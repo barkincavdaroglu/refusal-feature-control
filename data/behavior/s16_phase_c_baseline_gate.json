@@ -1,0 +1,18 @@
+{
+  "agreement_count": 120,
+  "agreement_rate": 0.6666666666666666,
+  "annotations_sha256": "3d0a9daec25d21b938b06587931ee4a0131d932a6d07ed7a6e70cc9b46767c43",
+  "blind_key_sha256": "cb60aa3834f2c0c658e81161f6aebae5ceb7ea52f7263db9afc7b8952e45ab43",
+  "comparison_count": 180,
+  "label_counts": {
+    "C": 103,
+    "P": 9,
+    "R": 34,
+    "S": 58
+  },
+  "name": "baseline",
+  "payload_sha256": "fe5418aa8a8e86447e33617771cc862ab6013dff890de37d7734f9b8350ebcbc",
+  "record_count": 204,
+  "schema_version": "s16-phase-c-annotations/1",
+  "status": "failed"
+}

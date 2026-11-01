@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "analysis_semantics_version": "s9-e9c-minimal-source-decoder-bundle-v1",
+  "status": "complete_authenticated_minimal_e9c_source_bundle_v1",
+  "created_at_utc": "2026-08-24T05:10:00Z",
+  "objective": "copy only the two frozen layer-31 decoder rows required by E9c without target-model or network contact",
+  "producer": {
+    "path": "build_s9_e9c_source_bundle.py",
+    "file_sha256": "e2dab7e0c1de28bfba7fe38b66c86bb3cb50ce912646bbebe69bdb624b2630b7"
+  },
+  "e9a_design": {
+    "file_sha256": "dfb1f1ad5de297997301a74022d38d27421acc772426d4314eebc9996a777788",
+    "payload_sha256": "0f3c01580c8a8837fe5a1819ea63c041ec5829f5acda24571f5ff6132aaf70f8"
+  },
+  "source": {
+    "bundle_file_sha256": "8a2de5629bcdbd138d23b9ed9705b6c4a2ac78d9995912ded0c820a0b0f23ffc",
+    "manifest_file_sha256": "c19d0722826a475fced422f73a87f9173948c43cc26d42a3751c34ecf337ef20",
+    "manifest_payload_sha256": "de8be0a4f475c477d5bcdbb90c2edfcf921d75cf470ea89758d7250f87b5907e",
+    "selected_layer": 31,
+    "selected_tensor": "W_dec",
+    "unused_e8b_rows_copied": false
+  },
+  "features": [
+    {
+      "feature": "L31:F49541",
+      "feature_index": 49541,
+      "row_index": 0,
+      "role": "nominated_c"
+    },
+    {
+      "feature": "L31:F139261",
+      "feature_index": 139261,
+      "row_index": 1,
+      "role": "equal_l2_control"
+    }
+  ],
+  "bundle": {
+    "path": "s9_e9c_source_decoders.safetensors",
+    "file_sha256": "89d3ae648c7ae8d28f04e54c05440754463b4f0a07fa93bfc6d1300054bbe2ad",
+    "keys": [
+      "decoder_rows",
+      "feature_indices"
+    ],
+    "tensor_identity_sha256": {
+      "decoder_rows": "1de670ddf7b639440c3361961e3d1f1fa9196d1e76bccb77908fa266f753d477",
+      "feature_indices": "52ef8ef34c20551f0efc4387191d76e66a9a085d458cb24a4babd22cd40dab35"
+    },
+    "public": false
+  },
+  "privacy": {
+    "raw_decoder_values_in_public_manifest": false,
+    "private_bundle_external_transfer_allowed": false,
+    "target_model_contact": false
+  },
+  "payload_sha256": "4ea386e43f2995f35a625edb7fbef2fd1cf3ff6860775d564a9ac30b930bcbcb"
+}

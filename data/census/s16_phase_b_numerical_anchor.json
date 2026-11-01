@@ -1,0 +1,20 @@
+{
+  "c_activation_all": {
+    "max_abs_difference": 1.0479779243469238,
+    "median_abs_difference": 0.0,
+    "value_count": 14085
+  },
+  "c_activation_final": {
+    "max_abs_difference": 0.634587287902832,
+    "median_abs_difference": 0.0,
+    "value_count": 100
+  },
+  "cpu_run_manifest_payload_sha256": "6f12ab2c0f4073b62b28a8d810b65eb6c8b0296ff0024dfac7fb91cab7d25b27",
+  "generator": "numpy.random.PCG64",
+  "mps_run_manifest_payload_sha256": "53400205587fa068ff134c0ec51b07e45d17c92cd2e45b68382ec21e8fa2b6e2",
+  "payload_sha256": "263e47a67fa6a84727f8fbc1a13d4734b43e9bb40599734fd4a9755479b7e26f",
+  "row_count": 100,
+  "schema_version": "s16-phase-b-numerical-anchor/1",
+  "seed": 2522210527409210963,
+  "status": "complete_mps_bf16_vs_cpu_fp32_anchor"
+}

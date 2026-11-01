@@ -1,0 +1,391 @@
+{
+  "schema_version": 1,
+  "analysis_semantics_version": "s9-e8a-c-to-d-replication-manifest-v1",
+  "status": "complete_preoutcome_route_replication_manifest_v1",
+  "mode": "prospective_route_replication",
+  "research_stage": "understanding_testing_hypotheses",
+  "created_at_utc": "2026-08-24T01:12:57.440915Z",
+  "objective": "freeze an E7-route-outcome-unseen, intent-disjoint C-edit to complete-L32-output replication panel while leaving confirmation sealed",
+  "authorization": {
+    "local_cpu_only": true,
+    "gpu_allocation_allowed": false,
+    "original_model_outcomes_allowed": false,
+    "generation_allowed": false,
+    "e7d_allowed": false,
+    "fresh_user_confirmation_required": true
+  },
+  "outcome_disclosure": {
+    "freshness_scope": "route_outcomes_only",
+    "s10_behavior_and_target_outcomes_already_exist": true,
+    "s10_cohort_level_outcomes_known_to_designers": true,
+    "record_level_s10_outcomes_used_for_selection": false,
+    "e8_route_outcomes_seen_by_builder": false,
+    "pristine_model_unseen_confirmation": false,
+    "selected_partition": "validation_expansion"
+  },
+  "confirmation_boundary": {
+    "partition": "confirmation",
+    "sealed": true,
+    "prompt_text_read": false,
+    "prompt_text_sent_to_model": false,
+    "model_outcomes": 0,
+    "selected_intent_overlap": [],
+    "prompt_key_set_sha256": "fcc7e8899fd86400ee9761ca9adea04a4f542d8f82cd48662226e717b1bfcac5"
+  },
+  "selection_contract": {
+    "fixed_intent_ids": [
+      "B15",
+      "B16",
+      "B17",
+      "B18",
+      "B19",
+      "H31",
+      "H32",
+      "H33",
+      "H34",
+      "H35",
+      "H36",
+      "H37",
+      "H38",
+      "H39",
+      "H40"
+    ],
+    "all_validation_expansion_intents_retained": true,
+    "selection_used_behavior_or_target_outcomes": false,
+    "selection_used_e7_or_e8_route_outcomes": false,
+    "source_frame_id": "D0",
+    "target_frame_id": "F0",
+    "one_pair_per_intent": true,
+    "fixed_full_panel_no_sequential_stopping": true
+  },
+  "intent_pairs": [
+    {
+      "pair_id": "e8a:B15:d0_to_f0",
+      "intent_id": "B15",
+      "risk_class": "benign",
+      "category": "food_allergen_prevention",
+      "partition": "validation_expansion",
+      "core_sha256": "33c5db9ca5bccf85cf14a8fb9cd255a0965829a2f78d2c332a3c20423ebea355",
+      "source_prompt": {
+        "prompt_key": "S10BX-B15-D0",
+        "frame_id": "D0",
+        "prompt_sha256": "33c5db9ca5bccf85cf14a8fb9cd255a0965829a2f78d2c332a3c20423ebea355"
+      },
+      "target_prompt": {
+        "prompt_key": "S10BX-B15-F0",
+        "frame_id": "F0",
+        "prompt_sha256": "c5bccc21342c5dc5ea4a894e1d2920c1ccda9fa50a2ecf733665e4e5fab6ae19"
+      }
+    },
+    {
+      "pair_id": "e8a:B16:d0_to_f0",
+      "intent_id": "B16",
+      "risk_class": "benign",
+      "category": "evidence_preservation",
+      "partition": "validation_expansion",
+      "core_sha256": "1a9a61a62573273b29ae7e9cac77ed733a5998ec936eb768a757e1f4a1a3cefb",
+      "source_prompt": {
+        "prompt_key": "S10BX-B16-D0",
+        "frame_id": "D0",
+        "prompt_sha256": "1a9a61a62573273b29ae7e9cac77ed733a5998ec936eb768a757e1f4a1a3cefb"
+      },
+      "target_prompt": {
+        "prompt_key": "S10BX-B16-F0",
+        "frame_id": "F0",
+        "prompt_sha256": "407f6040ad6cc1f0017c41f3e68ea5b3806de7c6f57a54c7a8a92fbad17c22d6"
+      }
+    },
+    {
+      "pair_id": "e8a:B17:d0_to_f0",
+      "intent_id": "B17",
+      "risk_class": "benign",
+      "category": "identity_theft_prevention",
+      "partition": "validation_expansion",
+      "core_sha256": "f11b1375319e3f17b638fce4dcb282ec5ebd376c21e5ddec782293c6bd09ba81",
+      "source_prompt": {
+        "prompt_key": "S10BX-B17-D0",
+        "frame_id": "D0",
+        "prompt_sha256": "f11b1375319e3f17b638fce4dcb282ec5ebd376c21e5ddec782293c6bd09ba81"
+      },
+      "target_prompt": {
+        "prompt_key": "S10BX-B17-F0",
+        "frame_id": "F0",
+        "prompt_sha256": "65dbd5884725e4dd5631317d246476c33887a7c4206de4ed60c5cbd165424acc"
+      }
+    },
+    {
+      "pair_id": "e8a:B18:d0_to_f0",
+      "intent_id": "B18",
+      "risk_class": "benign",
+      "category": "industrial_interlock_audit",
+      "partition": "validation_expansion",
+      "core_sha256": "a291bd71d2dfc59f2359cb0c73f0241eb750b5772ff266625015816327cb38c1",
+      "source_prompt": {
+        "prompt_key": "S10BX-B18-D0",
+        "frame_id": "D0",
+        "prompt_sha256": "a291bd71d2dfc59f2359cb0c73f0241eb750b5772ff266625015816327cb38c1"
+      },
+      "target_prompt": {
+        "prompt_key": "S10BX-B18-F0",
+        "frame_id": "F0",
+        "prompt_sha256": "ae6804832d230fe463a38b5be905abece3f3f01a8f84eceadffe049c020ed1aa"
+      }
+    },
+    {
+      "pair_id": "e8a:B19:d0_to_f0",
+      "intent_id": "B19",
+      "risk_class": "benign",
+      "category": "legal_document_verification",
+      "partition": "validation_expansion",
+      "core_sha256": "9b01f162c9b95d2189416b861f1f25d6c49252f4e90920827188a80c488149c0",
+      "source_prompt": {
+        "prompt_key": "S10BX-B19-D0",
+        "frame_id": "D0",
+        "prompt_sha256": "9b01f162c9b95d2189416b861f1f25d6c49252f4e90920827188a80c488149c0"
+      },
+      "target_prompt": {
+        "prompt_key": "S10BX-B19-F0",
+        "frame_id": "F0",
+        "prompt_sha256": "7b03b749eaefd37c51cde390a967b9708e66e170eaa79c8e4dcf2b1c05517962"
+      }
+    },
+    {
+      "pair_id": "e8a:H31:d0_to_f0",
+      "intent_id": "H31",
+      "risk_class": "harmful",
+      "category": "food_supply_contamination",
+      "partition": "validation_expansion",
+      "core_sha256": "db62f480a35f511cc3ce4735be3cc960991d3198c3c7889404ad28f5d7191995",
+      "source_prompt": {
+        "prompt_key": "S10BX-H31-D0",
+        "frame_id": "D0",
+        "prompt_sha256": "db62f480a35f511cc3ce4735be3cc960991d3198c3c7889404ad28f5d7191995"
+      },
+      "target_prompt": {
+        "prompt_key": "S10BX-H31-F0",
+        "frame_id": "F0",
+        "prompt_sha256": "af35617ef8806b5698811d8b0cd0e342896eec84ffba56f2a6d35389ba1f3241"
+      }
+    },
+    {
+      "pair_id": "e8a:H32:d0_to_f0",
+      "intent_id": "H32",
+      "risk_class": "harmful",
+      "category": "criminal_evidence_destruction",
+      "partition": "validation_expansion",
+      "core_sha256": "5022d174a6cb6f0824627b54b9ff1037148f073a4c04e2c94a503d4e9b5b1a8e",
+      "source_prompt": {
+        "prompt_key": "S10BX-H32-D0",
+        "frame_id": "D0",
+        "prompt_sha256": "5022d174a6cb6f0824627b54b9ff1037148f073a4c04e2c94a503d4e9b5b1a8e"
+      },
+      "target_prompt": {
+        "prompt_key": "S10BX-H32-F0",
+        "frame_id": "F0",
+        "prompt_sha256": "f3addbc4637bd0adde41b62ef6788e4c1299c595033b5e3bdc90ff1461507e85"
+      }
+    },
+    {
+      "pair_id": "e8a:H33:d0_to_f0",
+      "intent_id": "H33",
+      "risk_class": "harmful",
+      "category": "identity_based_credit_fraud",
+      "partition": "validation_expansion",
+      "core_sha256": "07c99c028fe0d5a9e06c91a82abfc688930cd808bb99d88b5723b48c952bc1dd",
+      "source_prompt": {
+        "prompt_key": "S10BX-H33-D0",
+        "frame_id": "D0",
+        "prompt_sha256": "07c99c028fe0d5a9e06c91a82abfc688930cd808bb99d88b5723b48c952bc1dd"
+      },
+      "target_prompt": {
+        "prompt_key": "S10BX-H33-F0",
+        "frame_id": "F0",
+        "prompt_sha256": "e66ccdd4f6e2be3cc7c8b9863e065d2110d1bbf35910ad7ca9dc4074523e8998"
+      }
+    },
+    {
+      "pair_id": "e8a:H34:d0_to_f0",
+      "intent_id": "H34",
+      "risk_class": "harmful",
+      "category": "industrial_safety_sabotage",
+      "partition": "validation_expansion",
+      "core_sha256": "ca7ee6dd1db22a3cbb5f34935a02c88312ba1dd92269bf5eb52fcce19af99da8",
+      "source_prompt": {
+        "prompt_key": "S10BX-H34-D0",
+        "frame_id": "D0",
+        "prompt_sha256": "ca7ee6dd1db22a3cbb5f34935a02c88312ba1dd92269bf5eb52fcce19af99da8"
+      },
+      "target_prompt": {
+        "prompt_key": "S10BX-H34-F0",
+        "frame_id": "F0",
+        "prompt_sha256": "f9e30025d99259463d2385b3101922bab5132591d873fbe19595c59ad78685f1"
+      }
+    },
+    {
+      "pair_id": "e8a:H35:d0_to_f0",
+      "intent_id": "H35",
+      "risk_class": "harmful",
+      "category": "forged_court_orders",
+      "partition": "validation_expansion",
+      "core_sha256": "a9cd5870dfcbfa695efc2a3247188184c11564e8e797d8cda927c9fb0f2e9d1f",
+      "source_prompt": {
+        "prompt_key": "S10BX-H35-D0",
+        "frame_id": "D0",
+        "prompt_sha256": "a9cd5870dfcbfa695efc2a3247188184c11564e8e797d8cda927c9fb0f2e9d1f"
+      },
+      "target_prompt": {
+        "prompt_key": "S10BX-H35-F0",
+        "frame_id": "F0",
+        "prompt_sha256": "6bee2f08663de774f369d7ca237710453682d123a4bcdc7251d818138d607fbf"
+      }
+    },
+    {
+      "pair_id": "e8a:H36:d0_to_f0",
+      "intent_id": "H36",
+      "risk_class": "harmful",
+      "category": "companion_animal_poisoning",
+      "partition": "validation_expansion",
+      "core_sha256": "45ad41d8d19c89a86c1af78b0b3d04020febe69071af4a129b243d9ff53cb73f",
+      "source_prompt": {
+        "prompt_key": "S10BX-H36-D0",
+        "frame_id": "D0",
+        "prompt_sha256": "45ad41d8d19c89a86c1af78b0b3d04020febe69071af4a129b243d9ff53cb73f"
+      },
+      "target_prompt": {
+        "prompt_key": "S10BX-H36-F0",
+        "frame_id": "F0",
+        "prompt_sha256": "045e162f9a67b77d597bbd3ef4fc3061ae5c155829fabc433eddd66dba5fb3fc"
+      }
+    },
+    {
+      "pair_id": "e8a:H37:d0_to_f0",
+      "intent_id": "H37",
+      "risk_class": "harmful",
+      "category": "emergency_dispatch_disruption",
+      "partition": "validation_expansion",
+      "core_sha256": "5e52cad3e19a5e2781c8e6c5ae75a1c9b7c36a894ed8268e6fe4b58e36f50ca5",
+      "source_prompt": {
+        "prompt_key": "S10BX-H37-D0",
+        "frame_id": "D0",
+        "prompt_sha256": "5e52cad3e19a5e2781c8e6c5ae75a1c9b7c36a894ed8268e6fe4b58e36f50ca5"
+      },
+      "target_prompt": {
+        "prompt_key": "S10BX-H37-F0",
+        "frame_id": "F0",
+        "prompt_sha256": "be6d7138a6f4b0e178735a6583753c939d690d57c2344050a3482d754cac12bd"
+      }
+    },
+    {
+      "pair_id": "e8a:H38:d0_to_f0",
+      "intent_id": "H38",
+      "risk_class": "harmful",
+      "category": "disaster_relief_charity_fraud",
+      "partition": "validation_expansion",
+      "core_sha256": "ba432e324c68c8f114b157f402bd7ecc6fb2a8f02076a72e8195eaafb2dab8e2",
+      "source_prompt": {
+        "prompt_key": "S10BX-H38-D0",
+        "frame_id": "D0",
+        "prompt_sha256": "ba432e324c68c8f114b157f402bd7ecc6fb2a8f02076a72e8195eaafb2dab8e2"
+      },
+      "target_prompt": {
+        "prompt_key": "S10BX-H38-F0",
+        "frame_id": "F0",
+        "prompt_sha256": "d70973f7797d99feb5d42a0379a941d4aba8c7d7495208137a5571aadba55f6d"
+      }
+    },
+    {
+      "pair_id": "e8a:H39:d0_to_f0",
+      "intent_id": "H39",
+      "risk_class": "harmful",
+      "category": "aviation_maintenance_sabotage",
+      "partition": "validation_expansion",
+      "core_sha256": "b4bd06e11cbafe60b9c4477149abd3da9338cdeed3004a550e7efbad7a481b89",
+      "source_prompt": {
+        "prompt_key": "S10BX-H39-D0",
+        "frame_id": "D0",
+        "prompt_sha256": "b4bd06e11cbafe60b9c4477149abd3da9338cdeed3004a550e7efbad7a481b89"
+      },
+      "target_prompt": {
+        "prompt_key": "S10BX-H39-F0",
+        "frame_id": "F0",
+        "prompt_sha256": "63bfe579b6ea94dc976939b2db7d384957f336897fb10aa6cd5aa8c02b4553ae"
+      }
+    },
+    {
+      "pair_id": "e8a:H40:d0_to_f0",
+      "intent_id": "H40",
+      "risk_class": "harmful",
+      "category": "witness_intimidation",
+      "partition": "validation_expansion",
+      "core_sha256": "c1d0640b13dc19079cffbcc1a2fee2e1c579bb02089db0f76d137acb471ace88",
+      "source_prompt": {
+        "prompt_key": "S10BX-H40-D0",
+        "frame_id": "D0",
+        "prompt_sha256": "c1d0640b13dc19079cffbcc1a2fee2e1c579bb02089db0f76d137acb471ace88"
+      },
+      "target_prompt": {
+        "prompt_key": "S10BX-H40-F0",
+        "frame_id": "F0",
+        "prompt_sha256": "7c4dee9ab4de83e015ecbdc3e2a3dc46e90b7fa9027c521d0ad7ed998d6f7c41"
+      }
+    }
+  ],
+  "expected_counts": {
+    "intent_pairs": 15,
+    "harmful_intents": 10,
+    "benign_intents": 5,
+    "prompt_records": 30,
+    "route_arms_per_intent": 2,
+    "receiver_positions_per_arm": 2,
+    "route_cells": 60
+  },
+  "private_prompt_source": {
+    "path": "source://refusal-study/ALL WORK/steps/10-target-and-dataset-repair/private/s10_phase_b_validation_expansion_prompts.csv",
+    "sha256": "f5f65a41a2ca6cf479a58f9d21e4cfa50becadd28fc033ceeaa3b88eb4bd41e8",
+    "public": false,
+    "opened_by_e8a_builder": false,
+    "hash_copied_from": "authenticated_s10_expansion_plan_input"
+  },
+  "inputs": {
+    "s10_expansion_plan": {
+      "path": "source://refusal-study/ALL WORK/steps/10-target-and-dataset-repair/outputs/s10_phase_b_expansion_plan.json",
+      "sha256": "9341c387c9a1f409cace2641f3bad7abcd1f6585305b73c1f1fd2b101e842016"
+    },
+    "s10_expansion_analysis": {
+      "path": "source://refusal-study/ALL WORK/steps/10-target-and-dataset-repair/outputs/s10_phase_b_expansion_analysis.json",
+      "sha256": "43d2439192e5c065461c2318252dc9598c97522205e87b65fbda2cbaea7907ea"
+    },
+    "s10_validation_plan": {
+      "path": "source://refusal-study/ALL WORK/steps/10-target-and-dataset-repair/outputs/s10_phase_b_validation_plan.json",
+      "sha256": "6beb7cf982e28adcd3a1548c0fb8ba2289feb8d0c22eedffc462f06f4c75b1b2"
+    },
+    "e7b_plan": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/outputs/s9_e7b_plan.json",
+      "sha256": "9ee3ca739caa97937a27d4f23571bd6c3ee6a7757d37669bb03d95efa0447666"
+    },
+    "e7c_result": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/outputs/s9_e7c_result.json",
+      "sha256": "b5a4a7fd0a2cbe9b904ebb08adcaa56af857a3cb7a4a329abd1deb228bba937b"
+    },
+    "e7c_interpretation_audit": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/outputs/s9_e7c_interpretation_audit.json",
+      "sha256": "545ac37618089e1e61de67746bf52866bc5153c8d100818c0012058b40706d47"
+    },
+    "manifest_builder": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/src/build_s9_e8a_manifest.py",
+      "sha256": "93b06c5fc16aad0ce7368964f96edcfec04cafc82df57ac25d86e5c30885e896"
+    },
+    "e8_contract": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/src/s9_e8_contract.py",
+      "sha256": "6fc5c7ea89b9549e6d558ab7fb5f06f1be5315da07bbceace8c60fc1e38d2253"
+    }
+  },
+  "privacy": {
+    "prompt_text_in_public_artifacts": false,
+    "completion_text_in_public_artifacts": false,
+    "token_text_in_public_artifacts": false,
+    "raw_receiver_tensors_in_public_artifacts": false,
+    "confirmation_prompt_text_read": false
+  },
+  "payload_sha256": "0d0de4fe9983c408b99158b74abd93e63421e0d098e8f07b25256520aad841c4"
+}

@@ -1,0 +1,220 @@
+{
+  "schema_version": 1,
+  "analysis_semantics_version": "s9-e9a-project-untouched-fixed-dose-route-design-v1",
+  "status": "frozen_cpu_only_design_protocol_v1",
+  "mode": "confirmatory_route_selectivity_design",
+  "research_stage": "understanding_testing_hypotheses",
+  "created_at_utc": "2026-08-24T03:54:27Z",
+  "objective": "Freeze a project-untouched, fixed-dose test of complete-layer-32 receiver dependence, rescue, and harmful-versus-benign endpoint selectivity.",
+  "decision": {
+    "advance_to_private_panel_materialization": true,
+    "execution_authorized": false,
+    "information_rate_rationale": [
+      "E8b repeated complete-layer-32 dependence and rescue in all 10 harmful intents.",
+      "E8b could not test benign selectivity because every benign natural C dose was zero.",
+      "A fixed transported dose can resolve the live selectivity question without screening new prompts."
+    ],
+    "claim_if_successful": "fixed-dose endpoint-level complete-receiver selectivity on the frozen panel",
+    "claims_still_out_of_scope": [
+      "unique sparse-feature mediation",
+      "dominant pathway",
+      "generated-answer behavior",
+      "benign behavioral sparing",
+      "graph-topology value",
+      "population-wide safety control"
+    ]
+  },
+  "freshness_contract": {
+    "preferred_label": "project_untouched_target_model_panel",
+    "pretraining_unseen_claim_allowed": false,
+    "target_model_prior_calls_on_exact_prompt_bytes": 0,
+    "sender_only_dose_screen_allowed": false,
+    "route_or_endpoint_outcomes_seen": false,
+    "exact_prompt_bytes_materialized": false,
+    "allowed_pre_execution_work": [
+      "human_or_non_target-model_prompt_authoring",
+      "metadata_only_privacy_and_hash_validation"
+    ]
+  },
+  "dose_contract": {
+    "calibration_source": "frozen_e8b_harmful_natural_c_activation_deltas",
+    "calibration_activation_deltas": [
+      19.875,
+      14.375,
+      19.625,
+      17.625,
+      17.625,
+      20.5,
+      21.75,
+      16.75,
+      15.125,
+      21.5
+    ],
+    "aggregation": "median_of_10_even_count_mean",
+    "fixed_c_activation_delta": 18.625,
+    "nominated_source_feature": "L31:F49541",
+    "nominated_decoder_write_formula": "+18.625 * d_C",
+    "control_source_feature": "L31:F139261",
+    "control_delta_formula": "+l2(18.625 * d_C) / l2(d_control)",
+    "control_matching": "exact_nominal_applied_residual_l2_with_positive_sign",
+    "sender_estimand": "fixed_positive_decoder_write",
+    "nonzero_by_construction": true,
+    "same_numeric_c_dose_for_every_harmful_and_benign_prompt": true,
+    "new_prompt_activation_screen_required": false,
+    "not_a_literal_natural_patch_replication": true
+  },
+  "panel_contract": {
+    "status": "sampling_protocol_frozen_prompt_bytes_pending",
+    "required_topic_pairs": 12,
+    "harmful_intents": 12,
+    "benign_intents": 12,
+    "total_intents": 24,
+    "exact_target_prompts_per_intent": 1,
+    "new_intent_categories_required": true,
+    "intent_disjoint_from_prior_e7_e8_and_s10_panels": true,
+    "template_disjoint_from_d0_f0_required": true,
+    "semantic_near_duplicate_review_required": true,
+    "private_prompt_panel_required": true,
+    "selection_uses_target_model_outcomes": false,
+    "selection_or_replacement_after_target_model_outcomes": false,
+    "fixed_full_panel_no_sequential_top_up": true
+  },
+  "route_contract": {
+    "source_hook": "blocks.31.mlp.hook_out",
+    "source_position": "final_prompt_position",
+    "receiver_layer": 32,
+    "receiver_boundary": "module_output",
+    "receiver_hook": "blocks.32.mlp.hook_out",
+    "receiver_state": "complete_d_model_vector",
+    "empirical_receiver_position": "final_prompt_position",
+    "structural_control_position": "penultimate_prompt_position",
+    "structural_control_role": "same_module_wrong_time_causal_order_and_runtime_audit",
+    "structural_control_is_empirical_off_path_control": false,
+    "restore_and_rescue_are_distinct_counterfactuals": true,
+    "estimands": {
+      "T_S": "YS - Y0",
+      "D_R": "YS - YS_R0",
+      "B_R": "YS_R0 - Y0",
+      "Q_R": "YR_S - Y0",
+      "invariant": "T_S = D_R + B_R",
+      "paired_D": "D_R[C] - D_R[equal_l2_control]",
+      "paired_Q": "Q_R[C] - Q_R[equal_l2_control]"
+    }
+  },
+  "analysis_contract": {
+    "primary_endpoint": "next_token_refusal_log_odds",
+    "secondary_endpoint": "probe_score",
+    "harmful_independent_unit": "intent_id",
+    "selectivity_independent_unit": "topic_pair_id",
+    "harmful_dependence_gate": {
+      "per_intent": "T_S_C_gt_0_and_D_R_C_gt_0_and_paired_D_gt_0",
+      "minimum_wins": 10,
+      "denominator": 12
+    },
+    "harmful_rescue_gate": {
+      "tested_only_after_dependence_gate": true,
+      "per_intent": "dependence_win_and_Q_R_C_gt_0_and_paired_Q_gt_0",
+      "minimum_wins": 10,
+      "denominator": 12
+    },
+    "risk_differential_gate": {
+      "paired_D_formula": "paired_D[harmful] - paired_D[benign]",
+      "paired_Q_formula": "paired_Q[harmful] - paired_Q[benign]",
+      "minimum_positive_paired_D": 10,
+      "minimum_positive_paired_Q": 10,
+      "denominator": 12,
+      "tested_only_after_harmful_route_gates": true
+    },
+    "benign_relative_smallness": {
+      "metric": "abs(paired_estimand_benign) / abs(paired_estimand_harmful)",
+      "estimands": [
+        "paired_D",
+        "paired_Q"
+      ],
+      "maximum_abs_benign_to_harmful_ratio": 0.25,
+      "minimum_pairs_with_both_estimands_small": 10,
+      "denominator": 12,
+      "nonpositive_harmful_denominator_is_not_a_win": true,
+      "practical_equivalence_or_behavior_claim_allowed": false
+    },
+    "exact_one_sided_sign_test_reported": true,
+    "alpha": 0.05,
+    "ties_are_nonwins": true,
+    "all_frozen_intents_remain_in_denominators": true,
+    "route_cells_are_independent_samples": false,
+    "behavior_claim_allowed": false,
+    "benign_behavior_sparing_claim_allowed": false,
+    "no_threshold_refit": true
+  },
+  "forward_accounting": {
+    "target_prompt_baselines": 24,
+    "sender_worlds": 48,
+    "receiver_restoration_and_rescue_worlds": 192,
+    "total_scientific_forwards": 264,
+    "fail_closed_audit_ceiling": 291
+  },
+  "excluded_arms": {
+    "natural_source_target_patch": true,
+    "sender_activation_screen_on_new_panel": true,
+    "module_input_receiver": true,
+    "graph_low_coverage_receiver": true,
+    "d_gate_selection_or_advancement": true,
+    "joint_receiver_set": true,
+    "topology_selection_or_e7d": true,
+    "generation": true,
+    "backward_pass": true
+  },
+  "authorization": {
+    "local_cpu_only_design_work": true,
+    "private_prompt_materialization_allowed": false,
+    "private_prompt_upload_allowed": false,
+    "target_model_load_allowed": false,
+    "model_forward_allowed": false,
+    "gpu_allocation_allowed": false,
+    "generation_allowed": false,
+    "e7d_allowed": false,
+    "execution_bundle_implementation_allowed": false,
+    "fresh_user_confirmation_required": true
+  },
+  "privacy": {
+    "prompt_text_in_public_artifact": false,
+    "completion_text_in_public_artifact": false,
+    "token_text_in_public_artifact": false,
+    "raw_tensor_in_public_artifact": false
+  },
+  "inputs": {
+    "e8a_preregistration": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/E8A_C_TO_D_REPLICATION_PREREGISTRATION.md",
+      "sha256": "5875b5cd5b18984a4cd2eb8ea2e1f99cb16f51116ea6eeb2d1cb127a7957a728"
+    },
+    "e8b_result": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/outputs/s9_e8b_result.json",
+      "sha256": "09967fa032d7ae5dafe407a41f3274780dc671e0d62b4c3016281090c8ecd153"
+    },
+    "e8b_analysis": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/outputs/s9_e8b_analysis.json",
+      "sha256": "0334b6b688e47a22f3838a9eb9ed419432bf5831ee8cf1b660f6b57383404e57"
+    },
+    "e8b_report": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/E8B_ROUTE_REPLICATION_OUTCOMES_REPORT.md",
+      "sha256": "a46a75fdb50f37f9b3f9e105eb20e2f96c3cdd7d78c4086e065348541031379d"
+    },
+    "decision_d005": {
+      "path": "source://refusal-study/.research-state/objects/decisions/D-005.yaml",
+      "sha256": "0641849dd8615a02a33959d7a4f701acac111df6135b49f3cce6b3b0b884fe80"
+    },
+    "question_q002": {
+      "path": "source://refusal-study/.research-state/objects/questions/Q-002.yaml",
+      "sha256": "f9eb2e4ce5a71f930d0947bcf009f2aa8e9444d472cedf7b6cf3cdb00d169ad8"
+    },
+    "design_builder": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/src/build_s9_e9a_design.py",
+      "sha256": "f22ab4b39e4d6871c422fbc6c10d5fdeddbac9b235abf3eadef95ca0d1766a3c"
+    },
+    "e9_contract": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/src/s9_e9_contract.py",
+      "sha256": "0b66ad0715d81f95f5ae18e3536183e7e58de6a6e86c1b66ee8654b6403d4b67"
+    }
+  },
+  "payload_sha256": "0f3c01580c8a8837fe5a1819ea63c041ec5829f5acda24571f5ff6132aaf70f8"
+}

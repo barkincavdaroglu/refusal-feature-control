@@ -1,0 +1,260 @@
+[
+  {
+    "repo_id": "Qwen/Qwen3-4B",
+    "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+    "source_snapshot_present": true,
+    "files": [
+      {
+        "filename": "config.json",
+        "bytes": 726,
+        "cache_blob_id": "e49eccdc32f36da9c09cfa0e737084f9e0105e5e"
+      },
+      {
+        "filename": "generation_config.json",
+        "bytes": 239,
+        "cache_blob_id": "20a8a9156fc8c3f25295ca067f61fdf120d517c5"
+      },
+      {
+        "filename": "merges.txt",
+        "bytes": 1671853,
+        "cache_blob_id": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7"
+      },
+      {
+        "filename": "model-00001-of-00003.safetensors",
+        "bytes": 3957900840,
+        "cache_blob_id": "328a91d3122359d5547f9d79521205bc0a46e1f79a792dfe650e99fc2d651223"
+      },
+      {
+        "filename": "model-00002-of-00003.safetensors",
+        "bytes": 3987450520,
+        "cache_blob_id": "6cd087b316306a68c562436b5492edbcf6e16c6dba3a1308279caa5a58e21ca5"
+      },
+      {
+        "filename": "model-00003-of-00003.safetensors",
+        "bytes": 99630640,
+        "cache_blob_id": "e4bf436957184f4eeb86a80e9db394503f1f56446b2e6b7edeac5b81470f4ca1"
+      },
+      {
+        "filename": "model.safetensors.index.json",
+        "bytes": 32819,
+        "cache_blob_id": "95c0a0059df040d75dc6c396b174382cf61d2f91"
+      },
+      {
+        "filename": "tokenizer.json",
+        "bytes": 11422654,
+        "cache_blob_id": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+      },
+      {
+        "filename": "tokenizer_config.json",
+        "bytes": 9732,
+        "cache_blob_id": "417d038a63fa3de29cfde265caedae14d1a58d92"
+      },
+      {
+        "filename": "vocab.json",
+        "bytes": 2776833,
+        "cache_blob_id": "4783fe10ac3adce15ac8f358ef5462739852c569"
+      }
+    ],
+    "purpose": "Fresh model/graph execution; transcoder weights also needed for recomputing relay cosines from graphs"
+  },
+  {
+    "repo_id": "mwhanna/qwen3-4b-transcoders",
+    "revision": "94d176260ac39ce2f882b8b09aba8c118df29bb3",
+    "source_snapshot_present": true,
+    "files": [
+      {
+        "filename": "config.yaml",
+        "bytes": 127,
+        "cache_blob_id": "05f88b4f5e45817c393dc0d215a5d8992dbb954d"
+      },
+      {
+        "filename": "layer_0.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "c432813451ade5dc8285e2eebcf0096a2a565970212dce85fa71ce970061c412"
+      },
+      {
+        "filename": "layer_1.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "51f5002c7370d875f623efb934e6d549a2a99e6454a4d0ff556884962d4aafc3"
+      },
+      {
+        "filename": "layer_10.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "dd54ce00bb4ce58da580a5adbe05e7d994fcb472b4a87cc01804c210c7cb819e"
+      },
+      {
+        "filename": "layer_11.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "36d7a41b44250c0f02c4bc983d5f2f451e1a4a223facef1a34a8dcaeb3245aad"
+      },
+      {
+        "filename": "layer_12.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "0025b6399f799bda082d2d09542885b3a5b9389b01d5be353bdacf7e89d68bc7"
+      },
+      {
+        "filename": "layer_13.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "98cc7866e4c8f643950a8e50988360c76e98767fc6c7e571762318503d4f47da"
+      },
+      {
+        "filename": "layer_14.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "0ae98fbd0d4b0a805510fc2f91065b21607acf4304bf53dd86affc8184fd67a9"
+      },
+      {
+        "filename": "layer_15.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "64c54d58125dc990c3c6e97d87f8829ba626132768118afd793ed99666970b0d"
+      },
+      {
+        "filename": "layer_16.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "4f01c09302ee8ae02d71963644517c6cb5343bdd672101104a054da8f958e618"
+      },
+      {
+        "filename": "layer_17.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "7393d74c48f5db548c80d5fbc6a9f1afa316fe4d02d482fcf2353b92bc2ea344"
+      },
+      {
+        "filename": "layer_18.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "150555108ff88408b4c84744b255d3d1be6b3d985f4de52e5475b2a8adfe514c"
+      },
+      {
+        "filename": "layer_19.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "1a97db62f06e14099a97799bf6ed5d2a0e952c2aac82150004d278c924f9375a"
+      },
+      {
+        "filename": "layer_2.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "79e61d8a6cf321342d082cb56247e709f00ec5ca264bbce3d042819c46771095"
+      },
+      {
+        "filename": "layer_20.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "f90293b9995437f29b6e1bc42974d4370d5d33bb7a9276574dfbe91deecbff4c"
+      },
+      {
+        "filename": "layer_21.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "a0b24d35885218b4fd79aad310b91e2e9f77c8931f73c11f3320879eb97cd95c"
+      },
+      {
+        "filename": "layer_22.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "bbc87c18ae6167ac6fe49871ec5448f5b1557dbe0576c9f9f15588f3f6bc5a87"
+      },
+      {
+        "filename": "layer_23.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "68ab814243fdd7d505604c316799ff5a8791544ed3d0cc5c52d5bd1df0ac01ac"
+      },
+      {
+        "filename": "layer_24.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "90d4b363ffab7ac066a3e22639871b8dcc3da76f3b79f85e5757368b721e4647"
+      },
+      {
+        "filename": "layer_25.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "504d33c63b993c23b3af20be39f63eb23c266fb8f0abb9a4f5d6e2ee0b99f876"
+      },
+      {
+        "filename": "layer_26.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "19383ac477b3c87b5cb7654b30b17e73108cacce4a741e5d90dad4f9657aab16"
+      },
+      {
+        "filename": "layer_27.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "c00b941030797a006a28797b99dfb4fcd629e4b102038bdc1e7a6fb38225d583"
+      },
+      {
+        "filename": "layer_28.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "56968e29d216453193442361b6d1c17e93011c5985dea6e4ecbe00ae9c39587b"
+      },
+      {
+        "filename": "layer_29.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "f42f8ed1e3b113196ca99ae348eaa1ea090e03038ad5a46f72f1b1b80cd116c9"
+      },
+      {
+        "filename": "layer_3.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "cc1502ab55af99900d5f754f9fed398401459271056e83ea69a1f8dc5b5c8f1e"
+      },
+      {
+        "filename": "layer_30.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "00b79f4e4acd8eb07613c0e4107ce40dcda4eac90fd908cc79400063eeecf353"
+      },
+      {
+        "filename": "layer_31.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "259a2ee3de571d9324e4535ea4ec1cecd352e968f25196d65d5974e1da123485"
+      },
+      {
+        "filename": "layer_32.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "6aa7a9bdea60ac9f7916108a6f5b189992ab448caa2386cc2a6cf273f79460e1"
+      },
+      {
+        "filename": "layer_33.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "07c1d32b45804da9543095e506a0560aa8f91e886c0cffda492013ef968a7a3c"
+      },
+      {
+        "filename": "layer_34.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "d123696e283d8b587355ce708e782022c7834f99628c73cdebb88fcad456e6f6"
+      },
+      {
+        "filename": "layer_35.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "9382674e8f8a585b5e87b24e95f8c2fab1b18c8a5333dbfda225110d2a67435f"
+      },
+      {
+        "filename": "layer_4.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "ba86b717a1c72110ae43f0092c003d76448184e42d1ed328dc7e6d65ac364f31"
+      },
+      {
+        "filename": "layer_5.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "40c91a1c34231f448173993e00ff66a1fae9ebd46e5f2988ed825b30119b26b2"
+      },
+      {
+        "filename": "layer_6.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "528322cd6a799091a1839fb9198a9b6402bd5cb69cf4f2b842ed588756c15d9e"
+      },
+      {
+        "filename": "layer_7.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "0c5ae762ac790899ab00890a5cbddf363f375e44597ddfccf69f71c70ca8b217"
+      },
+      {
+        "filename": "layer_8.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "4d87bae48af614b262ca158979defb107f15651db87c716167ecba4b42e67eaf"
+      },
+      {
+        "filename": "layer_9.safetensors",
+        "bytes": 1678054736,
+        "cache_blob_id": "0be448ea5cc1e0614e6dbaac1d3bd94e8ec7cd0900c81e0c10bc14d3b6ef8cee"
+      }
+    ],
+    "purpose": "Fresh model/graph execution; transcoder weights also needed for recomputing relay cosines from graphs"
+  },
+  {
+    "repo_id": "mistralai/Mistral-7B-Instruct-v0.3",
+    "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+    "files": [],
+    "source_snapshot_present": false,
+    "purpose": "Frozen independent evaluator for the reported behavior experiment; full recorded labels/results are packaged"
+  }
+]

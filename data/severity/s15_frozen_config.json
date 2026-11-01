@@ -1,0 +1,226 @@
+{
+  "schema_version": "s15-field-facing-audits-frozen-config-v1",
+  "frozen_at_utc": "2026-08-30T00:00:00Z",
+  "status": "frozen_before_new_s15_analysis_outputs",
+  "task0": {
+    "inventory_file": "../outputs/s15_task0_artifact_inventory.json",
+    "inventory_file_sha256": "f6632335b636cef20ea2248b76f7b1d52b3326d9abfc96f87005d01423e94d58",
+    "inventory_payload_sha256": "46d9793a09af14e6e0cc9749e4c7f57ec5ba864c777b28faf73fb515734edc09",
+    "required_status": "authenticated",
+    "maximum_limitations": 0
+  },
+  "w1": {
+    "primary_rows": {
+      "e7c": {"field": "primary_route_cells", "count": 48},
+      "e8b": {"field": "route_cells", "receiver_token_position": "final_prompt_position", "count": 30},
+      "e9d": {"field": "route_cells", "receiver_token_position": "final_prompt_position", "count": 48}
+    },
+    "structural_controls_excluded_from_primary": {
+      "e8b_penultimate": 30,
+      "e9d_penultimate": 48
+    },
+    "receiver_delta_orientation": "sender_minus_baseline",
+    "tensor_reconstruction_dtype": "float32",
+    "l2_parity_absolute_tolerance": 0.02,
+    "l2_parity_relative_tolerance": 0.002,
+    "readout_axes": {
+      "probe_axis": {
+        "file": "../../06-lexical-controls-and-causal-tests/outputs/qwen3_4b_refusal_probe_direction.npz",
+        "sha256": "3d2048a873ed05b334545e703e0253707aad9b3de76176eb1fc9d8a71b30d72e",
+        "role": "retrospective_fixed_coordinate_proxy"
+      },
+      "unembedding_axis": {
+        "model": "Qwen/Qwen3-4B",
+        "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+        "refusal_token_ids": [40, 19152],
+        "signed_axis": "mean_refusal_lm_head_rows_minus_mean_nonrefusal_lm_head_rows",
+        "subspace": "orthonormal_span_of_the_two_refusal_lm_head_rows",
+        "role": "fixed_coordinate_proxy_not_exact_downstream_jacobian"
+      }
+    },
+    "long_table_endpoints": ["probe_score", "next_token_refusal_log_odds"],
+    "outcomes": ["absolute_D_R", "absolute_Q_R"],
+    "directional_sensitivities": ["signed_D_R", "signed_Q_R"],
+    "magnitude_transform": "zscore_log1p_delta_l2_within_study",
+    "models": {
+      "magnitude": "outcome ~ z_magnitude * endpoint",
+      "condition": "outcome ~ z_magnitude * endpoint + risk_class + z_magnitude:risk_class + study_specific_nuisance",
+      "study_specific_nuisance": {
+        "e7c": ["receiver_layer"],
+        "e8b": ["arm"],
+        "e9d": ["arm"]
+      },
+      "random_intercept": {
+        "e7c": "intent_id",
+        "e8b": "intent_id",
+        "e9d": "topic_pair_id"
+      },
+      "fit": "maximum_likelihood_not_reml"
+    },
+    "primary_decision_study": "e7c_development",
+    "confirmation_or_scope_studies": ["e8b_replication", "e9d_fixed_dose_confirmation"],
+    "validation": {
+      "primary_r2": "leave_one_independent_unit_out_prediction_r2",
+      "secondary_r2": "nakagawa_marginal_r2",
+      "cluster_bootstrap_replicates": 10000,
+      "bootstrap_seed": 151001,
+      "wald_p_values_are_primary": false
+    },
+    "common_support": {
+      "central_interval": [0.05, 0.95],
+      "minimum_interval_overlap_fraction": 0.5,
+      "minimum_independent_units_per_risk_inside_overlap": 3,
+      "failure_disposition": "matched_magnitude_condition_not_identifiable"
+    },
+    "bins": {
+      "deflationary_min_magnitude_r2": 0.6,
+      "structure_survives_min_condition_delta_r2": 0.15,
+      "endpoint_split_min_standardized_interaction": 0.2,
+      "endpoint_split_requires_cluster_bootstrap_interval_excluding_zero": true,
+      "restricted_range_disposition": "not_decidable_retrospectively"
+    },
+    "pool_development_and_confirmation_silently": false,
+    "regress_algebraic_identity_on_components": false
+  },
+  "w2": {
+    "pruning_thresholds": [0.8, 0.9, 0.98],
+    "prune_each_threshold_from_raw_graph": true,
+    "candidate_position": "final_prompt_position",
+    "primary_family": "unsigned_absolute_flow",
+    "signed_transport_is_separate_sensitivity": true,
+    "indices": {
+      "interception_fraction": "receiver_rooted_intercepted_single_source_over_receiver_max_interceptable",
+      "bypass_index": "one_minus_interception_fraction",
+      "vertex_disjoint_routes": "internal_vertex_disjoint_directed_source_to_receiver_routes",
+      "candidate_c_k_gain": {
+        "primary_k": 5,
+        "sensitivity_k": [1, 2, 10],
+        "competitors": "deterministic_greedy_set_with_candidate_excluded",
+        "tie_break": "ascending_graph_node_index"
+      },
+      "candidate_error_origin_share": "error_source_mass_at_candidate_over_total_source_mass_at_candidate",
+      "direct_error_adjacency": "separate_sensitivity_not_error_origin_substitute"
+    },
+    "targets": [
+      "absolute_exact_minus_atp",
+      "absolute_exact_minus_graph_local_replacement"
+    ],
+    "secondary_target": "absolute_exact_effect",
+    "mandatory_covariates": ["log1p_absolute_atp", "log1p_source_edit_l2"],
+    "redundancy_composite": "mean_within_graph_percentile_of_bypass_log1p_routes_and_one_minus_c5_gain",
+    "prediction": {
+      "model": "ridge_on_training_standardized_features",
+      "ridge_alpha": 1.0,
+      "validation": "leave_one_pair_cluster_out_across_e5b_and_e5c",
+      "metric": "spearman_observed_vs_heldout_prediction",
+      "e5b_alone": "descriptive_only_one_pair_cluster",
+      "threshold_rows_are_repeated_sensitivities_not_independent_samples": true
+    },
+    "gate": {
+      "minimum_delta_spearman_each_calibration_target": 0.15,
+      "minimum_nonnegative_pair_clusters_each_target": 3,
+      "pair_cluster_denominator": 4,
+      "same_expected_sign_at_all_pruning_thresholds": true,
+      "strict_conjunction_across_atp_and_graph_error_targets": true
+    },
+    "exact_effect_expected_sign": "higher_redundancy_implies_smaller_absolute_exact_effect",
+    "missing_candidate_policy": "retain_row_with_presence_and_reachability_flags",
+    "row_level_p_values_allowed": false,
+    "cross_model_census": {
+      "raw_graphs_with_reproducible_threshold_normalization_required": true,
+      "already_pruned_public_json_is_comparable": false,
+      "unsupported_node_types_are_comparable": false,
+      "fallback": "publish_hash_pinned_comparability_and_downloader_spec"
+    }
+  },
+  "w3": {
+    "source": "e9d_primary_next_token_pair_rows",
+    "ratio_estimand": "expected_signed_benign_paired_effect_over_expected_signed_harmful_paired_effect_for_D_and_Q",
+    "ratio_grid": [0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9],
+    "sample_size": 12,
+    "monte_carlo_replicates": 200000,
+    "variance_multipliers": [1.0, 1.5, 2.0],
+    "models": {
+      "parametric": {
+        "family": "multivariate_gaussian_full_gate_vector",
+        "covariance": "ledoit_wolf",
+        "seed": 153001
+      },
+      "resampling": {
+        "family": "centered_whole_topic_pair_residual_bootstrap",
+        "resample_cells_independently": false,
+        "seed": 153002
+      }
+    },
+    "historical_gates": {
+      "harmful_dependence": {"minimum_wins": 10, "denominator": 12, "compound": true},
+      "harmful_rescue": {"minimum_wins": 10, "denominator": 12, "conditional": true, "compound": true},
+      "risk_differential": {"minimum_positive_D": 10, "minimum_positive_Q": 10, "denominator": 12, "conditional": true},
+      "relative_smallness": {"maximum_ratio": 0.25, "minimum_joint_wins": 10, "denominator": 12, "conditional": true},
+      "ties_are_nonwins": true,
+      "nonpositive_harmful_denominator_is_nonwin": true
+    },
+    "report_each_gate_and_conjunction": true,
+    "monte_carlo_interval": "wilson_95_percent",
+    "future_calibration": {
+      "nonselective_null_ratio": 0.8,
+      "target_selective_ratio": 0.5,
+      "maximum_type_i_error": 0.05,
+      "minimum_power": 0.8,
+      "sample_size_grid": [12, 18, 24, 36, 48, 72],
+      "ratio_threshold_grid": [0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75],
+      "minimum_win_fraction_grid": [0.7, 0.75, 0.8, 0.833333333333, 0.9],
+      "robust_requirement": "meets_error_and_power_under_both_models_and_all_variance_multipliers",
+      "selection_order": "smallest_n_then_smallest_type_i_error_then_highest_power_then_stricter_ratio_threshold"
+    },
+    "worked_examples": {
+      "e4c": "use_n4_per_named_harmful_replication_and_n2_benign_warning_not_n80_rows",
+      "e8b": "use_10_harmful_intents_and_5_topic_differentials_but_mark_same_dose_selectivity_not_evaluable"
+    },
+    "reopen_h005": false
+  },
+  "w4_stage1": {
+    "source_identity": {
+      "layer": 31,
+      "feature_id": 49541,
+      "position_role": "final-token",
+      "source_hook": "blocks.31.mlp.hook_out",
+      "equal_l2_control_feature_id": 139261
+    },
+    "matched_graph_pairs": ["B01:D0-F0", "H01:D0-F1", "H03:D0-F0", "H07:D0-F0"],
+    "activity_hurdle_reports_all_graphs": true,
+    "absent_node_is_observed_zero_parent_weight": false,
+    "conditional_parent_comparison_requires_both_active": true,
+    "minimum_dual_active_pairs_for_cross_pair_candidate_set": 3,
+    "parent_fields": ["signed_sum", "absolute_sum", "constituent_count"],
+    "primary_error_share": "direct_error_boundary_absolute_mass_over_error_embedding_and_internal_incoming_absolute_mass",
+    "sensitivity_error_share": "receiver_rooted_total_error_origin_share",
+    "error_dominated_threshold": 0.5,
+    "stage2_gate": "coverage_at_least_three_dual_active_pairs_and_not_error_dominated",
+    "coverage_failure_output": "feasibility_stop_plus_exploratory_dual_active_pair_parent_list",
+    "attention_qk_absence_claim_allowed": false
+  },
+  "w5": {
+    "source_transfer_spec": "../W5_METHOD_PROVENANCE_AND_TRANSFER_SPEC.md",
+    "literature_manifest": "literature/manifest.json",
+    "gates_must_come_from_completed_w3": true,
+    "new_project_untouched_pairs": 12,
+    "target_model_screening_for_panel_selection": false,
+    "raw_prompt_and_completion_visibility": "private_only",
+    "arms": [
+      "external_qwen3_4b_raw_neuron_L14_N5590_anchor_primary_constant_sensitivity",
+      "craft_style_per_layer_transcoder_adaptation_if_fidelity_checklist_passes",
+      "fixed_C_L31_F49541_nonselective_reference"
+    ],
+    "within_arm_controls": ["equal_applied_residual_l2", "outcome_blind_matched_random"],
+    "cross_arm_dose_comparisons_allowed": false,
+    "outcome_based_retuning_allowed": false,
+    "full_preregistration_status": "pending_w3_calibrated_gate_output"
+  },
+  "governance": {
+    "s14_baseline_frozen": true,
+    "canonical_updates": "stage_and_preview_only",
+    "approval_or_apply_in_this_run": false,
+    "public_artifacts_may_contain_harmful_prompt_or_completion_text": false
+  }
+}

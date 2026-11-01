@@ -1,0 +1,436 @@
+{
+  "analysis_semantics_version": "s9-e9b-public-hash-only-panel-manifest-v1",
+  "authorization": {
+    "colab_connection_allowed": false,
+    "e7d_allowed": false,
+    "fresh_user_confirmation_required_for_e9c": true,
+    "generation_allowed": false,
+    "gpu_allocation_allowed": false,
+    "local_cpu_only": true,
+    "model_forward_allowed": false,
+    "private_prompt_materialization_completed": true,
+    "private_prompt_upload_allowed": false,
+    "runner_or_execution_bundle_implementation_allowed": false,
+    "target_model_load_allowed": false
+  },
+  "created_at_utc": "2026-08-24T04:31:00Z",
+  "e9a_design": {
+    "fixed_c_activation_delta": 18.625,
+    "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/outputs/s9_e9a_design.json",
+    "payload_sha256": "0f3c01580c8a8837fe5a1819ea63c041ec5829f5acda24571f5ff6132aaf70f8",
+    "sha256": "dfb1f1ad5de297997301a74022d38d27421acc772426d4314eebc9996a777788"
+  },
+  "expected_counts": {
+    "benign_intents": 12,
+    "exact_target_prompts": 24,
+    "harmful_intents": 12,
+    "topic_pairs": 12,
+    "total_intents": 24
+  },
+  "freshness_contract": {
+    "exact_prompt_bytes_materialized": true,
+    "preferred_label": "project_untouched_target_model_panel",
+    "pretraining_unseen_claim_allowed": false,
+    "route_or_endpoint_outcomes_seen": false,
+    "selection_or_replacement_after_outcomes": false,
+    "target_model_prior_calls_on_exact_prompt_bytes": 0,
+    "target_model_screening_used": false
+  },
+  "inputs": {
+    "decision_d006": {
+      "path": "source://refusal-study/.research-state/objects/decisions/D-006.yaml",
+      "sha256": "dc9433c3c3f6d65e191c7edc84d48690ce378f972dd8305d6d7ed42f2c2b60c6"
+    },
+    "e7b_plan": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/outputs/s9_e7b_plan.json",
+      "sha256": "9ee3ca739caa97937a27d4f23571bd6c3ee6a7757d37669bb03d95efa0447666"
+    },
+    "e8a_manifest": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/outputs/s9_e8a_replication_manifest.json",
+      "sha256": "110932011bbb087a16bff0b2128b923e545534c9227e12648bfdb9bbf250744a"
+    },
+    "e9a_design": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/outputs/s9_e9a_design.json",
+      "sha256": "dfb1f1ad5de297997301a74022d38d27421acc772426d4314eebc9996a777788"
+    },
+    "e9b_contract": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/src/s9_e9b_contract.py",
+      "sha256": "90a7f4f497adf45e6a7bfc2d9e6b8196e534d17311885654632c6a6f1ac3ec7d"
+    },
+    "panel_builder": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/src/build_s9_e9b_panel.py",
+      "sha256": "696afe54b7da89516cf80729533ecf28baddb3a96ad6c4770d7be49408cddd14"
+    },
+    "question_q002": {
+      "path": "source://refusal-study/.research-state/objects/questions/Q-002.yaml",
+      "sha256": "cc03390cd228fdd2e687f1806e32dd2dbb7e3b032bd5ebac0dfab25a665328d0"
+    },
+    "s10_expansion_plan": {
+      "path": "source://refusal-study/ALL WORK/steps/10-target-and-dataset-repair/outputs/s10_phase_b_expansion_plan.json",
+      "sha256": "9341c387c9a1f409cace2641f3bad7abcd1f6585305b73c1f1fd2b101e842016"
+    },
+    "s10_frozen_design": {
+      "path": "source://refusal-study/ALL WORK/steps/10-target-and-dataset-repair/outputs/s10_phase_b_frozen_design.json",
+      "sha256": "0f3411bfbec079dbdcaf3c3aaa6fa0599a3e61c95a1d1e7f38abe7135ffe7bbe"
+    },
+    "s1_prompt_pairs": {
+      "path": "source://refusal-study/ALL WORK/steps/01-verify-refusal-phenomenon/inputs/refusal_prompt_pairs.csv",
+      "sha256": "67fd17ef6a396db07cf67ff94530c8df8c1b49858d4b915fd8bb9f569c928a52"
+    },
+    "s6_prompt_panel": {
+      "path": "source://refusal-study/ALL WORK/steps/06-lexical-controls-and-causal-tests/inputs/qwen3_4b_lexical_control_prompts.csv",
+      "sha256": "567a69fc30f218c32566f1d15f62c01be3dc6fe0fe63e3c721366418539c901b"
+    }
+  },
+  "mode": "hash_only_private_panel_manifest",
+  "objective": "freeze a project-untouched 12-pair harmful/benign panel and expose only identifiers, metadata, and hashes before any E9c proposal",
+  "payload_sha256": "a0aad6c7904ff08e05326ffb808c8d2fd8c3d468e927de8285df4dc5596e4f97",
+  "prior_panel_audit": {
+    "core_hashes_disjoint": true,
+    "cross_topic_lexical_jaccard_below_threshold": true,
+    "cross_topic_lexical_jaccard_threshold": 0.35,
+    "intent_categories_disjoint": true,
+    "intent_ids_disjoint": true,
+    "manual_semantic_near_duplicate_review_passed": true,
+    "max_cross_topic_lexical_jaccard": 0.151515151515,
+    "max_pair_core_word_count_difference_allowed": 4,
+    "max_pair_core_word_count_difference_observed": 3,
+    "no_target_model_used_for_review": true,
+    "pair_word_count_balance_passed": true,
+    "prior_category_count": 59,
+    "prior_core_hash_count": 101,
+    "prior_intent_count": 59,
+    "prior_prompt_hash_count": 366,
+    "prompt_hashes_disjoint": true
+  },
+  "privacy": {
+    "completion_text_in_public_artifact": false,
+    "core_request_text_in_public_artifact": false,
+    "prompt_text_in_public_artifact": false,
+    "raw_tensor_in_public_artifact": false,
+    "token_text_in_public_artifact": false
+  },
+  "private_prompt_source": {
+    "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/private/s9_e9b_prompt_panel.json",
+    "payload_sha256": "da3657aba93bafe307d960a5c6c8415185c3925cd8a744dcf281fb082e298356",
+    "public": false,
+    "sha256": "d003b98d170721fedbc58f0dd5f225f7e00261a4d7daeb2ab6ae9803572202fa"
+  },
+  "research_stage": "understanding_testing_hypotheses",
+  "schema_version": 1,
+  "selection_contract": {
+    "benign_intents": 12,
+    "exact_target_prompts_per_intent": 1,
+    "fixed_full_panel_no_sequential_top_up": true,
+    "harmful_intents": 12,
+    "intent_disjoint_from_prior_e7_e8_and_s10_panels": true,
+    "new_intent_categories_required": true,
+    "outcome_based_replacement_allowed": false,
+    "selection_uses_target_model_outcomes": false,
+    "template_disjoint_from_e8b_d0_f0": true,
+    "topic_pairs": 12,
+    "total_intents": 24
+  },
+  "semantic_review_contract": {
+    "cross_pair_semantic_near_duplicate_review_required": true,
+    "cross_topic_lexical_jaccard_threshold": 0.35,
+    "exact_hash_collision_review_required": true,
+    "max_pair_core_word_count_difference": 4,
+    "outcome_blind": true,
+    "prior_semantic_near_duplicate_review_required": true,
+    "review_completed_before_any_target_model_call": true,
+    "review_method": "non_target_model_manual_review_against_prior_intent_registry",
+    "risk_contrast_review_required": true,
+    "topic_match_review_required": true,
+    "word_count_is_local_regex_metadata_not_target_tokenization": true
+  },
+  "status": "frozen_hash_only_manifest_before_runner_v1",
+  "template_contract": {
+    "disjoint_from_e8b_frames": [
+      "D0",
+      "F0"
+    ],
+    "frame_class": "structured_planning_brief",
+    "frame_id": "E9P0",
+    "template_family_id": "structured_planning_brief_v1",
+    "template_sha256": "0899b76a6b8a0f1fd774be41088cb720178d478d0ff830b215dd12d5fcf7c9b5"
+  },
+  "topic_pairs": [
+    {
+      "benign": {
+        "core_sha256": "2e411723c5f20784f9f24e3a5b7d267de785651cde524b45fdc979bd802d533e",
+        "frame_id": "E9P0",
+        "intent_category": "procurement_bid_evaluation",
+        "intent_id": "E9B01",
+        "prompt_key": "E9B-E9B01-E9P0",
+        "prompt_sha256": "414ee855fef7065b2a1e4cb1d3bf5aef8eb6363da861bf99343e38738c3a2191",
+        "risk_class": "benign"
+      },
+      "harmful": {
+        "core_sha256": "16615fa71108be1719b7cb15527faf06d97d58402d7268f74cd9ffae08217ac0",
+        "frame_id": "E9P0",
+        "intent_category": "procurement_bid_rotation",
+        "intent_id": "E9H01",
+        "prompt_key": "E9B-E9H01-E9P0",
+        "prompt_sha256": "91f4daab26cb44f71a32af18dddf405bea9b8d2967be70216a5ceb6b0fd7d96a",
+        "risk_class": "harmful"
+      },
+      "pair_id": "E9P01",
+      "semantic_review_passed": true,
+      "topic_category": "public_procurement"
+    },
+    {
+      "benign": {
+        "core_sha256": "7ddf56fe12aba1658f639ec8530d513a228181f2fb35f73081e9ecafccb8f2c7",
+        "frame_id": "E9P0",
+        "intent_category": "verified_customer_feedback_analysis",
+        "intent_id": "E9B02",
+        "prompt_key": "E9B-E9B02-E9P0",
+        "prompt_sha256": "790d65697bb706b3ce93d9d15cad7ad0ec4fd364560c3a1d946f0789ffafdf8e",
+        "risk_class": "benign"
+      },
+      "harmful": {
+        "core_sha256": "52ab289e0d753bbf67948dcd713a59055f889e8f2c729597b23fe73d2ad16634",
+        "frame_id": "E9P0",
+        "intent_category": "coordinated_review_manipulation",
+        "intent_id": "E9H02",
+        "prompt_key": "E9B-E9H02-E9P0",
+        "prompt_sha256": "18d424c291213e0fe388a183ed245294cbbb8f568043a072700ad95d38165deb",
+        "risk_class": "harmful"
+      },
+      "pair_id": "E9P02",
+      "semantic_review_passed": true,
+      "topic_category": "product_reviews"
+    },
+    {
+      "benign": {
+        "core_sha256": "002cf5b80483e458e9ecd58a508879504cc7afbb5d05ef363b1b30f83206009f",
+        "frame_id": "E9P0",
+        "intent_category": "medical_billing_accuracy_audit",
+        "intent_id": "E9B03",
+        "prompt_key": "E9B-E9B03-E9P0",
+        "prompt_sha256": "864b999d159de0ecd6199f6191b6b135297583287fd17b3c39ff91bc4f85b943",
+        "risk_class": "benign"
+      },
+      "harmful": {
+        "core_sha256": "3d47b3ac15e8a18478f46969c3155e518fd5e1b478baa7dca57f52e6d22000d2",
+        "frame_id": "E9P0",
+        "intent_category": "medical_billing_upcoding",
+        "intent_id": "E9H03",
+        "prompt_key": "E9B-E9H03-E9P0",
+        "prompt_sha256": "c5d884cc6ee5d3992eec194a19f842422da1d483a8ba84a4c15709c4b4ec072a",
+        "risk_class": "harmful"
+      },
+      "pair_id": "E9P03",
+      "semantic_review_passed": true,
+      "topic_category": "medical_billing"
+    },
+    {
+      "benign": {
+        "core_sha256": "5bea95baccd537343cfecc4868a3e8a7b9ee877bbf30e88009f14ba911bcd20d",
+        "frame_id": "E9P0",
+        "intent_category": "amateur_tournament_integrity",
+        "intent_id": "E9B04",
+        "prompt_key": "E9B-E9B04-E9P0",
+        "prompt_sha256": "f987e969bfe0f037c84b7175f2d35c841ddcd40223b8bcdb525b803a1f387eff",
+        "risk_class": "benign"
+      },
+      "harmful": {
+        "core_sha256": "4a4e8593324ab5aa3f048add07403a2a4c98eeb5eaa35378c1b8f7b0b4a72996",
+        "frame_id": "E9P0",
+        "intent_category": "amateur_match_fixing",
+        "intent_id": "E9H04",
+        "prompt_key": "E9B-E9H04-E9P0",
+        "prompt_sha256": "55cb5063b72d63a96823b7254575adc1f3efa6c294aff9c8dc4d70f5e72e26f7",
+        "risk_class": "harmful"
+      },
+      "pair_id": "E9P04",
+      "semantic_review_passed": true,
+      "topic_category": "sports_tournament"
+    },
+    {
+      "benign": {
+        "core_sha256": "9d00d38afea012c3f1458202bf2f626cef5df6f459526108212068d68538a151",
+        "frame_id": "E9P0",
+        "intent_category": "equitable_ticket_queue_design",
+        "intent_id": "E9B05",
+        "prompt_key": "E9B-E9B05-E9P0",
+        "prompt_sha256": "3bfd8fb6f1e2f7ae3fbbb828872fd3a6c4f5fac3db6323b98629731d0fbf8f9e",
+        "risk_class": "benign"
+      },
+      "harmful": {
+        "core_sha256": "51cffe0b8c14d398b2eb8582d1ea7fe37982fbc836650c650751d003829cb23c",
+        "frame_id": "E9P0",
+        "intent_category": "ticket_queue_automation_abuse",
+        "intent_id": "E9H05",
+        "prompt_key": "E9B-E9H05-E9P0",
+        "prompt_sha256": "b87a942a17c9d21484e56b03a49166fed451c783bd95bab8512599a43a4d415d",
+        "risk_class": "harmful"
+      },
+      "pair_id": "E9P05",
+      "semantic_review_passed": true,
+      "topic_category": "event_ticketing"
+    },
+    {
+      "benign": {
+        "core_sha256": "69ed71a06a688bc8668c2922fc41c0cdf90275e5d04ea65a96a6ededa47f15cb",
+        "frame_id": "E9P0",
+        "intent_category": "payroll_overtime_reconciliation",
+        "intent_id": "E9B06",
+        "prompt_key": "E9B-E9B06-E9P0",
+        "prompt_sha256": "728845ecba4d10ad1c19bf6bd06d866e0a2df9707ec42c86dc25080aed170979",
+        "risk_class": "benign"
+      },
+      "harmful": {
+        "core_sha256": "4f5cb8716c1102dc5156dd11bcbfa5b989092f3704a81064a5c7c10763b1f666",
+        "frame_id": "E9P0",
+        "intent_category": "systematic_wage_underpayment",
+        "intent_id": "E9H06",
+        "prompt_key": "E9B-E9H06-E9P0",
+        "prompt_sha256": "af82e6a4d37b74f8f77c2804a87c8bf8e82da9445ed365af10451bb6c676dc95",
+        "risk_class": "harmful"
+      },
+      "pair_id": "E9P06",
+      "semantic_review_passed": true,
+      "topic_category": "payroll"
+    },
+    {
+      "benign": {
+        "core_sha256": "4d4d5f676ac337c911e05d6c5e607834543079305ecf0fe5048162c895c39bf0",
+        "frame_id": "E9P0",
+        "intent_category": "fair_tenant_screening",
+        "intent_id": "E9B07",
+        "prompt_key": "E9B-E9B07-E9P0",
+        "prompt_sha256": "5dab992995df4aab7e91eb1fdb2139cd1bcf81f3ec4933fb87325aade7e1a5d7",
+        "risk_class": "benign"
+      },
+      "harmful": {
+        "core_sha256": "188f6d88159d4a4088e643cd6d2f966f9c50c16c3faf25f63067e0e1ecc69e5a",
+        "frame_id": "E9P0",
+        "intent_category": "discriminatory_tenant_screening",
+        "intent_id": "E9H07",
+        "prompt_key": "E9B-E9H07-E9P0",
+        "prompt_sha256": "92c9379c430acd6cf5bba40f269202330969c08b74ec1abc3c52f0fcc60a0f3d",
+        "risk_class": "harmful"
+      },
+      "pair_id": "E9P07",
+      "semantic_review_passed": true,
+      "topic_category": "rental_housing"
+    },
+    {
+      "benign": {
+        "core_sha256": "5f083832707e6348eb674fddf144e7c11b3a26abf20bfefe4546078d6a475988",
+        "frame_id": "E9P0",
+        "intent_category": "insurance_claim_documentation",
+        "intent_id": "E9B08",
+        "prompt_key": "E9B-E9B08-E9P0",
+        "prompt_sha256": "72272187ed9f064f109fc98e403c017db6437cda7128eb31db23bef4813d6c51",
+        "risk_class": "benign"
+      },
+      "harmful": {
+        "core_sha256": "e0586d9f624ee3e632d0afc099db165406c1401d952f7841bf41969a7e053eb7",
+        "frame_id": "E9P0",
+        "intent_category": "insurance_claim_fabrication",
+        "intent_id": "E9H08",
+        "prompt_key": "E9B-E9H08-E9P0",
+        "prompt_sha256": "3cf92a95769e15651e89117d604a4832db2ba14b5db09e35a7fe76fb900884c9",
+        "risk_class": "harmful"
+      },
+      "pair_id": "E9P08",
+      "semantic_review_passed": true,
+      "topic_category": "insurance_claims"
+    },
+    {
+      "benign": {
+        "core_sha256": "c4db6f7cd497efce8df95a605b023c2930312a4f543713ab6960a2bb26329e25",
+        "frame_id": "E9P0",
+        "intent_category": "transparent_subscription_cancellation",
+        "intent_id": "E9B09",
+        "prompt_key": "E9B-E9B09-E9P0",
+        "prompt_sha256": "42f4588231516c2bc9f61fd18c9c210f95567dc9d2a7915512656dc0f08fc5a2",
+        "risk_class": "benign"
+      },
+      "harmful": {
+        "core_sha256": "c95846a7b1157070a877db74f9d0dad6252123f3abf5060e41e38f3e2a0dd91e",
+        "frame_id": "E9P0",
+        "intent_category": "subscription_cancellation_obstruction",
+        "intent_id": "E9H09",
+        "prompt_key": "E9B-E9H09-E9P0",
+        "prompt_sha256": "8b7509b8b12f491b94d599a1682cb2770a048db3af70cc393d475a34e0e443c4",
+        "risk_class": "harmful"
+      },
+      "pair_id": "E9P09",
+      "semantic_review_passed": true,
+      "topic_category": "subscription_cancellation"
+    },
+    {
+      "benign": {
+        "core_sha256": "cfbbbba06d6a5303e1db1f9a3e3545a5eb11dfa2fe37a6dff10f6950955130f3",
+        "frame_id": "E9P0",
+        "intent_category": "farm_subsidy_compliance",
+        "intent_id": "E9B10",
+        "prompt_key": "E9B-E9B10-E9P0",
+        "prompt_sha256": "f1870325c5288798bc038b4cdcfbc68251b237a55fe109dc09c5eb3d0e12d223",
+        "risk_class": "benign"
+      },
+      "harmful": {
+        "core_sha256": "bb834a09e1a528aa1198a7f825083b3120c586cb09a2aed1104060af541c6532",
+        "frame_id": "E9P0",
+        "intent_category": "farm_subsidy_misrepresentation",
+        "intent_id": "E9H10",
+        "prompt_key": "E9B-E9H10-E9P0",
+        "prompt_sha256": "3705f3aef5af714d09fca9ba3a341177b8ffd619cb508d1b71952918991e2216",
+        "risk_class": "harmful"
+      },
+      "pair_id": "E9P10",
+      "semantic_review_passed": true,
+      "topic_category": "agricultural_subsidies"
+    },
+    {
+      "benign": {
+        "core_sha256": "03dbdd9997643f2fab39e4afdf68e3b9c26f5f5a54041b69c26c4a4e59bb019f",
+        "frame_id": "E9P0",
+        "intent_category": "fair_reservation_allocation",
+        "intent_id": "E9B11",
+        "prompt_key": "E9B-E9B11-E9P0",
+        "prompt_sha256": "8d94e7608afe42aa05c22ad2af0a6edd09b4c0ee01a182e14d0b6a06491b9035",
+        "risk_class": "benign"
+      },
+      "harmful": {
+        "core_sha256": "384ad3622a03bb3f01b8047bfa2ab41bcbc4329b17c74b4fe2f13d8ba261797a",
+        "frame_id": "E9P0",
+        "intent_category": "reservation_hoarding_resale",
+        "intent_id": "E9H11",
+        "prompt_key": "E9B-E9H11-E9P0",
+        "prompt_sha256": "b748036b7ba01f2bb5034b3ed3a1031024b9be5931433fb6a561025260f61421",
+        "risk_class": "harmful"
+      },
+      "pair_id": "E9P11",
+      "semantic_review_passed": true,
+      "topic_category": "restaurant_reservations"
+    },
+    {
+      "benign": {
+        "core_sha256": "0622fb4a59d9506cdfc0bba359b482c3388aef34d6709e546afe9120c2344383",
+        "frame_id": "E9P0",
+        "intent_category": "legitimate_retail_return_processing",
+        "intent_id": "E9B12",
+        "prompt_key": "E9B-E9B12-E9P0",
+        "prompt_sha256": "5e4390b5dcf2daf6c10fb5512c0883091f6f78b57d0c0a80fce6152c89f80358",
+        "risk_class": "benign"
+      },
+      "harmful": {
+        "core_sha256": "4667e2362c0297a0ab8a65354b1aae57ebfb3fa2e3ed2dffaa7c2386ba4629bf",
+        "frame_id": "E9P0",
+        "intent_category": "retail_return_fraud",
+        "intent_id": "E9H12",
+        "prompt_key": "E9B-E9H12-E9P0",
+        "prompt_sha256": "51ebcfa2dbac0195c6941e408a8a51456e656196cdbeed5952a36c0baebc6576",
+        "risk_class": "harmful"
+      },
+      "pair_id": "E9P12",
+      "semantic_review_passed": true,
+      "topic_category": "retail_returns"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "agreement_count": 169,
+  "agreement_rate": 0.9388888888888889,
+  "comparison_count": 180,
+  "exact_four_class_agreement_count": 120,
+  "exact_four_class_agreement_rate": 0.6666666666666666,
+  "input_sha256": {
+    "annotations": "3d0a9daec25d21b938b06587931ee4a0131d932a6d07ed7a6e70cc9b46767c43",
+    "exact_gate": "b5745b0914f31ba2592b1907f1f483f4697ca0928494dc74a323bb45585868ec"
+  },
+  "label_mapping": {
+    "compliance_like": [
+      "P",
+      "C"
+    ],
+    "refusal_like": [
+      "R",
+      "S"
+    ]
+  },
+  "payload_sha256": "96f48a31102e189113f204a4b334c4a02830026444f7fe1278452aa13e8fb0df",
+  "schema_version": "s16-phase-c-amendment-01-binary-gate/1",
+  "status": "passed"
+}

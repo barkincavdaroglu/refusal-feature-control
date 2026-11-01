@@ -1,0 +1,37 @@
+{
+  "behavior": {
+    "package": "behavioral addendum",
+    "path": "step/outputs/phase_c_local/s16_phase_c_tier1_result.json",
+    "sha256": "5326dcacaabc6ef89f98721e068c25c6c31aa12a71f0bc2005a94505d7765b2c",
+    "fields": [
+      "primary_agent_labels.necessity_A1_direct",
+      "primary_agent_labels.necessity_control_RND_A1_direct",
+      "primary_agent_labels.sufficiency_A2_fictional_complying",
+      "primary_agent_labels.sufficiency_RB_A2_fictional_complying",
+      "primary_agent_labels.sufficiency_RD_A2_fictional_complying",
+      "primary_agent_labels.sufficiency_RND_A2_fictional_complying",
+      "numeric_continuity_median_deltas.a2_natural",
+      "numeric_continuity_median_deltas.rd_a2_natural",
+      "bootstrap",
+      "payload_sha256"
+    ]
+  },
+  "fidelity": {
+    "package": "earlier evidence bundle",
+    "path": "ALL WORK/steps/02-audit-transcoder-fidelity/outputs/qwen3_4b_full_transcoder_fidelity.json",
+    "sha256": "3a1ba2d1b46d4bc693e0b1fa94ae219746c7d217638fd527669dea843f168ce1",
+    "fields": [
+      "prompt_count",
+      "hf_vs_circuit_tracer_exact",
+      "circuit_tracer_exact_vs_strict_reconstruction"
+    ]
+  },
+  "protocol": {
+    "source": "methods.md",
+    "basis": "unchanged protocol descriptions in report Sections 2 and 3 and Appendix A; diagrams describe interventions, not a discovered exclusive circuit"
+  },
+  "toy": {
+    "source": "inputs.json",
+    "basis": "explicit illustrative paths, not experimental data; build_figures.py computes influences and union coverage"
+  }
+}

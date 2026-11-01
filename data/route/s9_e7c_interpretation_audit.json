@@ -1,0 +1,292 @@
+{
+  "analysis_semantics_version": "s9-e7c-postoutcome-interpretation-audit-v1",
+  "created_at_utc": "2026-08-24T00:14:24.712036+00:00",
+  "status": "complete_postoutcome_interpretation_audit_without_e7d",
+  "plan_payload_sha256": "730479e91c89a4d0d7fe26ac4f29594dc7cd2006e3ff59d4397da9f6670b799f",
+  "result_payload_sha256": "7067bf6d6e23e2fc8d8ffe96a1440dc2a6e7fd80b51b57dcc083f202727d227d",
+  "analysis_payload_sha256": "7cbab42759d545104fea86ee1dd3807af47da0d63cb110cf6dca4b1c89f1749e",
+  "claim_boundary": {
+    "postoutcome": true,
+    "changed_frozen_selection_or_estimand": false,
+    "e7d_executed": false,
+    "development_intents": 6,
+    "route_cells_are_not_independent_generalization_units": true
+  },
+  "module_input_output_equivalence": {
+    "calibration_cells": 21,
+    "scalar_comparisons": 336,
+    "maximum_absolute_difference": 0.0,
+    "all_exactly_equal": true,
+    "interpretation": "for this deterministic complete MLP, transplanting its full input and letting it recompute is operationally identical to transplanting its full output"
+  },
+  "mechanics_proposed_vs_equal_l2_control": {
+    "probe_score": {
+      "D_R": {
+        "comparisons": 15,
+        "proposed_absolute_effect_larger": 9,
+        "control_absolute_effect_larger": 6,
+        "ties": 0,
+        "median_absolute_margin_proposed_minus_control": 0.06538200378417969
+      },
+      "Q_R": {
+        "comparisons": 15,
+        "proposed_absolute_effect_larger": 6,
+        "control_absolute_effect_larger": 9,
+        "ties": 0,
+        "median_absolute_margin_proposed_minus_control": -0.020032882690429688
+      }
+    },
+    "next_token_refusal_log_odds": {
+      "D_R": {
+        "comparisons": 15,
+        "proposed_absolute_effect_larger": 11,
+        "control_absolute_effect_larger": 4,
+        "ties": 0,
+        "median_absolute_margin_proposed_minus_control": 0.1864757537841797
+      },
+      "Q_R": {
+        "comparisons": 15,
+        "proposed_absolute_effect_larger": 8,
+        "control_absolute_effect_larger": 7,
+        "ties": 0,
+        "median_absolute_margin_proposed_minus_control": 0.16296005249023438
+      }
+    }
+  },
+  "c_to_d_finite_gate_crossings": [
+    {
+      "source_cell_id": "mechanics:b04_f0_h03_denoising_transport:c_to_d",
+      "metrics": {
+        "probe_score": {
+          "T_S": {
+            "proposed": 2.5859222412109375,
+            "matched_control": 2.198211669921875,
+            "absolute_margin": 0.3877105712890625
+          },
+          "D_R": {
+            "proposed": 0.3153076171875,
+            "matched_control": 0.2573432922363281,
+            "absolute_margin": 0.057964324951171875
+          },
+          "B_R": {
+            "proposed": 2.2706146240234375,
+            "matched_control": 1.9408683776855469,
+            "absolute_margin": 0.3297462463378906
+          },
+          "Q_R": {
+            "proposed": 0.15064239501953125,
+            "matched_control": 0.2260894775390625,
+            "absolute_margin": -0.07544708251953125
+          }
+        },
+        "next_token_refusal_log_odds": {
+          "T_S": {
+            "proposed": 9.323440551757812,
+            "matched_control": -0.40512847900390625,
+            "absolute_margin": 8.918312072753906
+          },
+          "D_R": {
+            "proposed": 1.7302742004394531,
+            "matched_control": -0.002063751220703125,
+            "absolute_margin": 1.72821044921875
+          },
+          "B_R": {
+            "proposed": 7.593166351318359,
+            "matched_control": -0.4030647277832031,
+            "absolute_margin": 7.190101623535156
+          },
+          "Q_R": {
+            "proposed": 0.9767313003540039,
+            "matched_control": -0.0682830810546875,
+            "absolute_margin": 0.9084482192993164
+          }
+        }
+      }
+    },
+    {
+      "source_cell_id": "mechanics:h03_f0_from_d0:c_to_d",
+      "metrics": {
+        "probe_score": {
+          "T_S": {
+            "proposed": 1.4801177978515625,
+            "matched_control": 1.075836181640625,
+            "absolute_margin": 0.4042816162109375
+          },
+          "D_R": {
+            "proposed": 0.1824359893798828,
+            "matched_control": 0.01514434814453125,
+            "absolute_margin": 0.16729164123535156
+          },
+          "B_R": {
+            "proposed": 1.2976818084716797,
+            "matched_control": 1.0606918334960938,
+            "absolute_margin": 0.23698997497558594
+          },
+          "Q_R": {
+            "proposed": 0.2644691467285156,
+            "matched_control": 0.05031585693359375,
+            "absolute_margin": 0.21415328979492188
+          }
+        },
+        "next_token_refusal_log_odds": {
+          "T_S": {
+            "proposed": 10.579368591308594,
+            "matched_control": -0.8343944549560547,
+            "absolute_margin": 9.744974136352539
+          },
+          "D_R": {
+            "proposed": 1.5574226379394531,
+            "matched_control": 0.0803985595703125,
+            "absolute_margin": 1.4770240783691406
+          },
+          "B_R": {
+            "proposed": 9.02194595336914,
+            "matched_control": -0.9147930145263672,
+            "absolute_margin": 8.107152938842773
+          },
+          "Q_R": {
+            "proposed": 2.155397415161133,
+            "matched_control": 0.06650924682617188,
+            "absolute_margin": 2.088888168334961
+          }
+        }
+      }
+    },
+    {
+      "source_cell_id": "mechanics:h09_f0_from_d0:c_to_d",
+      "metrics": {
+        "probe_score": {
+          "T_S": {
+            "proposed": 1.6076335906982422,
+            "matched_control": 0.9286212921142578,
+            "absolute_margin": 0.6790122985839844
+          },
+          "D_R": {
+            "proposed": 0.07111167907714844,
+            "matched_control": -0.00572967529296875,
+            "absolute_margin": 0.06538200378417969
+          },
+          "B_R": {
+            "proposed": 1.5365219116210938,
+            "matched_control": 0.9343509674072266,
+            "absolute_margin": 0.6021709442138672
+          },
+          "Q_R": {
+            "proposed": 0.3168010711669922,
+            "matched_control": 0.08836841583251953,
+            "absolute_margin": 0.22843265533447266
+          }
+        },
+        "next_token_refusal_log_odds": {
+          "T_S": {
+            "proposed": 9.730846405029297,
+            "matched_control": -0.6212673187255859,
+            "absolute_margin": 9.109579086303711
+          },
+          "D_R": {
+            "proposed": 1.4771080017089844,
+            "matched_control": -0.13029098510742188,
+            "absolute_margin": 1.3468170166015625
+          },
+          "B_R": {
+            "proposed": 8.253738403320312,
+            "matched_control": -0.49097633361816406,
+            "absolute_margin": 7.762762069702148
+          },
+          "Q_R": {
+            "proposed": 1.620565414428711,
+            "matched_control": 0.005542755126953125,
+            "absolute_margin": 1.6150226593017578
+          }
+        }
+      }
+    }
+  ],
+  "low_coverage_module_controls": {
+    "probe_score": {
+      "D_R": {
+        "comparisons": 11,
+        "nominated_absolute_effect_larger": 5,
+        "low_coverage_absolute_effect_larger": 6,
+        "ties": 0,
+        "median_absolute_margin_nominated_minus_low_coverage": -0.016170501708984375
+      },
+      "Q_R": {
+        "comparisons": 11,
+        "nominated_absolute_effect_larger": 5,
+        "low_coverage_absolute_effect_larger": 6,
+        "ties": 0,
+        "median_absolute_margin_nominated_minus_low_coverage": -0.0014801025390625
+      }
+    },
+    "next_token_refusal_log_odds": {
+      "D_R": {
+        "comparisons": 11,
+        "nominated_absolute_effect_larger": 3,
+        "low_coverage_absolute_effect_larger": 8,
+        "ties": 0,
+        "median_absolute_margin_nominated_minus_low_coverage": -0.12691307067871094
+      },
+      "Q_R": {
+        "comparisons": 11,
+        "nominated_absolute_effect_larger": 8,
+        "low_coverage_absolute_effect_larger": 3,
+        "ties": 0,
+        "median_absolute_margin_nominated_minus_low_coverage": 0.010992050170898438
+      }
+    }
+  },
+  "topology_disagreement_adjudication": {
+    "probe_score": {
+      "D_R": {
+        "contrasts": 6,
+        "exact_order_matches_graph": 3,
+        "exact_order_matches_atp": 3,
+        "exact_ties": 0
+      },
+      "B_R": {
+        "contrasts": 6,
+        "exact_order_matches_graph": 2,
+        "exact_order_matches_atp": 4,
+        "exact_ties": 0
+      },
+      "Q_R": {
+        "contrasts": 6,
+        "exact_order_matches_graph": 4,
+        "exact_order_matches_atp": 2,
+        "exact_ties": 0
+      }
+    },
+    "next_token_refusal_log_odds": {
+      "D_R": {
+        "contrasts": 6,
+        "exact_order_matches_graph": 0,
+        "exact_order_matches_atp": 6,
+        "exact_ties": 0
+      },
+      "B_R": {
+        "contrasts": 6,
+        "exact_order_matches_graph": 2,
+        "exact_order_matches_atp": 4,
+        "exact_ties": 0
+      },
+      "Q_R": {
+        "contrasts": 6,
+        "exact_order_matches_graph": 2,
+        "exact_order_matches_atp": 4,
+        "exact_ties": 0
+      }
+    }
+  },
+  "invariant_audit": {
+    "route_rows": 82,
+    "endpoint_records": 164,
+    "maximum_absolute_T_minus_D_minus_B": 0.0
+  },
+  "payload_sha256": "94d2dc59498b52ae3f26c1580afdfdc5c0c578d70aedd99e15478c79c4588e41",
+  "input_file_sha256": {
+    "plan": "9ee3ca739caa97937a27d4f23571bd6c3ee6a7757d37669bb03d95efa0447666",
+    "result": "b5a4a7fd0a2cbe9b904ebb08adcaa56af857a3cb7a4a329abd1deb228bba937b",
+    "analysis": "a88ab05a25fcd0f4f1e867b929b0faeadd68b607cf132afbf87e3f7faa3ac4ae"
+  }
+}

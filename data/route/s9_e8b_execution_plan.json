@@ -1,0 +1,287 @@
+{
+  "schema_version": 1,
+  "analysis_semantics_version": "s9-e8b-authorized-route-execution-bundle-v2",
+  "status": "frozen_authorized_route_execution_bundle_v2",
+  "mode": "prospective_route_replication",
+  "research_stage": "understanding_testing_hypotheses",
+  "created_at_utc": "2026-08-24T02:56:00.054855Z",
+  "objective": "execute only the immutable E8a C-to-D replication with a fully hash-closed runtime, cumulative resume accounting, and no generation",
+  "frozen_e8a_snapshot": {
+    "scope": "entire_validated_e8a_manifest_and_plan_payloads",
+    "manifest_file_sha256": "110932011bbb087a16bff0b2128b923e545534c9227e12648bfdb9bbf250744a",
+    "manifest_payload_sha256": "0d0de4fe9983c408b99158b74abd93e63421e0d098e8f07b25256520aad841c4",
+    "plan_file_sha256": "76a6879af6ac9fd2f2595ab41b275318720adf0d47320455c0b16c112e3503ed",
+    "plan_payload_sha256": "270167e9e8bb9c35f997e5795529c265e88b57bf138164b2811c6346355b794b",
+    "scientific_snapshot_sha256": "4cd5a30b185400d095672a3ab39574ed639165f0ec3f1c50db2a293f6e9848a4"
+  },
+  "model": {
+    "id": "Qwen/Qwen3-4B",
+    "revision": "1cfa9a7208912126459214e8b04321603b3df60c"
+  },
+  "transcoder": {
+    "id": "mwhanna/qwen3-4b-transcoders",
+    "revision": "94d176260ac39ce2f882b8b09aba8c118df29bb3"
+  },
+  "authorization": {
+    "explicit_user_confirmation_received": true,
+    "confirmation_reference": "user-message:apply-S-20260824T011812070338Z-2de816057c-and-proceed-with-next-step",
+    "scope": "freeze_the_e8b_bundle_and_run_only_the_frozen_e8a_180_forward_original_model_route_replication_under_the_198_forward_ceiling",
+    "bundle_implementation_allowed": true,
+    "gpu_allocation_allowed": true,
+    "original_model_load_allowed": true,
+    "original_model_outcomes_allowed": true,
+    "validation_expansion_prompt_text_to_model_allowed": true,
+    "generation_allowed": false,
+    "e7d_allowed": false,
+    "backward_pass_allowed": false,
+    "confirmation_partition_allowed": false,
+    "new_scientific_cells_allowed": false,
+    "excluded_arms_allowed": false
+  },
+  "outcome_disclosure": {
+    "freshness_scope": "route_outcomes_only",
+    "s10_behavior_and_target_outcomes_already_exist": true,
+    "s10_cohort_level_outcomes_known_to_designers": true,
+    "record_level_s10_outcomes_used_for_selection": false,
+    "e8_route_outcomes_seen_by_builder": false,
+    "pristine_model_unseen_confirmation": false,
+    "selected_partition": "validation_expansion"
+  },
+  "confirmation_boundary": {
+    "partition": "confirmation",
+    "sealed": true,
+    "prompt_text_read": false,
+    "prompt_text_sent_to_model": false,
+    "model_outcomes": 0,
+    "selected_intent_overlap": [],
+    "prompt_key_set_sha256": "fcc7e8899fd86400ee9761ca9adea04a4f542d8f82cd48662226e717b1bfcac5"
+  },
+  "excluded_arms": {
+    "module_input": true,
+    "graph_low_coverage_receiver": true,
+    "joint_receiver_set": true,
+    "topology_selection": true,
+    "e7d": true,
+    "generation": true,
+    "backward_pass": true
+  },
+  "semantic_resolution": {
+    "status": "frozen_preoutcome_semantic_erratum_v1",
+    "erratum_file_sha256": "2a2566d260cb1bf5341f2b3cfc2bd1ea073cd9a9d013f9fa08a9e8a4cfe27691",
+    "primary_compound_and_topic_win_threshold": 0.0,
+    "primary_win_operator": "strictly_greater_than",
+    "scalar_sign_test_nonwin_threshold": 1e-07,
+    "scalar_sign_tests_decide_compound_gate": false,
+    "raw_nominated_median_positivity_role": "reported_redundant_full_pass_consistency_check",
+    "feature_activation_semantics": "cuda_bfloat16_encoder_state_bias_operands_and_bfloat16_output",
+    "nominal_decoded_edit_and_l2_semantics": "float32",
+    "applied_edit_semantics": "bfloat16"
+  },
+  "runtime_contract": {
+    "preferred_accelerators": [
+      "A100"
+    ],
+    "minimum_cuda_memory_gib": 39.0,
+    "package_versions": {
+      "torch": "2.11.0+cu128",
+      "transformers": "4.57.3",
+      "transformer-lens": "3.2.1",
+      "circuit-tracer": "0.5.2",
+      "safetensors": "0.8.0"
+    },
+    "dtype": "bfloat16",
+    "random_seed": 90801,
+    "determinism": {
+      "model_eval": true,
+      "gradient_tracking": false,
+      "parameters_require_grad": false,
+      "torch_manual_seed": 90801,
+      "cuda_manual_seed_all": 90801,
+      "cudnn_benchmark": false,
+      "allow_tf32": false,
+      "deterministic_algorithms": true,
+      "cublas_workspace_config": ":4096:8"
+    },
+    "model_load": {
+      "fold_ln": false,
+      "center_writing_weights": false,
+      "center_unembed": false
+    },
+    "chat_template": {
+      "add_generation_prompt": true,
+      "enable_thinking": false,
+      "tokenize": false
+    },
+    "runtime_probe_before_model_load": true,
+    "uploaded_hashes_verified_before_model_load": true,
+    "downloaded_model_and_transcoder_hashes_verified_before_first_forward": true,
+    "cross_resume_runtime_fingerprint_required": true,
+    "runtime_fingerprint_fields": [
+      "python",
+      "platform",
+      "device",
+      "device_capability",
+      "cuda_total_memory_gib",
+      "torch_cuda_version",
+      "cudnn_version",
+      "nvidia_driver_version",
+      "packages",
+      "dtype",
+      "random_seed",
+      "determinism",
+      "cublas_workspace_config"
+    ],
+    "gpu_instance_identity_policy": "instance_uuid_not_recorded_but_accelerator_capability_driver_and_software_fingerprint_must_match_exactly_across_resume"
+  },
+  "numerical_contract": {
+    "feature_row_storage_dtype": "bfloat16",
+    "feature_activation_operands_and_output_dtype": "bfloat16",
+    "feature_activation_device": "cuda",
+    "feature_activation_reference": "match_developed_e7c_operational_path",
+    "nominal_numeric_dtype": "float32",
+    "realized_numeric_dtype": "bfloat16",
+    "hook_fire_count_per_declared_capture": 1,
+    "invariant_absolute_tolerance": 1e-07,
+    "pre_replacement_max_abs_mismatch": 0.0001,
+    "penultimate_receiver_state_max_abs_change": 0.0001,
+    "penultimate_endpoint_abs_tolerance": 0.0001,
+    "scientific_threshold_miss_action": "retain_complete_result_and_mark_analysis_not_evaluable",
+    "zero_dose": {
+      "definition": "nominated_activation_delta_exactly_zero_and_nominal_nominated_edit_l2_exactly_zero",
+      "control_activation_delta": 0.0,
+      "nominal_control_edit_l2": 0.0,
+      "nominal_equal_l2_relative_error": 0.0,
+      "retain_all_four_route_cells": true,
+      "retuning_allowed": false
+    },
+    "nominal_equal_l2_relative_error_formula": "abs(nominal_control_edit_l2-nominal_nominated_edit_l2)/nominal_nominated_edit_l2",
+    "nominal_equal_l2_relative_tolerance": 1e-06,
+    "realized_bfloat16_equal_l2_role": "reported_not_gated",
+    "topic_dose_ratio": {
+      "orientation": "harmful_over_benign",
+      "formula": "nominal_nominated_edit_l2[harmful]/nominal_nominated_edit_l2[benign]",
+      "inclusive_interval": [
+        0.8,
+        1.25
+      ],
+      "zero_benign_denominator_action": "not_evaluable",
+      "outside_interval_action": "semantic_differential_not_evaluable_but_raw_results_retained"
+    }
+  },
+  "forward_contract": {
+    "planned_scientific": 180,
+    "audit_ceiling": 198,
+    "maximum_audit_forwards": 18,
+    "scientific_forwards_must_equal_plan": true,
+    "cumulative_across_resumes": true,
+    "counter_reset_on_resume_allowed": false,
+    "resume_policy": "authenticated_checkpoint_without_replaying_completed_forwards",
+    "audit_forward_policy": "predeclared_runtime_or_hash_diagnostics_only",
+    "new_scientific_cells_from_audit_budget_allowed": false,
+    "raw_checkpoint_storage": "content_addressed_versioned_safetensors",
+    "prior_raw_checkpoint_preserved_until_json_pointer_commit": true
+  },
+  "output_contract": {
+    "public_result_required": true,
+    "runtime_proof_required": true,
+    "private_raw_tensor_bundle_required": true,
+    "resumable_checkpoint_required": true,
+    "required_prompt_records": 30,
+    "required_dose_audits": 15,
+    "required_sender_worlds": 30,
+    "required_route_cells": 60,
+    "public_prompt_or_completion_text_allowed": false,
+    "public_raw_receiver_tensors_allowed": false,
+    "public_input_token_tensor_hash_required": true,
+    "analysis_implemented_in_this_stage": true
+  },
+  "inputs": {
+    "e8a_manifest": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/outputs/s9_e8a_replication_manifest.json",
+      "sha256": "110932011bbb087a16bff0b2128b923e545534c9227e12648bfdb9bbf250744a"
+    },
+    "e8a_plan": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/outputs/s9_e8a_plan.json",
+      "sha256": "76a6879af6ac9fd2f2595ab41b275318720adf0d47320455c0b16c112e3503ed"
+    },
+    "semantic_erratum": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/E8B_PRE_OUTCOME_SEMANTIC_ERRATUM.md",
+      "sha256": "2a2566d260cb1bf5341f2b3cfc2bd1ea073cd9a9d013f9fa08a9e8a4cfe27691"
+    },
+    "private_prompts": {
+      "path": "source://refusal-study/ALL WORK/steps/10-target-and-dataset-repair/private/s10_phase_b_validation_expansion_prompts.csv",
+      "sha256": "f5f65a41a2ca6cf479a58f9d21e4cfa50becadd28fc033ceeaa3b88eb4bd41e8"
+    },
+    "probe_direction": {
+      "path": "source://refusal-study/ALL WORK/steps/06-lexical-controls-and-causal-tests/outputs/qwen3_4b_refusal_probe_direction.npz",
+      "sha256": "3d2048a873ed05b334545e703e0253707aad9b3de76176eb1fc9d8a71b30d72e"
+    },
+    "transcoder_row_bundle": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/private/s9_e8b_transcoder_rows.safetensors",
+      "sha256": "8a2de5629bcdbd138d23b9ed9705b6c4a2ac78d9995912ded0c820a0b0f23ffc"
+    },
+    "transcoder_row_manifest": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/outputs/s9_e8b_transcoder_rows_manifest.json",
+      "sha256": "c19d0722826a475fced422f73a87f9173948c43cc26d42a3751c34ecf337ef20"
+    },
+    "transcoder_bundle_builder": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/src/build_s9_e8b_transcoder_bundle.py",
+      "sha256": "c454a6fdfab3082a7a5c611878c7f93ffddcc83a3a55b2fea710c4d8b7aa2377"
+    },
+    "range_helper": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/src/extract_s9_e8b_transcoder_rows.py",
+      "sha256": "bbbda48ff695496ea8bf6462b62c490e1c7790691faf2b1280be1d67def7c234"
+    },
+    "runner": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/src/run_s9_e8b.py",
+      "sha256": "eb9da0ac9802cfd12f3adfae5c1441be97810e220f638c2c3dfb6e0d66b2d398"
+    },
+    "colab_runner": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/src/run_s9_e8b_colab.py",
+      "sha256": "d85ef7f024e026bcd55ef4c1550dbe712408de335f6cc522f284dd02e6905eb3"
+    },
+    "runtime_probe": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/src/probe_s9_e8b_runtime_colab.py",
+      "sha256": "d06cca3c2a8500eb80266d75f3c11265325751b49355d7d6e2bf25449f8538de"
+    },
+    "analyzer": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/src/analyze_s9_e8b.py",
+      "sha256": "7e7c24b93b14a301538bbcd307bcaec5d3fc96726e41fc318e6956e8caa9dd30"
+    },
+    "runtime_installer": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/src/install_s9_colab_runtime.py",
+      "sha256": "2a58d24c5387f299cc60872703490533482720a22ef4b404745e5cb959488bf7"
+    },
+    "base_runner": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/src/run_s9_calibration.py",
+      "sha256": "77632041676083f4d5ae485ccd7b80e9cb5d44c926d18d15ff95710e075af05b"
+    },
+    "base_contract": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/src/s9_contract.py",
+      "sha256": "35717f36e91ec3bcdda1c6adcd220477dc899f7ac4b1d17de8aaee9a0e07753b"
+    },
+    "e8_contract": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/src/s9_e8_contract.py",
+      "sha256": "6fc5c7ea89b9549e6d558ab7fb5f06f1be5315da07bbceace8c60fc1e38d2253"
+    },
+    "e8b_contract": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/src/s9_e8b_contract.py",
+      "sha256": "3d0e461c041418f6ae4925dc62a2b7224deb28cf13ed447a29508c40ba8564c1"
+    },
+    "execution_plan_builder": {
+      "path": "source://refusal-study/ALL WORK/steps/09-intervention-method-exploration/src/build_s9_e8b_execution_plan.py",
+      "sha256": "e1d0cba1e214fc5d29c73f92cfca543d175467dc11b9d5ef7ee58c93a810ba97"
+    }
+  },
+  "privacy": {
+    "prompt_text_in_public_artifacts": false,
+    "completion_text_in_public_artifacts": false,
+    "token_text_in_public_artifacts": false,
+    "raw_receiver_tensors_in_public_artifacts": false,
+    "confirmation_prompt_text_read": false,
+    "raw_transcoder_rows_in_public_artifacts": false,
+    "input_token_ids_in_public_artifacts": false,
+    "input_token_tensor_hashes_in_public_artifacts": true
+  },
+  "payload_sha256": "9478370c4735172a729729e1865b4a085adde5e373e7aa3427c913fa89f8a1be"
+}

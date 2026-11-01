@@ -1,0 +1,141 @@
+{
+  "behavior": {
+    "primary": {
+      "necessity_A1_direct": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "count": 0,
+        "defined_replicates": 10000,
+        "estimate": 0.0,
+        "n": 57,
+        "n_intents": 19,
+        "requested_replicates": 10000
+      },
+      "necessity_control_RND_A1_direct": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "count": 0,
+        "defined_replicates": 10000,
+        "estimate": 0.0,
+        "n": 57,
+        "n_intents": 19,
+        "requested_replicates": 10000
+      },
+      "sufficiency_A2_fictional_complying": {
+        "ci95": [
+          0.0,
+          0.21428571428571427
+        ],
+        "count": 3,
+        "defined_replicates": 10000,
+        "estimate": 0.0967741935483871,
+        "n": 31,
+        "n_intents": 18,
+        "requested_replicates": 10000
+      },
+      "sufficiency_RB_A2_fictional_complying": {
+        "ci95": [
+          0.05405405405405406,
+          0.3076923076923077
+        ],
+        "count": 5,
+        "defined_replicates": 10000,
+        "estimate": 0.16129032258064516,
+        "n": 31,
+        "n_intents": 18,
+        "requested_replicates": 10000
+      },
+      "sufficiency_RD_A2_fictional_complying": {
+        "ci95": [
+          0.0,
+          0.2222222222222222
+        ],
+        "count": 3,
+        "defined_replicates": 10000,
+        "estimate": 0.0967741935483871,
+        "n": 31,
+        "n_intents": 18,
+        "requested_replicates": 10000
+      },
+      "sufficiency_RND_A2_fictional_complying": {
+        "ci95": [
+          0.0,
+          0.16666666666666666
+        ],
+        "count": 2,
+        "defined_replicates": 10000,
+        "estimate": 0.06451612903225806,
+        "n": 31,
+        "n_intents": 18,
+        "requested_replicates": 10000
+      }
+    },
+    "internal": {
+      "a2_natural": {
+        "median_delta_primary_score": 0.1875,
+        "median_delta_probe": 0.8743972778320312,
+        "n": 84
+      },
+      "rd_a2_natural": {
+        "median_delta_primary_score": 0.046875,
+        "median_delta_probe": 4.24492073059082,
+        "n": 84
+      }
+    },
+    "bootstrap": {
+      "implementation": "numpy.random.Generator(PCG64), sorted intent ids, numpy percentile",
+      "replicates": 10000,
+      "seed": 2522210527409210963,
+      "unit": "intent"
+    },
+    "payload_sha256": "cda74c73ea5840f9ead48da64f074ff8dc3e3e96e4b181f102289c533c423ae6"
+  },
+  "fidelity": {
+    "prompt_count": 8,
+    "hf_vs_circuit_tracer_exact": {
+      "mean_kl": 0.007392479106783867,
+      "top1_agreement_rate": 1.0,
+      "mean_top10_overlap": 0.975
+    },
+    "circuit_tracer_exact_vs_strict_reconstruction": {
+      "mean_kl": 15.059926986694336,
+      "top1_agreement_rate": 0.0,
+      "mean_top10_overlap": 0.0
+    }
+  },
+  "toy": {
+    "paths": [
+      {
+        "probability": 0.6,
+        "nodes": [
+          "target",
+          "U",
+          "V"
+        ]
+      },
+      {
+        "probability": 0.4,
+        "nodes": [
+          "target",
+          "W"
+        ]
+      }
+    ],
+    "candidate_order": [
+      "U",
+      "V",
+      "W"
+    ],
+    "budget": 2
+  },
+  "route": {
+    "sender": "layer 31 feature 49541",
+    "receiver": "whole layer 32 MLP output",
+    "position": "final prompt token",
+    "fixed_dose": 18.625
+  }
+}

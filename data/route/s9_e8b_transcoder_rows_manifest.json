@@ -1,0 +1,248 @@
+{
+  "schema_version": 1,
+  "analysis_semantics_version": "s9-e8b-transcoder-row-bundle-v1",
+  "created_at_utc": "2026-08-24T02:51:13.549734+00:00",
+  "status": "complete_authenticated_e8b_transcoder_row_bundle",
+  "producer": {
+    "path": "build_s9_e8b_transcoder_bundle.py",
+    "file_sha256": "c454a6fdfab3082a7a5c611878c7f93ffddcc83a3a55b2fea710c4d8b7aa2377"
+  },
+  "range_helper": {
+    "path": "extract_s9_e8b_transcoder_rows.py",
+    "file_sha256": "bbbda48ff695496ea8bf6462b62c490e1c7790691faf2b1280be1d67def7c234"
+  },
+  "e8a_manifest": {
+    "path": "s9_e8a_replication_manifest.json",
+    "file_sha256": "110932011bbb087a16bff0b2128b923e545534c9227e12648bfdb9bbf250744a",
+    "payload_sha256": "0d0de4fe9983c408b99158b74abd93e63421e0d098e8f07b25256520aad841c4"
+  },
+  "e8a_plan": {
+    "path": "s9_e8a_plan.json",
+    "file_sha256": "76a6879af6ac9fd2f2595ab41b275318720adf0d47320455c0b16c112e3503ed",
+    "payload_sha256": "270167e9e8bb9c35f997e5795529c265e88b57bf138164b2811c6346355b794b"
+  },
+  "source": {
+    "repo_id": "mwhanna/qwen3-4b-transcoders",
+    "revision": "94d176260ac39ce2f882b8b09aba8c118df29bb3",
+    "full_source_files_downloaded": false,
+    "http_range_required": true
+  },
+  "features": [
+    {
+      "feature": "L31:F49541",
+      "layer": 31,
+      "feature_index": 49541,
+      "role": "C"
+    },
+    {
+      "feature": "L31:F139261",
+      "layer": 31,
+      "feature_index": 139261,
+      "role": "M"
+    },
+    {
+      "feature": "L32:F50401",
+      "layer": 32,
+      "feature_index": 50401,
+      "role": "D"
+    }
+  ],
+  "counts": {
+    "layers": 2,
+    "unique_features": 3,
+    "bundle_tensors": 8
+  },
+  "layers": [
+    {
+      "layer": 31,
+      "filename": "layer_31.safetensors",
+      "resolved_commit": "94d176260ac39ce2f882b8b09aba8c118df29bb3",
+      "source_file_size": 1678054736,
+      "source_file_etag": "259a2ee3de571d9324e4535ea4ec1cecd352e968f25196d65d5974e1da123485",
+      "safetensors_header_length": 328,
+      "safetensors_header_sha256": "ea18427accff20f7801a3aa241e9c2b7482b6334b3fc63c2dd01e1bb46ac84e1",
+      "feature_indices": [
+        49541,
+        139261
+      ],
+      "tensors": {
+        "W_dec": {
+          "source_dtype": "BF16",
+          "source_shape": [
+            163840,
+            2560
+          ],
+          "bundle_shape": [
+            2,
+            2560
+          ],
+          "ranges": [
+            {
+              "first_index": 49541,
+              "last_index": 49541,
+              "byte_start": 253650256,
+              "byte_end": 253655375,
+              "row_bytes": 5120,
+              "sha256": "4319d2f5dbf5a835f6534b4729a303e8891b05602f9658b5870245398c83e1d4"
+            },
+            {
+              "first_index": 139261,
+              "last_index": 139261,
+              "byte_start": 713016656,
+              "byte_end": 713021775,
+              "row_bytes": 5120,
+              "sha256": "b7d41e4ff59ecf0cc9f77499220aef5ea4714de4cf7029635a42929fea2b4b43"
+            }
+          ]
+        },
+        "W_enc": {
+          "source_dtype": "BF16",
+          "source_shape": [
+            163840,
+            2560
+          ],
+          "bundle_shape": [
+            2,
+            2560
+          ],
+          "ranges": [
+            {
+              "first_index": 49541,
+              "last_index": 49541,
+              "byte_start": 1092511056,
+              "byte_end": 1092516175,
+              "row_bytes": 5120,
+              "sha256": "bf8661d39ffb74c00684359ed83f5fa2145f90789e32baec05b339c9a9029706"
+            },
+            {
+              "first_index": 139261,
+              "last_index": 139261,
+              "byte_start": 1551877456,
+              "byte_end": 1551882575,
+              "row_bytes": 5120,
+              "sha256": "56ed740b8f8223632a64bd9b4e47452b4cc71b3c1368bba60d4cdf5a13f3b1e3"
+            }
+          ]
+        },
+        "b_enc": {
+          "source_dtype": "BF16",
+          "source_shape": [
+            163840
+          ],
+          "bundle_shape": [
+            2
+          ],
+          "ranges": [
+            {
+              "first_index": 49541,
+              "last_index": 49541,
+              "byte_start": 1677826138,
+              "byte_end": 1677826139,
+              "row_bytes": 2,
+              "sha256": "01bb5a6ff7857c7b9a3781f2547debbe1037cc44ff629e49942b6f420c9f2556"
+            },
+            {
+              "first_index": 139261,
+              "last_index": 139261,
+              "byte_start": 1678005578,
+              "byte_end": 1678005579,
+              "row_bytes": 2,
+              "sha256": "000d3fa33506a770bad1c468960f6065a2658f270080f1bede5c3a5107f9e2c9"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "layer": 32,
+      "filename": "layer_32.safetensors",
+      "resolved_commit": "94d176260ac39ce2f882b8b09aba8c118df29bb3",
+      "source_file_size": 1678054736,
+      "source_file_etag": "6aa7a9bdea60ac9f7916108a6f5b189992ab448caa2386cc2a6cf273f79460e1",
+      "safetensors_header_length": 328,
+      "safetensors_header_sha256": "ea18427accff20f7801a3aa241e9c2b7482b6334b3fc63c2dd01e1bb46ac84e1",
+      "feature_indices": [
+        50401
+      ],
+      "tensors": {
+        "W_dec": {
+          "source_dtype": "BF16",
+          "source_shape": [
+            163840,
+            2560
+          ],
+          "bundle_shape": [
+            1,
+            2560
+          ],
+          "ranges": [
+            {
+              "first_index": 50401,
+              "last_index": 50401,
+              "byte_start": 258053456,
+              "byte_end": 258058575,
+              "row_bytes": 5120,
+              "sha256": "467e9f828cc779ddacc4737f3dfd764f75fc92cf196dd446d07c7c2365f85cc0"
+            }
+          ]
+        },
+        "W_enc": {
+          "source_dtype": "BF16",
+          "source_shape": [
+            163840,
+            2560
+          ],
+          "bundle_shape": [
+            1,
+            2560
+          ],
+          "ranges": [
+            {
+              "first_index": 50401,
+              "last_index": 50401,
+              "byte_start": 1096914256,
+              "byte_end": 1096919375,
+              "row_bytes": 5120,
+              "sha256": "9146aab8c85026db5db170cb48434671a6ebf296c7bc9a4b6e935130e0344def"
+            }
+          ]
+        },
+        "b_enc": {
+          "source_dtype": "BF16",
+          "source_shape": [
+            163840
+          ],
+          "bundle_shape": [
+            1
+          ],
+          "ranges": [
+            {
+              "first_index": 50401,
+              "last_index": 50401,
+              "byte_start": 1677827858,
+              "byte_end": 1677827859,
+              "row_bytes": 2,
+              "sha256": "8f9381c1d301c5860e854442e947d96779fc5a3b6fa0a05028adb12469ba8f66"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "bundle": {
+    "path": "s9_e8b_transcoder_rows.safetensors",
+    "file_sha256": "8a2de5629bcdbd138d23b9ed9705b6c4a2ac78d9995912ded0c820a0b0f23ffc",
+    "keys": [
+      "layer_31.W_dec",
+      "layer_31.W_enc",
+      "layer_31.b_enc",
+      "layer_31.feature_indices",
+      "layer_32.W_dec",
+      "layer_32.W_enc",
+      "layer_32.b_enc",
+      "layer_32.feature_indices"
+    ],
+    "public": false
+  },
+  "payload_sha256": "de8be0a4f475c477d5bcdbb90c2edfcf921d75cf470ea89758d7250f87b5907e"
+}

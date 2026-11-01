@@ -1,0 +1,684 @@
+{
+  "amendment_01_sha256": "7f99acc0a5fb1a109d610177517b4fab876adcefb58670173f096954a62856ed",
+  "amendment_02_sha256": "ba4b53484a4944ea5b662225f8218317df8283ff73c43af66ec73b903747bd44",
+  "baseline_binary_gate": {
+    "agreement_count": 169,
+    "agreement_rate": 0.9388888888888889,
+    "comparison_count": 180,
+    "exact_four_class_agreement_count": 120,
+    "exact_four_class_agreement_rate": 0.6666666666666666
+  },
+  "bootstrap": {
+    "implementation": "numpy.random.Generator(PCG64), sorted intent ids, numpy percentile",
+    "replicates": 10000,
+    "seed": 2522210527409210963,
+    "unit": "intent"
+  },
+  "claim_boundary": "Tier-1 generated-text intervention evidence only; no unique native-variable, mediation, selectivity, deferred-arm, Phase-D, or population-general claim.",
+  "generation_counts": {
+    "a1_persistent": 120,
+    "a2_natural": 84,
+    "a3_benign": 60,
+    "baseline": 204,
+    "rb_a2_natural": 84,
+    "rb_a3_benign": 60,
+    "rd_a2_natural": 84,
+    "rd_a3_benign": 60,
+    "rnd1707_a1_persistent": 120,
+    "rnd1707_a2_natural": 84,
+    "rnd1707_a3_benign": 60
+  },
+  "headline_variant": "primary_agent_labels",
+  "input_sha256": {
+    "baseline_annotations": "3d0a9daec25d21b938b06587931ee4a0131d932a6d07ed7a6e70cc9b46767c43",
+    "baseline_binary_gate": "f8e44f084ad3ea9dced07e652de65d0427e87b29f7308236f0660e5192eda1eb",
+    "run_manifest": "c727ccb2c19515ddf4144ec727c3292a61a7f8bb71e92f263c23313387de913d",
+    "second_rater_annotations": "f6705eeb5478c3131ac6890091700c4bcf63bfaeb454356f82a8f84c6f48c3b2",
+    "second_rater_audit": "a3888fff98a43815380215668eef4b77795f36234733062da2502a38d66e55aa",
+    "tier1_annotation_receipt": "b878b057106a293657087dc0ecae8b529f9d78b7df0877c507ca71a78de0ad40",
+    "tier1_annotations": "0c7a059e4f42a0c8e31feb90114742eb6eb89db7ff67d7ffd985682c38a1aed6"
+  },
+  "label_distribution_by_arm": {
+    "a1_persistent": {
+      "C": 27,
+      "P": 6,
+      "R": 24,
+      "S": 63
+    },
+    "a2_natural": {
+      "C": 38,
+      "P": 9,
+      "R": 20,
+      "S": 17
+    },
+    "a3_benign": {
+      "C": 59,
+      "P": 1
+    },
+    "rb_a2_natural": {
+      "C": 38,
+      "P": 8,
+      "R": 20,
+      "S": 18
+    },
+    "rb_a3_benign": {
+      "C": 59,
+      "P": 1
+    },
+    "rd_a2_natural": {
+      "C": 36,
+      "P": 13,
+      "R": 16,
+      "S": 19
+    },
+    "rd_a3_benign": {
+      "C": 59,
+      "P": 1
+    },
+    "rnd1707_a1_persistent": {
+      "C": 25,
+      "P": 8,
+      "R": 23,
+      "S": 64
+    },
+    "rnd1707_a2_natural": {
+      "C": 39,
+      "P": 12,
+      "R": 16,
+      "S": 17
+    },
+    "rnd1707_a3_benign": {
+      "C": 59,
+      "P": 1
+    }
+  },
+  "numeric_continuity_median_deltas": {
+    "a1_persistent": {
+      "median_delta_primary_score": -0.078125,
+      "median_delta_probe": -0.18068504333496094,
+      "n": 120
+    },
+    "a2_natural": {
+      "median_delta_primary_score": 0.1875,
+      "median_delta_probe": 0.8743972778320312,
+      "n": 84
+    },
+    "a3_benign": {
+      "median_delta_primary_score": 0.109375,
+      "median_delta_probe": 1.2773857116699219,
+      "n": 60
+    },
+    "rb_a2_natural": {
+      "median_delta_primary_score": 0.125,
+      "median_delta_probe": 0.7119808197021484,
+      "n": 84
+    },
+    "rb_a3_benign": {
+      "median_delta_primary_score": 0.06640625,
+      "median_delta_probe": 1.1695404052734375,
+      "n": 60
+    },
+    "rd_a2_natural": {
+      "median_delta_primary_score": 0.046875,
+      "median_delta_probe": 4.24492073059082,
+      "n": 84
+    },
+    "rd_a3_benign": {
+      "median_delta_primary_score": 0.07421875,
+      "median_delta_probe": 4.5066938400268555,
+      "n": 60
+    },
+    "rnd1707_a1_persistent": {
+      "median_delta_primary_score": 0.03125,
+      "median_delta_probe": 0.05988121032714844,
+      "n": 120
+    },
+    "rnd1707_a2_natural": {
+      "median_delta_primary_score": -0.0625,
+      "median_delta_probe": -0.49778079986572266,
+      "n": 84
+    },
+    "rnd1707_a3_benign": {
+      "median_delta_primary_score": -0.05078125,
+      "median_delta_probe": -0.45633411407470703,
+      "n": 60
+    }
+  },
+  "payload_sha256": "cda74c73ea5840f9ead48da64f074ff8dc3e3e96e4b181f102289c533c423ae6",
+  "preregistration_sha256": "25928a120f53a277553a15a6f271463b990f52f186653773f117507ff0a6f13d",
+  "primary_agent_labels": {
+    "benign_A3_refusal_like": {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "count": 0,
+      "defined_replicates": 10000,
+      "estimate": 0.0,
+      "n": 60,
+      "n_intents": 10,
+      "requested_replicates": 10000
+    },
+    "benign_RB_A3_refusal_like": {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "count": 0,
+      "defined_replicates": 10000,
+      "estimate": 0.0,
+      "n": 60,
+      "n_intents": 10,
+      "requested_replicates": 10000
+    },
+    "benign_RD_A3_refusal_like": {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "count": 0,
+      "defined_replicates": 10000,
+      "estimate": 0.0,
+      "n": 60,
+      "n_intents": 10,
+      "requested_replicates": 10000
+    },
+    "benign_RND_A3_refusal_like": {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "count": 0,
+      "defined_replicates": 10000,
+      "estimate": 0.0,
+      "n": 60,
+      "n_intents": 10,
+      "requested_replicates": 10000
+    },
+    "denominators": {
+      "benign": 72,
+      "fresh_complying": 18,
+      "harmful_all_refusing": 92,
+      "harmful_direct_refusing": 57,
+      "harmful_fictional_all": 60,
+      "harmful_fictional_complying": 31
+    },
+    "necessity_A1_all_refusing": {
+      "ci95": [
+        0.0,
+        0.03614457831325301
+      ],
+      "count": 1,
+      "defined_replicates": 10000,
+      "estimate": 0.011627906976744186,
+      "n": 86,
+      "n_intents": 19,
+      "requested_replicates": 10000
+    },
+    "necessity_A1_direct": {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "count": 0,
+      "defined_replicates": 10000,
+      "estimate": 0.0,
+      "n": 57,
+      "n_intents": 19,
+      "requested_replicates": 10000
+    },
+    "necessity_control_RND_A1_all_refusing": {
+      "ci95": [
+        0.0,
+        0.03614457831325301
+      ],
+      "count": 1,
+      "defined_replicates": 10000,
+      "estimate": 0.011627906976744186,
+      "n": 86,
+      "n_intents": 19,
+      "requested_replicates": 10000
+    },
+    "necessity_control_RND_A1_direct": {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "count": 0,
+      "defined_replicates": 10000,
+      "estimate": 0.0,
+      "n": 57,
+      "n_intents": 19,
+      "requested_replicates": 10000
+    },
+    "route_share_A2_fictional": {
+      "arm_effect": 0.0967741935483871,
+      "rb_effect": 0.16129032258064516,
+      "reason": "arm effect interval includes 0 or size < 0.10",
+      "route_share": null
+    },
+    "route_share_A3_benign": {
+      "arm_effect": 0.0,
+      "rb_effect": 0.0,
+      "reason": "arm effect interval includes 0 or size < 0.10",
+      "route_share": null
+    },
+    "sufficiency_A2_fictional_complying": {
+      "ci95": [
+        0.0,
+        0.21428571428571427
+      ],
+      "count": 3,
+      "defined_replicates": 10000,
+      "estimate": 0.0967741935483871,
+      "n": 31,
+      "n_intents": 18,
+      "requested_replicates": 10000
+    },
+    "sufficiency_A2_fresh_complying": {
+      "ci95": [
+        0.0,
+        0.16666666666666666
+      ],
+      "count": 1,
+      "defined_replicates": 10000,
+      "estimate": 0.05555555555555555,
+      "n": 18,
+      "n_intents": 18,
+      "requested_replicates": 10000
+    },
+    "sufficiency_RB_A2_fictional_complying": {
+      "ci95": [
+        0.05405405405405406,
+        0.3076923076923077
+      ],
+      "count": 5,
+      "defined_replicates": 10000,
+      "estimate": 0.16129032258064516,
+      "n": 31,
+      "n_intents": 18,
+      "requested_replicates": 10000
+    },
+    "sufficiency_RB_A2_fresh_complying": {
+      "ci95": [
+        0.0,
+        0.16666666666666666
+      ],
+      "count": 1,
+      "defined_replicates": 10000,
+      "estimate": 0.05555555555555555,
+      "n": 18,
+      "n_intents": 18,
+      "requested_replicates": 10000
+    },
+    "sufficiency_RD_A2_fictional_complying": {
+      "ci95": [
+        0.0,
+        0.2222222222222222
+      ],
+      "count": 3,
+      "defined_replicates": 10000,
+      "estimate": 0.0967741935483871,
+      "n": 31,
+      "n_intents": 18,
+      "requested_replicates": 10000
+    },
+    "sufficiency_RD_A2_fresh_complying": {
+      "ci95": [
+        0.0,
+        0.16666666666666666
+      ],
+      "count": 1,
+      "defined_replicates": 10000,
+      "estimate": 0.05555555555555555,
+      "n": 18,
+      "n_intents": 18,
+      "requested_replicates": 10000
+    },
+    "sufficiency_RND_A2_fictional_complying": {
+      "ci95": [
+        0.0,
+        0.16666666666666666
+      ],
+      "count": 2,
+      "defined_replicates": 10000,
+      "estimate": 0.06451612903225806,
+      "n": 31,
+      "n_intents": 18,
+      "requested_replicates": 10000
+    },
+    "sufficiency_RND_A2_fresh_complying": {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "count": 0,
+      "defined_replicates": 10000,
+      "estimate": 0.0,
+      "n": 18,
+      "n_intents": 18,
+      "requested_replicates": 10000
+    }
+  },
+  "schema_version": "s16-phase-c-tier1-result/1",
+  "second_rater": {
+    "agreement": {
+      "all_55": {
+        "binary_agreement": 0.9636363636363636,
+        "binary_agreement_ci95": [
+          0.9090909090909091,
+          1.0
+        ],
+        "binary_kappa": 0.9253731343283582,
+        "binary_kappa_ci95": [
+          0.8107364074328974,
+          1.0
+        ],
+        "exact_agreement": 0.7454545454545455,
+        "kappa_replicates_defined": 10000,
+        "n": 55,
+        "n_binary_valid": 55,
+        "u_count": 0
+      },
+      "flip_18": {
+        "binary_agreement": 0.9444444444444444,
+        "binary_agreement_ci95": [
+          0.8333333333333334,
+          1.0
+        ],
+        "binary_kappa": 0.8799999999999999,
+        "binary_kappa_ci95": [
+          0.5714285714285715,
+          1.0
+        ],
+        "exact_agreement": 0.7222222222222222,
+        "kappa_replicates_defined": 10000,
+        "n": 18,
+        "n_binary_valid": 18,
+        "u_count": 0
+      },
+      "nonflip_37": {
+        "binary_agreement": 0.972972972972973,
+        "binary_agreement_ci95": [
+          0.918918918918919,
+          1.0
+        ],
+        "binary_kappa": 0.9369676320272574,
+        "binary_kappa_ci95": [
+          0.7730061349693254,
+          1.0
+        ],
+        "exact_agreement": 0.7567567567567568,
+        "kappa_replicates_defined": 10000,
+        "n": 37,
+        "n_binary_valid": 37,
+        "u_count": 0
+      }
+    },
+    "annotations_sha256": "f6705eeb5478c3131ac6890091700c4bcf63bfaeb454356f82a8f84c6f48c3b2",
+    "audit_payload_sha256": "1070eac101948f85d7e1f1a0cc672c9c9271cfb663fa8fa4c1c7da643fbe30e7",
+    "flip_sides": {
+      "confirms_agent_flip": 17,
+      "sides_with_baseline_class": 1,
+      "u": 0
+    },
+    "per_arm": {
+      "a1_persistent": {
+        "binary_agreement": 0.8,
+        "exact_agreement": 0.2,
+        "n": 10,
+        "n_flip": 3
+      },
+      "a2_natural": {
+        "binary_agreement": 1.0,
+        "exact_agreement": 0.7142857142857143,
+        "n": 14,
+        "n_flip": 6
+      },
+      "a3_benign": {
+        "binary_agreement": 1.0,
+        "exact_agreement": 1.0,
+        "n": 6,
+        "n_flip": 0
+      },
+      "rb_a2_natural": {
+        "binary_agreement": 1.0,
+        "exact_agreement": 0.8333333333333334,
+        "n": 12,
+        "n_flip": 9
+      },
+      "rb_a3_benign": {
+        "binary_agreement": 1.0,
+        "exact_agreement": 1.0,
+        "n": 13,
+        "n_flip": 0
+      }
+    },
+    "rule_5_7": {
+      "benchmark_kappa": 0.8361096,
+      "flip_set_below_threshold": false,
+      "flip_set_binary_agreement": 0.9444444444444444,
+      "flip_set_min_agreement": 0.8,
+      "headline_is_sensitivity": false,
+      "pooled_kappa_ci_excludes_benchmark_from_below": false,
+      "sensitivity_reclassified_record_count": 2
+    },
+    "source": "s16_phase_c_tier1_second_rater_audit.json"
+  },
+  "sensitivity_barkin_reclassified": {
+    "benign_A3_refusal_like": {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "count": 0,
+      "defined_replicates": 10000,
+      "estimate": 0.0,
+      "n": 60,
+      "n_intents": 10,
+      "requested_replicates": 10000
+    },
+    "benign_RB_A3_refusal_like": {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "count": 0,
+      "defined_replicates": 10000,
+      "estimate": 0.0,
+      "n": 60,
+      "n_intents": 10,
+      "requested_replicates": 10000
+    },
+    "benign_RD_A3_refusal_like": {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "count": 0,
+      "defined_replicates": 10000,
+      "estimate": 0.0,
+      "n": 60,
+      "n_intents": 10,
+      "requested_replicates": 10000
+    },
+    "benign_RND_A3_refusal_like": {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "count": 0,
+      "defined_replicates": 10000,
+      "estimate": 0.0,
+      "n": 60,
+      "n_intents": 10,
+      "requested_replicates": 10000
+    },
+    "denominators": {
+      "benign": 72,
+      "fresh_complying": 18,
+      "harmful_all_refusing": 92,
+      "harmful_direct_refusing": 57,
+      "harmful_fictional_all": 60,
+      "harmful_fictional_complying": 31
+    },
+    "necessity_A1_all_refusing": {
+      "ci95": [
+        0.0,
+        0.058823529411764705
+      ],
+      "count": 2,
+      "defined_replicates": 10000,
+      "estimate": 0.023255813953488372,
+      "n": 86,
+      "n_intents": 19,
+      "requested_replicates": 10000
+    },
+    "necessity_A1_direct": {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "count": 0,
+      "defined_replicates": 10000,
+      "estimate": 0.0,
+      "n": 57,
+      "n_intents": 19,
+      "requested_replicates": 10000
+    },
+    "necessity_control_RND_A1_all_refusing": {
+      "ci95": [
+        0.0,
+        0.03614457831325301
+      ],
+      "count": 1,
+      "defined_replicates": 10000,
+      "estimate": 0.011627906976744186,
+      "n": 86,
+      "n_intents": 19,
+      "requested_replicates": 10000
+    },
+    "necessity_control_RND_A1_direct": {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "count": 0,
+      "defined_replicates": 10000,
+      "estimate": 0.0,
+      "n": 57,
+      "n_intents": 19,
+      "requested_replicates": 10000
+    },
+    "records_reclassified": 2,
+    "route_share_A2_fictional": {
+      "arm_effect": 0.0967741935483871,
+      "rb_effect": 0.16129032258064516,
+      "reason": "arm effect interval includes 0 or size < 0.10",
+      "route_share": null
+    },
+    "route_share_A3_benign": {
+      "arm_effect": 0.0,
+      "rb_effect": 0.0,
+      "reason": "arm effect interval includes 0 or size < 0.10",
+      "route_share": null
+    },
+    "sufficiency_A2_fictional_complying": {
+      "ci95": [
+        0.0,
+        0.21428571428571427
+      ],
+      "count": 3,
+      "defined_replicates": 10000,
+      "estimate": 0.0967741935483871,
+      "n": 31,
+      "n_intents": 18,
+      "requested_replicates": 10000
+    },
+    "sufficiency_A2_fresh_complying": {
+      "ci95": [
+        0.0,
+        0.16666666666666666
+      ],
+      "count": 1,
+      "defined_replicates": 10000,
+      "estimate": 0.05555555555555555,
+      "n": 18,
+      "n_intents": 18,
+      "requested_replicates": 10000
+    },
+    "sufficiency_RB_A2_fictional_complying": {
+      "ci95": [
+        0.05405405405405406,
+        0.3076923076923077
+      ],
+      "count": 5,
+      "defined_replicates": 10000,
+      "estimate": 0.16129032258064516,
+      "n": 31,
+      "n_intents": 18,
+      "requested_replicates": 10000
+    },
+    "sufficiency_RB_A2_fresh_complying": {
+      "ci95": [
+        0.0,
+        0.16666666666666666
+      ],
+      "count": 1,
+      "defined_replicates": 10000,
+      "estimate": 0.05555555555555555,
+      "n": 18,
+      "n_intents": 18,
+      "requested_replicates": 10000
+    },
+    "sufficiency_RD_A2_fictional_complying": {
+      "ci95": [
+        0.0,
+        0.2222222222222222
+      ],
+      "count": 3,
+      "defined_replicates": 10000,
+      "estimate": 0.0967741935483871,
+      "n": 31,
+      "n_intents": 18,
+      "requested_replicates": 10000
+    },
+    "sufficiency_RD_A2_fresh_complying": {
+      "ci95": [
+        0.0,
+        0.16666666666666666
+      ],
+      "count": 1,
+      "defined_replicates": 10000,
+      "estimate": 0.05555555555555555,
+      "n": 18,
+      "n_intents": 18,
+      "requested_replicates": 10000
+    },
+    "sufficiency_RND_A2_fictional_complying": {
+      "ci95": [
+        0.0,
+        0.16666666666666666
+      ],
+      "count": 2,
+      "defined_replicates": 10000,
+      "estimate": 0.06451612903225806,
+      "n": 31,
+      "n_intents": 18,
+      "requested_replicates": 10000
+    },
+    "sufficiency_RND_A2_fresh_complying": {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "count": 0,
+      "defined_replicates": 10000,
+      "estimate": 0.0,
+      "n": 18,
+      "n_intents": 18,
+      "requested_replicates": 10000
+    }
+  },
+  "status": "complete_preregistered_phase_c_tier1"
+}

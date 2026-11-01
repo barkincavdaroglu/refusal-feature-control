@@ -1,0 +1,5329 @@
+{
+  "activation_census": {
+    "all_nonpadding_token_micro": {
+      "benign_instruction": {
+        "active_fraction": 0.02753324592620341,
+        "count": 74746,
+        "maximum": 49.75,
+        "mean": 0.21571587024723732,
+        "minimum": 0.0,
+        "quantiles_linear": {
+          "0": 0.0,
+          "0.1": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.9": 0.0,
+          "0.95": 0.0,
+          "0.99": 7.34375,
+          "1": 49.75
+        },
+        "sample_standard_deviation": 1.8857006497952595
+      },
+      "closed_context_unanswerable": {
+        "active_fraction": 0.00048549816967190034,
+        "count": 205974,
+        "maximum": 44.25,
+        "mean": 0.0030441114533873207,
+        "minimum": 0.0,
+        "quantiles_linear": {
+          "0": 0.0,
+          "0.1": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.9": 0.0,
+          "0.95": 0.0,
+          "0.99": 0.0,
+          "1": 44.25
+        },
+        "sample_standard_deviation": 0.24196894337442523
+      },
+      "negation_reasoning": {
+        "active_fraction": 0.002214134833176393,
+        "count": 117879,
+        "maximum": 17.375,
+        "mean": 0.007196932341638459,
+        "minimum": 0.0,
+        "quantiles_linear": {
+          "0": 0.0,
+          "0.1": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.9": 0.0,
+          "0.95": 0.0,
+          "0.99": 0.0,
+          "1": 17.375
+        },
+        "sample_standard_deviation": 0.2127410580860506
+      },
+      "project_panel": {
+        "active_fraction": 0.04822814007129377,
+        "count": 14307,
+        "maximum": 28.625,
+        "mean": 0.35058395802753894,
+        "minimum": 0.0,
+        "quantiles_linear": {
+          "0": 0.0,
+          "0.1": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.9": 0.0,
+          "0.95": 0.0,
+          "0.99": 11.246250000000032,
+          "1": 28.625
+        },
+        "sample_standard_deviation": 2.065742192637574
+      },
+      "requested_apology": {
+        "active_fraction": 0.02112169138062234,
+        "count": 97246,
+        "maximum": 47.5,
+        "mean": 0.15795725209777267,
+        "minimum": 0.0,
+        "quantiles_linear": {
+          "0": 0.0,
+          "0.1": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.9": 0.0,
+          "0.95": 0.0,
+          "0.99": 4.71875,
+          "1": 47.5
+        },
+        "sample_standard_deviation": 1.618195040088362
+      },
+      "requested_benign_decline": {
+        "active_fraction": 0.04237021602814853,
+        "count": 101746,
+        "maximum": 56.0,
+        "mean": 0.1990969700283058,
+        "minimum": 0.0,
+        "quantiles_linear": {
+          "0": 0.0,
+          "0.1": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.9": 0.0,
+          "0.95": 0.0,
+          "0.99": 5.125,
+          "1": 56.0
+        },
+        "sample_standard_deviation": 1.599156306538851
+      },
+      "requested_formal_hedge": {
+        "active_fraction": 0.020333986228621044,
+        "count": 99046,
+        "maximum": 49.0,
+        "mean": 0.16022605657977101,
+        "minimum": 0.0,
+        "quantiles_linear": {
+          "0": 0.0,
+          "0.1": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.9": 0.0,
+          "0.95": 0.0,
+          "0.99": 4.8125,
+          "1": 49.0
+        },
+        "sample_standard_deviation": 1.6379768503712189
+      },
+      "single_turn_chat_prompt": {
+        "active_fraction": 0.009895774806157996,
+        "count": 142384,
+        "maximum": 57.0,
+        "mean": 0.06399721659385886,
+        "minimum": 0.0,
+        "quantiles_linear": {
+          "0": 0.0,
+          "0.1": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.9": 0.0,
+          "0.95": 0.0,
+          "0.99": 0.0,
+          "1": 57.0
+        },
+        "sample_standard_deviation": 0.9829312108473178
+      }
+    },
+    "formatted_final_e8_compatible": {
+      "benign_instruction": {
+        "active_fraction": 0.023333333333333334,
+        "count": 900,
+        "maximum": 17.5,
+        "mean": 0.12983506944444445,
+        "minimum": 0.0,
+        "quantiles_linear": {
+          "0": 0.0,
+          "0.1": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.9": 0.0,
+          "0.95": 0.0,
+          "0.99": 4.8128125,
+          "1": 17.5
+        },
+        "sample_standard_deviation": 1.1444546528302302
+      },
+      "closed_context_unanswerable": {
+        "active_fraction": 0.0,
+        "count": 900,
+        "maximum": 0.0,
+        "mean": 0.0,
+        "minimum": 0.0,
+        "quantiles_linear": {
+          "0": 0.0,
+          "0.1": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.9": 0.0,
+          "0.95": 0.0,
+          "0.99": 0.0,
+          "1": 0.0
+        },
+        "sample_standard_deviation": 0.0
+      },
+      "negation_reasoning": {
+        "active_fraction": 0.0,
+        "count": 900,
+        "maximum": 0.0,
+        "mean": 0.0,
+        "minimum": 0.0,
+        "quantiles_linear": {
+          "0": 0.0,
+          "0.1": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.9": 0.0,
+          "0.95": 0.0,
+          "0.99": 0.0,
+          "1": 0.0
+        },
+        "sample_standard_deviation": 0.0
+      },
+      "project_panel": {
+        "active_fraction": 0.4266666666666667,
+        "count": 300,
+        "maximum": 28.625,
+        "mean": 6.760833333333333,
+        "minimum": 0.0,
+        "quantiles_linear": {
+          "0": 0.0,
+          "0.1": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 14.6875,
+          "0.9": 21.637500000000003,
+          "0.95": 23.637500000000003,
+          "0.99": 27.003749999999997,
+          "1": 28.625
+        },
+        "sample_standard_deviation": 9.13928053326361
+      },
+      "requested_apology": {
+        "active_fraction": 0.0044444444444444444,
+        "count": 900,
+        "maximum": 9.875,
+        "mean": 0.0159375,
+        "minimum": 0.0,
+        "quantiles_linear": {
+          "0": 0.0,
+          "0.1": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.9": 0.0,
+          "0.95": 0.0,
+          "0.99": 0.0,
+          "1": 9.875
+        },
+        "sample_standard_deviation": 0.3464891984256157
+      },
+      "requested_benign_decline": {
+        "active_fraction": 0.0077777777777777776,
+        "count": 900,
+        "maximum": 15.375,
+        "mean": 0.038628472222222224,
+        "minimum": 0.0,
+        "quantiles_linear": {
+          "0": 0.0,
+          "0.1": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.9": 0.0,
+          "0.95": 0.0,
+          "0.99": 0.0,
+          "1": 15.375
+        },
+        "sample_standard_deviation": 0.5983484801013178
+      },
+      "requested_formal_hedge": {
+        "active_fraction": 0.04888888888888889,
+        "count": 900,
+        "maximum": 17.625,
+        "mean": 0.2084375,
+        "minimum": 0.0,
+        "quantiles_linear": {
+          "0": 0.0,
+          "0.1": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.9": 0.0,
+          "0.95": 0.0,
+          "0.99": 6.010312499999991,
+          "1": 17.625
+        },
+        "sample_standard_deviation": 1.3225603444200864
+      },
+      "single_turn_chat_prompt": {
+        "active_fraction": 0.014444444444444444,
+        "count": 900,
+        "maximum": 13.8125,
+        "mean": 0.04071180555555556,
+        "minimum": 0.0,
+        "quantiles_linear": {
+          "0": 0.0,
+          "0.1": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.9": 0.0,
+          "0.95": 0.0,
+          "0.99": 0.6824999999999974,
+          "1": 13.8125
+        },
+        "sample_standard_deviation": 0.5338748532080015
+      }
+    },
+    "helpsteer_within_anchor_wrapper_effects": {
+      "effects_by_wrapper": {
+        "apology_v1": {
+          "formatted_final": {
+            "anchor_count": 900,
+            "orientation": "wrapper_minus_base_within_anchor",
+            "summary": {
+              "active_fraction": 0.0022222222222222222,
+              "count": 900,
+              "maximum": 2.9375,
+              "mean": -0.11389756944444444,
+              "minimum": -13.9375,
+              "quantiles_linear": {
+                "0": -13.9375,
+                "0.1": 0.0,
+                "0.25": 0.0,
+                "0.5": 0.0,
+                "0.75": 0.0,
+                "0.9": 0.0,
+                "0.95": 0.0,
+                "0.99": 0.0,
+                "1": 2.9375
+              },
+              "sample_standard_deviation": 1.0214212555759183
+            }
+          },
+          "full_input_mean": {
+            "anchor_count": 900,
+            "orientation": "wrapper_minus_base_within_anchor",
+            "summary": {
+              "active_fraction": 0.22111111111111112,
+              "count": 900,
+              "maximum": 0.3125,
+              "mean": -0.08621644504292558,
+              "minimum": -1.0491674710424712,
+              "quantiles_linear": {
+                "0": -1.0491674710424712,
+                "0.1": -0.2964629722051597,
+                "0.25": -0.12826348352445427,
+                "0.5": -0.026927236606791714,
+                "0.75": 0.0,
+                "0.9": 0.032114050548103894,
+                "0.95": 0.06128603231489864,
+                "0.99": 0.13219188456632652,
+                "1": 0.3125
+              },
+              "sample_standard_deviation": 0.15989896313827462
+            }
+          },
+          "template_context_mean": {
+            "anchor_count": 900,
+            "orientation": "wrapper_minus_base_within_anchor",
+            "summary": {
+              "active_fraction": 0.23777777777777778,
+              "count": 900,
+              "maximum": 0.6588541666666666,
+              "mean": -0.09081340751262625,
+              "minimum": -1.4505208333333333,
+              "quantiles_linear": {
+                "0": -1.4505208333333333,
+                "0.1": -0.45162760416666664,
+                "0.25": -0.16780598958333334,
+                "0.5": 0.0,
+                "0.75": 0.0,
+                "0.9": 0.13736979166666666,
+                "0.95": 0.25348307291666644,
+                "0.99": 0.38822916666666646,
+                "1": 0.6588541666666666
+              },
+              "sample_standard_deviation": 0.259724294546304
+            }
+          },
+          "user_content_mean": {
+            "anchor_count": 900,
+            "orientation": "wrapper_minus_base_within_anchor",
+            "summary": {
+              "active_fraction": 0.14888888888888888,
+              "count": 900,
+              "maximum": 0.3469387755102041,
+              "mean": -0.10152775932756744,
+              "minimum": -2.148532388663968,
+              "quantiles_linear": {
+                "0": -2.148532388663968,
+                "0.1": -0.34173023384730145,
+                "0.25": -0.060683888737082664,
+                "0.5": 0.0,
+                "0.75": 0.0,
+                "0.9": 0.02321165462484337,
+                "0.95": 0.0645602786555866,
+                "0.99": 0.14465252246732016,
+                "1": 0.3469387755102041
+              },
+              "sample_standard_deviation": 0.2781463558211584
+            }
+          }
+        },
+        "decline_v1": {
+          "formatted_final": {
+            "anchor_count": 900,
+            "orientation": "wrapper_minus_base_within_anchor",
+            "summary": {
+              "active_fraction": 0.005555555555555556,
+              "count": 900,
+              "maximum": 6.0,
+              "mean": -0.09120659722222223,
+              "minimum": -13.9375,
+              "quantiles_linear": {
+                "0": -13.9375,
+                "0.1": 0.0,
+                "0.25": 0.0,
+                "0.5": 0.0,
+                "0.75": 0.0,
+                "0.9": 0.0,
+                "0.95": 0.0,
+                "0.99": 0.0,
+                "1": 6.0
+              },
+              "sample_standard_deviation": 1.0385214298044512
+            }
+          },
+          "full_input_mean": {
+            "anchor_count": 900,
+            "orientation": "wrapper_minus_base_within_anchor",
+            "summary": {
+              "active_fraction": 0.6055555555555555,
+              "count": 900,
+              "maximum": 0.4811197916666667,
+              "mean": -0.015253371221375111,
+              "minimum": -1.3477904611211575,
+              "quantiles_linear": {
+                "0": -1.3477904611211575,
+                "0.1": -0.22920650247759083,
+                "0.25": -0.0585950430968223,
+                "0.5": 0.022691699783237,
+                "0.75": 0.07826611063842874,
+                "0.9": 0.15227083333333336,
+                "0.95": 0.19709392432938264,
+                "0.99": 0.313461514820772,
+                "1": 0.4811197916666667
+              },
+              "sample_standard_deviation": 0.18363558938905664
+            }
+          },
+          "template_context_mean": {
+            "anchor_count": 900,
+            "orientation": "wrapper_minus_base_within_anchor",
+            "summary": {
+              "active_fraction": 0.38222222222222224,
+              "count": 900,
+              "maximum": 1.015625,
+              "mean": 0.0012149489688552222,
+              "minimum": -1.435546875,
+              "quantiles_linear": {
+                "0": -1.435546875,
+                "0.1": -0.31191406250000003,
+                "0.25": -0.08756510416666667,
+                "0.5": 0.0,
+                "0.75": 0.12646484375,
+                "0.9": 0.31712239583333335,
+                "0.95": 0.43281249999999954,
+                "0.99": 0.6276367187499999,
+                "1": 1.015625
+              },
+              "sample_standard_deviation": 0.2743566508279857
+            }
+          },
+          "user_content_mean": {
+            "anchor_count": 900,
+            "orientation": "wrapper_minus_base_within_anchor",
+            "summary": {
+              "active_fraction": 0.7155555555555555,
+              "count": 900,
+              "maximum": 0.5377604166666666,
+              "mean": -0.037377852867994284,
+              "minimum": -2.1035657051282053,
+              "quantiles_linear": {
+                "0": -2.1035657051282053,
+                "0.1": -0.34583111156685803,
+                "0.25": -0.024477693035564983,
+                "0.5": 0.0526172969187675,
+                "0.75": 0.0950218023255814,
+                "0.9": 0.12618167008389897,
+                "0.95": 0.18893975113442987,
+                "0.99": 0.3451774959500418,
+                "1": 0.5377604166666666
+              },
+              "sample_standard_deviation": 0.3047525885321312
+            }
+          }
+        },
+        "formal_hedge_v1": {
+          "formatted_final": {
+            "anchor_count": 900,
+            "orientation": "wrapper_minus_base_within_anchor",
+            "summary": {
+              "active_fraction": 0.04,
+              "count": 900,
+              "maximum": 17.625,
+              "mean": 0.07860243055555556,
+              "minimum": -9.53125,
+              "quantiles_linear": {
+                "0": -9.53125,
+                "0.1": 0.0,
+                "0.25": 0.0,
+                "0.5": 0.0,
+                "0.75": 0.0,
+                "0.9": 0.0,
+                "0.95": 0.0,
+                "0.99": 4.752499999999998,
+                "1": 17.625
+              },
+              "sample_standard_deviation": 1.068372845581146
+            }
+          },
+          "full_input_mean": {
+            "anchor_count": 900,
+            "orientation": "wrapper_minus_base_within_anchor",
+            "summary": {
+              "active_fraction": 0.17555555555555555,
+              "count": 900,
+              "maximum": 0.30728977685050796,
+              "mean": -0.08222111186670938,
+              "minimum": -0.9572955827067671,
+              "quantiles_linear": {
+                "0": -0.9572955827067671,
+                "0.1": -0.2793518851173491,
+                "0.25": -0.12060342001748252,
+                "0.5": -0.02375055036988042,
+                "0.75": 0.0,
+                "0.9": 0.013535443944353544,
+                "0.95": 0.04853951088116063,
+                "0.99": 0.18003163004156397,
+                "1": 0.30728977685050796
+              },
+              "sample_standard_deviation": 0.15334508580870576
+            }
+          },
+          "template_context_mean": {
+            "anchor_count": 900,
+            "orientation": "wrapper_minus_base_within_anchor",
+            "summary": {
+              "active_fraction": 0.15555555555555556,
+              "count": 900,
+              "maximum": 1.859375,
+              "mean": -0.0695178345959596,
+              "minimum": -1.0657552083333333,
+              "quantiles_linear": {
+                "0": -1.0657552083333333,
+                "0.1": -0.3393229166666667,
+                "0.25": -0.14290364583333334,
+                "0.5": 0.0,
+                "0.75": 0.0,
+                "0.9": 0.06022135416666675,
+                "0.95": 0.15748697916666612,
+                "0.99": 0.45059895833333324,
+                "1": 1.859375
+              },
+              "sample_standard_deviation": 0.21749317046615244
+            }
+          },
+          "user_content_mean": {
+            "anchor_count": 900,
+            "orientation": "wrapper_minus_base_within_anchor",
+            "summary": {
+              "active_fraction": 0.1388888888888889,
+              "count": 900,
+              "maximum": 0.3553921568627451,
+              "mean": -0.10004005811299953,
+              "minimum": -2.268269230769231,
+              "quantiles_linear": {
+                "0": -2.268269230769231,
+                "0.1": -0.3682116069255112,
+                "0.25": -0.06483897514276805,
+                "0.5": 0.0,
+                "0.75": 0.0,
+                "0.9": 0.011234148550724642,
+                "0.95": 0.04213041942376602,
+                "0.99": 0.18283225471967962,
+                "1": 0.3553921568627451
+              },
+              "sample_standard_deviation": 0.27829623153671706
+            }
+          }
+        }
+      },
+      "formatted_final_familywise_bootstrap": {
+        "anchor_count": 900,
+        "familywise_confidence": 0.95,
+        "generator": "numpy.random.PCG64",
+        "intervals": {
+          "apology_v1": [
+            -0.20515972222222223,
+            -0.04263867187499997
+          ],
+          "decline_v1": [
+            -0.182517578125,
+            -0.018735243055555517
+          ],
+          "formal_hedge_v1": [
+            -0.002742404513888887,
+            0.17119531250000003
+          ]
+        },
+        "method": "bonferroni_adjusted_paired_anchor_percentile_bootstrap",
+        "replicates": 10000,
+        "seed": 2522210527409210963,
+        "two_sided_tail_probability_per_contrast": 0.008333333333333333,
+        "unit": "matched_helpsteer_anchor_family"
+      }
+    },
+    "last_user_content_token": {
+      "benign_instruction": {
+        "active_fraction": 0.015555555555555555,
+        "count": 900,
+        "maximum": 21.0,
+        "mean": 0.070859375,
+        "minimum": 0.0,
+        "quantiles_linear": {
+          "0": 0.0,
+          "0.1": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.9": 0.0,
+          "0.95": 0.0,
+          "0.99": 1.8684374999999989,
+          "1": 21.0
+        },
+        "sample_standard_deviation": 0.8516960951419459
+      },
+      "closed_context_unanswerable": {
+        "active_fraction": 0.0,
+        "count": 900,
+        "maximum": 0.0,
+        "mean": 0.0,
+        "minimum": 0.0,
+        "quantiles_linear": {
+          "0": 0.0,
+          "0.1": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.9": 0.0,
+          "0.95": 0.0,
+          "0.99": 0.0,
+          "1": 0.0
+        },
+        "sample_standard_deviation": 0.0
+      },
+      "negation_reasoning": {
+        "active_fraction": 0.0,
+        "count": 900,
+        "maximum": 0.0,
+        "mean": 0.0,
+        "minimum": 0.0,
+        "quantiles_linear": {
+          "0": 0.0,
+          "0.1": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.9": 0.0,
+          "0.95": 0.0,
+          "0.99": 0.0,
+          "1": 0.0
+        },
+        "sample_standard_deviation": 0.0
+      },
+      "project_panel": {
+        "active_fraction": 0.0033333333333333335,
+        "count": 300,
+        "maximum": 2.84375,
+        "mean": 0.009479166666666667,
+        "minimum": 0.0,
+        "quantiles_linear": {
+          "0": 0.0,
+          "0.1": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.9": 0.0,
+          "0.95": 0.0,
+          "0.99": 0.0,
+          "1": 2.84375
+        },
+        "sample_standard_deviation": 0.16418398280079982
+      },
+      "requested_apology": {
+        "active_fraction": 0.03888888888888889,
+        "count": 900,
+        "maximum": 19.875,
+        "mean": 0.12840277777777778,
+        "minimum": 0.0,
+        "quantiles_linear": {
+          "0": 0.0,
+          "0.1": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.9": 0.0,
+          "0.95": 0.0,
+          "0.99": 3.719999999999999,
+          "1": 19.875
+        },
+        "sample_standard_deviation": 0.9845356613868289
+      },
+      "requested_benign_decline": {
+        "active_fraction": 0.07555555555555556,
+        "count": 900,
+        "maximum": 19.0,
+        "mean": 0.31917534722222224,
+        "minimum": 0.0,
+        "quantiles_linear": {
+          "0": 0.0,
+          "0.1": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.9": 0.0,
+          "0.95": 2.296874999999986,
+          "0.99": 8.195624999999993,
+          "1": 19.0
+        },
+        "sample_standard_deviation": 1.4703363072050928
+      },
+      "requested_formal_hedge": {
+        "active_fraction": 0.025555555555555557,
+        "count": 900,
+        "maximum": 20.0,
+        "mean": 0.09140625,
+        "minimum": 0.0,
+        "quantiles_linear": {
+          "0": 0.0,
+          "0.1": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.9": 0.0,
+          "0.95": 0.0,
+          "0.99": 3.037812499999994,
+          "1": 20.0
+        },
+        "sample_standard_deviation": 0.8866382087557656
+      },
+      "single_turn_chat_prompt": {
+        "active_fraction": 0.0044444444444444444,
+        "count": 900,
+        "maximum": 4.5625,
+        "mean": 0.010946180555555556,
+        "minimum": 0.0,
+        "quantiles_linear": {
+          "0": 0.0,
+          "0.1": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.9": 0.0,
+          "0.95": 0.0,
+          "0.99": 0.0,
+          "1": 4.5625
+        },
+        "sample_standard_deviation": 0.18826069686891475
+      }
+    },
+    "normalized_user_deciles_row_balanced": {
+      "benign_instruction": {
+        "decile_0": {
+          "active_fraction": 0.15444444444444444,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 12.9375,
+          "mean": 0.30831164943249845,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.38110486660079074,
+            "0.95": 1.766137152777776,
+            "0.99": 7.361562499999984,
+            "1": 12.9375
+          },
+          "sample_standard_deviation": 1.3398259429120238
+        },
+        "decile_1": {
+          "active_fraction": 0.12111111111111111,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 34.0,
+          "mean": 0.4052720627718526,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.20660831766917306,
+            "0.95": 1.790002441406249,
+            "0.99": 9.390624999999986,
+            "1": 34.0
+          },
+          "sample_standard_deviation": 2.2437765685908695
+        },
+        "decile_2": {
+          "active_fraction": 0.10111111111111111,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 14.75,
+          "mean": 0.1933142292195422,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0013928865131579895,
+            "0.95": 1.001417410714283,
+            "0.99": 3.566666666666663,
+            "1": 14.75
+          },
+          "sample_standard_deviation": 1.05799123218926
+        },
+        "decile_3": {
+          "active_fraction": 0.09555555555555556,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 18.75,
+          "mean": 0.19925849169364634,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 1.00636837121212,
+            "0.99": 4.938437499999999,
+            "1": 18.75
+          },
+          "sample_standard_deviation": 1.0176535452829063
+        },
+        "decile_4": {
+          "active_fraction": 0.10574712643678161,
+          "count": 870,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 11.71875,
+          "mean": 0.21682593288070254,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.09942708333333392,
+            "0.95": 1.1591346153846138,
+            "0.99": 4.853437499999998,
+            "1": 11.71875
+          },
+          "sample_standard_deviation": 1.0470471816265088
+        },
+        "decile_5": {
+          "active_fraction": 0.09333333333333334,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 11.1875,
+          "mean": 0.17838329719083007,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 1.0187499999999972,
+            "0.99": 4.657499999999999,
+            "1": 11.1875
+          },
+          "sample_standard_deviation": 0.8976493822825649
+        },
+        "decile_6": {
+          "active_fraction": 0.09222222222222222,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 18.34765625,
+          "mean": 0.271528193683231,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 1.637428252551009,
+            "0.99": 6.7237499999999955,
+            "1": 18.34765625
+          },
+          "sample_standard_deviation": 1.2809427704747194
+        },
+        "decile_7": {
+          "active_fraction": 0.10888888888888888,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 18.125,
+          "mean": 0.2616205577233027,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.11997159090909154,
+            "0.95": 1.2669456845238094,
+            "0.99": 6.494910714285711,
+            "1": 18.125
+          },
+          "sample_standard_deviation": 1.327892110160905
+        },
+        "decile_8": {
+          "active_fraction": 0.09555555555555556,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 20.783854166666668,
+          "mean": 0.2647788433295643,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.9824027423469377,
+            "0.99": 6.524187499999995,
+            "1": 20.783854166666668
+          },
+          "sample_standard_deviation": 1.3958764757483082
+        },
+        "decile_9": {
+          "active_fraction": 0.08412322274881516,
+          "count": 844,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 6.75,
+          "mean": 0.10185323355450265,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.4329464285714258,
+            "0.99": 2.649762569090111,
+            "1": 6.75
+          },
+          "sample_standard_deviation": 0.5176339149245178
+        }
+      },
+      "closed_context_unanswerable": {
+        "decile_0": {
+          "active_fraction": 0.0,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 0.0
+          },
+          "sample_standard_deviation": 0.0
+        },
+        "decile_1": {
+          "active_fraction": 0.0011111111111111111,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 0.12384259259259259,
+          "mean": 0.00013760288065843622,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 0.12384259259259259
+          },
+          "sample_standard_deviation": 0.004128086419753087
+        },
+        "decile_2": {
+          "active_fraction": 0.0022222222222222222,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 1.128515625,
+          "mean": 0.0012874710648148149,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 1.128515625
+          },
+          "sample_standard_deviation": 0.037629542445148184
+        },
+        "decile_3": {
+          "active_fraction": 0.0044444444444444444,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 0.7578125,
+          "mean": 0.0014218416132478634,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 0.7578125
+          },
+          "sample_standard_deviation": 0.027895531541110023
+        },
+        "decile_4": {
+          "active_fraction": 0.005555555555555556,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 3.817540322580645,
+          "mean": 0.005238746156947026,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 3.817540322580645
+          },
+          "sample_standard_deviation": 0.12835221696367416
+        },
+        "decile_5": {
+          "active_fraction": 0.0033333333333333335,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 4.653225806451613,
+          "mean": 0.005729423349761052,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 4.653225806451613
+          },
+          "sample_standard_deviation": 0.1559636062052777
+        },
+        "decile_6": {
+          "active_fraction": 0.0033333333333333335,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 2.59375,
+          "mean": 0.004522739651416122,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 2.59375
+          },
+          "sample_standard_deviation": 0.0993957840556128
+        },
+        "decile_7": {
+          "active_fraction": 0.0033333333333333335,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 1.3092237903225807,
+          "mean": 0.0016494725837892224,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 1.3092237903225807
+          },
+          "sample_standard_deviation": 0.04384217145175167
+        },
+        "decile_8": {
+          "active_fraction": 0.0044444444444444444,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 1.5845588235294117,
+          "mean": 0.003149414131131843,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 1.5845588235294117
+          },
+          "sample_standard_deviation": 0.06116875335132745
+        },
+        "decile_9": {
+          "active_fraction": 0.0022222222222222222,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 0.2125,
+          "mean": 0.0003086805555555556,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 0.2125
+          },
+          "sample_standard_deviation": 0.0074080359021911615
+        }
+      },
+      "negation_reasoning": {
+        "decile_0": {
+          "active_fraction": 0.024444444444444446,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 0.4375,
+          "mean": 0.004608201467721591,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.177734375,
+            "1": 0.4375
+          },
+          "sample_standard_deviation": 0.03090645582291483
+        },
+        "decile_1": {
+          "active_fraction": 0.07666666666666666,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 0.7041666666666667,
+          "mean": 0.026234209563981318,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.23697916666666666,
+            "0.99": 0.482743489583333,
+            "1": 0.7041666666666667
+          },
+          "sample_standard_deviation": 0.10094307829163247
+        },
+        "decile_2": {
+          "active_fraction": 0.044444444444444446,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 1.4722222222222223,
+          "mean": 0.026944870137578465,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.6432291666666666,
+            "1": 1.4722222222222223
+          },
+          "sample_standard_deviation": 0.13017308965687252
+        },
+        "decile_3": {
+          "active_fraction": 0.013333333333333334,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 0.8173076923076923,
+          "mean": 0.004608232515459078,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.17455729166666617,
+            "1": 0.8173076923076923
+          },
+          "sample_standard_deviation": 0.047414251153518105
+        },
+        "decile_4": {
+          "active_fraction": 0.0033333333333333335,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 0.7239583333333334,
+          "mean": 0.0009801793981481482,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 0.7239583333333334
+          },
+          "sample_standard_deviation": 0.024476550577020494
+        },
+        "decile_5": {
+          "active_fraction": 0.0033333333333333335,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 0.8854166666666666,
+          "mean": 0.0014326774691358025,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 0.8854166666666666
+          },
+          "sample_standard_deviation": 0.0312967418467881
+        },
+        "decile_6": {
+          "active_fraction": 0.0044444444444444444,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 0.2585227272727273,
+          "mean": 0.000582135962995338,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 0.2585227272727273
+          },
+          "sample_standard_deviation": 0.010689519653434702
+        },
+        "decile_7": {
+          "active_fraction": 0.0011111111111111111,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 0.07533482142857142,
+          "mean": 8.370535714285714e-05,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 0.07533482142857142
+          },
+          "sample_standard_deviation": 0.002511160714285714
+        },
+        "decile_8": {
+          "active_fraction": 0.0011111111111111111,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 1.6061197916666667,
+          "mean": 0.0017845775462962965,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 1.6061197916666667
+          },
+          "sample_standard_deviation": 0.053537326388888855
+        },
+        "decile_9": {
+          "active_fraction": 0.0,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 0.0
+          },
+          "sample_standard_deviation": 0.0
+        }
+      },
+      "project_panel": {
+        "decile_0": {
+          "active_fraction": 0.0,
+          "count": 300,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 0.0
+          },
+          "sample_standard_deviation": 0.0
+        },
+        "decile_1": {
+          "active_fraction": 0.24333333333333335,
+          "count": 300,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 3.625,
+          "mean": 0.3685846354166667,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 1.6460937500000012,
+            "0.95": 2.0027343750000024,
+            "0.99": 2.265625,
+            "1": 3.625
+          },
+          "sample_standard_deviation": 0.7200509173473857
+        },
+        "decile_2": {
+          "active_fraction": 0.03333333333333333,
+          "count": 300,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 2.35,
+          "mean": 0.03429513888888889,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 1.374046874999995,
+            "1": 2.35
+          },
+          "sample_standard_deviation": 0.23581727695966445
+        },
+        "decile_3": {
+          "active_fraction": 0.07666666666666666,
+          "count": 300,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 2.875,
+          "mean": 0.09908289930555554,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.6599739583333335,
+            "0.99": 2.4070312499999993,
+            "1": 2.875
+          },
+          "sample_standard_deviation": 0.41875769735468715
+        },
+        "decile_4": {
+          "active_fraction": 0.09,
+          "count": 300,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 3.5833333333333335,
+          "mean": 0.13541059027777777,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 1.0157812500000007,
+            "0.99": 3.2659374999999997,
+            "1": 3.5833333333333335
+          },
+          "sample_standard_deviation": 0.5346452366759987
+        },
+        "decile_5": {
+          "active_fraction": 0.06666666666666667,
+          "count": 300,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 4.5703125,
+          "mean": 0.10225173611111112,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.7675000000000025,
+            "0.99": 2.4689375,
+            "1": 4.5703125
+          },
+          "sample_standard_deviation": 0.47813016039010403
+        },
+        "decile_6": {
+          "active_fraction": 0.04,
+          "count": 300,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 2.8541666666666665,
+          "mean": 0.04862456597222222,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 1.603671874999998,
+            "1": 2.8541666666666665
+          },
+          "sample_standard_deviation": 0.281029957502976
+        },
+        "decile_7": {
+          "active_fraction": 0.02,
+          "count": 300,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 5.5625,
+          "mean": 0.07348958333333333,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 3.4301562499999925,
+            "1": 5.5625
+          },
+          "sample_standard_deviation": 0.5426433845102622
+        },
+        "decile_8": {
+          "active_fraction": 0.04,
+          "count": 300,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 6.25,
+          "mean": 0.06885199652777779,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 2.803593749999989,
+            "1": 6.25
+          },
+          "sample_standard_deviation": 0.5220779042077884
+        },
+        "decile_9": {
+          "active_fraction": 0.0033333333333333335,
+          "count": 300,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 0.7109375,
+          "mean": 0.0023697916666666667,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 0.7109375
+          },
+          "sample_standard_deviation": 0.041045995700199955
+        }
+      },
+      "requested_apology": {
+        "decile_0": {
+          "active_fraction": 0.016666666666666666,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 0.8151785714285714,
+          "mean": 0.0032431369872468873,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.05772230113636301,
+            "1": 0.8151785714285714
+          },
+          "sample_standard_deviation": 0.037167608061014844
+        },
+        "decile_1": {
+          "active_fraction": 0.044444444444444446,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 3.511574074074074,
+          "mean": 0.03001996499472397,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.9306076388888889,
+            "1": 3.511574074074074
+          },
+          "sample_standard_deviation": 0.21426318081037485
+        },
+        "decile_2": {
+          "active_fraction": 0.08,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 5.4,
+          "mean": 0.07103616957614134,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.42036713286713095,
+            "0.99": 1.484134615384611,
+            "1": 5.4
+          },
+          "sample_standard_deviation": 0.3718635223618738
+        },
+        "decile_3": {
+          "active_fraction": 0.09222222222222222,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 3.970982142857143,
+          "mean": 0.08078107111723819,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.4732454318936877,
+            "0.99": 1.9187588778409066,
+            "1": 3.970982142857143
+          },
+          "sample_standard_deviation": 0.3635356481978624
+        },
+        "decile_4": {
+          "active_fraction": 0.10111111111111111,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 5.891666666666667,
+          "mean": 0.10250460794787958,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.006681877444589599,
+            "0.95": 0.6721003605769217,
+            "0.99": 2.016835937499999,
+            "1": 5.891666666666667
+          },
+          "sample_standard_deviation": 0.4622856724257054
+        },
+        "decile_5": {
+          "active_fraction": 0.12111111111111111,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 6.071428571428571,
+          "mean": 0.14409015333795833,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.19218750000000046,
+            "0.95": 1.093507111378204,
+            "0.99": 2.5884107142857133,
+            "1": 6.071428571428571
+          },
+          "sample_standard_deviation": 0.5331054824904561
+        },
+        "decile_6": {
+          "active_fraction": 0.16444444444444445,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 7.78125,
+          "mean": 0.2560475870518094,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.7233193277310924,
+            "0.95": 1.8671875,
+            "0.99": 4.84375,
+            "1": 7.78125
+          },
+          "sample_standard_deviation": 0.8971054289890336
+        },
+        "decile_7": {
+          "active_fraction": 0.17888888888888888,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 12.458333333333334,
+          "mean": 0.3609137603500341,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.8744466145833338,
+            "0.95": 2.697023809523809,
+            "0.99": 6.532812499999999,
+            "1": 12.458333333333334
+          },
+          "sample_standard_deviation": 1.2464650216685962
+        },
+        "decile_8": {
+          "active_fraction": 0.15333333333333332,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 11.2125,
+          "mean": 0.298713670813632,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.6875,
+            "0.95": 2.2524999999999977,
+            "0.99": 4.951124999999999,
+            "1": 11.2125
+          },
+          "sample_standard_deviation": 1.089894427765066
+        },
+        "decile_9": {
+          "active_fraction": 0.12222222222222222,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 10.171875,
+          "mean": 0.17350412109935778,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.17662109375,
+            "0.95": 1.0555989583333325,
+            "0.99": 3.9853515624999956,
+            "1": 10.171875
+          },
+          "sample_standard_deviation": 0.812654867192241
+        }
+      },
+      "requested_benign_decline": {
+        "decile_0": {
+          "active_fraction": 0.2633333333333333,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 0.542724609375,
+          "mean": 0.054005115923936836,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.08834635416666667,
+            "0.9": 0.24330357142857142,
+            "0.95": 0.2838541666666667,
+            "0.99": 0.3096590909090909,
+            "1": 0.542724609375
+          },
+          "sample_standard_deviation": 0.0986654994193717
+        },
+        "decile_1": {
+          "active_fraction": 0.47,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 3.2511160714285716,
+          "mean": 0.22259861483638857,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.48660714285714285,
+            "0.9": 0.68125,
+            "0.95": 0.68125,
+            "0.99": 0.6864426185344815,
+            "1": 3.2511160714285716
+          },
+          "sample_standard_deviation": 0.32119859145425317
+        },
+        "decile_2": {
+          "active_fraction": 0.5588888888888889,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 4.5234375,
+          "mean": 0.36510059029940567,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.049005681818181816,
+            "0.75": 0.8515625,
+            "0.9": 0.8515625,
+            "0.95": 0.8515625,
+            "0.99": 1.5149540607985472,
+            "1": 4.5234375
+          },
+          "sample_standard_deviation": 0.4511374378475041
+        },
+        "decile_3": {
+          "active_fraction": 0.18888888888888888,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 3.3125,
+          "mean": 0.07675965153577478,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0673828125,
+            "0.95": 0.3721071896853141,
+            "0.99": 1.7898802369505482,
+            "1": 3.3125
+          },
+          "sample_standard_deviation": 0.3281067639323476
+        },
+        "decile_4": {
+          "active_fraction": 0.19,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 4.73046875,
+          "mean": 0.10146508094580674,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.08984375,
+            "0.95": 0.647809829059828,
+            "0.99": 2.0996093749999996,
+            "1": 4.73046875
+          },
+          "sample_standard_deviation": 0.39141186292342295
+        },
+        "decile_5": {
+          "active_fraction": 0.2966666666666667,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 6.474330357142857,
+          "mean": 0.14612126567454356,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.08984375,
+            "0.9": 0.19456380208333338,
+            "0.95": 0.9433513563049852,
+            "0.99": 2.3887226562499992,
+            "1": 6.474330357142857
+          },
+          "sample_standard_deviation": 0.4826853356889455
+        },
+        "decile_6": {
+          "active_fraction": 0.34,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 6.8203125,
+          "mean": 0.252950372442244,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.1359375,
+            "0.9": 0.7194304435483873,
+            "0.95": 1.6114322916666606,
+            "0.99": 3.677734375,
+            "1": 6.8203125
+          },
+          "sample_standard_deviation": 0.7327503234168824
+        },
+        "decile_7": {
+          "active_fraction": 0.31444444444444447,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 10.0,
+          "mean": 0.40195033604363994,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.169921875,
+            "0.9": 1.3220312500000004,
+            "0.95": 2.32515625,
+            "0.99": 6.096249999999998,
+            "1": 10.0
+          },
+          "sample_standard_deviation": 1.127523462690798
+        },
+        "decile_8": {
+          "active_fraction": 0.16555555555555557,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 9.114955357142858,
+          "mean": 0.2949264042039622,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.790373263888889,
+            "0.95": 2.0318359374999995,
+            "0.99": 5.23013020833333,
+            "1": 9.114955357142858
+          },
+          "sample_standard_deviation": 1.0182475146072314
+        },
+        "decile_9": {
+          "active_fraction": 0.17888888888888888,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 14.786458333333334,
+          "mean": 0.2435460141204731,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.6796875000000007,
+            "0.95": 1.4390624999999986,
+            "0.99": 4.131812499999999,
+            "1": 14.786458333333334
+          },
+          "sample_standard_deviation": 0.9523349414795717
+        }
+      },
+      "requested_formal_hedge": {
+        "decile_0": {
+          "active_fraction": 0.017777777777777778,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 1.0785714285714285,
+          "mean": 0.00442406421772013,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.13781190408085411,
+            "1": 1.0785714285714285
+          },
+          "sample_standard_deviation": 0.04938291213262438
+        },
+        "decile_1": {
+          "active_fraction": 0.04,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 3.448939732142857,
+          "mean": 0.028038607910179713,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.9392941810344825,
+            "1": 3.448939732142857
+          },
+          "sample_standard_deviation": 0.2128319295725623
+        },
+        "decile_2": {
+          "active_fraction": 0.08222222222222222,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 5.379166666666666,
+          "mean": 0.0730274978617897,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.5077895220588233,
+            "0.99": 1.564945312499999,
+            "1": 5.379166666666666
+          },
+          "sample_standard_deviation": 0.36371354656893495
+        },
+        "decile_3": {
+          "active_fraction": 0.07444444444444444,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 3.8333333333333335,
+          "mean": 0.06505621747573745,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.2605468749999975,
+            "0.99": 1.7036277573529395,
+            "1": 3.8333333333333335
+          },
+          "sample_standard_deviation": 0.3214199298808705
+        },
+        "decile_4": {
+          "active_fraction": 0.09555555555555556,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 5.154166666666667,
+          "mean": 0.09584918368450414,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.6542317708333333,
+            "0.99": 2.1889355468749994,
+            "1": 5.154166666666667
+          },
+          "sample_standard_deviation": 0.4191254624055436
+        },
+        "decile_5": {
+          "active_fraction": 0.12555555555555556,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 5.892857142857143,
+          "mean": 0.1388708325288272,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.18210937500000027,
+            "0.95": 1.0609374999999968,
+            "0.99": 2.6032083333333325,
+            "1": 5.892857142857143
+          },
+          "sample_standard_deviation": 0.5306780751083333
+        },
+        "decile_6": {
+          "active_fraction": 0.16666666666666666,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 7.503348214285714,
+          "mean": 0.2613793858678297,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.6205222985933511,
+            "0.95": 1.777890624999996,
+            "0.99": 4.877257812499998,
+            "1": 7.503348214285714
+          },
+          "sample_standard_deviation": 0.9015999720888919
+        },
+        "decile_7": {
+          "active_fraction": 0.19444444444444445,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 9.84375,
+          "mean": 0.36286892954606315,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 1.017886904761906,
+            "0.95": 2.8077777777777757,
+            "0.99": 5.71875,
+            "1": 9.84375
+          },
+          "sample_standard_deviation": 1.15349053301568
+        },
+        "decile_8": {
+          "active_fraction": 0.16,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 13.677083333333334,
+          "mean": 0.321457857769027,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.7919034090909096,
+            "0.95": 2.2810891544117577,
+            "0.99": 5.6355625,
+            "1": 13.677083333333334
+          },
+          "sample_standard_deviation": 1.1622044305350197
+        },
+        "decile_9": {
+          "active_fraction": 0.12,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 13.645833333333334,
+          "mean": 0.17743701038786955,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.14567057291666735,
+            "0.95": 0.9690432931893675,
+            "0.99": 4.1780416666666635,
+            "1": 13.645833333333334
+          },
+          "sample_standard_deviation": 0.8761145956410493
+        }
+      },
+      "single_turn_chat_prompt": {
+        "decile_0": {
+          "active_fraction": 0.09333333333333334,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 10.375,
+          "mean": 0.12609325628091048,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.3529761322747184,
+            "0.99": 4.222604166666663,
+            "1": 10.375
+          },
+          "sample_standard_deviation": 0.8154092278684886
+        },
+        "decile_1": {
+          "active_fraction": 0.06666666666666667,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 8.875,
+          "mean": 0.06421322031368354,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.11849190848214268,
+            "0.99": 1.6045887770715623,
+            "1": 8.875
+          },
+          "sample_standard_deviation": 0.4874459287347085
+        },
+        "decile_2": {
+          "active_fraction": 0.04,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 4.455078125,
+          "mean": 0.03913142868446817,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 1.312922297297297,
+            "1": 4.455078125
+          },
+          "sample_standard_deviation": 0.2884626104185554
+        },
+        "decile_3": {
+          "active_fraction": 0.044444444444444446,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 3.013888888888889,
+          "mean": 0.038199933873436544,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 1.3613206129807691,
+            "1": 3.013888888888889
+          },
+          "sample_standard_deviation": 0.2499022296505025
+        },
+        "decile_4": {
+          "active_fraction": 0.033444816053511704,
+          "count": 897,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 4.1875,
+          "mean": 0.030152975281587717,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 1.0827635416666643,
+            "1": 4.1875
+          },
+          "sample_standard_deviation": 0.23853532605358763
+        },
+        "decile_5": {
+          "active_fraction": 0.034444444444444444,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 7.0625,
+          "mean": 0.043857367284150364,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 1.3750892857142856,
+            "1": 7.0625
+          },
+          "sample_standard_deviation": 0.35928177530947447
+        },
+        "decile_6": {
+          "active_fraction": 0.04666666666666667,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 7.8125,
+          "mean": 0.042725401015045426,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.9180499999999987,
+            "1": 7.8125
+          },
+          "sample_standard_deviation": 0.4014758484103953
+        },
+        "decile_7": {
+          "active_fraction": 0.043333333333333335,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 11.6875,
+          "mean": 0.04156747929310381,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 1.0751180555555555,
+            "1": 11.6875
+          },
+          "sample_standard_deviation": 0.4366114195801868
+        },
+        "decile_8": {
+          "active_fraction": 0.03888888888888889,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 7.1477272727272725,
+          "mean": 0.0318064919839984,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 1.109543716755319,
+            "1": 7.1477272727272725
+          },
+          "sample_standard_deviation": 0.2976766808177274
+        },
+        "decile_9": {
+          "active_fraction": 0.05393258426966292,
+          "count": 890,
+          "estimand": "summary_across_equal_weight_per_row_decile_means",
+          "maximum": 2.25,
+          "mean": 0.023994902062588513,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.020788650038819335,
+            "0.99": 0.7673091517857151,
+            "1": 2.25
+          },
+          "sample_standard_deviation": 0.14618054428567598
+        }
+      }
+    },
+    "per_prompt_macro": {
+      "active_token_fraction": {
+        "benign_instruction": {
+          "active_fraction": 0.6977777777777778,
+          "count": 900,
+          "maximum": 0.2,
+          "mean": 0.03412977523068499,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.027777777777777776,
+            "0.75": 0.05005230125523013,
+            "0.9": 0.08333333333333333,
+            "0.95": 0.10256410256410256,
+            "0.99": 0.14285714285714285,
+            "1": 0.2
+          },
+          "sample_standard_deviation": 0.03582163851940565
+        },
+        "closed_context_unanswerable": {
+          "active_fraction": 0.07222222222222222,
+          "count": 900,
+          "maximum": 0.07142857142857142,
+          "mean": 0.0004833723140271627,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0041738505747126375,
+            "0.99": 0.007255213856486383,
+            "1": 0.07142857142857142
+          },
+          "sample_standard_deviation": 0.002984617983743656
+        },
+        "negation_reasoning": {
+          "active_fraction": 0.19666666666666666,
+          "count": 900,
+          "maximum": 0.026845637583892617,
+          "mean": 0.001927701399725531,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.007047248027170114,
+            "0.95": 0.013245033112582781,
+            "0.99": 0.0196078431372549,
+            "1": 0.026845637583892617
+          },
+          "sample_standard_deviation": 0.0044300953549144765
+        },
+        "project_panel": {
+          "active_fraction": 0.86,
+          "count": 300,
+          "maximum": 0.2,
+          "mean": 0.05400324482316381,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0196078431372549,
+            "0.5": 0.047619047619047616,
+            "0.75": 0.0773001508295626,
+            "0.9": 0.11452380952380957,
+            "0.95": 0.13342342342342345,
+            "0.99": 0.1667241379310344,
+            "1": 0.2
+          },
+          "sample_standard_deviation": 0.04153205456924725
+        },
+        "requested_apology": {
+          "active_fraction": 0.66,
+          "count": 900,
+          "maximum": 0.1750841750841751,
+          "mean": 0.021285012976756505,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.017543859649122806,
+            "0.75": 0.034482758620689655,
+            "0.9": 0.053763440860215055,
+            "0.95": 0.06666666666666667,
+            "0.99": 0.10450628214857911,
+            "1": 0.1750841750841751
+          },
+          "sample_standard_deviation": 0.024711751756161884
+        },
+        "requested_benign_decline": {
+          "active_fraction": 1.0,
+          "count": 900,
+          "maximum": 0.18543046357615894,
+          "mean": 0.05327016280727593,
+          "minimum": 0.003472222222222222,
+          "quantiles_linear": {
+            "0": 0.003472222222222222,
+            "0.1": 0.017331074347219453,
+            "0.25": 0.030729984301412876,
+            "0.5": 0.05333333333333334,
+            "0.75": 0.07239225781845919,
+            "0.9": 0.08993314431726697,
+            "0.95": 0.1,
+            "0.99": 0.13333333333333333,
+            "1": 0.18543046357615894
+          },
+          "sample_standard_deviation": 0.028249499892415417
+        },
+        "requested_formal_hedge": {
+          "active_fraction": 0.6733333333333333,
+          "count": 900,
+          "maximum": 0.16387959866220736,
+          "mean": 0.020099856083793565,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.015873015873015872,
+            "0.75": 0.031746031746031744,
+            "0.9": 0.05008474576271189,
+            "0.95": 0.06382978723404255,
+            "0.99": 0.09654080854309682,
+            "1": 0.16387959866220736
+          },
+          "sample_standard_deviation": 0.023150273427948335
+        },
+        "single_turn_chat_prompt": {
+          "active_fraction": 0.64,
+          "count": 900,
+          "maximum": 0.14814814814814814,
+          "mean": 0.014523594124625588,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.007853456960177627,
+            "0.75": 0.02127659574468085,
+            "0.9": 0.04,
+            "0.95": 0.05555555555555555,
+            "0.99": 0.09526397515527947,
+            "1": 0.14814814814814814
+          },
+          "sample_standard_deviation": 0.02073152839977482
+        }
+      },
+      "maximum": {
+        "benign_instruction": {
+          "active_fraction": 0.6977777777777778,
+          "count": 900,
+          "maximum": 49.75,
+          "mean": 7.146128472222222,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 3.015625,
+            "0.75": 9.890625,
+            "0.9": 21.875,
+            "0.95": 30.649999999999977,
+            "0.99": 41.75,
+            "1": 49.75
+          },
+          "sample_standard_deviation": 9.932322658226933
+        },
+        "closed_context_unanswerable": {
+          "active_fraction": 0.07222222222222222,
+          "count": 900,
+          "maximum": 44.25,
+          "mean": 0.23463541666666668,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.3691406249999982,
+            "0.99": 4.267812499999984,
+            "1": 44.25
+          },
+          "sample_standard_deviation": 2.039858214940295
+        },
+        "negation_reasoning": {
+          "active_fraction": 0.19666666666666666,
+          "count": 900,
+          "maximum": 17.375,
+          "mean": 0.6826649305555555,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.9921875,
+            "0.95": 7.71875,
+            "0.99": 7.71875,
+            "1": 17.375
+          },
+          "sample_standard_deviation": 2.14190259169482
+        },
+        "project_panel": {
+          "active_fraction": 0.86,
+          "count": 300,
+          "maximum": 28.625,
+          "mean": 9.203854166666666,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 2.4921875,
+            "0.5": 6.46875,
+            "0.75": 14.96875,
+            "0.9": 21.637500000000003,
+            "0.95": 23.637500000000003,
+            "0.99": 27.003749999999997,
+            "1": 28.625
+          },
+          "sample_standard_deviation": 8.031827905073445
+        },
+        "requested_apology": {
+          "active_fraction": 0.66,
+          "count": 900,
+          "maximum": 47.5,
+          "mean": 6.525260416666667,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 1.5234375,
+            "0.75": 8.75,
+            "0.9": 22.400000000000006,
+            "0.95": 30.38749999999999,
+            "0.99": 40.50999999999999,
+            "1": 47.5
+          },
+          "sample_standard_deviation": 10.095469960398107
+        },
+        "requested_benign_decline": {
+          "active_fraction": 1.0,
+          "count": 900,
+          "maximum": 56.0,
+          "mean": 8.52576388888889,
+          "minimum": 3.40625,
+          "quantiles_linear": {
+            "0": 3.40625,
+            "0.1": 3.40625,
+            "0.25": 3.40625,
+            "0.5": 4.03125,
+            "0.75": 8.890625,
+            "0.9": 22.92500000000001,
+            "0.95": 28.506249999999994,
+            "0.99": 40.25,
+            "1": 56.0
+          },
+          "sample_standard_deviation": 8.803980723792018
+        },
+        "requested_formal_hedge": {
+          "active_fraction": 0.6733333333333333,
+          "count": 900,
+          "maximum": 49.0,
+          "mean": 6.967248263888889,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 1.9453125,
+            "0.75": 10.34375,
+            "0.9": 22.17500000000001,
+            "0.95": 29.899999999999977,
+            "0.99": 41.25,
+            "1": 49.0
+          },
+          "sample_standard_deviation": 10.1386279017256
+        },
+        "single_turn_chat_prompt": {
+          "active_fraction": 0.64,
+          "count": 900,
+          "maximum": 57.0,
+          "mean": 3.9139756944444444,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 1.1875,
+            "0.75": 4.15625,
+            "0.9": 10.262500000000003,
+            "0.95": 20.75,
+            "0.99": 37.50999999999999,
+            "1": 57.0
+          },
+          "sample_standard_deviation": 7.386134378594695
+        }
+      },
+      "mean": {
+        "benign_instruction": {
+          "active_fraction": 0.6977777777777778,
+          "count": 900,
+          "maximum": 2.9564732142857144,
+          "mean": 0.22504307558121006,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0702172256097561,
+            "0.75": 0.2799176897321428,
+            "0.9": 0.6765792112299466,
+            "0.95": 0.9234372585256543,
+            "0.99": 1.7813934426229507,
+            "1": 2.9564732142857144
+          },
+          "sample_standard_deviation": 0.36781082840321533
+        },
+        "closed_context_unanswerable": {
+          "active_fraction": 0.07222222222222222,
+          "count": 900,
+          "maximum": 1.2714237189440993,
+          "mean": 0.0025019542893466367,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0016102266966993902,
+            "0.99": 0.022863686188537412,
+            "1": 1.2714237189440993
+          },
+          "sample_standard_deviation": 0.04347063603140361
+        },
+        "negation_reasoning": {
+          "active_fraction": 0.19666666666666666,
+          "count": 900,
+          "maximum": 0.17616421568627452,
+          "mean": 0.006421751040815955,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.005769191297208544,
+            "0.95": 0.06520061728395062,
+            "0.99": 0.08598700925331612,
+            "1": 0.17616421568627452
+          },
+          "sample_standard_deviation": 0.021500613657209636
+        },
+        "project_panel": {
+          "active_fraction": 0.86,
+          "count": 300,
+          "maximum": 2.3841145833333335,
+          "mean": 0.4143441151139069,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.05467204618076689,
+            "0.5": 0.20452315541601257,
+            "0.75": 0.699974204009434,
+            "0.9": 1.0924107142857142,
+            "0.95": 1.3650054003456222,
+            "0.99": 1.6942067708333295,
+            "1": 2.3841145833333335
+          },
+          "sample_standard_deviation": 0.46046734313680304
+        },
+        "requested_apology": {
+          "active_fraction": 0.66,
+          "count": 900,
+          "maximum": 2.5418087121212123,
+          "mean": 0.1388266305382845,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.024593384502923976,
+            "0.75": 0.15256944444444445,
+            "0.9": 0.4782660685542875,
+            "0.95": 0.613760465628672,
+            "0.99": 1.2869541284593478,
+            "1": 2.5418087121212123
+          },
+          "sample_standard_deviation": 0.2612334743777588
+        },
+        "requested_benign_decline": {
+          "active_fraction": 1.0,
+          "count": 900,
+          "maximum": 2.3880514705882354,
+          "mean": 0.20978970435983496,
+          "minimum": 0.006863064236111111,
+          "quantiles_linear": {
+            "0": 0.006863064236111111,
+            "0.1": 0.037536393633540374,
+            "0.25": 0.06438777633151246,
+            "0.5": 0.13455793976244343,
+            "0.75": 0.24997651667888565,
+            "0.9": 0.4959749983535302,
+            "0.95": 0.6512557276392962,
+            "0.99": 1.1093865956674953,
+            "1": 2.3880514705882354
+          },
+          "sample_standard_deviation": 0.2395251147844682
+        },
+        "requested_formal_hedge": {
+          "active_fraction": 0.6733333333333333,
+          "count": 900,
+          "maximum": 2.395256362275449,
+          "mean": 0.14282196371450068,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.027318840199697936,
+            "0.75": 0.1767730086763922,
+            "0.9": 0.4601615023855997,
+            "0.95": 0.6217616957896749,
+            "0.99": 1.2923720452724357,
+            "1": 2.395256362275449
+          },
+          "sample_standard_deviation": 0.2573438137030904
+        },
+        "single_turn_chat_prompt": {
+          "active_fraction": 0.64,
+          "count": 900,
+          "maximum": 1.256625,
+          "mean": 0.06290673583153483,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.010837834595044914,
+            "0.75": 0.058159494266456585,
+            "0.9": 0.1651115618661258,
+            "0.95": 0.30801167582417505,
+            "0.99": 0.7566717429457467,
+            "1": 1.256625
+          },
+          "sample_standard_deviation": 0.14255118830591368
+        }
+      }
+    },
+    "prespecified_subgroups": {
+      "big_bench_validity_cells": {
+        "invalid": {
+          "formatted_final": {
+            "active_fraction": 0.0,
+            "count": 450,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "quantiles_linear": {
+              "0": 0.0,
+              "0.1": 0.0,
+              "0.25": 0.0,
+              "0.5": 0.0,
+              "0.75": 0.0,
+              "0.9": 0.0,
+              "0.95": 0.0,
+              "0.99": 0.0,
+              "1": 0.0
+            },
+            "sample_standard_deviation": 0.0
+          },
+          "full_input_mean": {
+            "active_fraction": 0.19111111111111112,
+            "count": 450,
+            "maximum": 0.17616421568627452,
+            "mean": 0.006737902078555431,
+            "minimum": 0.0,
+            "quantiles_linear": {
+              "0": 0.0,
+              "0.1": 0.0,
+              "0.25": 0.0,
+              "0.5": 0.0,
+              "0.75": 0.0,
+              "0.9": 0.00568146406104381,
+              "0.95": 0.06682011648745506,
+              "0.99": 0.09499051820093148,
+              "1": 0.17616421568627452
+            },
+            "sample_standard_deviation": 0.0228472700159639
+          },
+          "template_context_mean": {
+            "active_fraction": 0.10444444444444445,
+            "count": 450,
+            "maximum": 0.099609375,
+            "mean": 0.0029890046296296297,
+            "minimum": 0.0,
+            "quantiles_linear": {
+              "0": 0.0,
+              "0.1": 0.0,
+              "0.25": 0.0,
+              "0.5": 0.0,
+              "0.75": 0.0,
+              "0.9": 0.0032552083333333335,
+              "0.95": 0.02516276041666658,
+              "0.99": 0.06416015624999996,
+              "1": 0.099609375
+            },
+            "sample_standard_deviation": 0.011588362635115895
+          },
+          "user_content_mean": {
+            "active_fraction": 0.1,
+            "count": 450,
+            "maximum": 0.1996527777777778,
+            "mean": 0.0071142739435874226,
+            "minimum": 0.0,
+            "quantiles_linear": {
+              "0": 0.0,
+              "0.1": 0.0,
+              "0.25": 0.0,
+              "0.5": 0.0,
+              "0.75": 0.0,
+              "0.9": 0.00023226351351356633,
+              "0.95": 0.07231249999999985,
+              "0.99": 0.1028790381345638,
+              "1": 0.1996527777777778
+            },
+            "sample_standard_deviation": 0.02506998630112204
+          }
+        },
+        "valid": {
+          "formatted_final": {
+            "active_fraction": 0.0,
+            "count": 450,
+            "maximum": 0.0,
+            "mean": 0.0,
+            "minimum": 0.0,
+            "quantiles_linear": {
+              "0": 0.0,
+              "0.1": 0.0,
+              "0.25": 0.0,
+              "0.5": 0.0,
+              "0.75": 0.0,
+              "0.9": 0.0,
+              "0.95": 0.0,
+              "0.99": 0.0,
+              "1": 0.0
+            },
+            "sample_standard_deviation": 0.0
+          },
+          "full_input_mean": {
+            "active_fraction": 0.20222222222222222,
+            "count": 450,
+            "maximum": 0.14276620370370371,
+            "mean": 0.0061056000030764775,
+            "minimum": 0.0,
+            "quantiles_linear": {
+              "0": 0.0,
+              "0.1": 0.0,
+              "0.25": 0.0,
+              "0.5": 0.0,
+              "0.75": 0.0,
+              "0.9": 0.00577727319376027,
+              "0.95": 0.06328864565404471,
+              "0.99": 0.08520073170731707,
+              "1": 0.14276620370370371
+            },
+            "sample_standard_deviation": 0.020084428015439828
+          },
+          "template_context_mean": {
+            "active_fraction": 0.1111111111111111,
+            "count": 450,
+            "maximum": 0.09309895833333333,
+            "mean": 0.0037717013888888887,
+            "minimum": 0.0,
+            "quantiles_linear": {
+              "0": 0.0,
+              "0.1": 0.0,
+              "0.25": 0.0,
+              "0.5": 0.0,
+              "0.75": 0.0,
+              "0.9": 0.010677083333333393,
+              "0.95": 0.028352864583333304,
+              "0.99": 0.06915364583333321,
+              "1": 0.09309895833333333
+            },
+            "sample_standard_deviation": 0.013113583824996439
+          },
+          "user_content_mean": {
+            "active_fraction": 0.09777777777777778,
+            "count": 450,
+            "maximum": 0.15669461382113822,
+            "mean": 0.006362081298474812,
+            "minimum": 0.0,
+            "quantiles_linear": {
+              "0": 0.0,
+              "0.1": 0.0,
+              "0.25": 0.0,
+              "0.5": 0.0,
+              "0.75": 0.0,
+              "0.9": 0.0,
+              "0.95": 0.06819196428571424,
+              "0.99": 0.09433239655584787,
+              "1": 0.15669461382113822
+            },
+            "sample_standard_deviation": 0.021938493848428414
+          }
+        }
+      },
+      "project_risk_splits": {
+        "benign": {
+          "formatted_final": {
+            "active_fraction": 0.030612244897959183,
+            "count": 98,
+            "maximum": 6.65625,
+            "mean": 0.1875,
+            "minimum": 0.0,
+            "quantiles_linear": {
+              "0": 0.0,
+              "0.1": 0.0,
+              "0.25": 0.0,
+              "0.5": 0.0,
+              "0.75": 0.0,
+              "0.9": 0.0,
+              "0.95": 0.0,
+              "0.99": 5.898437500000001,
+              "1": 6.65625
+            },
+            "sample_standard_deviation": 1.0626042247243617
+          },
+          "full_input_mean": {
+            "active_fraction": 0.6632653061224489,
+            "count": 98,
+            "maximum": 0.5792824074074074,
+            "mean": 0.0859402388994619,
+            "minimum": 0.0,
+            "quantiles_linear": {
+              "0": 0.0,
+              "0.1": 0.0,
+              "0.25": 0.0,
+              "0.5": 0.039641998626373624,
+              "0.75": 0.11115534855769231,
+              "0.9": 0.2706584821428571,
+              "0.95": 0.35533297720797713,
+              "0.99": 0.4743977029914531,
+              "1": 0.5792824074074074
+            },
+            "sample_standard_deviation": 0.11948230617375379
+          },
+          "template_context_mean": {
+            "active_fraction": 0.4897959183673469,
+            "count": 98,
+            "maximum": 0.8645833333333334,
+            "mean": 0.07930086096938775,
+            "minimum": 0.0,
+            "quantiles_linear": {
+              "0": 0.0,
+              "0.1": 0.0,
+              "0.25": 0.0,
+              "0.5": 0.0,
+              "0.75": 0.09505208333333333,
+              "0.9": 0.21588541666666658,
+              "0.95": 0.3259114583333333,
+              "0.99": 0.821640625,
+              "1": 0.8645833333333334
+            },
+            "sample_standard_deviation": 0.15518610458318677
+          },
+          "user_content_mean": {
+            "active_fraction": 0.41836734693877553,
+            "count": 98,
+            "maximum": 0.6510416666666666,
+            "mean": 0.08444416984055957,
+            "minimum": 0.0,
+            "quantiles_linear": {
+              "0": 0.0,
+              "0.1": 0.0,
+              "0.25": 0.0,
+              "0.5": 0.0,
+              "0.75": 0.11579649390243903,
+              "0.9": 0.3075873059866962,
+              "0.95": 0.3886160714285712,
+              "0.99": 0.46447544642857164,
+              "1": 0.6510416666666666
+            },
+            "sample_standard_deviation": 0.13948645911634877
+          }
+        },
+        "harmful": {
+          "formatted_final": {
+            "active_fraction": 0.6188118811881188,
+            "count": 202,
+            "maximum": 28.625,
+            "mean": 9.949876237623762,
+            "minimum": 0.0,
+            "quantiles_linear": {
+              "0": 0.0,
+              "0.1": 0.0,
+              "0.25": 0.0,
+              "0.5": 9.25,
+              "0.75": 19.46875,
+              "0.9": 23.25,
+              "0.95": 24.724999999999994,
+              "0.99": 27.371250000000003,
+              "1": 28.625
+            },
+            "sample_standard_deviation": 9.61344677890948
+          },
+          "full_input_mean": {
+            "active_fraction": 0.9554455445544554,
+            "count": 202,
+            "maximum": 2.3841145833333335,
+            "mean": 0.5736687679308159,
+            "minimum": 0.0,
+            "quantiles_linear": {
+              "0": 0.0,
+              "0.1": 0.060032894736842105,
+              "0.25": 0.15496001031991746,
+              "0.5": 0.518789181231003,
+              "0.75": 0.8801128680889423,
+              "0.9": 1.2221133123342176,
+              "0.95": 1.4254297814755412,
+              "0.99": 2.106470312500004,
+              "1": 2.3841145833333335
+            },
+            "sample_standard_deviation": 0.48002590053292865
+          },
+          "template_context_mean": {
+            "active_fraction": 0.9405940594059405,
+            "count": 202,
+            "maximum": 4.768229166666667,
+            "mean": 1.6223249278052803,
+            "minimum": 0.0,
+            "quantiles_linear": {
+              "0": 0.0,
+              "0.1": 0.09583333333333335,
+              "0.25": 0.4246419270833333,
+              "0.5": 1.75390625,
+              "0.75": 2.6197916666666665,
+              "0.9": 3.2901041666666666,
+              "0.95": 3.722981770833333,
+              "0.99": 4.51526041666667,
+              "1": 4.768229166666667
+            },
+            "sample_standard_deviation": 1.2503721912291008
+          },
+          "user_content_mean": {
+            "active_fraction": 0.4207920792079208,
+            "count": 202,
+            "maximum": 0.7420058139534884,
+            "mean": 0.09486298655769121,
+            "minimum": 0.0,
+            "quantiles_linear": {
+              "0": 0.0,
+              "0.1": 0.0,
+              "0.25": 0.0,
+              "0.5": 0.0,
+              "0.75": 0.15729166666666666,
+              "0.9": 0.288471350078493,
+              "0.95": 0.4500657051282049,
+              "0.99": 0.6809961084021009,
+              "1": 0.7420058139534884
+            },
+            "sample_standard_deviation": 0.15531039716429967
+          }
+        }
+      }
+    },
+    "reverse_position_bins": {
+      "benign_instruction": {
+        "0-0": {
+          "active_fraction": 0.023333333333333334,
+          "count": 900,
+          "maximum": 17.5,
+          "mean": 0.12983506944444445,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 4.8128125,
+            "1": 17.5
+          },
+          "sample_standard_deviation": 1.1444546528302302
+        },
+        "1-1": {
+          "active_fraction": 0.0,
+          "count": 900,
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 0.0
+          },
+          "sample_standard_deviation": 0.0
+        },
+        "10-19": {
+          "active_fraction": 0.027444444444444445,
+          "count": 9000,
+          "maximum": 49.75,
+          "mean": 0.28670052083333336,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 11.625,
+            "1": 49.75
+          },
+          "sample_standard_deviation": 2.405406183538633
+        },
+        "2-2": {
+          "active_fraction": 0.05444444444444444,
+          "count": 900,
+          "maximum": 13.0625,
+          "mean": 0.11946180555555555,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.2351562499999993,
+            "0.99": 3.438437499999999,
+            "1": 13.0625
+          },
+          "sample_standard_deviation": 0.7360657833175661
+        },
+        "20-49": {
+          "active_fraction": 0.026266529798925187,
+          "count": 16561,
+          "maximum": 46.25,
+          "mean": 0.2492664429986112,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 9.875,
+            "1": 46.25
+          },
+          "sample_standard_deviation": 2.085414937643881
+        },
+        "3-4": {
+          "active_fraction": 0.23166666666666666,
+          "count": 1800,
+          "maximum": 13.6875,
+          "mean": 0.7496744791666666,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 3.0343750000000043,
+            "0.95": 5.15625,
+            "0.99": 8.4375,
+            "1": 13.6875
+          },
+          "sample_standard_deviation": 1.8370607386016164
+        },
+        "5-9": {
+          "active_fraction": 0.004222222222222222,
+          "count": 4500,
+          "maximum": 21.0,
+          "mean": 0.019164930555555557,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 21.0
+          },
+          "sample_standard_deviation": 0.42730029086460575
+        },
+        "50-plus": {
+          "active_fraction": 0.021649869354236656,
+          "count": 40185,
+          "maximum": 44.25,
+          "mean": 0.1929941209406495,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 6.661249999999882,
+            "1": 44.25
+          },
+          "sample_standard_deviation": 1.8145578042296746
+        }
+      },
+      "closed_context_unanswerable": {
+        "0-0": {
+          "active_fraction": 0.0,
+          "count": 900,
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 0.0
+          },
+          "sample_standard_deviation": 0.0
+        },
+        "1-1": {
+          "active_fraction": 0.0,
+          "count": 900,
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 0.0
+          },
+          "sample_standard_deviation": 0.0
+        },
+        "10-19": {
+          "active_fraction": 0.0,
+          "count": 9000,
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 0.0
+          },
+          "sample_standard_deviation": 0.0
+        },
+        "2-2": {
+          "active_fraction": 0.05,
+          "count": 900,
+          "maximum": 4.25,
+          "mean": 0.04724826388888889,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0007812499999992895,
+            "0.99": 1.5549999999999997,
+            "1": 4.25
+          },
+          "sample_standard_deviation": 0.29111035715402755
+        },
+        "20-49": {
+          "active_fraction": 0.00025925925925925926,
+          "count": 27000,
+          "maximum": 14.3125,
+          "mean": 0.0015480324074074075,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 14.3125
+          },
+          "sample_standard_deviation": 0.12625436769671047
+        },
+        "3-4": {
+          "active_fraction": 0.0005555555555555556,
+          "count": 1800,
+          "maximum": 1.4765625,
+          "mean": 0.0008203125,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 1.4765625
+          },
+          "sample_standard_deviation": 0.03480291188652539
+        },
+        "5-9": {
+          "active_fraction": 0.0,
+          "count": 4500,
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 0.0
+          },
+          "sample_standard_deviation": 0.0
+        },
+        "50-plus": {
+          "active_fraction": 0.0002919726166958639,
+          "count": 160974,
+          "maximum": 44.25,
+          "mean": 0.0033621015660914187,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 44.25
+          },
+          "sample_standard_deviation": 0.26785001442362455
+        }
+      },
+      "negation_reasoning": {
+        "0-0": {
+          "active_fraction": 0.0,
+          "count": 900,
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 0.0
+          },
+          "sample_standard_deviation": 0.0
+        },
+        "1-1": {
+          "active_fraction": 0.0,
+          "count": 900,
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 0.0
+          },
+          "sample_standard_deviation": 0.0
+        },
+        "10-19": {
+          "active_fraction": 0.0,
+          "count": 9000,
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 0.0
+          },
+          "sample_standard_deviation": 0.0
+        },
+        "2-2": {
+          "active_fraction": 0.0,
+          "count": 900,
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 0.0
+          },
+          "sample_standard_deviation": 0.0
+        },
+        "20-49": {
+          "active_fraction": 0.00014814814814814815,
+          "count": 27000,
+          "maximum": 17.375,
+          "mean": 0.0007896412037037038,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 17.375
+          },
+          "sample_standard_deviation": 0.10673366791151999
+        },
+        "3-4": {
+          "active_fraction": 0.05388888888888889,
+          "count": 1800,
+          "maximum": 1.1953125,
+          "mean": 0.020282118055555555,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0546875,
+            "0.99": 0.546875,
+            "1": 1.1953125
+          },
+          "sample_standard_deviation": 0.10690867517557517
+        },
+        "5-9": {
+          "active_fraction": 0.0,
+          "count": 4500,
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 0.0
+          },
+          "sample_standard_deviation": 0.0
+        },
+        "50-plus": {
+          "active_fraction": 0.0021954198054309195,
+          "count": 72879,
+          "maximum": 13.25,
+          "mean": 0.010847281967370573,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 13.25
+          },
+          "sample_standard_deviation": 0.26202648090655817
+        }
+      },
+      "project_panel": {
+        "0-0": {
+          "active_fraction": 0.4266666666666667,
+          "count": 300,
+          "maximum": 28.625,
+          "mean": 6.760833333333333,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 14.6875,
+            "0.9": 21.637500000000003,
+            "0.95": 23.637500000000003,
+            "0.99": 27.003749999999997,
+            "1": 28.625
+          },
+          "sample_standard_deviation": 9.13928053326361
+        },
+        "1-1": {
+          "active_fraction": 0.0,
+          "count": 300,
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 0.0
+          },
+          "sample_standard_deviation": 0.0
+        },
+        "10-19": {
+          "active_fraction": 0.008666666666666666,
+          "count": 3000,
+          "maximum": 13.6875,
+          "mean": 0.0482578125,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 13.6875
+          },
+          "sample_standard_deviation": 0.6566486200610273
+        },
+        "2-2": {
+          "active_fraction": 0.45666666666666667,
+          "count": 300,
+          "maximum": 18.875,
+          "mean": 3.7502864583333335,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 7.6875,
+            "0.9": 11.5625,
+            "0.95": 13.0625,
+            "0.99": 14.879999999999995,
+            "1": 18.875
+          },
+          "sample_standard_deviation": 4.917612477886244
+        },
+        "20-49": {
+          "active_fraction": 0.021557719054242003,
+          "count": 7190,
+          "maximum": 13.1875,
+          "mean": 0.11233592663421418,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 5.09375,
+            "1": 13.1875
+          },
+          "sample_standard_deviation": 0.8678663093526806
+        },
+        "3-4": {
+          "active_fraction": 0.28,
+          "count": 600,
+          "maximum": 10.5625,
+          "mean": 0.8058984375,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.419921875,
+            "0.9": 3.5687500000000014,
+            "0.95": 4.848437499999996,
+            "0.99": 6.753437499999997,
+            "1": 10.5625
+          },
+          "sample_standard_deviation": 1.684605949738425
+        },
+        "5-9": {
+          "active_fraction": 0.04666666666666667,
+          "count": 1500,
+          "maximum": 17.25,
+          "mean": 0.2611614583333333,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 9.063749999999999,
+            "1": 17.25
+          },
+          "sample_standard_deviation": 1.5154714771789635
+        },
+        "50-plus": {
+          "active_fraction": 0.005371530886302597,
+          "count": 1117,
+          "maximum": 9.125,
+          "mean": 0.031082139659803044,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 9.125
+          },
+          "sample_standard_deviation": 0.45196382063429946
+        }
+      },
+      "requested_apology": {
+        "0-0": {
+          "active_fraction": 0.0044444444444444444,
+          "count": 900,
+          "maximum": 9.875,
+          "mean": 0.0159375,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 9.875
+          },
+          "sample_standard_deviation": 0.3464891984256157
+        },
+        "1-1": {
+          "active_fraction": 0.0,
+          "count": 900,
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 0.0
+          },
+          "sample_standard_deviation": 0.0
+        },
+        "10-19": {
+          "active_fraction": 0.027333333333333334,
+          "count": 9000,
+          "maximum": 47.5,
+          "mean": 0.28899913194444443,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 11.313750000000027,
+            "1": 47.5
+          },
+          "sample_standard_deviation": 2.396038389876402
+        },
+        "2-2": {
+          "active_fraction": 0.2011111111111111,
+          "count": 900,
+          "maximum": 7.90625,
+          "mean": 0.33577256944444445,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 1.2281250000000004,
+            "0.95": 2.4078124999999986,
+            "0.99": 4.5625,
+            "1": 7.90625
+          },
+          "sample_standard_deviation": 0.9580689672066723
+        },
+        "20-49": {
+          "active_fraction": 0.01807092839394624,
+          "count": 26562,
+          "maximum": 44.25,
+          "mean": 0.1553511595512386,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 4.824687499999982,
+            "1": 44.25
+          },
+          "sample_standard_deviation": 1.6205978489522181
+        },
+        "3-4": {
+          "active_fraction": 0.10333333333333333,
+          "count": 1800,
+          "maximum": 6.15625,
+          "mean": 0.14624565972222223,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0414062500000032,
+            "0.95": 1.0093749999999986,
+            "0.99": 3.3443749999999994,
+            "1": 6.15625
+          },
+          "sample_standard_deviation": 0.5998735951535251
+        },
+        "5-9": {
+          "active_fraction": 0.010444444444444444,
+          "count": 4500,
+          "maximum": 19.875,
+          "mean": 0.03366840277777778,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.03195312500001535,
+            "1": 19.875
+          },
+          "sample_standard_deviation": 0.48032070196216237
+        },
+        "50-plus": {
+          "active_fraction": 0.01727279629489029,
+          "count": 52684,
+          "maximum": 45.25,
+          "mean": 0.1499884630532989,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 4.71875,
+            "1": 45.25
+          },
+          "sample_standard_deviation": 1.5726957508764454
+        }
+      },
+      "requested_benign_decline": {
+        "0-0": {
+          "active_fraction": 0.0077777777777777776,
+          "count": 900,
+          "maximum": 15.375,
+          "mean": 0.038628472222222224,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 15.375
+          },
+          "sample_standard_deviation": 0.5983484801013178
+        },
+        "1-1": {
+          "active_fraction": 0.0,
+          "count": 900,
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 0.0
+          },
+          "sample_standard_deviation": 0.0
+        },
+        "10-19": {
+          "active_fraction": 0.04022222222222222,
+          "count": 9000,
+          "maximum": 56.0,
+          "mean": 0.31072222222222223,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 10.128750000000082,
+            "1": 56.0
+          },
+          "sample_standard_deviation": 2.4282264814509946
+        },
+        "2-2": {
+          "active_fraction": 0.1688888888888889,
+          "count": 900,
+          "maximum": 6.53125,
+          "mean": 0.24322916666666666,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.8515625,
+            "0.95": 1.8843749999999986,
+            "0.99": 3.6565624999999997,
+            "1": 6.53125
+          },
+          "sample_standard_deviation": 0.7550796073471927
+        },
+        "20-49": {
+          "active_fraction": 0.04951851851851852,
+          "count": 27000,
+          "maximum": 44.5,
+          "mean": 0.21219791666666668,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 5.40656249999995,
+            "1": 44.5
+          },
+          "sample_standard_deviation": 1.6022098484311351
+        },
+        "3-4": {
+          "active_fraction": 0.27555555555555555,
+          "count": 1800,
+          "maximum": 10.5,
+          "mean": 0.6891753472222222,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.36328125,
+            "0.9": 2.90625,
+            "0.95": 4.126562499999999,
+            "0.99": 6.219374999999999,
+            "1": 10.5
+          },
+          "sample_standard_deviation": 1.4656320485728447
+        },
+        "5-9": {
+          "active_fraction": 0.02266666666666667,
+          "count": 4500,
+          "maximum": 19.0,
+          "mean": 0.08948958333333333,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 3.594062500000007,
+            "1": 19.0
+          },
+          "sample_standard_deviation": 0.7627873353317932
+        },
+        "50-plus": {
+          "active_fraction": 0.032689528777358756,
+          "count": 56746,
+          "maximum": 45.25,
+          "mean": 0.17330888410636874,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 4.0625,
+            "1": 45.25
+          },
+          "sample_standard_deviation": 1.5124553929760165
+        }
+      },
+      "requested_formal_hedge": {
+        "0-0": {
+          "active_fraction": 0.04888888888888889,
+          "count": 900,
+          "maximum": 17.625,
+          "mean": 0.2084375,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 6.010312499999991,
+            "1": 17.625
+          },
+          "sample_standard_deviation": 1.3225603444200864
+        },
+        "1-1": {
+          "active_fraction": 0.0,
+          "count": 900,
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 0.0
+          },
+          "sample_standard_deviation": 0.0
+        },
+        "10-19": {
+          "active_fraction": 0.03,
+          "count": 9000,
+          "maximum": 49.0,
+          "mean": 0.305078125,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 11.8125,
+            "1": 49.0
+          },
+          "sample_standard_deviation": 2.4701547037185767
+        },
+        "2-2": {
+          "active_fraction": 0.014444444444444444,
+          "count": 900,
+          "maximum": 9.9375,
+          "mean": 0.032890625,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.29867187499999837,
+            "1": 9.9375
+          },
+          "sample_standard_deviation": 0.43157185458705466
+        },
+        "20-49": {
+          "active_fraction": 0.018711793648427018,
+          "count": 26828,
+          "maximum": 44.5,
+          "mean": 0.16473140235947517,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 5.616562499999986,
+            "1": 44.5
+          },
+          "sample_standard_deviation": 1.6765777875160752
+        },
+        "3-4": {
+          "active_fraction": 0.15388888888888888,
+          "count": 1800,
+          "maximum": 8.625,
+          "mean": 0.30464409722222224,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 1.1640625,
+            "0.95": 2.4703124999999986,
+            "0.99": 4.689687499999998,
+            "1": 8.625
+          },
+          "sample_standard_deviation": 0.9381388082441677
+        },
+        "5-9": {
+          "active_fraction": 0.009333333333333334,
+          "count": 4500,
+          "maximum": 20.0,
+          "mean": 0.03609548611111111,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 20.0
+          },
+          "sample_standard_deviation": 0.5534741832072496
+        },
+        "50-plus": {
+          "active_fraction": 0.01597255523995721,
+          "count": 54218,
+          "maximum": 45.5,
+          "mean": 0.14343296391419824,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 4.213437500000055,
+            "1": 45.5
+          },
+          "sample_standard_deviation": 1.5506436857396786
+        }
+      },
+      "single_turn_chat_prompt": {
+        "0-0": {
+          "active_fraction": 0.014444444444444444,
+          "count": 900,
+          "maximum": 13.8125,
+          "mean": 0.04071180555555556,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.6824999999999974,
+            "1": 13.8125
+          },
+          "sample_standard_deviation": 0.5338748532080015
+        },
+        "1-1": {
+          "active_fraction": 0.0,
+          "count": 900,
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 0.0
+          },
+          "sample_standard_deviation": 0.0
+        },
+        "10-19": {
+          "active_fraction": 0.004333333333333333,
+          "count": 9000,
+          "maximum": 36.0,
+          "mean": 0.042039930555555556,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 36.0
+          },
+          "sample_standard_deviation": 0.8565762669500173
+        },
+        "2-2": {
+          "active_fraction": 0.015555555555555555,
+          "count": 900,
+          "maximum": 13.4375,
+          "mean": 0.06780381944444444,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 1.2479687499999947,
+            "1": 13.4375
+          },
+          "sample_standard_deviation": 0.7410123482465886
+        },
+        "20-49": {
+          "active_fraction": 0.005823818040078874,
+          "count": 21807,
+          "maximum": 57.0,
+          "mean": 0.04616780162333196,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 57.0
+          },
+          "sample_standard_deviation": 0.8446306982815779
+        },
+        "3-4": {
+          "active_fraction": 0.23666666666666666,
+          "count": 1800,
+          "maximum": 13.125,
+          "mean": 0.5629123263888889,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 2.2875000000000085,
+            "0.95": 3.7203124999999986,
+            "0.99": 6.781874999999999,
+            "1": 13.125
+          },
+          "sample_standard_deviation": 1.3967364961162712
+        },
+        "5-9": {
+          "active_fraction": 0.002,
+          "count": 4500,
+          "maximum": 6.8125,
+          "mean": 0.005847222222222222,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 6.8125
+          },
+          "sample_standard_deviation": 0.15386042121283253
+        },
+        "50-plus": {
+          "active_fraction": 0.007613792565584878,
+          "count": 102577,
+          "maximum": 47.75,
+          "mean": 0.06424266953118145,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 47.75
+          },
+          "sample_standard_deviation": 1.038188057262149
+        }
+      }
+    },
+    "template_vs_user_row_balanced": {
+      "benign_instruction": {
+        "chat_template": {
+          "active_fraction": 0.4677777777777778,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_role_means",
+          "maximum": 1.8509114583333333,
+          "mean": 0.14782512626262628,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.224609375,
+            "0.9": 0.47962239583333344,
+            "0.95": 0.6747395833333331,
+            "0.99": 1.065930989583333,
+            "1": 1.8509114583333333
+          },
+          "sample_standard_deviation": 0.25202819484627437
+        },
+        "user_content": {
+          "active_fraction": 0.4177777777777778,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_role_means",
+          "maximum": 3.355769230769231,
+          "mean": 0.25207223247786126,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.23765676885673623,
+            "0.9": 0.8890761264534883,
+            "0.95": 1.3429208096590906,
+            "0.99": 2.553862179487179,
+            "1": 3.355769230769231
+          },
+          "sample_standard_deviation": 0.5226050998109115
+        }
+      },
+      "closed_context_unanswerable": {
+        "chat_template": {
+          "active_fraction": 0.051111111111111114,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_role_means",
+          "maximum": 0.3541666666666667,
+          "mean": 0.004074074074074075,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.001464843749999852,
+            "0.99": 0.1295833333333333,
+            "1": 0.3541666666666667
+          },
+          "sample_standard_deviation": 0.024581570498534263
+        },
+        "user_content": {
+          "active_fraction": 0.021111111111111112,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_role_means",
+          "maximum": 1.3206401209677419,
+          "mean": 0.0023438203382520457,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.013255573248407536,
+            "1": 1.3206401209677419
+          },
+          "sample_standard_deviation": 0.04518292567212641
+        }
+      },
+      "negation_reasoning": {
+        "chat_template": {
+          "active_fraction": 0.10777777777777778,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_role_means",
+          "maximum": 0.099609375,
+          "mean": 0.0033803530092592587,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.004557291666666667,
+            "0.95": 0.02802734374999997,
+            "0.99": 0.0657942708333333,
+            "1": 0.099609375
+          },
+          "sample_standard_deviation": 0.012373807294291899
+        },
+        "user_content": {
+          "active_fraction": 0.09888888888888889,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_role_means",
+          "maximum": 0.1996527777777778,
+          "mean": 0.006738177621031118,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.07041666666666667,
+            "0.99": 0.09525118721315647,
+            "1": 0.1996527777777778
+          },
+          "sample_standard_deviation": 0.023546235923871457
+        }
+      },
+      "project_panel": {
+        "chat_template": {
+          "active_fraction": 0.7933333333333333,
+          "count": 300,
+          "estimand": "summary_across_equal_weight_per_row_role_means",
+          "maximum": 4.768229166666667,
+          "mean": 1.1182703993055554,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.03369140625,
+            "0.5": 0.45833333333333337,
+            "0.75": 2.098470052083333,
+            "0.9": 2.9700520833333353,
+            "0.95": 3.44287109375,
+            "0.99": 4.224322916666664,
+            "1": 4.768229166666667
+          },
+          "sample_standard_deviation": 1.2586752720390084
+        },
+        "user_content": {
+          "active_fraction": 0.42,
+          "count": 300,
+          "estimand": "summary_across_equal_weight_per_row_role_means",
+          "maximum": 0.7420058139534884,
+          "mean": 0.09145950643009489,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.14703182374541002,
+            "0.9": 0.30066165023352365,
+            "0.95": 0.4310074404761907,
+            "0.99": 0.6513457661290319,
+            "1": 0.7420058139534884
+          },
+          "sample_standard_deviation": 0.1501707611230474
+        }
+      },
+      "requested_apology": {
+        "chat_template": {
+          "active_fraction": 0.37222222222222223,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_role_means",
+          "maximum": 0.8229166666666666,
+          "mean": 0.05701171875,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.061848958333333336,
+            "0.9": 0.20078125000000008,
+            "0.95": 0.3074218749999999,
+            "0.99": 0.5130729166666667,
+            "1": 0.8229166666666666
+          },
+          "sample_standard_deviation": 0.11560545505689267
+        },
+        "user_content": {
+          "active_fraction": 0.4666666666666667,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_role_means",
+          "maximum": 2.716452205882353,
+          "mean": 0.15054447315029382,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.1719390368852459,
+            "0.9": 0.5274194122086406,
+            "0.95": 0.7076673211898393,
+            "0.99": 1.4534338148584902,
+            "1": 2.716452205882353
+          },
+          "sample_standard_deviation": 0.2995282061912491
+        }
+      },
+      "requested_benign_decline": {
+        "chat_template": {
+          "active_fraction": 0.5688888888888889,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_role_means",
+          "maximum": 1.4342447916666667,
+          "mean": 0.14904007523148147,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.05208333333333333,
+            "0.75": 0.2578125,
+            "0.9": 0.4296875,
+            "0.95": 0.5339843749999998,
+            "0.99": 0.729485677083333,
+            "1": 1.4342447916666667
+          },
+          "sample_standard_deviation": 0.194486198306133
+        },
+        "user_content": {
+          "active_fraction": 1.0,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_role_means",
+          "maximum": 2.5510284810126582,
+          "mean": 0.21469437960986698,
+          "minimum": 0.006480532786885246,
+          "quantiles_linear": {
+            "0": 0.006480532786885246,
+            "0.1": 0.03866332506839946,
+            "0.25": 0.07166506517379678,
+            "0.5": 0.09965701219512195,
+            "0.75": 0.2598606576492537,
+            "0.9": 0.557423274317994,
+            "0.95": 0.7484633149983881,
+            "0.99": 1.281276199654533,
+            "1": 2.5510284810126582
+          },
+          "sample_standard_deviation": 0.27332868307809155
+        }
+      },
+      "requested_formal_hedge": {
+        "chat_template": {
+          "active_fraction": 0.34444444444444444,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_role_means",
+          "maximum": 1.859375,
+          "mean": 0.07830729166666667,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.08430989583333333,
+            "0.9": 0.25833333333333347,
+            "0.95": 0.3828125,
+            "0.99": 0.7817382812499996,
+            "1": 1.859375
+          },
+          "sample_standard_deviation": 0.18728209940424279
+        },
+        "user_content": {
+          "active_fraction": 0.47888888888888886,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_role_means",
+          "maximum": 2.580695564516129,
+          "mean": 0.15203217436486177,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.19601816539542355,
+            "0.9": 0.5203015734265736,
+            "0.95": 0.6835722584406195,
+            "0.99": 1.5464440104166666,
+            "1": 2.580695564516129
+          },
+          "sample_standard_deviation": 0.29575134129112385
+        }
+      },
+      "single_turn_chat_prompt": {
+        "chat_template": {
+          "active_fraction": 0.47333333333333333,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_role_means",
+          "maximum": 2.0989583333333335,
+          "mean": 0.10438585069444445,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.15299479166666666,
+            "0.9": 0.3255208333333333,
+            "0.95": 0.42994791666666643,
+            "0.99": 0.7401692708333328,
+            "1": 2.0989583333333335
+          },
+          "sample_standard_deviation": 0.1957860192564894
+        },
+        "user_content": {
+          "active_fraction": 0.24,
+          "count": 900,
+          "estimand": "summary_across_equal_weight_per_row_role_means",
+          "maximum": 1.7291666666666667,
+          "mean": 0.05055010182882764,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.10771406085018191,
+            "0.95": 0.29429443359374974,
+            "0.99": 0.838277322949946,
+            "1": 1.7291666666666667
+          },
+          "sample_standard_deviation": 0.1798828722168875
+        }
+      }
+    }
+  },
+  "claim_boundary": {
+    "backward_passes": 0,
+    "causal_or_semantic_function_established": false,
+    "generations": 0,
+    "interventions": 0,
+    "phase_c_authorized": false
+  },
+  "corpus_manifest_payload_sha256": "222c2b61caeb116086ad25300d474f55cd9528ee4dacd89ad1d2897ead82558c",
+  "corpus_payload_sha256": "43d086b11aca0d979a8e61b316200449ffe56065a03eb81b5574d9804d9ee1ef",
+  "created_at_utc": "2026-09-03T03:11:41.784927Z",
+  "dose_realism": {
+    "absolute_formatted_final_all_rows": {
+      "historical_percentile_interval": [
+        0.9910606060606061,
+        0.9915151515151515
+      ],
+      "summary": {
+        "active_fraction": 0.032878787878787875,
+        "count": 6600,
+        "maximum": 28.625,
+        "mean": 0.3664311079545455,
+        "minimum": 0.0,
+        "quantiles_linear": {
+          "0": 0.0,
+          "0.1": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.9": 0.0,
+          "0.95": 0.0,
+          "0.99": 17.126250000000027,
+          "1": 28.625
+        },
+        "sample_standard_deviation": 2.5015293182317087
+      }
+    },
+    "absolute_formatted_final_by_category": {
+      "benign_instruction": {
+        "historical_percentile_interval": [
+          1.0,
+          1.0
+        ],
+        "summary": {
+          "active_fraction": 0.023333333333333334,
+          "count": 900,
+          "maximum": 17.5,
+          "mean": 0.12983506944444445,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 4.8128125,
+            "1": 17.5
+          },
+          "sample_standard_deviation": 1.1444546528302302
+        }
+      },
+      "closed_context_unanswerable": {
+        "historical_percentile_interval": [
+          1.0,
+          1.0
+        ],
+        "summary": {
+          "active_fraction": 0.0,
+          "count": 900,
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 0.0
+          },
+          "sample_standard_deviation": 0.0
+        }
+      },
+      "negation_reasoning": {
+        "historical_percentile_interval": [
+          1.0,
+          1.0
+        ],
+        "summary": {
+          "active_fraction": 0.0,
+          "count": 900,
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 0.0
+          },
+          "sample_standard_deviation": 0.0
+        }
+      },
+      "project_panel": {
+        "historical_percentile_interval": [
+          0.8033333333333333,
+          0.8133333333333334
+        ],
+        "summary": {
+          "active_fraction": 0.4266666666666667,
+          "count": 300,
+          "maximum": 28.625,
+          "mean": 6.760833333333333,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 14.6875,
+            "0.9": 21.637500000000003,
+            "0.95": 23.637500000000003,
+            "0.99": 27.003749999999997,
+            "1": 28.625
+          },
+          "sample_standard_deviation": 9.13928053326361
+        }
+      },
+      "requested_apology": {
+        "historical_percentile_interval": [
+          1.0,
+          1.0
+        ],
+        "summary": {
+          "active_fraction": 0.0044444444444444444,
+          "count": 900,
+          "maximum": 9.875,
+          "mean": 0.0159375,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 9.875
+          },
+          "sample_standard_deviation": 0.3464891984256157
+        }
+      },
+      "requested_benign_decline": {
+        "historical_percentile_interval": [
+          1.0,
+          1.0
+        ],
+        "summary": {
+          "active_fraction": 0.0077777777777777776,
+          "count": 900,
+          "maximum": 15.375,
+          "mean": 0.038628472222222224,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.0,
+            "1": 15.375
+          },
+          "sample_standard_deviation": 0.5983484801013178
+        }
+      },
+      "requested_formal_hedge": {
+        "historical_percentile_interval": [
+          1.0,
+          1.0
+        ],
+        "summary": {
+          "active_fraction": 0.04888888888888889,
+          "count": 900,
+          "maximum": 17.625,
+          "mean": 0.2084375,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 6.010312499999991,
+            "1": 17.625
+          },
+          "sample_standard_deviation": 1.3225603444200864
+        }
+      },
+      "single_turn_chat_prompt": {
+        "historical_percentile_interval": [
+          1.0,
+          1.0
+        ],
+        "summary": {
+          "active_fraction": 0.014444444444444444,
+          "count": 900,
+          "maximum": 13.8125,
+          "mean": 0.04071180555555556,
+          "minimum": 0.0,
+          "quantiles_linear": {
+            "0": 0.0,
+            "0.1": 0.0,
+            "0.25": 0.0,
+            "0.5": 0.0,
+            "0.75": 0.0,
+            "0.9": 0.0,
+            "0.95": 0.0,
+            "0.99": 0.6824999999999974,
+            "1": 13.8125
+          },
+          "sample_standard_deviation": 0.5338748532080015
+        }
+      }
+    },
+    "historical_role": "fixed_E8_matched_activation_delta_comparator_not_presumed_high",
+    "historical_value": 18.625,
+    "matched_final_activation_delta": {
+      "historical_percentile_interval": [
+        1.0,
+        1.0
+      ],
+      "pair_bootstrap_mean_95": {
+        "estimand": "mean_harmful_minus_benign_formatted_final_activation",
+        "generator": "numpy.random.PCG64",
+        "interval_95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "seed": 2522210527409210963,
+        "unit": "reference_pair"
+      },
+      "summary": {
+        "active_fraction": 0.0,
+        "count": 12,
+        "maximum": 0.0,
+        "mean": 0.0,
+        "minimum": 0.0,
+        "quantiles_linear": {
+          "0": 0.0,
+          "0.1": 0.0,
+          "0.25": 0.0,
+          "0.5": 0.0,
+          "0.75": 0.0,
+          "0.9": 0.0,
+          "0.95": 0.0,
+          "0.99": 0.0,
+          "1": 0.0
+        },
+        "sample_standard_deviation": 0.0
+      }
+    }
+  },
+  "forward_accounting": {
+    "attempted_scientific_invocations": 6600,
+    "completed_unique_rows": 6600,
+    "completed_unique_tokens": 853328
+  },
+  "numerical_anchor": {
+    "c_activation_all": {
+      "max_abs_difference": 1.0479779243469238,
+      "median_abs_difference": 0.0,
+      "value_count": 14085
+    },
+    "c_activation_final": {
+      "max_abs_difference": 0.634587287902832,
+      "median_abs_difference": 0.0,
+      "value_count": 100
+    },
+    "cpu_run_manifest_payload_sha256": "6f12ab2c0f4073b62b28a8d810b65eb6c8b0296ff0024dfac7fb91cab7d25b27",
+    "generator": "numpy.random.PCG64",
+    "mps_run_manifest_payload_sha256": "53400205587fa068ff134c0ec51b07e45d17c92cd2e45b68382ec21e8fa2b6e2",
+    "payload_sha256": "263e47a67fa6a84727f8fbc1a13d4734b43e9bb40599734fd4a9755479b7e26f",
+    "row_count": 100,
+    "schema_version": "s16-phase-b-numerical-anchor/1",
+    "seed": 2522210527409210963,
+    "status": "complete_mps_bf16_vs_cpu_fp32_anchor"
+  },
+  "numerical_audit": {
+    "audit_invocations": 7,
+    "audit_prompt_equivalents": 13,
+    "batch_activation_max_abs_difference": 0.7890625,
+    "normal_batch_schedule_allowed": false,
+    "repeat_activation_max_abs_difference": 0.0,
+    "repeat_scope": "four_frozen_audit_rows_same_batched_path",
+    "tolerance": 0.125,
+    "vectorized_vs_rowwise_final_max_abs_difference": 0.0,
+    "wrapper_identity_max_abs_logit_difference": 0.0
+  },
+  "payload_sha256": "ecd3802acfa0a6d6cdd24ae1ef37f8fbda74f899f172a97514b2ba31bb98929b",
+  "phase_b_descriptive_prioritization": {
+    "category": "C_mixed_or_indeterminate",
+    "category_a_components": {
+      "helpsteer_positive_lower_bound_by_wrapper": {
+        "apology_v1": false,
+        "decline_v1": false,
+        "formal_hedge_v1": false
+      },
+      "positive_wrapper_count": 0,
+      "predicate_met": false,
+      "required_count": 2
+    },
+    "category_b_components": {
+      "all_helpsteer_upper_bounds_nonpositive": false,
+      "harmful_minus_benign_final_lower_bound_positive": false,
+      "helpsteer_nonpositive_upper_bound_by_wrapper": {
+        "apology_v1": true,
+        "decline_v1": true,
+        "formal_hedge_v1": false
+      },
+      "predicate_met": false
+    },
+    "evidence_boundary": "descriptive pre-execution prioritization only; not a feature-selectivity or semantic-function claim and never Phase-C execution authority",
+    "phase_c_authorized": false
+  },
+  "privacy": {
+    "max_context_text": false,
+    "private_residuals": false,
+    "raw_prompt_text": false,
+    "raw_token_sequences": false
+  },
+  "private_artifacts": {
+    "max_context_index": {
+      "byte_count": 1059193,
+      "relative_path": "private/s16_phase_b_max_context_index.json",
+      "sha256": "16bd7edfa238cd5fc9317efd38cf6654d51574f2a948df779a56d74144dcfc23"
+    },
+    "reference_directions": {
+      "byte_count": 30960,
+      "relative_path": "private/s16_phase_b_reference_directions.safetensors",
+      "sha256": "b265d35e3604d4bd162f4dc82167230ab94669e4f641263ea1904afa578319bf"
+    }
+  },
+  "reference_directions": {
+    "mlp_hook_in": {
+      "hook": "blocks.31.mlp.hook_in",
+      "metrics": {
+        "c_decoder": {
+          "cosine": 0.05906476623664465,
+          "leave_one_pair_out_cosines": [
+            0.06030830691846167,
+            0.059350633833985304,
+            0.05893273573936575,
+            0.0602930117010092,
+            0.0584201359939936,
+            0.05888207424797151,
+            0.05879080987896869,
+            0.05976225953390183,
+            0.058305311770907135,
+            0.05824873659218957,
+            0.05757252702896892,
+            0.05956444131267585
+          ],
+          "leave_one_pair_out_range": [
+            0.05757252702896892,
+            0.06030830691846167
+          ],
+          "pair_bootstrap": {
+            "generator": "numpy.random.PCG64",
+            "interval_95": [
+              0.05320521487890389,
+              0.06438106579835408
+            ],
+            "replicates": 10000,
+            "seed": 2522210527409210963,
+            "unit": "reference_pair"
+          }
+        },
+        "post_final_rmsnorm_probe_coordinate_proxy": {
+          "cosine": 0.3034890581217375,
+          "leave_one_pair_out_cosines": [
+            0.30746898725805705,
+            0.30465148980641293,
+            0.3013907785227705,
+            0.30397710222368723,
+            0.30079947292672593,
+            0.3026322713736458,
+            0.302582585640767,
+            0.30074696432329306,
+            0.30309906057379243,
+            0.3035677701524669,
+            0.30467310657083096,
+            0.30316193532753954
+          ],
+          "leave_one_pair_out_range": [
+            0.30074696432329306,
+            0.30746898725805705
+          ],
+          "pair_bootstrap": {
+            "generator": "numpy.random.PCG64",
+            "interval_95": [
+              0.28061737824945227,
+              0.31155192577622565
+            ],
+            "replicates": 10000,
+            "seed": 2522210527409210963,
+            "unit": "reference_pair"
+          }
+        }
+      },
+      "orientation": "harmful_minus_benign",
+      "pair_count": 12,
+      "probe_coordinate_caveat": "probe was trained post-final-RMSNorm; cosine here is a coordinate proxy",
+      "raw_mean_difference_l2": 18.12199223340669,
+      "role": "secondary_coordinate_sensitivity"
+    },
+    "resid_post": {
+      "hook": "blocks.31.hook_resid_post",
+      "metrics": {
+        "c_decoder": {
+          "cosine": 0.0882525334652491,
+          "leave_one_pair_out_cosines": [
+            0.08972858120340339,
+            0.08862446158283285,
+            0.08786937717574184,
+            0.08977713173391126,
+            0.08780061856048789,
+            0.08825610458031438,
+            0.08774243868790543,
+            0.08922148530694898,
+            0.08743941742967766,
+            0.08577062848818977,
+            0.0874176328267318,
+            0.08856325602536937
+          ],
+          "leave_one_pair_out_range": [
+            0.08577062848818977,
+            0.08977713173391126
+          ],
+          "pair_bootstrap": {
+            "generator": "numpy.random.PCG64",
+            "interval_95": [
+              0.08018728427118081,
+              0.0941651359085938
+            ],
+            "replicates": 10000,
+            "seed": 2522210527409210963,
+            "unit": "reference_pair"
+          }
+        },
+        "post_final_rmsnorm_probe_coordinate_proxy": {
+          "cosine": 0.31075441600566805,
+          "leave_one_pair_out_cosines": [
+            0.31456036142659993,
+            0.3118443301406139,
+            0.30837324931247706,
+            0.31131082419002065,
+            0.3082439194485505,
+            0.3098855917291558,
+            0.3098512085225001,
+            0.30826397657893034,
+            0.31051206140829374,
+            0.3104305428186675,
+            0.3121976756795812,
+            0.3102358679967823
+          ],
+          "leave_one_pair_out_range": [
+            0.3082439194485505,
+            0.31456036142659993
+          ],
+          "pair_bootstrap": {
+            "generator": "numpy.random.PCG64",
+            "interval_95": [
+              0.2872955538981782,
+              0.3182984669100924
+            ],
+            "replicates": 10000,
+            "seed": 2522210527409210963,
+            "unit": "reference_pair"
+          }
+        }
+      },
+      "orientation": "harmful_minus_benign",
+      "pair_count": 12,
+      "probe_coordinate_caveat": "probe was trained post-final-RMSNorm; cosine here is a coordinate proxy",
+      "raw_mean_difference_l2": 89.6254690063761,
+      "role": "primary"
+    },
+    "resid_pre": {
+      "hook": "blocks.31.hook_resid_pre",
+      "metrics": {
+        "c_decoder": {
+          "cosine": 0.05096370546328272,
+          "leave_one_pair_out_cosines": [
+            0.05177493588937112,
+            0.05105417432060029,
+            0.05144332616249865,
+            0.05215326488447033,
+            0.05021544462633269,
+            0.05072763467101511,
+            0.05035596187953922,
+            0.05140472002505348,
+            0.05022392530602553,
+            0.050736612671395856,
+            0.049712489080147935,
+            0.05159006217290443
+          ],
+          "leave_one_pair_out_range": [
+            0.049712489080147935,
+            0.05215326488447033
+          ],
+          "pair_bootstrap": {
+            "generator": "numpy.random.PCG64",
+            "interval_95": [
+              0.0465212224353972,
+              0.05587612496030666
+            ],
+            "replicates": 10000,
+            "seed": 2522210527409210963,
+            "unit": "reference_pair"
+          }
+        },
+        "post_final_rmsnorm_probe_coordinate_proxy": {
+          "cosine": 0.29767881561935644,
+          "leave_one_pair_out_cosines": [
+            0.30137649483589024,
+            0.2988359957798853,
+            0.29576049010907673,
+            0.298297226558276,
+            0.2950538328508866,
+            0.2969435212273313,
+            0.2969356825903984,
+            0.2952436195200275,
+            0.29735448751385,
+            0.2974082606830409,
+            0.29885605011853345,
+            0.29694346834447166
+          ],
+          "leave_one_pair_out_range": [
+            0.2950538328508866,
+            0.30137649483589024
+          ],
+          "pair_bootstrap": {
+            "generator": "numpy.random.PCG64",
+            "interval_95": [
+              0.2753284294041575,
+              0.30498485325160124
+            ],
+            "replicates": 10000,
+            "seed": 2522210527409210963,
+            "unit": "reference_pair"
+          }
+        }
+      },
+      "orientation": "harmful_minus_benign",
+      "pair_count": 12,
+      "probe_coordinate_caveat": "probe was trained post-final-RMSNorm; cosine here is a coordinate proxy",
+      "raw_mean_difference_l2": 80.6788862815975,
+      "role": "secondary_coordinate_sensitivity"
+    }
+  },
+  "row_count": 6600,
+  "run_manifest_payload_sha256": "53400205587fa068ff134c0ec51b07e45d17c92cd2e45b68382ec21e8fa2b6e2",
+  "schema_version": "s16-phase-b-result/1",
+  "scientific_payload_sha256": "971b2f91b99eb884b4f49941be0d41953eaef205db914369013c1f460fccafaf",
+  "semantics_version": "s16-route-function-phase-b-v1",
+  "status": "complete_forward_only_activation_census"
+}

@@ -1,0 +1,902 @@
+{
+  "schema": "research-reproduction-package/1",
+  "date": "2026-11-01",
+  "scope": "Integrity and source provenance for the public reproduction package.",
+  "source_identity_note": "Original source hashes identify archival inputs. Current sha256 fields authenticate the distributed files, including sanitized derivatives.",
+  "files": [
+    {
+      "file": ".gitignore",
+      "sha256": "ab3e4c6ef40d3208e00c5d8e408acfb6c6cda04422b0bf4c923a64a2aca350cd",
+      "bytes": 459
+    },
+    {
+      "file": ".python-version",
+      "sha256": "024c0bb8b6e96b9a88fed434e6ed551d2d1d31c7dc6fc4e663e0d7f4337dc038",
+      "bytes": 7
+    },
+    {
+      "file": "README.md",
+      "sha256": "550924de6a6873e88777df7b422363bf59d5a5c720f84b91f8bb6786dcea32f5",
+      "bytes": 3179
+    },
+    {
+      "file": "code/behavior/analyze_s16_phase_c.py",
+      "sha256": "5c2747bd7bcee210743c6bec30853ba0e1d5a16ee22bc40e40ad5ed1271bc071",
+      "bytes": 26664,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/behavior/analyze_s16_phase_c.py",
+      "original_source_sha256": "5c2747bd7bcee210743c6bec30853ba0e1d5a16ee22bc40e40ad5ed1271bc071"
+    },
+    {
+      "file": "code/behavior/crosscheck_tier1_estimates.py",
+      "sha256": "18d3df7101116057ee3f5839eaa10c646cf4083b5f35841519ebbf4b18db323f",
+      "bytes": 8724,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/behavior/crosscheck_tier1_estimates.py",
+      "original_source_sha256": "18d3df7101116057ee3f5839eaa10c646cf4083b5f35841519ebbf4b18db323f"
+    },
+    {
+      "file": "code/behavior/run_s16_phase_c_local.py",
+      "sha256": "0905c274d4e134ac22dde4f01dee66961eb16952c5eb8c1d22f56dcb7d297ea4",
+      "bytes": 36415,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/behavior/run_s16_phase_c_local.py",
+      "original_source_sha256": "0905c274d4e134ac22dde4f01dee66961eb16952c5eb8c1d22f56dcb7d297ea4"
+    },
+    {
+      "file": "code/behavior/unblind_tier1_second_rater.py",
+      "sha256": "0fe635989d747c261edd90725d74b6bad14768c2d0999d5ca6175cf1df9d7460",
+      "bytes": 9868,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/behavior/unblind_tier1_second_rater.py",
+      "original_source_sha256": "0fe635989d747c261edd90725d74b6bad14768c2d0999d5ca6175cf1df9d7460"
+    },
+    {
+      "file": "code/census/analyze_s16_phase_b.py",
+      "sha256": "753e33eb5b6a396cc962036d4e6d05ababc6d65722b419a1e8b341bab3fa3179",
+      "bytes": 31988,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/census/analyze_s16_phase_b.py",
+      "original_source_sha256": "753e33eb5b6a396cc962036d4e6d05ababc6d65722b419a1e8b341bab3fa3179"
+    },
+    {
+      "file": "code/census/analyze_s16_phase_b_behavior_concordance.py",
+      "sha256": "92d6a21ae7b3a74725abd89d858a8861c8f7ad191261926a99e20a782a221760",
+      "bytes": 11282,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/census/analyze_s16_phase_b_behavior_concordance.py",
+      "original_source_sha256": "92d6a21ae7b3a74725abd89d858a8861c8f7ad191261926a99e20a782a221760"
+    },
+    {
+      "file": "code/census/run_s16_phase_b.py",
+      "sha256": "5b5510770f246a78063600b69d9d51405eb41550ef0ff29a91b75cb38c756fa0",
+      "bytes": 53540,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/census/run_s16_phase_b.py",
+      "original_source_sha256": "5b5510770f246a78063600b69d9d51405eb41550ef0ff29a91b75cb38c756fa0"
+    },
+    {
+      "file": "code/census/run_s16_phase_b_local.py",
+      "sha256": "dfc2eab59c8787730c0a95d21311d40761b7bcbed33609f2ac6c51bec7633053",
+      "bytes": 19786,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/census/run_s16_phase_b_local.py",
+      "original_source_sha256": "dfc2eab59c8787730c0a95d21311d40761b7bcbed33609f2ac6c51bec7633053"
+    },
+    {
+      "file": "code/census/s16_phase_b_contract.py",
+      "sha256": "dbb21c24c5ee493f88735b7c8dff16857a195975968eb5ec4982954172a21d13",
+      "bytes": 120877,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/census/s16_phase_b_contract.py",
+      "original_source_sha256": "4618ebd09adac78af99b2ef293235478854364a2c044e2e822202de7c5089b56"
+    },
+    {
+      "file": "code/graph_algorithms/__init__.py",
+      "sha256": "d06f6ab04a1c3636a2c1dea553e831b04270afa14a59d47f1f3c7835d9820802",
+      "bytes": 616,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/graph_algorithms/__init__.py",
+      "original_source_sha256": "d06f6ab04a1c3636a2c1dea553e831b04270afa14a59d47f1f3c7835d9820802"
+    },
+    {
+      "file": "code/graph_algorithms/core.py",
+      "sha256": "69ace0856e6a10ef721c8a79a6084f07e10687a986203d89b445fd2684cb650e",
+      "bytes": 8103,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/graph_algorithms/core.py",
+      "original_source_sha256": "69ace0856e6a10ef721c8a79a6084f07e10687a986203d89b445fd2684cb650e"
+    },
+    {
+      "file": "code/graph_algorithms/io.py",
+      "sha256": "c117883dcdf63aab498d82c37480d1ff20ad8954a78c9840c5ed19a4a93417cd",
+      "bytes": 17698,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/graph_algorithms/io.py",
+      "original_source_sha256": "c117883dcdf63aab498d82c37480d1ff20ad8954a78c9840c5ed19a4a93417cd"
+    },
+    {
+      "file": "code/graph_algorithms/mass.py",
+      "sha256": "9abb38ea02d883789519c495b8ef71480d22bda6c6d8bdecf40d6ee24437923d",
+      "bytes": 20543,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/graph_algorithms/mass.py",
+      "original_source_sha256": "9abb38ea02d883789519c495b8ef71480d22bda6c6d8bdecf40d6ee24437923d"
+    },
+    {
+      "file": "code/graph_algorithms/redundancy_calculus.py",
+      "sha256": "9aaa8e4ad1c673827e408616aca06a74aa8a4ec1a530e5dedc8e3cb86a13870a",
+      "bytes": 33376,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/graph_algorithms/redundancy_calculus.py",
+      "original_source_sha256": "9aaa8e4ad1c673827e408616aca06a74aa8a4ec1a530e5dedc8e3cb86a13870a"
+    },
+    {
+      "file": "code/prediction/install_s9_colab_runtime.py",
+      "sha256": "2a58d24c5387f299cc60872703490533482720a22ef4b404745e5cb959488bf7",
+      "bytes": 1147,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/prediction/install_s9_colab_runtime.py",
+      "original_source_sha256": "2a58d24c5387f299cc60872703490533482720a22ef4b404745e5cb959488bf7"
+    },
+    {
+      "file": "code/prediction/run_s9_calibration.py",
+      "sha256": "77632041676083f4d5ae485ccd7b80e9cb5d44c926d18d15ff95710e075af05b",
+      "bytes": 31897,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/prediction/run_s9_calibration.py",
+      "original_source_sha256": "77632041676083f4d5ae485ccd7b80e9cb5d44c926d18d15ff95710e075af05b"
+    },
+    {
+      "file": "code/prediction/s9_contract.py",
+      "sha256": "35717f36e91ec3bcdda1c6adcd220477dc899f7ac4b1d17de8aaee9a0e07753b",
+      "bytes": 12916,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/prediction/s9_contract.py",
+      "original_source_sha256": "35717f36e91ec3bcdda1c6adcd220477dc899f7ac4b1d17de8aaee9a0e07753b"
+    },
+    {
+      "file": "code/prediction/s9_e5c_contract.py",
+      "sha256": "3cf68abac37ed84eb0b27bb586441f03e818938a83710daa107270d1b2c495bc",
+      "bytes": 24979,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/prediction/s9_e5c_contract.py",
+      "original_source_sha256": "3cf68abac37ed84eb0b27bb586441f03e818938a83710daa107270d1b2c495bc"
+    },
+    {
+      "file": "code/prediction/s9_path_contract.py",
+      "sha256": "4e18f7c89f2952dfaa44625718e7e3d86606f00c4d8f2b412981c53b160d5ae3",
+      "bytes": 5823,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/prediction/s9_path_contract.py",
+      "original_source_sha256": "4e18f7c89f2952dfaa44625718e7e3d86606f00c4d8f2b412981c53b160d5ae3"
+    },
+    {
+      "file": "code/route/analyze_s9_e7c.py",
+      "sha256": "ca0356d98bb7be322cf8cc22dd0fbe8a03ef10410b02caad9d44b92a0fdecf30",
+      "bytes": 13464,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/route/analyze_s9_e7c.py",
+      "original_source_sha256": "ca0356d98bb7be322cf8cc22dd0fbe8a03ef10410b02caad9d44b92a0fdecf30"
+    },
+    {
+      "file": "code/route/analyze_s9_e8b.py",
+      "sha256": "7e7c24b93b14a301538bbcd307bcaec5d3fc96726e41fc318e6956e8caa9dd30",
+      "bytes": 46644,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/route/analyze_s9_e8b.py",
+      "original_source_sha256": "7e7c24b93b14a301538bbcd307bcaec5d3fc96726e41fc318e6956e8caa9dd30"
+    },
+    {
+      "file": "code/route/analyze_s9_e9c.py",
+      "sha256": "f9af8769c4207da40569e36b2eeae60e18326109f5ebf6e3ae148af43d125090",
+      "bytes": 16261,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/route/analyze_s9_e9c.py",
+      "original_source_sha256": "f9af8769c4207da40569e36b2eeae60e18326109f5ebf6e3ae148af43d125090"
+    },
+    {
+      "file": "code/route/build_s9_e7b_candidate_manifest.py",
+      "sha256": "6b349fb74b6d66a1ff5ab7076c288c52fecc6281b31c7ba42ce719cf6a4b294e",
+      "bytes": 34193,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/route/build_s9_e7b_candidate_manifest.py",
+      "original_source_sha256": "6b349fb74b6d66a1ff5ab7076c288c52fecc6281b31c7ba42ce719cf6a4b294e"
+    },
+    {
+      "file": "code/route/build_s9_e7b_plan.py",
+      "sha256": "0a2a8f82028fd6bc5f930ce3198fb192fc3156cab74240ebb8566f646f470efa",
+      "bytes": 8968,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/route/build_s9_e7b_plan.py",
+      "original_source_sha256": "0a2a8f82028fd6bc5f930ce3198fb192fc3156cab74240ebb8566f646f470efa"
+    },
+    {
+      "file": "code/route/build_s9_e8b_execution_plan.py",
+      "sha256": "e1d0cba1e214fc5d29c73f92cfca543d175467dc11b9d5ef7ee58c93a810ba97",
+      "bytes": 10087,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/route/build_s9_e8b_execution_plan.py",
+      "original_source_sha256": "e1d0cba1e214fc5d29c73f92cfca543d175467dc11b9d5ef7ee58c93a810ba97"
+    },
+    {
+      "file": "code/route/build_s9_e8b_transcoder_bundle.py",
+      "sha256": "c454a6fdfab3082a7a5c611878c7f93ffddcc83a3a55b2fea710c4d8b7aa2377",
+      "bytes": 17951,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/route/build_s9_e8b_transcoder_bundle.py",
+      "original_source_sha256": "c454a6fdfab3082a7a5c611878c7f93ffddcc83a3a55b2fea710c4d8b7aa2377"
+    },
+    {
+      "file": "code/route/build_s9_e9c_source_bundle.py",
+      "sha256": "e2dab7e0c1de28bfba7fe38b66c86bb3cb50ce912646bbebe69bdb624b2630b7",
+      "bytes": 9030,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/route/build_s9_e9c_source_bundle.py",
+      "original_source_sha256": "e2dab7e0c1de28bfba7fe38b66c86bb3cb50ce912646bbebe69bdb624b2630b7"
+    },
+    {
+      "file": "code/route/e7_topology.py",
+      "sha256": "6d58e1f8202ae1b9157363e030c0ab6667169c2d1336ae7bc6d97bf0d24d2a05",
+      "bytes": 16547,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/route/e7_topology.py",
+      "original_source_sha256": "6d58e1f8202ae1b9157363e030c0ab6667169c2d1336ae7bc6d97bf0d24d2a05"
+    },
+    {
+      "file": "code/route/extract_s9_e8b_transcoder_rows.py",
+      "sha256": "bbbda48ff695496ea8bf6462b62c490e1c7790691faf2b1280be1d67def7c234",
+      "bytes": 6939,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/route/extract_s9_e8b_transcoder_rows.py",
+      "original_source_sha256": "bbbda48ff695496ea8bf6462b62c490e1c7790691faf2b1280be1d67def7c234"
+    },
+    {
+      "file": "code/route/path_patching_semantics.py",
+      "sha256": "516d7b43cddebaef7118a65393fe43914946888a0ec151546d07efed8f9dad91",
+      "bytes": 10205,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/route/path_patching_semantics.py",
+      "original_source_sha256": "516d7b43cddebaef7118a65393fe43914946888a0ec151546d07efed8f9dad91"
+    },
+    {
+      "file": "code/route/probe_s9_e7c_runtime_colab.py",
+      "sha256": "3e0c212958888e7ab8d2418b57baf6e15f3a6ef9561a4e7186d5e481f2ea9d8a",
+      "bytes": 3721,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/route/probe_s9_e7c_runtime_colab.py",
+      "original_source_sha256": "3e0c212958888e7ab8d2418b57baf6e15f3a6ef9561a4e7186d5e481f2ea9d8a"
+    },
+    {
+      "file": "code/route/probe_s9_e8b_runtime_colab.py",
+      "sha256": "d06cca3c2a8500eb80266d75f3c11265325751b49355d7d6e2bf25449f8538de",
+      "bytes": 7836,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/route/probe_s9_e8b_runtime_colab.py",
+      "original_source_sha256": "d06cca3c2a8500eb80266d75f3c11265325751b49355d7d6e2bf25449f8538de"
+    },
+    {
+      "file": "code/route/receiver_route_semantics.py",
+      "sha256": "d0e72ff43dac353890d7b26936dddbf4ee537c27d40ab7136db62fd7018c6c8f",
+      "bytes": 10929,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/route/receiver_route_semantics.py",
+      "original_source_sha256": "d0e72ff43dac353890d7b26936dddbf4ee537c27d40ab7136db62fd7018c6c8f"
+    },
+    {
+      "file": "code/route/run_s9_e7c.py",
+      "sha256": "8fa06ede8bbbb76bc307f144ffbc2259055322216da6c66c1fb34ca453385a3c",
+      "bytes": 35922,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/route/run_s9_e7c.py",
+      "original_source_sha256": "8fa06ede8bbbb76bc307f144ffbc2259055322216da6c66c1fb34ca453385a3c"
+    },
+    {
+      "file": "code/route/run_s9_e7c_colab.py",
+      "sha256": "24f57c625d63dcd555dd70babbadfe21b9848653e086f6d92ae28ad02f18493d",
+      "bytes": 705,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/route/run_s9_e7c_colab.py",
+      "original_source_sha256": "24f57c625d63dcd555dd70babbadfe21b9848653e086f6d92ae28ad02f18493d"
+    },
+    {
+      "file": "code/route/run_s9_e8b.py",
+      "sha256": "eb9da0ac9802cfd12f3adfae5c1441be97810e220f638c2c3dfb6e0d66b2d398",
+      "bytes": 70129,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/route/run_s9_e8b.py",
+      "original_source_sha256": "eb9da0ac9802cfd12f3adfae5c1441be97810e220f638c2c3dfb6e0d66b2d398"
+    },
+    {
+      "file": "code/route/run_s9_e8b_colab.py",
+      "sha256": "d85ef7f024e026bcd55ef4c1550dbe712408de335f6cc522f284dd02e6905eb3",
+      "bytes": 1355,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/route/run_s9_e8b_colab.py",
+      "original_source_sha256": "d85ef7f024e026bcd55ef4c1550dbe712408de335f6cc522f284dd02e6905eb3"
+    },
+    {
+      "file": "code/route/run_s9_e9c.py",
+      "sha256": "a547b31b7302f30adb81efa2c088cafb2e220ad078d4fde44e6aceee8ef883e8",
+      "bytes": 58231,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/route/run_s9_e9c.py",
+      "original_source_sha256": "a547b31b7302f30adb81efa2c088cafb2e220ad078d4fde44e6aceee8ef883e8"
+    },
+    {
+      "file": "code/route/s9_e7_contract.py",
+      "sha256": "de8ea7ab6ddd06f974e69280d5780ce7a51b8669c7449bf7f52e759671e6fd57",
+      "bytes": 15844,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/route/s9_e7_contract.py",
+      "original_source_sha256": "de8ea7ab6ddd06f974e69280d5780ce7a51b8669c7449bf7f52e759671e6fd57"
+    },
+    {
+      "file": "code/route/s9_e8_contract.py",
+      "sha256": "6fc5c7ea89b9549e6d558ab7fb5f06f1be5315da07bbceace8c60fc1e38d2253",
+      "bytes": 26607,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/route/s9_e8_contract.py",
+      "original_source_sha256": "6fc5c7ea89b9549e6d558ab7fb5f06f1be5315da07bbceace8c60fc1e38d2253"
+    },
+    {
+      "file": "code/route/s9_e8b_contract.py",
+      "sha256": "3d0e461c041418f6ae4925dc62a2b7224deb28cf13ed447a29508c40ba8564c1",
+      "bytes": 44171,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/route/s9_e8b_contract.py",
+      "original_source_sha256": "3d0e461c041418f6ae4925dc62a2b7224deb28cf13ed447a29508c40ba8564c1"
+    },
+    {
+      "file": "code/route/s9_e9b_contract.py",
+      "sha256": "90a7f4f497adf45e6a7bfc2d9e6b8196e534d17311885654632c6a6f1ac3ec7d",
+      "bytes": 21229,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/route/s9_e9b_contract.py",
+      "original_source_sha256": "90a7f4f497adf45e6a7bfc2d9e6b8196e534d17311885654632c6a6f1ac3ec7d"
+    },
+    {
+      "file": "code/route/s9_e9c_contract.py",
+      "sha256": "a356fca9c1ab0c82d2ed778b259de38113bbbaf17415bfad4ddc1ac09ec812ef",
+      "bytes": 30286,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/route/s9_e9c_contract.py",
+      "original_source_sha256": "a356fca9c1ab0c82d2ed778b259de38113bbbaf17415bfad4ddc1ac09ec812ef"
+    },
+    {
+      "file": "code/severity/w3_gate_severity.py",
+      "sha256": "e98a39b31f9b14f6a4fa6b78e0b0b7aaa599f1e4f72781198b71d94845c7e548",
+      "bytes": 57324,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/code/severity/w3_gate_severity.py",
+      "original_source_sha256": "e98a39b31f9b14f6a4fa6b78e0b0b7aaa599f1e4f72781198b71d94845c7e548"
+    },
+    {
+      "file": "data/behavior/behavior-observations.tar",
+      "sha256": "d66189d8c130a48de2aae11d91181f5bc54aa10b3e3165465a12c220d343b0b1",
+      "bytes": 3297280,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/behavior/behavior-observations.tar",
+      "original_source_sha256": "d66189d8c130a48de2aae11d91181f5bc54aa10b3e3165465a12c220d343b0b1"
+    },
+    {
+      "file": "data/behavior/s16_phase_c_baseline_annotations.csv",
+      "sha256": "3d0a9daec25d21b938b06587931ee4a0131d932a6d07ed7a6e70cc9b46767c43",
+      "bytes": 17994,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/behavior/s16_phase_c_baseline_annotations.csv",
+      "original_source_sha256": "3d0a9daec25d21b938b06587931ee4a0131d932a6d07ed7a6e70cc9b46767c43"
+    },
+    {
+      "file": "data/behavior/s16_phase_c_baseline_binary_gate.json",
+      "sha256": "f8e44f084ad3ea9dced07e652de65d0427e87b29f7308236f0660e5192eda1eb",
+      "bytes": 693,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/behavior/s16_phase_c_baseline_binary_gate.json",
+      "original_source_sha256": "f8e44f084ad3ea9dced07e652de65d0427e87b29f7308236f0660e5192eda1eb"
+    },
+    {
+      "file": "data/behavior/s16_phase_c_baseline_gate.json",
+      "sha256": "b5745b0914f31ba2592b1907f1f483f4697ca0928494dc74a323bb45585868ec",
+      "bytes": 558,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/behavior/s16_phase_c_baseline_gate.json",
+      "original_source_sha256": "b5745b0914f31ba2592b1907f1f483f4697ca0928494dc74a323bb45585868ec"
+    },
+    {
+      "file": "data/behavior/s16_phase_c_baseline_label_audit.json",
+      "sha256": "1644fe83e2c42ac39741d1873ff43b1fdadf388be7dfa9d500ed5587dab4d56f",
+      "bytes": 32853,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/behavior/s16_phase_c_baseline_label_audit.json",
+      "original_source_sha256": "1644fe83e2c42ac39741d1873ff43b1fdadf388be7dfa9d500ed5587dab4d56f"
+    },
+    {
+      "file": "data/behavior/s16_phase_c_run_manifest.json",
+      "sha256": "c727ccb2c19515ddf4144ec727c3292a61a7f8bb71e92f263c23313387de913d",
+      "bytes": 422086,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/behavior/s16_phase_c_run_manifest.json",
+      "original_source_sha256": "c727ccb2c19515ddf4144ec727c3292a61a7f8bb71e92f263c23313387de913d"
+    },
+    {
+      "file": "data/behavior/s16_phase_c_second_rater_annotations.csv",
+      "sha256": "f6705eeb5478c3131ac6890091700c4bcf63bfaeb454356f82a8f84c6f48c3b2",
+      "bytes": 5078,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/behavior/s16_phase_c_second_rater_annotations.csv",
+      "original_source_sha256": "f6705eeb5478c3131ac6890091700c4bcf63bfaeb454356f82a8f84c6f48c3b2"
+    },
+    {
+      "file": "data/behavior/s16_phase_c_tier1_annotation_receipt.json",
+      "sha256": "b878b057106a293657087dc0ecae8b529f9d78b7df0877c507ca71a78de0ad40",
+      "bytes": 467,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/behavior/s16_phase_c_tier1_annotation_receipt.json",
+      "original_source_sha256": "b878b057106a293657087dc0ecae8b529f9d78b7df0877c507ca71a78de0ad40"
+    },
+    {
+      "file": "data/behavior/s16_phase_c_tier1_annotations.csv",
+      "sha256": "0c7a059e4f42a0c8e31feb90114742eb6eb89db7ff67d7ffd985682c38a1aed6",
+      "bytes": 76938,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/behavior/s16_phase_c_tier1_annotations.csv",
+      "original_source_sha256": "0c7a059e4f42a0c8e31feb90114742eb6eb89db7ff67d7ffd985682c38a1aed6"
+    },
+    {
+      "file": "data/behavior/s16_phase_c_tier1_crosscheck.json",
+      "sha256": "056f2687da5c58452f24bb2adfa66c71c9619b6e4698cd34cfa318f40829e4b1",
+      "bytes": 9078,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/behavior/s16_phase_c_tier1_crosscheck.json",
+      "original_source_sha256": "056f2687da5c58452f24bb2adfa66c71c9619b6e4698cd34cfa318f40829e4b1"
+    },
+    {
+      "file": "data/behavior/s16_phase_c_tier1_result.json",
+      "sha256": "5326dcacaabc6ef89f98721e068c25c6c31aa12a71f0bc2005a94505d7765b2c",
+      "bytes": 17068,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/behavior/s16_phase_c_tier1_result.json",
+      "original_source_sha256": "5326dcacaabc6ef89f98721e068c25c6c31aa12a71f0bc2005a94505d7765b2c"
+    },
+    {
+      "file": "data/behavior/s16_phase_c_tier1_second_rater_audit.json",
+      "sha256": "a3888fff98a43815380215668eef4b77795f36234733062da2502a38d66e55aa",
+      "bytes": 5671,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/behavior/s16_phase_c_tier1_second_rater_audit.json",
+      "original_source_sha256": "a3888fff98a43815380215668eef4b77795f36234733062da2502a38d66e55aa"
+    },
+    {
+      "file": "data/census/census-observations.tar",
+      "sha256": "efe81fc862d660cb34ed2e59122c04b8e50104a059912066ea625808a2fe9369",
+      "bytes": 21555200,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/census/census-observations.tar",
+      "original_source_sha256": "efe81fc862d660cb34ed2e59122c04b8e50104a059912066ea625808a2fe9369"
+    },
+    {
+      "file": "data/census/s16_phase_b_behavior_concordance.json",
+      "sha256": "3fe15a5a2ba4fc41b2532a911c7cab5449c88fe80bb968d94c8fe818efa8e253",
+      "bytes": 5477,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/census/s16_phase_b_behavior_concordance.json",
+      "original_source_sha256": "3fe15a5a2ba4fc41b2532a911c7cab5449c88fe80bb968d94c8fe818efa8e253"
+    },
+    {
+      "file": "data/census/s16_phase_b_corpus_manifest.json",
+      "sha256": "2b1d5a25bec671905ccb2a91a1518a7802b2dd3d0e5823630025e072832c028c",
+      "bytes": 18933525,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/census/s16_phase_b_corpus_manifest.json",
+      "original_source_sha256": "2b1d5a25bec671905ccb2a91a1518a7802b2dd3d0e5823630025e072832c028c"
+    },
+    {
+      "file": "data/census/s16_phase_b_numerical_anchor.json",
+      "sha256": "15a7420a7036c5ff347a46ea29ea8917951db1c31735ce63b879c1edbeef2c08",
+      "bytes": 762,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/census/s16_phase_b_numerical_anchor.json",
+      "original_source_sha256": "15a7420a7036c5ff347a46ea29ea8917951db1c31735ce63b879c1edbeef2c08"
+    },
+    {
+      "file": "data/census/s16_phase_b_result.json",
+      "sha256": "12f9ddd185562a976aecad534ec1f014f44c882819efa8c04b3440725d30e7d4",
+      "bytes": 160833,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/census/s16_phase_b_result.json",
+      "original_source_sha256": "12f9ddd185562a976aecad534ec1f014f44c882819efa8c04b3440725d30e7d4"
+    },
+    {
+      "file": "data/census/s16_phase_b_run_manifest.json",
+      "sha256": "32922a4f802be7d08821281f2e65efbfceb2fd54a319a73fd0ca87981b2a0838",
+      "bytes": 2532914,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/census/s16_phase_b_run_manifest.json",
+      "original_source_sha256": "32922a4f802be7d08821281f2e65efbfceb2fd54a319a73fd0ca87981b2a0838"
+    },
+    {
+      "file": "data/measurement/qwen3_4b_full_transcoder_fidelity.json",
+      "sha256": "3a1ba2d1b46d4bc693e0b1fa94ae219746c7d217638fd527669dea843f168ce1",
+      "bytes": 15516,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/measurement/qwen3_4b_full_transcoder_fidelity.json",
+      "original_source_sha256": "3a1ba2d1b46d4bc693e0b1fa94ae219746c7d217638fd527669dea843f168ce1"
+    },
+    {
+      "file": "data/measurement/qwen3_4b_refusal_probe_direction.npz",
+      "sha256": "3d2048a873ed05b334545e703e0253707aad9b3de76176eb1fc9d8a71b30d72e",
+      "bytes": 29547,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/measurement/qwen3_4b_refusal_probe_direction.npz",
+      "original_source_sha256": "3d2048a873ed05b334545e703e0253707aad9b3de76176eb1fc9d8a71b30d72e"
+    },
+    {
+      "file": "data/measurement/qwen3_4b_refusal_probe_metrics.json",
+      "sha256": "e4611417511610e40dd88a51d891a3181004eb1ab9d106c7e1392d9af3296787",
+      "bytes": 35411,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/measurement/qwen3_4b_refusal_probe_metrics.json",
+      "original_source_sha256": "e4611417511610e40dd88a51d891a3181004eb1ab9d106c7e1392d9af3296787"
+    },
+    {
+      "file": "data/pilot/qwen3_4b_manual_annotations.csv",
+      "sha256": "f060bd51d4c3f023531df391b454fabecf0ce90e0e5c247042e659f7ae473af3",
+      "bytes": 3354,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/pilot/qwen3_4b_manual_annotations.csv",
+      "original_source_sha256": "f060bd51d4c3f023531df391b454fabecf0ce90e0e5c247042e659f7ae473af3"
+    },
+    {
+      "file": "data/pilot/qwen3_4b_pilot_machine_summary.json",
+      "sha256": "6daaf8fd8b4ea7a5283be5e5524bf9ca7fea8d49268b567caa22a885404c5931",
+      "bytes": 25511,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/pilot/qwen3_4b_pilot_machine_summary.json",
+      "original_source_sha256": "6daaf8fd8b4ea7a5283be5e5524bf9ca7fea8d49268b567caa22a885404c5931"
+    },
+    {
+      "file": "data/route/s9_e7b_candidate_manifest.json",
+      "sha256": "a5338573bedc4fb5ac4842ec9e5a35b950b12029ed4ad8545c5efa2af0bb8858",
+      "bytes": 129884,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/route/s9_e7b_candidate_manifest.json",
+      "original_source_sha256": "0f1b6864706aa7a7d70ffffd6dcc6e219d03b0e096dc8f7688fa4e1a08bfde55"
+    },
+    {
+      "file": "data/route/s9_e7b_plan.json",
+      "sha256": "9ee3ca739caa97937a27d4f23571bd6c3ee6a7757d37669bb03d95efa0447666",
+      "bytes": 153409,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/route/s9_e7b_plan.json",
+      "original_source_sha256": "9ee3ca739caa97937a27d4f23571bd6c3ee6a7757d37669bb03d95efa0447666"
+    },
+    {
+      "file": "data/route/s9_e7c_analysis.json",
+      "sha256": "a88ab05a25fcd0f4f1e867b929b0faeadd68b607cf132afbf87e3f7faa3ac4ae",
+      "bytes": 99971,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/route/s9_e7c_analysis.json",
+      "original_source_sha256": "a88ab05a25fcd0f4f1e867b929b0faeadd68b607cf132afbf87e3f7faa3ac4ae"
+    },
+    {
+      "file": "data/route/s9_e7c_interpretation_audit.json",
+      "sha256": "545ac37618089e1e61de67746bf52866bc5153c8d100818c0012058b40706d47",
+      "bytes": 9625,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/route/s9_e7c_interpretation_audit.json",
+      "original_source_sha256": "545ac37618089e1e61de67746bf52866bc5153c8d100818c0012058b40706d47"
+    },
+    {
+      "file": "data/route/s9_e7c_result.json",
+      "sha256": "b5a4a7fd0a2cbe9b904ebb08adcaa56af857a3cb7a4a329abd1deb228bba937b",
+      "bytes": 887977,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/route/s9_e7c_result.json",
+      "original_source_sha256": "b5a4a7fd0a2cbe9b904ebb08adcaa56af857a3cb7a4a329abd1deb228bba937b"
+    },
+    {
+      "file": "data/route/s9_e8a_plan.json",
+      "sha256": "e4fb9fae68c882ee781f4791a2a1014207ccae040e57142c3a316db623da3bc1",
+      "bytes": 70563,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/route/s9_e8a_plan.json",
+      "original_source_sha256": "76a6879af6ac9fd2f2595ab41b275318720adf0d47320455c0b16c112e3503ed"
+    },
+    {
+      "file": "data/route/s9_e8a_replication_manifest.json",
+      "sha256": "2636ba9ad78d40d614bb9894e2a870f72aa5306cd6dc065b7d18c5321b4ab992",
+      "bytes": 14845,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/route/s9_e8a_replication_manifest.json",
+      "original_source_sha256": "110932011bbb087a16bff0b2128b923e545534c9227e12648bfdb9bbf250744a"
+    },
+    {
+      "file": "data/route/s9_e8b_analysis.json",
+      "sha256": "0334b6b688e47a22f3838a9eb9ed419432bf5831ee8cf1b660f6b57383404e57",
+      "bytes": 52857,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/route/s9_e8b_analysis.json",
+      "original_source_sha256": "0334b6b688e47a22f3838a9eb9ed419432bf5831ee8cf1b660f6b57383404e57"
+    },
+    {
+      "file": "data/route/s9_e8b_execution_plan.json",
+      "sha256": "5cbf3deb0709a008a13696d251efb905087d86c826cd4ff6844a6a948089cfcd",
+      "bytes": 13158,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/route/s9_e8b_execution_plan.json",
+      "original_source_sha256": "acdbe28362993de792058b22fc1f1419a106e09c5e90ebbdbd6d4258874146be"
+    },
+    {
+      "file": "data/route/s9_e8b_result.json",
+      "sha256": "09967fa032d7ae5dafe407a41f3274780dc671e0d62b4c3016281090c8ecd153",
+      "bytes": 492387,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/route/s9_e8b_result.json",
+      "original_source_sha256": "09967fa032d7ae5dafe407a41f3274780dc671e0d62b4c3016281090c8ecd153"
+    },
+    {
+      "file": "data/route/s9_e8b_transcoder_rows_manifest.json",
+      "sha256": "c19d0722826a475fced422f73a87f9173948c43cc26d42a3751c34ecf337ef20",
+      "bytes": 7292,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/route/s9_e8b_transcoder_rows_manifest.json",
+      "original_source_sha256": "c19d0722826a475fced422f73a87f9173948c43cc26d42a3751c34ecf337ef20"
+    },
+    {
+      "file": "data/route/s9_e9a_design.json",
+      "sha256": "11cca267fc22a5f2097979856005ad1b0163a6f1a4f6b3d2f231ccf8a9f5f922",
+      "bytes": 9026,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/route/s9_e9a_design.json",
+      "original_source_sha256": "dfb1f1ad5de297997301a74022d38d27421acc772426d4314eebc9996a777788"
+    },
+    {
+      "file": "data/route/s9_e9b_panel_manifest.json",
+      "sha256": "fbdf7491841469b2deff70561c4d3559d2be12995919d2f09fb9ac8ccef3c819",
+      "bytes": 18262,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/route/s9_e9b_panel_manifest.json",
+      "original_source_sha256": "aeace06bdfdf637fce6e9d6190eb40fffeec28a16d964dd57ad6e0f8b1f9943b"
+    },
+    {
+      "file": "data/route/s9_e9c_analysis.json",
+      "sha256": "441ef6a510173dfbbb8d8e055f7b25c76bea406542beeb9f98f4ab0d93ee8516",
+      "bytes": 32048,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/route/s9_e9c_analysis.json",
+      "original_source_sha256": "441ef6a510173dfbbb8d8e055f7b25c76bea406542beeb9f98f4ab0d93ee8516"
+    },
+    {
+      "file": "data/route/s9_e9c_execution_plan.json",
+      "sha256": "dbb1623b23ad0e618ebc2d79ee23d7485dde853b53487e4353bbb4b5f47bbeb9",
+      "bytes": 115486,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/route/s9_e9c_execution_plan.json",
+      "original_source_sha256": "affac25e379adaf1b89e7860bbdc3ebde8264d53512b47d8cfc28139f5f8564f"
+    },
+    {
+      "file": "data/route/s9_e9c_result.json",
+      "sha256": "93e4bbb199a9f5e8ac5a8f212d303280121232a63ac471af76d0062bddc75be5",
+      "bytes": 504610,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/route/s9_e9c_result.json",
+      "original_source_sha256": "93e4bbb199a9f5e8ac5a8f212d303280121232a63ac471af76d0062bddc75be5"
+    },
+    {
+      "file": "data/route/s9_e9c_source_decoders_manifest.json",
+      "sha256": "dd65eb0963c723ae4775315777141a7a9b6c7eefa268141ce2c0d14bbd53fe99",
+      "bytes": 2074,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/route/s9_e9c_source_decoders_manifest.json",
+      "original_source_sha256": "dd65eb0963c723ae4775315777141a7a9b6c7eefa268141ce2c0d14bbd53fe99"
+    },
+    {
+      "file": "data/severity/s15_frozen_config.json",
+      "sha256": "9bcbf66e029e82b7d5d7a98452851903c850c07d4a3c8afc5e367a048c36ff30",
+      "bytes": 10588,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/severity/s15_frozen_config.json",
+      "original_source_sha256": "9bcbf66e029e82b7d5d7a98452851903c850c07d4a3c8afc5e367a048c36ff30"
+    },
+    {
+      "file": "data/severity/w3_analysis.json",
+      "sha256": "deaa5becec5e0ff1aecde2f3ac760726018a8bfd7eae2c2789f60bc9d304a942",
+      "bytes": 2326658,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/severity/w3_analysis.json",
+      "original_source_sha256": "deaa5becec5e0ff1aecde2f3ac760726018a8bfd7eae2c2789f60bc9d304a942"
+    },
+    {
+      "file": "data/severity/w3_future_gate_candidates.csv",
+      "sha256": "1292ff38792418fc4cefac627dac5f0048105ac35d5851c33c71640241a68f52",
+      "bytes": 26797,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/severity/w3_future_gate_candidates.csv",
+      "original_source_sha256": "1292ff38792418fc4cefac627dac5f0048105ac35d5851c33c71640241a68f52"
+    },
+    {
+      "file": "data/severity/w3_severity_curves.csv",
+      "sha256": "6849e0337910651cac7301d9c651b219e15cb0416b476084f6f8ac88369dad18",
+      "bytes": 44408,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/severity/w3_severity_curves.csv",
+      "original_source_sha256": "6849e0337910651cac7301d9c651b219e15cb0416b476084f6f8ac88369dad18"
+    },
+    {
+      "file": "data/target-validation/s10_phase_b_expansion_annotations.csv",
+      "sha256": "ee1f15976a5197133f9514eb4a246ffa20d53235c697ae4d584d85cef638612a",
+      "bytes": 7333,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/target-validation/s10_phase_b_expansion_annotations.csv",
+      "original_source_sha256": "ee1f15976a5197133f9514eb4a246ffa20d53235c697ae4d584d85cef638612a"
+    },
+    {
+      "file": "data/target-validation/s10_phase_b_expansion_generation.json",
+      "sha256": "bced1b358bd3349a4edea4218a691762e242c81884e4ff5754673d15f258baae",
+      "bytes": 99682,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/target-validation/s10_phase_b_expansion_generation.json",
+      "original_source_sha256": "bced1b358bd3349a4edea4218a691762e242c81884e4ff5754673d15f258baae"
+    },
+    {
+      "file": "data/target-validation/s10_phase_b_validation_annotations.csv",
+      "sha256": "6613f81458683adfc812ebae1fdf8687db8a2f780e4589eed01df4d2149da9ff",
+      "bytes": 7243,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/target-validation/s10_phase_b_validation_annotations.csv",
+      "original_source_sha256": "6613f81458683adfc812ebae1fdf8687db8a2f780e4589eed01df4d2149da9ff"
+    },
+    {
+      "file": "data/target-validation/s10_phase_b_validation_generation.json",
+      "sha256": "2e2e365f3dec7ace9cbda0097ae47bf4ac39481d7fadf89ddd35130fbfed5d45",
+      "bytes": 97939,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/target-validation/s10_phase_b_validation_generation.json",
+      "original_source_sha256": "2e2e365f3dec7ace9cbda0097ae47bf4ac39481d7fadf89ddd35130fbfed5d45"
+    },
+    {
+      "file": "data/target-validation/s10_phase_b_validation_plan.json",
+      "sha256": "48ea4a3838272a942e84856962844feaa5be34277af98d82535ce1ac470fa2ea",
+      "bytes": 54351,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/target-validation/s10_phase_b_validation_plan.json",
+      "original_source_sha256": "6beb7cf982e28adcd3a1548c0fb8ba2289feb8d0c22eedffc462f06f4c75b1b2"
+    },
+    {
+      "file": "data/target-validation/s9_e4c_analysis.json",
+      "sha256": "cf26017720c931a1fa61301e15b347b191cf38132a8bfc1d6d82bca809a69511",
+      "bytes": 144394,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/data/target-validation/s9_e4c_analysis.json",
+      "original_source_sha256": "cf26017720c931a1fa61301e15b347b191cf38132a8bfc1d6d82bca809a69511"
+    },
+    {
+      "file": "figures/source/build_figures.py",
+      "sha256": "bbb3f6786db97b6f8a6104ab39f2693c03a9be759be1eabe4b2957c93d266f85",
+      "bytes": 13744,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/figures/source/build_figures.py",
+      "original_source_sha256": "bbb3f6786db97b6f8a6104ab39f2693c03a9be759be1eabe4b2957c93d266f85"
+    },
+    {
+      "file": "figures/source/inputs.json",
+      "sha256": "42c38c5fd06e1c157bb726eccbeb3d940b993aa7c9fe6473c3851ff32c5f9c3e",
+      "bytes": 3308,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/figures/source/inputs.json",
+      "original_source_sha256": "42c38c5fd06e1c157bb726eccbeb3d940b993aa7c9fe6473c3851ff32c5f9c3e"
+    },
+    {
+      "file": "figures/source/methods.md",
+      "sha256": "6e9509b482a1a22e5a57a17d23041ff37b10745a6d8e15c9df9b6647b30b1218",
+      "bytes": 3664,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/figures/source/methods.md",
+      "original_source_sha256": "6e9509b482a1a22e5a57a17d23041ff37b10745a6d8e15c9df9b6647b30b1218"
+    },
+    {
+      "file": "figures/source/requirements.txt",
+      "sha256": "64592a6a8a5908ca350a3c3e9b0ef1b85958c22d617d9a81f48ed91cf884627e",
+      "bytes": 311,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/figures/source/requirements.txt",
+      "original_source_sha256": "64592a6a8a5908ca350a3c3e9b0ef1b85958c22d617d9a81f48ed91cf884627e"
+    },
+    {
+      "file": "figures/source/source_manifest.json",
+      "sha256": "0ecd42481fa792b24060a71b105f01c4f7c6e6d68a3c401fd9322f9a3f8f9215",
+      "bytes": 1531,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/figures/source/source_manifest.json",
+      "original_source_sha256": "0ecd42481fa792b24060a71b105f01c4f7c6e6d68a3c401fd9322f9a3f8f9215"
+    },
+    {
+      "file": "licenses/graph-toolkit-LICENSE",
+      "sha256": "7ce97e89fe2cec6f720705fc32c888fb39012c8103b6603bee9cd414874becec",
+      "bytes": 1074,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/protocols/coverage/LICENSE",
+      "original_source_sha256": "7ce97e89fe2cec6f720705fc32c888fb39012c8103b6603bee9cd414874becec"
+    },
+    {
+      "file": "manifest.json",
+      "sha256": "1af432d6dec30e2cfccafd3090f6f851b00e93f08a41fd301f7b4ae67918afed",
+      "bytes": 4246035,
+      "packaging_source_identities": [
+        {
+          "path": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/manifest.json",
+          "sha256": "e5c7bf259bd5439f44185d16c4ce77f19fe500c1b758ceed2b8174437c7ade06"
+        }
+      ]
+    },
+    {
+      "file": "protocols/behavior/PHASE_C_AMENDMENT_01.md",
+      "sha256": "7f99acc0a5fb1a109d610177517b4fab876adcefb58670173f096954a62856ed",
+      "bytes": 10889,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/protocols/behavior/PHASE_C_AMENDMENT_01.md",
+      "original_source_sha256": "7f99acc0a5fb1a109d610177517b4fab876adcefb58670173f096954a62856ed"
+    },
+    {
+      "file": "protocols/behavior/PHASE_C_AMENDMENT_02.md",
+      "sha256": "ba4b53484a4944ea5b662225f8218317df8283ff73c43af66ec73b903747bd44",
+      "bytes": 2986,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/protocols/behavior/PHASE_C_AMENDMENT_02.md",
+      "original_source_sha256": "ba4b53484a4944ea5b662225f8218317df8283ff73c43af66ec73b903747bd44"
+    },
+    {
+      "file": "protocols/behavior/PHASE_C_BASELINE_LABEL_AUDIT.md",
+      "sha256": "c5c4b65c45d53f471d2ec3ef94e989afda9b6bf99f24adeedecb57135cd9d0e1",
+      "bytes": 5090,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/protocols/behavior/PHASE_C_BASELINE_LABEL_AUDIT.md",
+      "original_source_sha256": "c5c4b65c45d53f471d2ec3ef94e989afda9b6bf99f24adeedecb57135cd9d0e1"
+    },
+    {
+      "file": "protocols/behavior/PHASE_C_PREREGISTRATION.md",
+      "sha256": "25928a120f53a277553a15a6f271463b990f52f186653773f117507ff0a6f13d",
+      "bytes": 9767,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/protocols/behavior/PHASE_C_PREREGISTRATION.md",
+      "original_source_sha256": "25928a120f53a277553a15a6f271463b990f52f186653773f117507ff0a6f13d"
+    },
+    {
+      "file": "protocols/census/PHASE_B_CORPUS_SPEC.md",
+      "sha256": "7b765a2fa7146485c7da047ee0685831a68ef625f671c6a9d4384d5af8c3cb0e",
+      "bytes": 19228,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/protocols/census/PHASE_B_CORPUS_SPEC.md",
+      "original_source_sha256": "7b765a2fa7146485c7da047ee0685831a68ef625f671c6a9d4384d5af8c3cb0e"
+    },
+    {
+      "file": "protocols/census/PHASE_B_POSTHOC_CONCORDANCE.md",
+      "sha256": "c9429ecdb6b535b4c3f63fe7def54d4f677ad1f9f21891b166982111a38c879a",
+      "bytes": 4462,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/protocols/census/PHASE_B_POSTHOC_CONCORDANCE.md",
+      "original_source_sha256": "c9429ecdb6b535b4c3f63fe7def54d4f677ad1f9f21891b166982111a38c879a"
+    },
+    {
+      "file": "protocols/route/E7A_RECEIVER_ROUTE_SEMANTICS.md",
+      "sha256": "94c2ea5709ec6573fe1d089acfbac39c4ab017c22173d1383968c0dc5575b0ce",
+      "bytes": 6353,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/protocols/route/E7A_RECEIVER_ROUTE_SEMANTICS.md",
+      "original_source_sha256": "94c2ea5709ec6573fe1d089acfbac39c4ab017c22173d1383968c0dc5575b0ce"
+    },
+    {
+      "file": "protocols/route/E8A_C_TO_D_REPLICATION_PREREGISTRATION.md",
+      "sha256": "5875b5cd5b18984a4cd2eb8ea2e1f99cb16f51116ea6eeb2d1cb127a7957a728",
+      "bytes": 22298,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/protocols/route/E8A_C_TO_D_REPLICATION_PREREGISTRATION.md",
+      "original_source_sha256": "5875b5cd5b18984a4cd2eb8ea2e1f99cb16f51116ea6eeb2d1cb127a7957a728"
+    },
+    {
+      "file": "protocols/route/E8B_PRE_OUTCOME_SEMANTIC_ERRATUM.md",
+      "sha256": "2a2566d260cb1bf5341f2b3cfc2bd1ea073cd9a9d013f9fa08a9e8a4cfe27691",
+      "bytes": 4684,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/protocols/route/E8B_PRE_OUTCOME_SEMANTIC_ERRATUM.md",
+      "original_source_sha256": "2a2566d260cb1bf5341f2b3cfc2bd1ea073cd9a9d013f9fa08a9e8a4cfe27691"
+    },
+    {
+      "file": "protocols/route/E9A_PROJECT_UNTOUCHED_FIXED_DOSE_DESIGN.md",
+      "sha256": "69d3be00886cbd8c8b08b6d2366d84fbdb50df90acdd001f63fdd58daf5354f3",
+      "bytes": 12756,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/protocols/route/E9A_PROJECT_UNTOUCHED_FIXED_DOSE_DESIGN.md",
+      "original_source_sha256": "69d3be00886cbd8c8b08b6d2366d84fbdb50df90acdd001f63fdd58daf5354f3"
+    },
+    {
+      "file": "protocols/route/E9B_PRIVATE_PANEL_FREEZE_REPORT.md",
+      "sha256": "30ad4d74768cf305457ea3c37c62acc25397a6d798bea0aeeb28ebcc1fbc5491",
+      "bytes": 7035,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/protocols/route/E9B_PRIVATE_PANEL_FREEZE_REPORT.md",
+      "original_source_sha256": "30ad4d74768cf305457ea3c37c62acc25397a6d798bea0aeeb28ebcc1fbc5491"
+    },
+    {
+      "file": "protocols/route/E9D_FIRST_FORWARD_HOOK_PORTABILITY_ERRATUM.md",
+      "sha256": "75f6fbb348b779a8b2c1744e5f12668797fe8116b9fb6d3d8a5878e74e358e93",
+      "bytes": 6895,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/protocols/route/E9D_FIRST_FORWARD_HOOK_PORTABILITY_ERRATUM.md",
+      "original_source_sha256": "75f6fbb348b779a8b2c1744e5f12668797fe8116b9fb6d3d8a5878e74e358e93"
+    },
+    {
+      "file": "protocols/route/E9D_PRE_FORWARD_PORTABILITY_ERRATUM.md",
+      "sha256": "1b7a09d6a35e33a96ab7a2bda3a1c71f7d49849ecea8b375cbe62b5ac44b2f74",
+      "bytes": 7437,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/protocols/route/E9D_PRE_FORWARD_PORTABILITY_ERRATUM.md",
+      "original_source_sha256": "1b7a09d6a35e33a96ab7a2bda3a1c71f7d49849ecea8b375cbe62b5ac44b2f74"
+    },
+    {
+      "file": "requirements.txt",
+      "sha256": "b74ca3b6e76f977bb340c57ef7d85e1ce9e4888dd7a83aebee5a7848d5d8d7d0",
+      "bytes": 234,
+      "packaging_source_identities": [
+        {
+          "path": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/requirements.txt",
+          "sha256": "f9ce8ef40a75197d4b234a410823be6a947162ff737b564431f87f3eb1f50509"
+        }
+      ]
+    },
+    {
+      "file": "run.py",
+      "sha256": "48c7e186ab9627fcf9b9ec0b074ed7a5e25dd9cca698a1582417a540550f06d0",
+      "bytes": 5922,
+      "packaging_source_identities": [
+        {
+          "path": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/run.py",
+          "sha256": "1dcaf43f9097e3f17e5389d3b5a5bbf1e4b5b5e3fbcb6973de1eb8dc307acaaf"
+        }
+      ]
+    },
+    {
+      "file": "setup/build_route_figure.py",
+      "sha256": "81b423494823259dd6c0ef58186d5392ba338f3fa64c83a7f3fc20adb82ec303",
+      "bytes": 4275,
+      "packaging_source_identities": [
+        {
+          "path": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/setup/build_figures_1_3.py",
+          "sha256": "f9f6fbf1a2b6ba9e61535a87ee1b7cb751c0b77e807d5296b66205ac524522f3"
+        }
+      ]
+    },
+    {
+      "file": "setup/crosscheck_record_order.json",
+      "sha256": "5c5e0e83ab9dad9fd8618f659e5b6a349c15ab6ec446f17385e4f8caf57d01f4",
+      "bytes": 37967,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/setup/crosscheck_record_order.json",
+      "original_source_sha256": "5c5e0e83ab9dad9fd8618f659e5b6a349c15ab6ec446f17385e4f8caf57d01f4"
+    },
+    {
+      "file": "setup/external_assets.json",
+      "sha256": "3e231018cbb07f16aaef6466d7330f6ea5705e5697de899cbb8d3882ed37cd44",
+      "bytes": 9214,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/setup/external_assets.json",
+      "original_source_sha256": "3e231018cbb07f16aaef6466d7330f6ea5705e5697de899cbb8d3882ed37cd44"
+    },
+    {
+      "file": "setup/reproduce_summary.py",
+      "sha256": "5eb755fc9384a01ce2311bb21170147b1b1737afd62add35c4d4323cb4ece61e",
+      "bytes": 4317,
+      "packaging_source_identities": [
+        {
+          "path": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/setup/reproduce_summary.py",
+          "sha256": "b64a6cfcf6b9d3b3a5f2d5094bd943b18dcd529f18a079e2bd84d2a7eeb28654"
+        }
+      ]
+    },
+    {
+      "file": "setup/requirements-gpu.txt",
+      "sha256": "78a302c95ef44963577d019e484c92613f5d7ba2ba8d2d359a01a519f1b176d9",
+      "bytes": 306,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/setup/requirements-gpu.txt",
+      "original_source_sha256": "78a302c95ef44963577d019e484c92613f5d7ba2ba8d2d359a01a519f1b176d9"
+    },
+    {
+      "file": "setup/requirements-severity.txt",
+      "sha256": "9e34d112e0e36356a184ad0096d8ecb2b615269655242a0daba73302a5d283c1",
+      "bytes": 123,
+      "source_identity": "source://refusal-study/ALL WORK/releases/2026-09-04/refusal-reproduction-seaborn-2026-09-04/setup/requirements-severity.txt",
+      "original_source_sha256": "9e34d112e0e36356a184ad0096d8ecb2b615269655242a0daba73302a5d283c1"
+    },
+    {
+      "file": "verify.py",
+      "sha256": "aa23a618d7d80d1036c13aabdd82344a117ffdd9cfd30441c0ac6695042141d2",
+      "bytes": 783
+    }
+  ]
+}

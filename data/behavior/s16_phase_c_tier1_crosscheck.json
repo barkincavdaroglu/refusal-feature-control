@@ -1,0 +1,486 @@
+{
+ "bootstrap": {
+  "replicates": 10000,
+  "seed": 2522210527409210963,
+  "unit": "intent"
+ },
+ "inputs_sha256": {
+  "s16_phase_c_baseline_annotations.csv": "3d0a9daec25d21b938b06587931ee4a0131d932a6d07ed7a6e70cc9b46767c43",
+  "s16_phase_c_second_rater_annotations.csv": "f6705eeb5478c3131ac6890091700c4bcf63bfaeb454356f82a8f84c6f48c3b2",
+  "s16_phase_c_tier1_annotations.csv": "0c7a059e4f42a0c8e31feb90114742eb6eb89db7ff67d7ffd985682c38a1aed6"
+ },
+ "label_distribution_by_arm": {
+  "a1_persistent": {
+   "C": 27,
+   "P": 6,
+   "R": 24,
+   "S": 63
+  },
+  "a2_natural": {
+   "C": 38,
+   "P": 9,
+   "R": 20,
+   "S": 17
+  },
+  "a3_benign": {
+   "C": 59,
+   "P": 1
+  },
+  "rb_a2_natural": {
+   "C": 38,
+   "P": 8,
+   "R": 20,
+   "S": 18
+  },
+  "rb_a3_benign": {
+   "C": 59,
+   "P": 1
+  },
+  "rd_a2_natural": {
+   "C": 36,
+   "P": 13,
+   "R": 16,
+   "S": 19
+  },
+  "rd_a3_benign": {
+   "C": 59,
+   "P": 1
+  },
+  "rnd1707_a1_persistent": {
+   "C": 25,
+   "P": 8,
+   "R": 23,
+   "S": 64
+  },
+  "rnd1707_a2_natural": {
+   "C": 39,
+   "P": 12,
+   "R": 16,
+   "S": 17
+  },
+  "rnd1707_a3_benign": {
+   "C": 59,
+   "P": 1
+  }
+ },
+ "note": "cross-check from public files; not the frozen analyzer",
+ "numeric_continuity_median_deltas": {
+  "a1_persistent": {
+   "median_delta_primary_score": -0.078125,
+   "median_delta_probe": -0.18068504333496094,
+   "n": 120
+  },
+  "a2_natural": {
+   "median_delta_primary_score": 0.1875,
+   "median_delta_probe": 0.8743972778320312,
+   "n": 84
+  },
+  "a3_benign": {
+   "median_delta_primary_score": 0.109375,
+   "median_delta_probe": 1.2773857116699219,
+   "n": 60
+  },
+  "rb_a2_natural": {
+   "median_delta_primary_score": 0.125,
+   "median_delta_probe": 0.7119808197021484,
+   "n": 84
+  },
+  "rb_a3_benign": {
+   "median_delta_primary_score": 0.06640625,
+   "median_delta_probe": 1.1695404052734375,
+   "n": 60
+  },
+  "rd_a2_natural": {
+   "median_delta_primary_score": 0.046875,
+   "median_delta_probe": 4.24492073059082,
+   "n": 84
+  },
+  "rd_a3_benign": {
+   "median_delta_primary_score": 0.07421875,
+   "median_delta_probe": 4.5066938400268555,
+   "n": 60
+  },
+  "rnd1707_a1_persistent": {
+   "median_delta_primary_score": 0.03125,
+   "median_delta_probe": 0.05988121032714844,
+   "n": 120
+  },
+  "rnd1707_a2_natural": {
+   "median_delta_primary_score": -0.0625,
+   "median_delta_probe": -0.49778079986572266,
+   "n": 84
+  },
+  "rnd1707_a3_benign": {
+   "median_delta_primary_score": -0.05078125,
+   "median_delta_probe": -0.45633411407470703,
+   "n": 60
+  }
+ },
+ "payload_sha256": "9d52d9b2c904d3e7ed15294334cfdfafe18bdb06b3f9b13a16e5fb6842a936d0",
+ "primary_agent_labels": {
+  "benign_A3_refusal_like": {
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "count": 0,
+   "estimate": 0.0,
+   "n": 60,
+   "n_intents": 10
+  },
+  "benign_RB_A3_refusal_like": {
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "count": 0,
+   "estimate": 0.0,
+   "n": 60,
+   "n_intents": 10
+  },
+  "benign_RD_A3_refusal_like": {
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "count": 0,
+   "estimate": 0.0,
+   "n": 60,
+   "n_intents": 10
+  },
+  "benign_RND_A3_refusal_like": {
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "count": 0,
+   "estimate": 0.0,
+   "n": 60,
+   "n_intents": 10
+  },
+  "denominators": {
+   "benign": 72,
+   "fresh_complying": 18,
+   "harmful_all_refusing": 92,
+   "harmful_direct_refusing": 57,
+   "harmful_fictional_all": 60,
+   "harmful_fictional_complying": 31
+  },
+  "necessity_A1_all_refusing": {
+   "ci95": [
+    0.0,
+    0.03614457831325301
+   ],
+   "count": 1,
+   "estimate": 0.011627906976744186,
+   "n": 86,
+   "n_intents": 19
+  },
+  "necessity_A1_direct": {
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "count": 0,
+   "estimate": 0.0,
+   "n": 57,
+   "n_intents": 19
+  },
+  "necessity_control_RND_A1_all_refusing": {
+   "ci95": [
+    0.0,
+    0.03614457831325301
+   ],
+   "count": 1,
+   "estimate": 0.011627906976744186,
+   "n": 86,
+   "n_intents": 19
+  },
+  "necessity_control_RND_A1_direct": {
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "count": 0,
+   "estimate": 0.0,
+   "n": 57,
+   "n_intents": 19
+  },
+  "route_share_A2_fictional": {
+   "arm_effect": 0.0967741935483871,
+   "rb_effect": 0.16129032258064516,
+   "reason": "arm effect interval includes 0 or size < 0.10",
+   "route_share": null
+  },
+  "route_share_A3_benign": {
+   "arm_effect": 0.0,
+   "rb_effect": 0.0,
+   "reason": "arm effect interval includes 0 or size < 0.10",
+   "route_share": null
+  },
+  "sufficiency_A2_fictional_complying": {
+   "ci95": [
+    0.0,
+    0.21428571428571427
+   ],
+   "count": 3,
+   "estimate": 0.0967741935483871,
+   "n": 31,
+   "n_intents": 18
+  },
+  "sufficiency_A2_fresh_complying": {
+   "ci95": [
+    0.0,
+    0.16666666666666666
+   ],
+   "count": 1,
+   "estimate": 0.05555555555555555,
+   "n": 18,
+   "n_intents": 18
+  },
+  "sufficiency_RB_A2_fictional_complying": {
+   "ci95": [
+    0.05128205128205128,
+    0.3076923076923077
+   ],
+   "count": 5,
+   "estimate": 0.16129032258064516,
+   "n": 31,
+   "n_intents": 18
+  },
+  "sufficiency_RB_A2_fresh_complying": {
+   "ci95": [
+    0.0,
+    0.16666666666666666
+   ],
+   "count": 1,
+   "estimate": 0.05555555555555555,
+   "n": 18,
+   "n_intents": 18
+  },
+  "sufficiency_RD_A2_fictional_complying": {
+   "ci95": [
+    0.0,
+    0.2222222222222222
+   ],
+   "count": 3,
+   "estimate": 0.0967741935483871,
+   "n": 31,
+   "n_intents": 18
+  },
+  "sufficiency_RD_A2_fresh_complying": {
+   "ci95": [
+    0.0,
+    0.16666666666666666
+   ],
+   "count": 1,
+   "estimate": 0.05555555555555555,
+   "n": 18,
+   "n_intents": 18
+  },
+  "sufficiency_RND_A2_fictional_complying": {
+   "ci95": [
+    0.0,
+    0.16666666666666666
+   ],
+   "count": 2,
+   "estimate": 0.06451612903225806,
+   "n": 31,
+   "n_intents": 18
+  },
+  "sufficiency_RND_A2_fresh_complying": {
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "count": 0,
+   "estimate": 0.0,
+   "n": 18,
+   "n_intents": 18
+  }
+ },
+ "schema_version": 1,
+ "sensitivity_barkin_reclassified": {
+  "benign_A3_refusal_like": {
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "count": 0,
+   "estimate": 0.0,
+   "n": 60,
+   "n_intents": 10
+  },
+  "benign_RB_A3_refusal_like": {
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "count": 0,
+   "estimate": 0.0,
+   "n": 60,
+   "n_intents": 10
+  },
+  "benign_RD_A3_refusal_like": {
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "count": 0,
+   "estimate": 0.0,
+   "n": 60,
+   "n_intents": 10
+  },
+  "benign_RND_A3_refusal_like": {
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "count": 0,
+   "estimate": 0.0,
+   "n": 60,
+   "n_intents": 10
+  },
+  "denominators": {
+   "benign": 72,
+   "fresh_complying": 18,
+   "harmful_all_refusing": 92,
+   "harmful_direct_refusing": 57,
+   "harmful_fictional_all": 60,
+   "harmful_fictional_complying": 31
+  },
+  "necessity_A1_all_refusing": {
+   "ci95": [
+    0.0,
+    0.05813953488372093
+   ],
+   "count": 2,
+   "estimate": 0.023255813953488372,
+   "n": 86,
+   "n_intents": 19
+  },
+  "necessity_A1_direct": {
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "count": 0,
+   "estimate": 0.0,
+   "n": 57,
+   "n_intents": 19
+  },
+  "necessity_control_RND_A1_all_refusing": {
+   "ci95": [
+    0.0,
+    0.03614457831325301
+   ],
+   "count": 1,
+   "estimate": 0.011627906976744186,
+   "n": 86,
+   "n_intents": 19
+  },
+  "necessity_control_RND_A1_direct": {
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "count": 0,
+   "estimate": 0.0,
+   "n": 57,
+   "n_intents": 19
+  },
+  "records_reclassified": 2,
+  "route_share_A2_fictional": {
+   "arm_effect": 0.0967741935483871,
+   "rb_effect": 0.16129032258064516,
+   "reason": "arm effect interval includes 0 or size < 0.10",
+   "route_share": null
+  },
+  "route_share_A3_benign": {
+   "arm_effect": 0.0,
+   "rb_effect": 0.0,
+   "reason": "arm effect interval includes 0 or size < 0.10",
+   "route_share": null
+  },
+  "sufficiency_A2_fictional_complying": {
+   "ci95": [
+    0.0,
+    0.21428571428571427
+   ],
+   "count": 3,
+   "estimate": 0.0967741935483871,
+   "n": 31,
+   "n_intents": 18
+  },
+  "sufficiency_A2_fresh_complying": {
+   "ci95": [
+    0.0,
+    0.16666666666666666
+   ],
+   "count": 1,
+   "estimate": 0.05555555555555555,
+   "n": 18,
+   "n_intents": 18
+  },
+  "sufficiency_RB_A2_fictional_complying": {
+   "ci95": [
+    0.05128205128205128,
+    0.3076923076923077
+   ],
+   "count": 5,
+   "estimate": 0.16129032258064516,
+   "n": 31,
+   "n_intents": 18
+  },
+  "sufficiency_RB_A2_fresh_complying": {
+   "ci95": [
+    0.0,
+    0.16666666666666666
+   ],
+   "count": 1,
+   "estimate": 0.05555555555555555,
+   "n": 18,
+   "n_intents": 18
+  },
+  "sufficiency_RD_A2_fictional_complying": {
+   "ci95": [
+    0.0,
+    0.2222222222222222
+   ],
+   "count": 3,
+   "estimate": 0.0967741935483871,
+   "n": 31,
+   "n_intents": 18
+  },
+  "sufficiency_RD_A2_fresh_complying": {
+   "ci95": [
+    0.0,
+    0.16666666666666666
+   ],
+   "count": 1,
+   "estimate": 0.05555555555555555,
+   "n": 18,
+   "n_intents": 18
+  },
+  "sufficiency_RND_A2_fictional_complying": {
+   "ci95": [
+    0.0,
+    0.16666666666666666
+   ],
+   "count": 2,
+   "estimate": 0.06451612903225806,
+   "n": 31,
+   "n_intents": 18
+  },
+  "sufficiency_RND_A2_fresh_complying": {
+   "ci95": [
+    0.0,
+    0.0
+   ],
+   "count": 0,
+   "estimate": 0.0,
+   "n": 18,
+   "n_intents": 18
+  }
+ }
+}

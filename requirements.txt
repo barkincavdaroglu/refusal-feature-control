@@ -1,0 +1,9 @@
+# Python 3.11.7; tested saved-data and figure environment. No model packages needed.
+numpy==2.3.3
+scipy==1.17.1
+scikit-learn==1.8.0
+networkx==3.6.1
+torch==2.7.1
+safetensors==0.7.0
+matplotlib==3.11.0
+-r figures/source/requirements.txt

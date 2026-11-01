@@ -1,0 +1,15 @@
+{
+  "annotations_sha256": "0c7a059e4f42a0c8e31feb90114742eb6eb89db7ff67d7ffd985682c38a1aed6",
+  "blind_key_sha256": "6ecf25b0fe1322f2bca949adafeb843c0baeb6e9cb28a54b0fc3c7b82529466b",
+  "label_counts": {
+    "C": 439,
+    "P": 60,
+    "R": 119,
+    "S": 198
+  },
+  "name": "tier1",
+  "payload_sha256": "7ddefb3fc75bf9131dc734264862c899dd2b26dc7a564b5b08b82323ceba0cf1",
+  "record_count": 816,
+  "schema_version": "s16-phase-c-annotations/1",
+  "status": "complete"
+}

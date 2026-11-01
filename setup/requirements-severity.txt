@@ -1,0 +1,5 @@
+# Separate environment matching the frozen W3 simulation run.
+numpy==2.1.3
+scipy==1.15.3
+pandas==2.2.3
+scikit-learn==1.7.2

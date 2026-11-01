@@ -1,0 +1,3635 @@
+{
+  "schema_version": 1,
+  "analysis_semantics_version": "s9-e7b-exact-receiver-route-plan-v1",
+  "created_at_utc": "2026-08-24T00:04:30.027599+00:00",
+  "status": "frozen_preoutcome_route_execution_plan_v1",
+  "mode": "adaptive_exploration",
+  "research_stage": "understanding_testing_hypotheses",
+  "objective": "measure exact original-model dependence on complete receiver MLP outputs, with MLP-input calibration and controls, before any E7 outcome",
+  "authorization": {
+    "explicit_user_confirmation_received": true,
+    "gpu_allocation_allowed": true,
+    "confirmation_received_after_e7a_and_e7b_v0_1": true,
+    "e7d_allowed": false
+  },
+  "selection_used_e7_outcomes": false,
+  "candidate_manifest_payload_sha256": "43c16cd95691aa861386373d95ec6a24cec89673bbecb0c346dd792f6e2eccf8",
+  "candidate_manifest_file_sha256": "0f1b6864706aa7a7d70ffffd6dcc6e219d03b0e096dc8f7688fa4e1a08bfde55",
+  "model": {
+    "id": "Qwen/Qwen3-4B",
+    "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+    "dtype": "bfloat16",
+    "original_model_forward": true
+  },
+  "transcoder": {
+    "id": "mwhanna/qwen3-4b-transcoders",
+    "revision": "94d176260ac39ce2f882b8b09aba8c118df29bb3",
+    "role": "selected feature coordinates only; model-native component patches remain separate"
+  },
+  "runtime_contract": {
+    "preferred_accelerators": [
+      "H100",
+      "A100"
+    ],
+    "minimum_cuda_memory_gib": 39.0,
+    "package_versions": {
+      "torch": "2.11.0+cu128",
+      "transformers": "4.57.3",
+      "transformer-lens": "3.2.1",
+      "circuit-tracer": "0.5.2",
+      "safetensors": "0.8.0"
+    }
+  },
+  "random_seed": 90701,
+  "prompt_records": [
+    {
+      "prompt_key": "LC-B01-D0",
+      "intent_id": "B01",
+      "risk_class": "benign",
+      "category": "event_planning",
+      "intent_split": "discovery",
+      "frame_id": "D0",
+      "frame_class": "direct",
+      "manual_label": "C",
+      "coarse_label": "compliance_like",
+      "prompt_sha256": "a6175841045308e4128307151e1adacfe2c74460c5df05a55774c91586289953"
+    },
+    {
+      "prompt_key": "LC-B01-F0",
+      "intent_id": "B01",
+      "risk_class": "benign",
+      "category": "event_planning",
+      "intent_split": "discovery",
+      "frame_id": "F0",
+      "frame_class": "fictional",
+      "manual_label": "C",
+      "coarse_label": "compliance_like",
+      "prompt_sha256": "65a6e99ec94b8e333bafe49857ea3375ed402621141f41611ad8f4ea491a3c4e"
+    },
+    {
+      "prompt_key": "LC-B04-F0",
+      "intent_id": "B04",
+      "risk_class": "benign",
+      "frame_id": "F0",
+      "frame_class": "fictional",
+      "manual_label": "C",
+      "coarse_label": "compliance_like",
+      "prompt_sha256": "2b9c0bc29e6218ef59120901aee5dde4cbd9c67edc44292cc750a351e63c9671"
+    },
+    {
+      "prompt_key": "LC-H01-D0",
+      "intent_id": "H01",
+      "risk_class": "harmful",
+      "category": "credential_theft",
+      "intent_split": "discovery",
+      "frame_id": "D0",
+      "frame_class": "direct",
+      "manual_label": "S",
+      "coarse_label": "refusal_like",
+      "prompt_sha256": "4fdfa72a378193f22bdf6485fcae44b58c3c6e03454d0030f0aa2055283450be"
+    },
+    {
+      "prompt_key": "LC-H01-F1",
+      "intent_id": "H01",
+      "risk_class": "harmful",
+      "category": "credential_theft",
+      "intent_split": "discovery",
+      "frame_id": "F1",
+      "frame_class": "fictional",
+      "manual_label": "S",
+      "coarse_label": "refusal_like",
+      "prompt_sha256": "1f12fcc91fd65aad26ae86dfc79c4b07c039f251c92a0529b91def7d558e3feb"
+    },
+    {
+      "prompt_key": "LC-H03-D0",
+      "intent_id": "H03",
+      "risk_class": "harmful",
+      "frame_id": "D0",
+      "frame_class": "direct",
+      "manual_label": "S",
+      "coarse_label": "refusal_like",
+      "prompt_sha256": "6b45f423de10e37b0bac5ec687647a2ca64937ed494c00999ed9b692144e813a"
+    },
+    {
+      "prompt_key": "LC-H03-F0",
+      "intent_id": "H03",
+      "risk_class": "harmful",
+      "frame_id": "F0",
+      "frame_class": "fictional",
+      "manual_label": "R",
+      "coarse_label": "refusal_like",
+      "prompt_sha256": "933497234bd52448d78d96a4bd7dd5ee8de42ad3e559595ed3c6dec17f600ba3"
+    },
+    {
+      "prompt_key": "LC-H07-D0",
+      "intent_id": "H07",
+      "risk_class": "harmful",
+      "category": "money_laundering",
+      "intent_split": "validation",
+      "frame_id": "D0",
+      "frame_class": "direct",
+      "manual_label": "S",
+      "coarse_label": "refusal_like",
+      "prompt_sha256": "10d430cd146ce47a6ed23962414305e726e6a7aef5cf1aca9e61880c2b40c7f4"
+    },
+    {
+      "prompt_key": "LC-H07-F0",
+      "intent_id": "H07",
+      "risk_class": "harmful",
+      "category": "money_laundering",
+      "intent_split": "validation",
+      "frame_id": "F0",
+      "frame_class": "fictional",
+      "manual_label": "C",
+      "coarse_label": "compliance_like",
+      "prompt_sha256": "d893d42d975fbc181091001fa025ee5a4eda88bf054d4a4c8246e80ee57ce750"
+    },
+    {
+      "prompt_key": "LC-H09-D0",
+      "intent_id": "H09",
+      "risk_class": "harmful",
+      "frame_id": "D0",
+      "frame_class": "direct",
+      "manual_label": "S",
+      "coarse_label": "refusal_like",
+      "prompt_sha256": "ea78bb2aa5d66458f3eb2a8869b0327d4d6d0e5f763cbd4d6ccade9b5995e758"
+    },
+    {
+      "prompt_key": "LC-H09-F0",
+      "intent_id": "H09",
+      "risk_class": "harmful",
+      "frame_id": "F0",
+      "frame_class": "fictional",
+      "manual_label": "C",
+      "coarse_label": "compliance_like",
+      "prompt_sha256": "d920a3b7a697726112d1b0c329b55698125a9f48e3a6a0188e4979a2ffed2c08"
+    }
+  ],
+  "candidate_features": [
+    {
+      "feature": "L7:F13452",
+      "layer": 7,
+      "feature_index": 13452,
+      "roles": [
+        "sender_edit_decoder"
+      ]
+    },
+    {
+      "feature": "L7:F76557",
+      "layer": 7,
+      "feature_index": 76557,
+      "roles": [
+        "sender_edit_decoder"
+      ]
+    },
+    {
+      "feature": "L7:F96498",
+      "layer": 7,
+      "feature_index": 96498,
+      "roles": [
+        "sender_edit_decoder"
+      ]
+    },
+    {
+      "feature": "L8:F160272",
+      "layer": 8,
+      "feature_index": 160272,
+      "roles": [
+        "receiver_topology_marker_diagnostic"
+      ]
+    },
+    {
+      "feature": "L12:F75753",
+      "layer": 12,
+      "feature_index": 75753,
+      "roles": [
+        "receiver_topology_marker_diagnostic"
+      ]
+    },
+    {
+      "feature": "L19:F77881",
+      "layer": 19,
+      "feature_index": 77881,
+      "roles": [
+        "sender_edit_decoder"
+      ]
+    },
+    {
+      "feature": "L19:F93429",
+      "layer": 19,
+      "feature_index": 93429,
+      "roles": [
+        "sender_edit_decoder"
+      ]
+    },
+    {
+      "feature": "L19:F104910",
+      "layer": 19,
+      "feature_index": 104910,
+      "roles": [
+        "sender_edit_decoder"
+      ]
+    },
+    {
+      "feature": "L21:F108909",
+      "layer": 21,
+      "feature_index": 108909,
+      "roles": [
+        "sender_edit_decoder"
+      ]
+    },
+    {
+      "feature": "L21:F143133",
+      "layer": 21,
+      "feature_index": 143133,
+      "roles": [
+        "sender_edit_decoder"
+      ]
+    },
+    {
+      "feature": "L21:F151318",
+      "layer": 21,
+      "feature_index": 151318,
+      "roles": [
+        "sender_edit_decoder"
+      ]
+    },
+    {
+      "feature": "L22:F64818",
+      "layer": 22,
+      "feature_index": 64818,
+      "roles": [
+        "receiver_topology_marker_diagnostic"
+      ]
+    },
+    {
+      "feature": "L23:F11852",
+      "layer": 23,
+      "feature_index": 11852,
+      "roles": [
+        "receiver_topology_marker_diagnostic"
+      ]
+    },
+    {
+      "feature": "L25:F51350",
+      "layer": 25,
+      "feature_index": 51350,
+      "roles": [
+        "sender_edit_decoder"
+      ]
+    },
+    {
+      "feature": "L25:F88401",
+      "layer": 25,
+      "feature_index": 88401,
+      "roles": [
+        "sender_edit_decoder"
+      ]
+    },
+    {
+      "feature": "L25:F106080",
+      "layer": 25,
+      "feature_index": 106080,
+      "roles": [
+        "sender_edit_decoder"
+      ]
+    },
+    {
+      "feature": "L29:F18221",
+      "layer": 29,
+      "feature_index": 18221,
+      "roles": [
+        "sender_edit_decoder"
+      ]
+    },
+    {
+      "feature": "L29:F40376",
+      "layer": 29,
+      "feature_index": 40376,
+      "roles": [
+        "sender_edit_decoder"
+      ]
+    },
+    {
+      "feature": "L29:F63008",
+      "layer": 29,
+      "feature_index": 63008,
+      "roles": [
+        "sender_edit_decoder"
+      ]
+    },
+    {
+      "feature": "L29:F152160",
+      "layer": 29,
+      "feature_index": 152160,
+      "roles": [
+        "sender_edit_decoder"
+      ]
+    },
+    {
+      "feature": "L31:F49541",
+      "layer": 31,
+      "feature_index": 49541,
+      "roles": [
+        "receiver_topology_marker_diagnostic",
+        "sender_edit_decoder"
+      ]
+    },
+    {
+      "feature": "L31:F139261",
+      "layer": 31,
+      "feature_index": 139261,
+      "roles": [
+        "sender_edit_decoder"
+      ]
+    },
+    {
+      "feature": "L32:F50401",
+      "layer": 32,
+      "feature_index": 50401,
+      "roles": [
+        "receiver_topology_marker_diagnostic"
+      ]
+    },
+    {
+      "feature": "L32:F93101",
+      "layer": 32,
+      "feature_index": 93101,
+      "roles": [
+        "receiver_topology_marker_diagnostic"
+      ]
+    },
+    {
+      "feature": "L33:F5064",
+      "layer": 33,
+      "feature_index": 5064,
+      "roles": [
+        "sender_edit_decoder"
+      ]
+    },
+    {
+      "feature": "L33:F78685",
+      "layer": 33,
+      "feature_index": 78685,
+      "roles": [
+        "sender_edit_decoder"
+      ]
+    },
+    {
+      "feature": "L33:F143078",
+      "layer": 33,
+      "feature_index": 143078,
+      "roles": [
+        "sender_edit_decoder"
+      ]
+    },
+    {
+      "feature": "L35:F10607",
+      "layer": 35,
+      "feature_index": 10607,
+      "roles": [
+        "receiver_topology_marker_diagnostic"
+      ]
+    }
+  ],
+  "source_edits": [
+    {
+      "source_edit_id": "benign_b01_d0_f0:a_from_b:L25:F106080:l2_matched_to:LC-B01-D0:late_long:anchor_high",
+      "direction_id": "benign_b01_d0_f0:a_from_b",
+      "target_prompt_key": "LC-B01-D0",
+      "source_prompt_key": "LC-B01-F0",
+      "source_feature": "L25:F106080",
+      "source_edit_policy": "l2_matched_to_anchor_source_edit",
+      "source_activation_delta": -6.218320410462902,
+      "source_edit_l2": 6.218505730852485
+    },
+    {
+      "source_edit_id": "benign_b01_d0_f0:a_from_b:L25:F51350:natural",
+      "direction_id": "benign_b01_d0_f0:a_from_b",
+      "target_prompt_key": "LC-B01-D0",
+      "source_prompt_key": "LC-B01-F0",
+      "source_feature": "L25:F51350",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": -6.21875,
+      "source_edit_l2": 6.218505730852485
+    },
+    {
+      "source_edit_id": "benign_b01_d0_f0:a_from_b:L25:F88401:l2_matched_to:LC-B01-D0:late_long:anchor_high",
+      "direction_id": "benign_b01_d0_f0:a_from_b",
+      "target_prompt_key": "LC-B01-D0",
+      "source_prompt_key": "LC-B01-F0",
+      "source_feature": "L25:F88401",
+      "source_edit_policy": "l2_matched_to_anchor_source_edit",
+      "source_activation_delta": -6.218459029073259,
+      "source_edit_l2": 6.218505730852485
+    },
+    {
+      "source_edit_id": "benign_b01_d0_f0:b_from_a:L7:F13452:l2_matched_to:LC-B01-F0:early_local:anchor_high",
+      "direction_id": "benign_b01_d0_f0:b_from_a",
+      "target_prompt_key": "LC-B01-F0",
+      "source_prompt_key": "LC-B01-D0",
+      "source_feature": "L7:F13452",
+      "source_edit_policy": "l2_matched_to_anchor_source_edit",
+      "source_activation_delta": 0.31248822819071165,
+      "source_edit_l2": 0.3124910965561867
+    },
+    {
+      "source_edit_id": "benign_b01_d0_f0:b_from_a:L7:F76557:l2_matched_to:LC-B01-F0:early_local:anchor_high",
+      "direction_id": "benign_b01_d0_f0:b_from_a",
+      "target_prompt_key": "LC-B01-F0",
+      "source_prompt_key": "LC-B01-D0",
+      "source_feature": "L7:F76557",
+      "source_edit_policy": "l2_matched_to_anchor_source_edit",
+      "source_activation_delta": 0.3124672571963542,
+      "source_edit_l2": 0.3124910965561867
+    },
+    {
+      "source_edit_id": "benign_b01_d0_f0:b_from_a:L7:F96498:natural",
+      "direction_id": "benign_b01_d0_f0:b_from_a",
+      "target_prompt_key": "LC-B01-F0",
+      "source_prompt_key": "LC-B01-D0",
+      "source_feature": "L7:F96498",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": 0.3125,
+      "source_edit_l2": 0.3124910965561867
+    },
+    {
+      "source_edit_id": "flip_h07_d0_f0:a_from_b:L19:F104910:l2_matched_to:LC-H07-D0:middle_short:anchor_high",
+      "direction_id": "flip_h07_d0_f0:a_from_b",
+      "target_prompt_key": "LC-H07-D0",
+      "source_prompt_key": "LC-H07-F0",
+      "source_feature": "L19:F104910",
+      "source_edit_policy": "l2_matched_to_anchor_source_edit",
+      "source_activation_delta": -1.203098037290582,
+      "source_edit_l2": 1.2031400594860315
+    },
+    {
+      "source_edit_id": "flip_h07_d0_f0:a_from_b:L19:F77881:l2_matched_to:LC-H07-D0:middle_short:anchor_high",
+      "direction_id": "flip_h07_d0_f0:a_from_b",
+      "target_prompt_key": "LC-H07-D0",
+      "source_prompt_key": "LC-H07-F0",
+      "source_feature": "L19:F77881",
+      "source_edit_policy": "l2_matched_to_anchor_source_edit",
+      "source_activation_delta": -1.2030365152074123,
+      "source_edit_l2": 1.2031400594860315
+    },
+    {
+      "source_edit_id": "flip_h07_d0_f0:a_from_b:L19:F93429:natural",
+      "direction_id": "flip_h07_d0_f0:a_from_b",
+      "target_prompt_key": "LC-H07-D0",
+      "source_prompt_key": "LC-H07-F0",
+      "source_feature": "L19:F93429",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": -1.203125,
+      "source_edit_l2": 1.2031400594860315
+    },
+    {
+      "source_edit_id": "flip_h07_d0_f0:b_from_a:L7:F13452:l2_matched_to:LC-H07-F0:early_long:anchor_high",
+      "direction_id": "flip_h07_d0_f0:b_from_a",
+      "target_prompt_key": "LC-H07-F0",
+      "source_prompt_key": "LC-H07-D0",
+      "source_feature": "L7:F13452",
+      "source_edit_policy": "l2_matched_to_anchor_source_edit",
+      "source_activation_delta": 0.9062158617530638,
+      "source_edit_l2": 0.9062241800129414
+    },
+    {
+      "source_edit_id": "flip_h07_d0_f0:b_from_a:L7:F76557:l2_matched_to:LC-H07-F0:early_long:anchor_high",
+      "direction_id": "flip_h07_d0_f0:b_from_a",
+      "target_prompt_key": "LC-H07-F0",
+      "source_prompt_key": "LC-H07-D0",
+      "source_feature": "L7:F76557",
+      "source_edit_policy": "l2_matched_to_anchor_source_edit",
+      "source_activation_delta": 0.9061550458694272,
+      "source_edit_l2": 0.9062241800129414
+    },
+    {
+      "source_edit_id": "flip_h07_d0_f0:b_from_a:L7:F96498:natural",
+      "direction_id": "flip_h07_d0_f0:b_from_a",
+      "target_prompt_key": "LC-H07-F0",
+      "source_prompt_key": "LC-H07-D0",
+      "source_feature": "L7:F96498",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": 0.90625,
+      "source_edit_l2": 0.9062241800129414
+    },
+    {
+      "source_edit_id": "mechanics:b04_f0_h03_denoising_transport:a_to_c:L29:F18221",
+      "direction_id": "b04_f0_h03_denoising_transport",
+      "target_prompt_key": "LC-B04-F0",
+      "source_prompt_key": "LC-H03-D0",
+      "source_feature": "L29:F18221",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": 20.375,
+      "source_edit_l2": 20.37405637651682
+    },
+    {
+      "source_edit_id": "mechanics:b04_f0_h03_denoising_transport:b_to_c:L29:F152160",
+      "direction_id": "b04_f0_h03_denoising_transport",
+      "target_prompt_key": "LC-B04-F0",
+      "source_prompt_key": "LC-H03-D0",
+      "source_feature": "L29:F152160",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": 8.25,
+      "source_edit_l2": 8.24955153465271
+    },
+    {
+      "source_edit_id": "mechanics:b04_f0_h03_denoising_transport:c_to_d:L31:F49541",
+      "direction_id": "b04_f0_h03_denoising_transport",
+      "target_prompt_key": "LC-B04-F0",
+      "source_prompt_key": "LC-H03-D0",
+      "source_feature": "L31:F49541",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": 24.0,
+      "source_edit_l2": 23.998828411102295
+    },
+    {
+      "source_edit_id": "mechanics:b04_f0_h03_denoising_transport:matched_a_to_c:L29:F40376",
+      "direction_id": "b04_f0_h03_denoising_transport",
+      "target_prompt_key": "LC-B04-F0",
+      "source_prompt_key": "LC-H03-D0",
+      "source_feature": "L29:F40376",
+      "source_edit_policy": "exact_l2_matched_to_graph_relation",
+      "source_activation_delta": 20.37359734804645,
+      "source_edit_l2": 20.37405637651682
+    },
+    {
+      "source_edit_id": "mechanics:b04_f0_h03_denoising_transport:matched_b_to_c:L29:F63008",
+      "direction_id": "b04_f0_h03_denoising_transport",
+      "target_prompt_key": "LC-B04-F0",
+      "source_prompt_key": "LC-H03-D0",
+      "source_feature": "L29:F63008",
+      "source_edit_policy": "exact_l2_matched_to_graph_relation",
+      "source_activation_delta": 8.250551797291976,
+      "source_edit_l2": 8.24955153465271
+    },
+    {
+      "source_edit_id": "mechanics:b04_f0_h03_denoising_transport:matched_c_to_d:L31:F139261",
+      "direction_id": "b04_f0_h03_denoising_transport",
+      "target_prompt_key": "LC-B04-F0",
+      "source_prompt_key": "LC-H03-D0",
+      "source_feature": "L31:F139261",
+      "source_edit_policy": "exact_l2_matched_to_graph_relation",
+      "source_activation_delta": 23.998038833294153,
+      "source_edit_l2": 23.998828411102295
+    },
+    {
+      "source_edit_id": "mechanics:h03_d0_from_f0:a_to_c:L29:F18221",
+      "direction_id": "h03_d0_from_f0",
+      "target_prompt_key": "LC-H03-D0",
+      "source_prompt_key": "LC-H03-F0",
+      "source_feature": "L29:F18221",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": -20.375,
+      "source_edit_l2": 20.37405637651682
+    },
+    {
+      "source_edit_id": "mechanics:h03_d0_from_f0:b_to_c:L29:F152160",
+      "direction_id": "h03_d0_from_f0",
+      "target_prompt_key": "LC-H03-D0",
+      "source_prompt_key": "LC-H03-F0",
+      "source_feature": "L29:F152160",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": -8.25,
+      "source_edit_l2": 8.24955153465271
+    },
+    {
+      "source_edit_id": "mechanics:h03_d0_from_f0:c_to_d:L31:F49541",
+      "direction_id": "h03_d0_from_f0",
+      "target_prompt_key": "LC-H03-D0",
+      "source_prompt_key": "LC-H03-F0",
+      "source_feature": "L31:F49541",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": -24.0,
+      "source_edit_l2": 23.998828411102295
+    },
+    {
+      "source_edit_id": "mechanics:h03_d0_from_f0:matched_a_to_c:L29:F40376",
+      "direction_id": "h03_d0_from_f0",
+      "target_prompt_key": "LC-H03-D0",
+      "source_prompt_key": "LC-H03-F0",
+      "source_feature": "L29:F40376",
+      "source_edit_policy": "exact_l2_matched_to_graph_relation",
+      "source_activation_delta": -20.37359734804645,
+      "source_edit_l2": 20.37405637651682
+    },
+    {
+      "source_edit_id": "mechanics:h03_d0_from_f0:matched_b_to_c:L29:F63008",
+      "direction_id": "h03_d0_from_f0",
+      "target_prompt_key": "LC-H03-D0",
+      "source_prompt_key": "LC-H03-F0",
+      "source_feature": "L29:F63008",
+      "source_edit_policy": "exact_l2_matched_to_graph_relation",
+      "source_activation_delta": -8.250551797291976,
+      "source_edit_l2": 8.24955153465271
+    },
+    {
+      "source_edit_id": "mechanics:h03_d0_from_f0:matched_c_to_d:L31:F139261",
+      "direction_id": "h03_d0_from_f0",
+      "target_prompt_key": "LC-H03-D0",
+      "source_prompt_key": "LC-H03-F0",
+      "source_feature": "L31:F139261",
+      "source_edit_policy": "exact_l2_matched_to_graph_relation",
+      "source_activation_delta": -23.998038833294153,
+      "source_edit_l2": 23.998828411102295
+    },
+    {
+      "source_edit_id": "mechanics:h03_f0_from_d0:a_to_c:L29:F18221",
+      "direction_id": "h03_f0_from_d0",
+      "target_prompt_key": "LC-H03-F0",
+      "source_prompt_key": "LC-H03-D0",
+      "source_feature": "L29:F18221",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": 20.375,
+      "source_edit_l2": 20.37405637651682
+    },
+    {
+      "source_edit_id": "mechanics:h03_f0_from_d0:b_to_c:L29:F152160",
+      "direction_id": "h03_f0_from_d0",
+      "target_prompt_key": "LC-H03-F0",
+      "source_prompt_key": "LC-H03-D0",
+      "source_feature": "L29:F152160",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": 8.25,
+      "source_edit_l2": 8.24955153465271
+    },
+    {
+      "source_edit_id": "mechanics:h03_f0_from_d0:c_to_d:L31:F49541",
+      "direction_id": "h03_f0_from_d0",
+      "target_prompt_key": "LC-H03-F0",
+      "source_prompt_key": "LC-H03-D0",
+      "source_feature": "L31:F49541",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": 24.0,
+      "source_edit_l2": 23.998828411102295
+    },
+    {
+      "source_edit_id": "mechanics:h03_f0_from_d0:matched_a_to_c:L29:F40376",
+      "direction_id": "h03_f0_from_d0",
+      "target_prompt_key": "LC-H03-F0",
+      "source_prompt_key": "LC-H03-D0",
+      "source_feature": "L29:F40376",
+      "source_edit_policy": "exact_l2_matched_to_graph_relation",
+      "source_activation_delta": 20.37359734804645,
+      "source_edit_l2": 20.37405637651682
+    },
+    {
+      "source_edit_id": "mechanics:h03_f0_from_d0:matched_b_to_c:L29:F63008",
+      "direction_id": "h03_f0_from_d0",
+      "target_prompt_key": "LC-H03-F0",
+      "source_prompt_key": "LC-H03-D0",
+      "source_feature": "L29:F63008",
+      "source_edit_policy": "exact_l2_matched_to_graph_relation",
+      "source_activation_delta": 8.250551797291976,
+      "source_edit_l2": 8.24955153465271
+    },
+    {
+      "source_edit_id": "mechanics:h03_f0_from_d0:matched_c_to_d:L31:F139261",
+      "direction_id": "h03_f0_from_d0",
+      "target_prompt_key": "LC-H03-F0",
+      "source_prompt_key": "LC-H03-D0",
+      "source_feature": "L31:F139261",
+      "source_edit_policy": "exact_l2_matched_to_graph_relation",
+      "source_activation_delta": 23.998038833294153,
+      "source_edit_l2": 23.998828411102295
+    },
+    {
+      "source_edit_id": "mechanics:h09_d0_from_f0:a_to_c:L29:F18221",
+      "direction_id": "h09_d0_from_f0",
+      "target_prompt_key": "LC-H09-D0",
+      "source_prompt_key": "LC-H09-F0",
+      "source_feature": "L29:F18221",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": -18.75,
+      "source_edit_l2": 18.74913163483143
+    },
+    {
+      "source_edit_id": "mechanics:h09_d0_from_f0:b_to_c:L29:F152160",
+      "direction_id": "h09_d0_from_f0",
+      "target_prompt_key": "LC-H09-D0",
+      "source_prompt_key": "LC-H09-F0",
+      "source_feature": "L29:F152160",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": -5.09375,
+      "source_edit_l2": 5.093473106622696
+    },
+    {
+      "source_edit_id": "mechanics:h09_d0_from_f0:c_to_d:L31:F49541",
+      "direction_id": "h09_d0_from_f0",
+      "target_prompt_key": "LC-H09-D0",
+      "source_prompt_key": "LC-H09-F0",
+      "source_feature": "L31:F49541",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": -22.0,
+      "source_edit_l2": 21.998926043510437
+    },
+    {
+      "source_edit_id": "mechanics:h09_d0_from_f0:matched_a_to_c:L29:F40376",
+      "direction_id": "h09_d0_from_f0",
+      "target_prompt_key": "LC-H09-D0",
+      "source_prompt_key": "LC-H09-F0",
+      "source_feature": "L29:F40376",
+      "source_edit_policy": "exact_l2_matched_to_graph_relation",
+      "source_activation_delta": -18.748709215993664,
+      "source_edit_l2": 18.74913163483143
+    },
+    {
+      "source_edit_id": "mechanics:h09_d0_from_f0:matched_b_to_c:L29:F63008",
+      "direction_id": "h09_d0_from_f0",
+      "target_prompt_key": "LC-H09-D0",
+      "source_prompt_key": "LC-H09-F0",
+      "source_feature": "L29:F63008",
+      "source_edit_policy": "exact_l2_matched_to_graph_relation",
+      "source_activation_delta": -5.09409069302497,
+      "source_edit_l2": 5.093473106622696
+    },
+    {
+      "source_edit_id": "mechanics:h09_d0_from_f0:matched_c_to_d:L31:F139261",
+      "direction_id": "h09_d0_from_f0",
+      "target_prompt_key": "LC-H09-D0",
+      "source_prompt_key": "LC-H09-F0",
+      "source_feature": "L31:F139261",
+      "source_edit_policy": "exact_l2_matched_to_graph_relation",
+      "source_activation_delta": -21.998202263852974,
+      "source_edit_l2": 21.998926043510437
+    },
+    {
+      "source_edit_id": "mechanics:h09_f0_from_d0:a_to_c:L29:F18221",
+      "direction_id": "h09_f0_from_d0",
+      "target_prompt_key": "LC-H09-F0",
+      "source_prompt_key": "LC-H09-D0",
+      "source_feature": "L29:F18221",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": 18.75,
+      "source_edit_l2": 18.74913163483143
+    },
+    {
+      "source_edit_id": "mechanics:h09_f0_from_d0:b_to_c:L29:F152160",
+      "direction_id": "h09_f0_from_d0",
+      "target_prompt_key": "LC-H09-F0",
+      "source_prompt_key": "LC-H09-D0",
+      "source_feature": "L29:F152160",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": 5.09375,
+      "source_edit_l2": 5.093473106622696
+    },
+    {
+      "source_edit_id": "mechanics:h09_f0_from_d0:c_to_d:L31:F49541",
+      "direction_id": "h09_f0_from_d0",
+      "target_prompt_key": "LC-H09-F0",
+      "source_prompt_key": "LC-H09-D0",
+      "source_feature": "L31:F49541",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": 22.0,
+      "source_edit_l2": 21.998926043510437
+    },
+    {
+      "source_edit_id": "mechanics:h09_f0_from_d0:matched_a_to_c:L29:F40376",
+      "direction_id": "h09_f0_from_d0",
+      "target_prompt_key": "LC-H09-F0",
+      "source_prompt_key": "LC-H09-D0",
+      "source_feature": "L29:F40376",
+      "source_edit_policy": "exact_l2_matched_to_graph_relation",
+      "source_activation_delta": 18.748709215993664,
+      "source_edit_l2": 18.74913163483143
+    },
+    {
+      "source_edit_id": "mechanics:h09_f0_from_d0:matched_b_to_c:L29:F63008",
+      "direction_id": "h09_f0_from_d0",
+      "target_prompt_key": "LC-H09-F0",
+      "source_prompt_key": "LC-H09-D0",
+      "source_feature": "L29:F63008",
+      "source_edit_policy": "exact_l2_matched_to_graph_relation",
+      "source_activation_delta": 5.09409069302497,
+      "source_edit_l2": 5.093473106622696
+    },
+    {
+      "source_edit_id": "mechanics:h09_f0_from_d0:matched_c_to_d:L31:F139261",
+      "direction_id": "h09_f0_from_d0",
+      "target_prompt_key": "LC-H09-F0",
+      "source_prompt_key": "LC-H09-D0",
+      "source_feature": "L31:F139261",
+      "source_edit_policy": "exact_l2_matched_to_graph_relation",
+      "source_activation_delta": 21.998202263852974,
+      "source_edit_l2": 21.998926043510437
+    },
+    {
+      "source_edit_id": "same_h01_d0_f1:a_from_b:L33:F143078:natural",
+      "direction_id": "same_h01_d0_f1:a_from_b",
+      "target_prompt_key": "LC-H01-D0",
+      "source_prompt_key": "LC-H01-F1",
+      "source_feature": "L33:F143078",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": -8.25,
+      "source_edit_l2": 8.265227168798447
+    },
+    {
+      "source_edit_id": "same_h01_d0_f1:a_from_b:L33:F5064:l2_matched_to:LC-H01-D0:late_short:anchor_high",
+      "direction_id": "same_h01_d0_f1:a_from_b",
+      "target_prompt_key": "LC-H01-D0",
+      "source_prompt_key": "LC-H01-F1",
+      "source_feature": "L33:F5064",
+      "source_edit_policy": "l2_matched_to_anchor_source_edit",
+      "source_activation_delta": -8.264681353155417,
+      "source_edit_l2": 8.265227168798447
+    },
+    {
+      "source_edit_id": "same_h01_d0_f1:a_from_b:L33:F78685:l2_matched_to:LC-H01-D0:late_short:anchor_high",
+      "direction_id": "same_h01_d0_f1:a_from_b",
+      "target_prompt_key": "LC-H01-D0",
+      "source_prompt_key": "LC-H01-F1",
+      "source_feature": "L33:F78685",
+      "source_edit_policy": "l2_matched_to_anchor_source_edit",
+      "source_activation_delta": -8.264069613004294,
+      "source_edit_l2": 8.265227168798447
+    },
+    {
+      "source_edit_id": "same_h01_d0_f1:b_from_a:L21:F108909:l2_matched_to:LC-H01-F1:middle_short:anchor_high",
+      "direction_id": "same_h01_d0_f1:b_from_a",
+      "target_prompt_key": "LC-H01-F1",
+      "source_prompt_key": "LC-H01-D0",
+      "source_feature": "L21:F108909",
+      "source_edit_policy": "l2_matched_to_anchor_source_edit",
+      "source_activation_delta": -3.7189525832853736,
+      "source_edit_l2": 3.7191210500895977
+    },
+    {
+      "source_edit_id": "same_h01_d0_f1:b_from_a:L21:F143133:natural",
+      "direction_id": "same_h01_d0_f1:b_from_a",
+      "target_prompt_key": "LC-H01-F1",
+      "source_prompt_key": "LC-H01-D0",
+      "source_feature": "L21:F143133",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": -3.71875,
+      "source_edit_l2": 3.7191210500895977
+    },
+    {
+      "source_edit_id": "same_h01_d0_f1:b_from_a:L21:F151318:l2_matched_to:LC-H01-F1:middle_short:anchor_high",
+      "direction_id": "same_h01_d0_f1:b_from_a",
+      "target_prompt_key": "LC-H01-F1",
+      "source_prompt_key": "LC-H01-D0",
+      "source_feature": "L21:F151318",
+      "source_edit_policy": "l2_matched_to_anchor_source_edit",
+      "source_activation_delta": -3.7190966657916764,
+      "source_edit_l2": 3.7191210500895977
+    }
+  ],
+  "mechanics_cells": [
+    {
+      "cell_id": "mechanics:b04_f0_h03_denoising_transport:a_to_c",
+      "panel": "mechanics_core",
+      "context_id": "b04_f0_h03_denoising_transport",
+      "direction_id": "b04_f0_h03_denoising_transport",
+      "pair_id": null,
+      "pair_type": "benign_numeric_transport",
+      "target_prompt_key": "LC-B04-F0",
+      "source_prompt_key": "LC-H03-D0",
+      "source_feature": "L29:F18221",
+      "source_edit_id": "mechanics:b04_f0_h03_denoising_transport:a_to_c:L29:F18221",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": 20.375,
+      "source_edit_l2": 20.37405637651682,
+      "receiver_layer": 31,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L31:F49541",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.008876296552464604,
+          "bypass_share": 0.9911237034475354,
+          "direct_coverage": 0.008526455477093433,
+          "indirect_coverage": 0.00034984107537117115,
+          "route_effective_count": 1.0833582824888155,
+          "route_max_branch_share": 0.9605870451371936,
+          "error_bypass_mass": 0.6962235247855888,
+          "embedding_bypass_mass": 0.2949001786619328,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.7024587570288525,
+          "walk_conservation": 0.9999999999999862
+        },
+        "signed": {
+          "direct_jacobian": -0.07208588957055215,
+          "indirect_signed_jacobian": 0.009741575484947501,
+          "total_signed_jacobian": -0.062344314085604646,
+          "total_absolute_path_strength": 0.11822063465118055,
+          "cancellation_ratio": 0.5273556031022548,
+          "conflict_fraction": 0.4726443968977452,
+          "path_sign_relation": "opposed_partial",
+          "receiver_active": true,
+          "intermediate_active_count": 36,
+          "class": "mixed",
+          "predicted_receiver_preactivation_delta": -0.062344314085604646,
+          "predicted_receiver_preactivation": -22.312344314085603,
+          "predicted_receiver_gate_crossing": false
+        },
+        "reference_graph_id": "LC-H03-D0",
+        "transported_context_warning": "topology is an H03-D0 design reference, not a current-context prediction"
+      },
+      "role": "graph_proposed",
+      "route_signature": "b04_f0_h03_denoising_transport|mechanics:b04_f0_h03_denoising_transport:a_to_c:L29:F18221|L31|module_output"
+    },
+    {
+      "cell_id": "mechanics:b04_f0_h03_denoising_transport:b_to_c",
+      "panel": "mechanics_core",
+      "context_id": "b04_f0_h03_denoising_transport",
+      "direction_id": "b04_f0_h03_denoising_transport",
+      "pair_id": null,
+      "pair_type": "benign_numeric_transport",
+      "target_prompt_key": "LC-B04-F0",
+      "source_prompt_key": "LC-H03-D0",
+      "source_feature": "L29:F152160",
+      "source_edit_id": "mechanics:b04_f0_h03_denoising_transport:b_to_c:L29:F152160",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": 8.25,
+      "source_edit_l2": 8.24955153465271,
+      "receiver_layer": 31,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L31:F49541",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.0017178712337856284,
+          "bypass_share": 0.9982821287662144,
+          "direct_coverage": 0.001644063888535303,
+          "indirect_coverage": 7.380734525032546e-05,
+          "route_effective_count": 1.0915961615140761,
+          "route_max_branch_share": 0.9570355776389141,
+          "error_bypass_mass": 0.7008896169542045,
+          "embedding_bypass_mass": 0.2973925118119954,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.7020957270069936,
+          "walk_conservation": 0.9999999999999856
+        },
+        "signed": {
+          "direct_jacobian": 0.03432765151515151,
+          "indirect_signed_jacobian": -0.01200205711586071,
+          "total_signed_jacobian": 0.022325594399290802,
+          "total_absolute_path_strength": 0.07557498846880809,
+          "cancellation_ratio": 0.2954098287227024,
+          "conflict_fraction": 0.7045901712772976,
+          "path_sign_relation": "opposed_partial",
+          "receiver_active": true,
+          "intermediate_active_count": 36,
+          "class": "conflicted",
+          "predicted_receiver_preactivation_delta": 0.022325594399290802,
+          "predicted_receiver_preactivation": -22.22767440560071,
+          "predicted_receiver_gate_crossing": false
+        },
+        "reference_graph_id": "LC-H03-D0",
+        "transported_context_warning": "topology is an H03-D0 design reference, not a current-context prediction"
+      },
+      "role": "graph_proposed",
+      "route_signature": "b04_f0_h03_denoising_transport|mechanics:b04_f0_h03_denoising_transport:b_to_c:L29:F152160|L31|module_output"
+    },
+    {
+      "cell_id": "mechanics:b04_f0_h03_denoising_transport:c_to_d",
+      "panel": "mechanics_core",
+      "context_id": "b04_f0_h03_denoising_transport",
+      "direction_id": "b04_f0_h03_denoising_transport",
+      "pair_id": null,
+      "pair_type": "benign_numeric_transport",
+      "target_prompt_key": "LC-B04-F0",
+      "source_prompt_key": "LC-H03-D0",
+      "source_feature": "L31:F49541",
+      "source_edit_id": "mechanics:b04_f0_h03_denoising_transport:c_to_d:L31:F49541",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": 24.0,
+      "source_edit_l2": 23.998828411102295,
+      "receiver_layer": 32,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L32:F50401",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.06551779754663248,
+          "bypass_share": 0.9344822024533675,
+          "direct_coverage": 0.06551779754663248,
+          "indirect_coverage": 0.0,
+          "route_effective_count": 1.0,
+          "route_max_branch_share": 1.0,
+          "error_bypass_mass": 0.6472312845293726,
+          "embedding_bypass_mass": 0.28725091792394897,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.6926095358800273,
+          "walk_conservation": 0.999999999999954
+        },
+        "signed": {
+          "direct_jacobian": 0.59375,
+          "indirect_signed_jacobian": 0.0,
+          "total_signed_jacobian": 0.59375,
+          "total_absolute_path_strength": 0.59375,
+          "cancellation_ratio": 1.0,
+          "conflict_fraction": 0.0,
+          "path_sign_relation": "direct_only",
+          "receiver_active": true,
+          "intermediate_active_count": 0,
+          "class": "coherent",
+          "predicted_receiver_preactivation_delta": 0.59375,
+          "predicted_receiver_preactivation": -9.15625,
+          "predicted_receiver_gate_crossing": false
+        },
+        "reference_graph_id": "LC-H03-D0",
+        "transported_context_warning": "topology is an H03-D0 design reference, not a current-context prediction"
+      },
+      "role": "graph_proposed",
+      "route_signature": "b04_f0_h03_denoising_transport|mechanics:b04_f0_h03_denoising_transport:c_to_d:L31:F49541|L32|module_output"
+    },
+    {
+      "cell_id": "mechanics:b04_f0_h03_denoising_transport:matched_a_to_c",
+      "panel": "mechanics_core",
+      "context_id": "b04_f0_h03_denoising_transport",
+      "direction_id": "b04_f0_h03_denoising_transport",
+      "pair_id": null,
+      "pair_type": "benign_numeric_transport",
+      "target_prompt_key": "LC-B04-F0",
+      "source_prompt_key": "LC-H03-D0",
+      "source_feature": "L29:F40376",
+      "source_edit_id": "mechanics:b04_f0_h03_denoising_transport:matched_a_to_c:L29:F40376",
+      "source_edit_policy": "exact_l2_matched_to_graph_relation",
+      "source_activation_delta": 20.37359734804645,
+      "source_edit_l2": 20.37405637651682,
+      "receiver_layer": 31,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L31:F49541",
+      "topology": {
+        "status": "not_available_in_reference_graph",
+        "missing_features": [
+          "L29:F40376"
+        ],
+        "claim_boundary": "matched controls absent from the selected graph remain valid causal controls but receive no invented topology features",
+        "reference_graph_id": "LC-H03-D0",
+        "transported_context_warning": "topology is an H03-D0 design reference, not a current-context prediction"
+      },
+      "role": "matched_source_control",
+      "route_signature": "b04_f0_h03_denoising_transport|mechanics:b04_f0_h03_denoising_transport:matched_a_to_c:L29:F40376|L31|module_output"
+    },
+    {
+      "cell_id": "mechanics:b04_f0_h03_denoising_transport:matched_b_to_c",
+      "panel": "mechanics_core",
+      "context_id": "b04_f0_h03_denoising_transport",
+      "direction_id": "b04_f0_h03_denoising_transport",
+      "pair_id": null,
+      "pair_type": "benign_numeric_transport",
+      "target_prompt_key": "LC-B04-F0",
+      "source_prompt_key": "LC-H03-D0",
+      "source_feature": "L29:F63008",
+      "source_edit_id": "mechanics:b04_f0_h03_denoising_transport:matched_b_to_c:L29:F63008",
+      "source_edit_policy": "exact_l2_matched_to_graph_relation",
+      "source_activation_delta": 8.250551797291976,
+      "source_edit_l2": 8.24955153465271,
+      "receiver_layer": 31,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L31:F49541",
+      "topology": {
+        "status": "not_available_in_reference_graph",
+        "missing_features": [
+          "L29:F63008"
+        ],
+        "claim_boundary": "matched controls absent from the selected graph remain valid causal controls but receive no invented topology features",
+        "reference_graph_id": "LC-H03-D0",
+        "transported_context_warning": "topology is an H03-D0 design reference, not a current-context prediction"
+      },
+      "role": "matched_source_control",
+      "route_signature": "b04_f0_h03_denoising_transport|mechanics:b04_f0_h03_denoising_transport:matched_b_to_c:L29:F63008|L31|module_output"
+    },
+    {
+      "cell_id": "mechanics:b04_f0_h03_denoising_transport:matched_c_to_d",
+      "panel": "mechanics_core",
+      "context_id": "b04_f0_h03_denoising_transport",
+      "direction_id": "b04_f0_h03_denoising_transport",
+      "pair_id": null,
+      "pair_type": "benign_numeric_transport",
+      "target_prompt_key": "LC-B04-F0",
+      "source_prompt_key": "LC-H03-D0",
+      "source_feature": "L31:F139261",
+      "source_edit_id": "mechanics:b04_f0_h03_denoising_transport:matched_c_to_d:L31:F139261",
+      "source_edit_policy": "exact_l2_matched_to_graph_relation",
+      "source_activation_delta": 23.998038833294153,
+      "source_edit_l2": 23.998828411102295,
+      "receiver_layer": 32,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L32:F50401",
+      "topology": {
+        "status": "not_available_in_reference_graph",
+        "missing_features": [
+          "L31:F139261"
+        ],
+        "claim_boundary": "matched controls absent from the selected graph remain valid causal controls but receive no invented topology features",
+        "reference_graph_id": "LC-H03-D0",
+        "transported_context_warning": "topology is an H03-D0 design reference, not a current-context prediction"
+      },
+      "role": "matched_source_control",
+      "route_signature": "b04_f0_h03_denoising_transport|mechanics:b04_f0_h03_denoising_transport:matched_c_to_d:L31:F139261|L32|module_output"
+    },
+    {
+      "cell_id": "mechanics:h03_d0_from_f0:a_to_c",
+      "panel": "mechanics_core",
+      "context_id": "h03_d0_from_f0",
+      "direction_id": "h03_d0_from_f0",
+      "pair_id": null,
+      "pair_type": "graph_prompt_noising",
+      "target_prompt_key": "LC-H03-D0",
+      "source_prompt_key": "LC-H03-F0",
+      "source_feature": "L29:F18221",
+      "source_edit_id": "mechanics:h03_d0_from_f0:a_to_c:L29:F18221",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": -20.375,
+      "source_edit_l2": 20.37405637651682,
+      "receiver_layer": 31,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L31:F49541",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.008876296552464604,
+          "bypass_share": 0.9911237034475354,
+          "direct_coverage": 0.008526455477093433,
+          "indirect_coverage": 0.00034984107537117115,
+          "route_effective_count": 1.0833582824888155,
+          "route_max_branch_share": 0.9605870451371936,
+          "error_bypass_mass": 0.6962235247855888,
+          "embedding_bypass_mass": 0.2949001786619328,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.7024587570288525,
+          "walk_conservation": 0.9999999999999862
+        },
+        "signed": {
+          "direct_jacobian": -0.07208588957055215,
+          "indirect_signed_jacobian": 0.009741575484947501,
+          "total_signed_jacobian": -0.062344314085604646,
+          "total_absolute_path_strength": 0.11822063465118055,
+          "cancellation_ratio": 0.5273556031022548,
+          "conflict_fraction": 0.4726443968977452,
+          "path_sign_relation": "opposed_partial",
+          "receiver_active": true,
+          "intermediate_active_count": 36,
+          "class": "mixed",
+          "predicted_receiver_preactivation_delta": -0.062344314085604646,
+          "predicted_receiver_preactivation": -22.312344314085603,
+          "predicted_receiver_gate_crossing": false
+        },
+        "reference_graph_id": "LC-H03-D0",
+        "transported_context_warning": null
+      },
+      "role": "graph_proposed",
+      "route_signature": "h03_d0_from_f0|mechanics:h03_d0_from_f0:a_to_c:L29:F18221|L31|module_output"
+    },
+    {
+      "cell_id": "mechanics:h03_d0_from_f0:b_to_c",
+      "panel": "mechanics_core",
+      "context_id": "h03_d0_from_f0",
+      "direction_id": "h03_d0_from_f0",
+      "pair_id": null,
+      "pair_type": "graph_prompt_noising",
+      "target_prompt_key": "LC-H03-D0",
+      "source_prompt_key": "LC-H03-F0",
+      "source_feature": "L29:F152160",
+      "source_edit_id": "mechanics:h03_d0_from_f0:b_to_c:L29:F152160",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": -8.25,
+      "source_edit_l2": 8.24955153465271,
+      "receiver_layer": 31,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L31:F49541",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.0017178712337856284,
+          "bypass_share": 0.9982821287662144,
+          "direct_coverage": 0.001644063888535303,
+          "indirect_coverage": 7.380734525032546e-05,
+          "route_effective_count": 1.0915961615140761,
+          "route_max_branch_share": 0.9570355776389141,
+          "error_bypass_mass": 0.7008896169542045,
+          "embedding_bypass_mass": 0.2973925118119954,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.7020957270069936,
+          "walk_conservation": 0.9999999999999856
+        },
+        "signed": {
+          "direct_jacobian": 0.03432765151515151,
+          "indirect_signed_jacobian": -0.01200205711586071,
+          "total_signed_jacobian": 0.022325594399290802,
+          "total_absolute_path_strength": 0.07557498846880809,
+          "cancellation_ratio": 0.2954098287227024,
+          "conflict_fraction": 0.7045901712772976,
+          "path_sign_relation": "opposed_partial",
+          "receiver_active": true,
+          "intermediate_active_count": 36,
+          "class": "conflicted",
+          "predicted_receiver_preactivation_delta": 0.022325594399290802,
+          "predicted_receiver_preactivation": -22.22767440560071,
+          "predicted_receiver_gate_crossing": false
+        },
+        "reference_graph_id": "LC-H03-D0",
+        "transported_context_warning": null
+      },
+      "role": "graph_proposed",
+      "route_signature": "h03_d0_from_f0|mechanics:h03_d0_from_f0:b_to_c:L29:F152160|L31|module_output"
+    },
+    {
+      "cell_id": "mechanics:h03_d0_from_f0:c_to_d",
+      "panel": "mechanics_core",
+      "context_id": "h03_d0_from_f0",
+      "direction_id": "h03_d0_from_f0",
+      "pair_id": null,
+      "pair_type": "graph_prompt_noising",
+      "target_prompt_key": "LC-H03-D0",
+      "source_prompt_key": "LC-H03-F0",
+      "source_feature": "L31:F49541",
+      "source_edit_id": "mechanics:h03_d0_from_f0:c_to_d:L31:F49541",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": -24.0,
+      "source_edit_l2": 23.998828411102295,
+      "receiver_layer": 32,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L32:F50401",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.06551779754663248,
+          "bypass_share": 0.9344822024533675,
+          "direct_coverage": 0.06551779754663248,
+          "indirect_coverage": 0.0,
+          "route_effective_count": 1.0,
+          "route_max_branch_share": 1.0,
+          "error_bypass_mass": 0.6472312845293726,
+          "embedding_bypass_mass": 0.28725091792394897,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.6926095358800273,
+          "walk_conservation": 0.999999999999954
+        },
+        "signed": {
+          "direct_jacobian": 0.59375,
+          "indirect_signed_jacobian": 0.0,
+          "total_signed_jacobian": 0.59375,
+          "total_absolute_path_strength": 0.59375,
+          "cancellation_ratio": 1.0,
+          "conflict_fraction": 0.0,
+          "path_sign_relation": "direct_only",
+          "receiver_active": true,
+          "intermediate_active_count": 0,
+          "class": "coherent",
+          "predicted_receiver_preactivation_delta": 0.59375,
+          "predicted_receiver_preactivation": -9.15625,
+          "predicted_receiver_gate_crossing": false
+        },
+        "reference_graph_id": "LC-H03-D0",
+        "transported_context_warning": null
+      },
+      "role": "graph_proposed",
+      "route_signature": "h03_d0_from_f0|mechanics:h03_d0_from_f0:c_to_d:L31:F49541|L32|module_output"
+    },
+    {
+      "cell_id": "mechanics:h03_d0_from_f0:matched_a_to_c",
+      "panel": "mechanics_core",
+      "context_id": "h03_d0_from_f0",
+      "direction_id": "h03_d0_from_f0",
+      "pair_id": null,
+      "pair_type": "graph_prompt_noising",
+      "target_prompt_key": "LC-H03-D0",
+      "source_prompt_key": "LC-H03-F0",
+      "source_feature": "L29:F40376",
+      "source_edit_id": "mechanics:h03_d0_from_f0:matched_a_to_c:L29:F40376",
+      "source_edit_policy": "exact_l2_matched_to_graph_relation",
+      "source_activation_delta": -20.37359734804645,
+      "source_edit_l2": 20.37405637651682,
+      "receiver_layer": 31,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L31:F49541",
+      "topology": {
+        "status": "not_available_in_reference_graph",
+        "missing_features": [
+          "L29:F40376"
+        ],
+        "claim_boundary": "matched controls absent from the selected graph remain valid causal controls but receive no invented topology features",
+        "reference_graph_id": "LC-H03-D0",
+        "transported_context_warning": null
+      },
+      "role": "matched_source_control",
+      "route_signature": "h03_d0_from_f0|mechanics:h03_d0_from_f0:matched_a_to_c:L29:F40376|L31|module_output"
+    },
+    {
+      "cell_id": "mechanics:h03_d0_from_f0:matched_b_to_c",
+      "panel": "mechanics_core",
+      "context_id": "h03_d0_from_f0",
+      "direction_id": "h03_d0_from_f0",
+      "pair_id": null,
+      "pair_type": "graph_prompt_noising",
+      "target_prompt_key": "LC-H03-D0",
+      "source_prompt_key": "LC-H03-F0",
+      "source_feature": "L29:F63008",
+      "source_edit_id": "mechanics:h03_d0_from_f0:matched_b_to_c:L29:F63008",
+      "source_edit_policy": "exact_l2_matched_to_graph_relation",
+      "source_activation_delta": -8.250551797291976,
+      "source_edit_l2": 8.24955153465271,
+      "receiver_layer": 31,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L31:F49541",
+      "topology": {
+        "status": "not_available_in_reference_graph",
+        "missing_features": [
+          "L29:F63008"
+        ],
+        "claim_boundary": "matched controls absent from the selected graph remain valid causal controls but receive no invented topology features",
+        "reference_graph_id": "LC-H03-D0",
+        "transported_context_warning": null
+      },
+      "role": "matched_source_control",
+      "route_signature": "h03_d0_from_f0|mechanics:h03_d0_from_f0:matched_b_to_c:L29:F63008|L31|module_output"
+    },
+    {
+      "cell_id": "mechanics:h03_d0_from_f0:matched_c_to_d",
+      "panel": "mechanics_core",
+      "context_id": "h03_d0_from_f0",
+      "direction_id": "h03_d0_from_f0",
+      "pair_id": null,
+      "pair_type": "graph_prompt_noising",
+      "target_prompt_key": "LC-H03-D0",
+      "source_prompt_key": "LC-H03-F0",
+      "source_feature": "L31:F139261",
+      "source_edit_id": "mechanics:h03_d0_from_f0:matched_c_to_d:L31:F139261",
+      "source_edit_policy": "exact_l2_matched_to_graph_relation",
+      "source_activation_delta": -23.998038833294153,
+      "source_edit_l2": 23.998828411102295,
+      "receiver_layer": 32,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L32:F50401",
+      "topology": {
+        "status": "not_available_in_reference_graph",
+        "missing_features": [
+          "L31:F139261"
+        ],
+        "claim_boundary": "matched controls absent from the selected graph remain valid causal controls but receive no invented topology features",
+        "reference_graph_id": "LC-H03-D0",
+        "transported_context_warning": null
+      },
+      "role": "matched_source_control",
+      "route_signature": "h03_d0_from_f0|mechanics:h03_d0_from_f0:matched_c_to_d:L31:F139261|L32|module_output"
+    },
+    {
+      "cell_id": "mechanics:h03_f0_from_d0:a_to_c",
+      "panel": "mechanics_core",
+      "context_id": "h03_f0_from_d0",
+      "direction_id": "h03_f0_from_d0",
+      "pair_id": null,
+      "pair_type": "graph_prompt_denoising",
+      "target_prompt_key": "LC-H03-F0",
+      "source_prompt_key": "LC-H03-D0",
+      "source_feature": "L29:F18221",
+      "source_edit_id": "mechanics:h03_f0_from_d0:a_to_c:L29:F18221",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": 20.375,
+      "source_edit_l2": 20.37405637651682,
+      "receiver_layer": 31,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L31:F49541",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.008876296552464604,
+          "bypass_share": 0.9911237034475354,
+          "direct_coverage": 0.008526455477093433,
+          "indirect_coverage": 0.00034984107537117115,
+          "route_effective_count": 1.0833582824888155,
+          "route_max_branch_share": 0.9605870451371936,
+          "error_bypass_mass": 0.6962235247855888,
+          "embedding_bypass_mass": 0.2949001786619328,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.7024587570288525,
+          "walk_conservation": 0.9999999999999862
+        },
+        "signed": {
+          "direct_jacobian": -0.07208588957055215,
+          "indirect_signed_jacobian": 0.009741575484947501,
+          "total_signed_jacobian": -0.062344314085604646,
+          "total_absolute_path_strength": 0.11822063465118055,
+          "cancellation_ratio": 0.5273556031022548,
+          "conflict_fraction": 0.4726443968977452,
+          "path_sign_relation": "opposed_partial",
+          "receiver_active": true,
+          "intermediate_active_count": 36,
+          "class": "mixed",
+          "predicted_receiver_preactivation_delta": -0.062344314085604646,
+          "predicted_receiver_preactivation": -22.312344314085603,
+          "predicted_receiver_gate_crossing": false
+        },
+        "reference_graph_id": "LC-H03-D0",
+        "transported_context_warning": "topology is an H03-D0 design reference, not a current-context prediction"
+      },
+      "role": "graph_proposed",
+      "route_signature": "h03_f0_from_d0|mechanics:h03_f0_from_d0:a_to_c:L29:F18221|L31|module_output"
+    },
+    {
+      "cell_id": "mechanics:h03_f0_from_d0:b_to_c",
+      "panel": "mechanics_core",
+      "context_id": "h03_f0_from_d0",
+      "direction_id": "h03_f0_from_d0",
+      "pair_id": null,
+      "pair_type": "graph_prompt_denoising",
+      "target_prompt_key": "LC-H03-F0",
+      "source_prompt_key": "LC-H03-D0",
+      "source_feature": "L29:F152160",
+      "source_edit_id": "mechanics:h03_f0_from_d0:b_to_c:L29:F152160",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": 8.25,
+      "source_edit_l2": 8.24955153465271,
+      "receiver_layer": 31,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L31:F49541",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.0017178712337856284,
+          "bypass_share": 0.9982821287662144,
+          "direct_coverage": 0.001644063888535303,
+          "indirect_coverage": 7.380734525032546e-05,
+          "route_effective_count": 1.0915961615140761,
+          "route_max_branch_share": 0.9570355776389141,
+          "error_bypass_mass": 0.7008896169542045,
+          "embedding_bypass_mass": 0.2973925118119954,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.7020957270069936,
+          "walk_conservation": 0.9999999999999856
+        },
+        "signed": {
+          "direct_jacobian": 0.03432765151515151,
+          "indirect_signed_jacobian": -0.01200205711586071,
+          "total_signed_jacobian": 0.022325594399290802,
+          "total_absolute_path_strength": 0.07557498846880809,
+          "cancellation_ratio": 0.2954098287227024,
+          "conflict_fraction": 0.7045901712772976,
+          "path_sign_relation": "opposed_partial",
+          "receiver_active": true,
+          "intermediate_active_count": 36,
+          "class": "conflicted",
+          "predicted_receiver_preactivation_delta": 0.022325594399290802,
+          "predicted_receiver_preactivation": -22.22767440560071,
+          "predicted_receiver_gate_crossing": false
+        },
+        "reference_graph_id": "LC-H03-D0",
+        "transported_context_warning": "topology is an H03-D0 design reference, not a current-context prediction"
+      },
+      "role": "graph_proposed",
+      "route_signature": "h03_f0_from_d0|mechanics:h03_f0_from_d0:b_to_c:L29:F152160|L31|module_output"
+    },
+    {
+      "cell_id": "mechanics:h03_f0_from_d0:c_to_d",
+      "panel": "mechanics_core",
+      "context_id": "h03_f0_from_d0",
+      "direction_id": "h03_f0_from_d0",
+      "pair_id": null,
+      "pair_type": "graph_prompt_denoising",
+      "target_prompt_key": "LC-H03-F0",
+      "source_prompt_key": "LC-H03-D0",
+      "source_feature": "L31:F49541",
+      "source_edit_id": "mechanics:h03_f0_from_d0:c_to_d:L31:F49541",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": 24.0,
+      "source_edit_l2": 23.998828411102295,
+      "receiver_layer": 32,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L32:F50401",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.06551779754663248,
+          "bypass_share": 0.9344822024533675,
+          "direct_coverage": 0.06551779754663248,
+          "indirect_coverage": 0.0,
+          "route_effective_count": 1.0,
+          "route_max_branch_share": 1.0,
+          "error_bypass_mass": 0.6472312845293726,
+          "embedding_bypass_mass": 0.28725091792394897,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.6926095358800273,
+          "walk_conservation": 0.999999999999954
+        },
+        "signed": {
+          "direct_jacobian": 0.59375,
+          "indirect_signed_jacobian": 0.0,
+          "total_signed_jacobian": 0.59375,
+          "total_absolute_path_strength": 0.59375,
+          "cancellation_ratio": 1.0,
+          "conflict_fraction": 0.0,
+          "path_sign_relation": "direct_only",
+          "receiver_active": true,
+          "intermediate_active_count": 0,
+          "class": "coherent",
+          "predicted_receiver_preactivation_delta": 0.59375,
+          "predicted_receiver_preactivation": -9.15625,
+          "predicted_receiver_gate_crossing": false
+        },
+        "reference_graph_id": "LC-H03-D0",
+        "transported_context_warning": "topology is an H03-D0 design reference, not a current-context prediction"
+      },
+      "role": "graph_proposed",
+      "route_signature": "h03_f0_from_d0|mechanics:h03_f0_from_d0:c_to_d:L31:F49541|L32|module_output"
+    },
+    {
+      "cell_id": "mechanics:h03_f0_from_d0:matched_a_to_c",
+      "panel": "mechanics_core",
+      "context_id": "h03_f0_from_d0",
+      "direction_id": "h03_f0_from_d0",
+      "pair_id": null,
+      "pair_type": "graph_prompt_denoising",
+      "target_prompt_key": "LC-H03-F0",
+      "source_prompt_key": "LC-H03-D0",
+      "source_feature": "L29:F40376",
+      "source_edit_id": "mechanics:h03_f0_from_d0:matched_a_to_c:L29:F40376",
+      "source_edit_policy": "exact_l2_matched_to_graph_relation",
+      "source_activation_delta": 20.37359734804645,
+      "source_edit_l2": 20.37405637651682,
+      "receiver_layer": 31,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L31:F49541",
+      "topology": {
+        "status": "not_available_in_reference_graph",
+        "missing_features": [
+          "L29:F40376"
+        ],
+        "claim_boundary": "matched controls absent from the selected graph remain valid causal controls but receive no invented topology features",
+        "reference_graph_id": "LC-H03-D0",
+        "transported_context_warning": "topology is an H03-D0 design reference, not a current-context prediction"
+      },
+      "role": "matched_source_control",
+      "route_signature": "h03_f0_from_d0|mechanics:h03_f0_from_d0:matched_a_to_c:L29:F40376|L31|module_output"
+    },
+    {
+      "cell_id": "mechanics:h03_f0_from_d0:matched_b_to_c",
+      "panel": "mechanics_core",
+      "context_id": "h03_f0_from_d0",
+      "direction_id": "h03_f0_from_d0",
+      "pair_id": null,
+      "pair_type": "graph_prompt_denoising",
+      "target_prompt_key": "LC-H03-F0",
+      "source_prompt_key": "LC-H03-D0",
+      "source_feature": "L29:F63008",
+      "source_edit_id": "mechanics:h03_f0_from_d0:matched_b_to_c:L29:F63008",
+      "source_edit_policy": "exact_l2_matched_to_graph_relation",
+      "source_activation_delta": 8.250551797291976,
+      "source_edit_l2": 8.24955153465271,
+      "receiver_layer": 31,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L31:F49541",
+      "topology": {
+        "status": "not_available_in_reference_graph",
+        "missing_features": [
+          "L29:F63008"
+        ],
+        "claim_boundary": "matched controls absent from the selected graph remain valid causal controls but receive no invented topology features",
+        "reference_graph_id": "LC-H03-D0",
+        "transported_context_warning": "topology is an H03-D0 design reference, not a current-context prediction"
+      },
+      "role": "matched_source_control",
+      "route_signature": "h03_f0_from_d0|mechanics:h03_f0_from_d0:matched_b_to_c:L29:F63008|L31|module_output"
+    },
+    {
+      "cell_id": "mechanics:h03_f0_from_d0:matched_c_to_d",
+      "panel": "mechanics_core",
+      "context_id": "h03_f0_from_d0",
+      "direction_id": "h03_f0_from_d0",
+      "pair_id": null,
+      "pair_type": "graph_prompt_denoising",
+      "target_prompt_key": "LC-H03-F0",
+      "source_prompt_key": "LC-H03-D0",
+      "source_feature": "L31:F139261",
+      "source_edit_id": "mechanics:h03_f0_from_d0:matched_c_to_d:L31:F139261",
+      "source_edit_policy": "exact_l2_matched_to_graph_relation",
+      "source_activation_delta": 23.998038833294153,
+      "source_edit_l2": 23.998828411102295,
+      "receiver_layer": 32,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L32:F50401",
+      "topology": {
+        "status": "not_available_in_reference_graph",
+        "missing_features": [
+          "L31:F139261"
+        ],
+        "claim_boundary": "matched controls absent from the selected graph remain valid causal controls but receive no invented topology features",
+        "reference_graph_id": "LC-H03-D0",
+        "transported_context_warning": "topology is an H03-D0 design reference, not a current-context prediction"
+      },
+      "role": "matched_source_control",
+      "route_signature": "h03_f0_from_d0|mechanics:h03_f0_from_d0:matched_c_to_d:L31:F139261|L32|module_output"
+    },
+    {
+      "cell_id": "mechanics:h09_d0_from_f0:a_to_c",
+      "panel": "mechanics_core",
+      "context_id": "h09_d0_from_f0",
+      "direction_id": "h09_d0_from_f0",
+      "pair_id": null,
+      "pair_type": "harmful_replication_noising",
+      "target_prompt_key": "LC-H09-D0",
+      "source_prompt_key": "LC-H09-F0",
+      "source_feature": "L29:F18221",
+      "source_edit_id": "mechanics:h09_d0_from_f0:a_to_c:L29:F18221",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": -18.75,
+      "source_edit_l2": 18.74913163483143,
+      "receiver_layer": 31,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L31:F49541",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.008876296552464604,
+          "bypass_share": 0.9911237034475354,
+          "direct_coverage": 0.008526455477093433,
+          "indirect_coverage": 0.00034984107537117115,
+          "route_effective_count": 1.0833582824888155,
+          "route_max_branch_share": 0.9605870451371936,
+          "error_bypass_mass": 0.6962235247855888,
+          "embedding_bypass_mass": 0.2949001786619328,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.7024587570288525,
+          "walk_conservation": 0.9999999999999862
+        },
+        "signed": {
+          "direct_jacobian": -0.07208588957055215,
+          "indirect_signed_jacobian": 0.009741575484947501,
+          "total_signed_jacobian": -0.062344314085604646,
+          "total_absolute_path_strength": 0.11822063465118055,
+          "cancellation_ratio": 0.5273556031022548,
+          "conflict_fraction": 0.4726443968977452,
+          "path_sign_relation": "opposed_partial",
+          "receiver_active": true,
+          "intermediate_active_count": 36,
+          "class": "mixed",
+          "predicted_receiver_preactivation_delta": -0.062344314085604646,
+          "predicted_receiver_preactivation": -22.312344314085603,
+          "predicted_receiver_gate_crossing": false
+        },
+        "reference_graph_id": "LC-H03-D0",
+        "transported_context_warning": "topology is an H03-D0 design reference, not a current-context prediction"
+      },
+      "role": "graph_proposed",
+      "route_signature": "h09_d0_from_f0|mechanics:h09_d0_from_f0:a_to_c:L29:F18221|L31|module_output"
+    },
+    {
+      "cell_id": "mechanics:h09_d0_from_f0:b_to_c",
+      "panel": "mechanics_core",
+      "context_id": "h09_d0_from_f0",
+      "direction_id": "h09_d0_from_f0",
+      "pair_id": null,
+      "pair_type": "harmful_replication_noising",
+      "target_prompt_key": "LC-H09-D0",
+      "source_prompt_key": "LC-H09-F0",
+      "source_feature": "L29:F152160",
+      "source_edit_id": "mechanics:h09_d0_from_f0:b_to_c:L29:F152160",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": -5.09375,
+      "source_edit_l2": 5.093473106622696,
+      "receiver_layer": 31,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L31:F49541",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.0017178712337856284,
+          "bypass_share": 0.9982821287662144,
+          "direct_coverage": 0.001644063888535303,
+          "indirect_coverage": 7.380734525032546e-05,
+          "route_effective_count": 1.0915961615140761,
+          "route_max_branch_share": 0.9570355776389141,
+          "error_bypass_mass": 0.7008896169542045,
+          "embedding_bypass_mass": 0.2973925118119954,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.7020957270069936,
+          "walk_conservation": 0.9999999999999856
+        },
+        "signed": {
+          "direct_jacobian": 0.03432765151515151,
+          "indirect_signed_jacobian": -0.01200205711586071,
+          "total_signed_jacobian": 0.022325594399290802,
+          "total_absolute_path_strength": 0.07557498846880809,
+          "cancellation_ratio": 0.2954098287227024,
+          "conflict_fraction": 0.7045901712772976,
+          "path_sign_relation": "opposed_partial",
+          "receiver_active": true,
+          "intermediate_active_count": 36,
+          "class": "conflicted",
+          "predicted_receiver_preactivation_delta": 0.022325594399290802,
+          "predicted_receiver_preactivation": -22.22767440560071,
+          "predicted_receiver_gate_crossing": false
+        },
+        "reference_graph_id": "LC-H03-D0",
+        "transported_context_warning": "topology is an H03-D0 design reference, not a current-context prediction"
+      },
+      "role": "graph_proposed",
+      "route_signature": "h09_d0_from_f0|mechanics:h09_d0_from_f0:b_to_c:L29:F152160|L31|module_output"
+    },
+    {
+      "cell_id": "mechanics:h09_d0_from_f0:c_to_d",
+      "panel": "mechanics_core",
+      "context_id": "h09_d0_from_f0",
+      "direction_id": "h09_d0_from_f0",
+      "pair_id": null,
+      "pair_type": "harmful_replication_noising",
+      "target_prompt_key": "LC-H09-D0",
+      "source_prompt_key": "LC-H09-F0",
+      "source_feature": "L31:F49541",
+      "source_edit_id": "mechanics:h09_d0_from_f0:c_to_d:L31:F49541",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": -22.0,
+      "source_edit_l2": 21.998926043510437,
+      "receiver_layer": 32,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L32:F50401",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.06551779754663248,
+          "bypass_share": 0.9344822024533675,
+          "direct_coverage": 0.06551779754663248,
+          "indirect_coverage": 0.0,
+          "route_effective_count": 1.0,
+          "route_max_branch_share": 1.0,
+          "error_bypass_mass": 0.6472312845293726,
+          "embedding_bypass_mass": 0.28725091792394897,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.6926095358800273,
+          "walk_conservation": 0.999999999999954
+        },
+        "signed": {
+          "direct_jacobian": 0.59375,
+          "indirect_signed_jacobian": 0.0,
+          "total_signed_jacobian": 0.59375,
+          "total_absolute_path_strength": 0.59375,
+          "cancellation_ratio": 1.0,
+          "conflict_fraction": 0.0,
+          "path_sign_relation": "direct_only",
+          "receiver_active": true,
+          "intermediate_active_count": 0,
+          "class": "coherent",
+          "predicted_receiver_preactivation_delta": 0.59375,
+          "predicted_receiver_preactivation": -9.15625,
+          "predicted_receiver_gate_crossing": false
+        },
+        "reference_graph_id": "LC-H03-D0",
+        "transported_context_warning": "topology is an H03-D0 design reference, not a current-context prediction"
+      },
+      "role": "graph_proposed",
+      "route_signature": "h09_d0_from_f0|mechanics:h09_d0_from_f0:c_to_d:L31:F49541|L32|module_output"
+    },
+    {
+      "cell_id": "mechanics:h09_d0_from_f0:matched_a_to_c",
+      "panel": "mechanics_core",
+      "context_id": "h09_d0_from_f0",
+      "direction_id": "h09_d0_from_f0",
+      "pair_id": null,
+      "pair_type": "harmful_replication_noising",
+      "target_prompt_key": "LC-H09-D0",
+      "source_prompt_key": "LC-H09-F0",
+      "source_feature": "L29:F40376",
+      "source_edit_id": "mechanics:h09_d0_from_f0:matched_a_to_c:L29:F40376",
+      "source_edit_policy": "exact_l2_matched_to_graph_relation",
+      "source_activation_delta": -18.748709215993664,
+      "source_edit_l2": 18.74913163483143,
+      "receiver_layer": 31,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L31:F49541",
+      "topology": {
+        "status": "not_available_in_reference_graph",
+        "missing_features": [
+          "L29:F40376"
+        ],
+        "claim_boundary": "matched controls absent from the selected graph remain valid causal controls but receive no invented topology features",
+        "reference_graph_id": "LC-H03-D0",
+        "transported_context_warning": "topology is an H03-D0 design reference, not a current-context prediction"
+      },
+      "role": "matched_source_control",
+      "route_signature": "h09_d0_from_f0|mechanics:h09_d0_from_f0:matched_a_to_c:L29:F40376|L31|module_output"
+    },
+    {
+      "cell_id": "mechanics:h09_d0_from_f0:matched_b_to_c",
+      "panel": "mechanics_core",
+      "context_id": "h09_d0_from_f0",
+      "direction_id": "h09_d0_from_f0",
+      "pair_id": null,
+      "pair_type": "harmful_replication_noising",
+      "target_prompt_key": "LC-H09-D0",
+      "source_prompt_key": "LC-H09-F0",
+      "source_feature": "L29:F63008",
+      "source_edit_id": "mechanics:h09_d0_from_f0:matched_b_to_c:L29:F63008",
+      "source_edit_policy": "exact_l2_matched_to_graph_relation",
+      "source_activation_delta": -5.09409069302497,
+      "source_edit_l2": 5.093473106622696,
+      "receiver_layer": 31,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L31:F49541",
+      "topology": {
+        "status": "not_available_in_reference_graph",
+        "missing_features": [
+          "L29:F63008"
+        ],
+        "claim_boundary": "matched controls absent from the selected graph remain valid causal controls but receive no invented topology features",
+        "reference_graph_id": "LC-H03-D0",
+        "transported_context_warning": "topology is an H03-D0 design reference, not a current-context prediction"
+      },
+      "role": "matched_source_control",
+      "route_signature": "h09_d0_from_f0|mechanics:h09_d0_from_f0:matched_b_to_c:L29:F63008|L31|module_output"
+    },
+    {
+      "cell_id": "mechanics:h09_d0_from_f0:matched_c_to_d",
+      "panel": "mechanics_core",
+      "context_id": "h09_d0_from_f0",
+      "direction_id": "h09_d0_from_f0",
+      "pair_id": null,
+      "pair_type": "harmful_replication_noising",
+      "target_prompt_key": "LC-H09-D0",
+      "source_prompt_key": "LC-H09-F0",
+      "source_feature": "L31:F139261",
+      "source_edit_id": "mechanics:h09_d0_from_f0:matched_c_to_d:L31:F139261",
+      "source_edit_policy": "exact_l2_matched_to_graph_relation",
+      "source_activation_delta": -21.998202263852974,
+      "source_edit_l2": 21.998926043510437,
+      "receiver_layer": 32,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L32:F50401",
+      "topology": {
+        "status": "not_available_in_reference_graph",
+        "missing_features": [
+          "L31:F139261"
+        ],
+        "claim_boundary": "matched controls absent from the selected graph remain valid causal controls but receive no invented topology features",
+        "reference_graph_id": "LC-H03-D0",
+        "transported_context_warning": "topology is an H03-D0 design reference, not a current-context prediction"
+      },
+      "role": "matched_source_control",
+      "route_signature": "h09_d0_from_f0|mechanics:h09_d0_from_f0:matched_c_to_d:L31:F139261|L32|module_output"
+    },
+    {
+      "cell_id": "mechanics:h09_f0_from_d0:a_to_c",
+      "panel": "mechanics_core",
+      "context_id": "h09_f0_from_d0",
+      "direction_id": "h09_f0_from_d0",
+      "pair_id": null,
+      "pair_type": "harmful_replication_denoising",
+      "target_prompt_key": "LC-H09-F0",
+      "source_prompt_key": "LC-H09-D0",
+      "source_feature": "L29:F18221",
+      "source_edit_id": "mechanics:h09_f0_from_d0:a_to_c:L29:F18221",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": 18.75,
+      "source_edit_l2": 18.74913163483143,
+      "receiver_layer": 31,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L31:F49541",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.008876296552464604,
+          "bypass_share": 0.9911237034475354,
+          "direct_coverage": 0.008526455477093433,
+          "indirect_coverage": 0.00034984107537117115,
+          "route_effective_count": 1.0833582824888155,
+          "route_max_branch_share": 0.9605870451371936,
+          "error_bypass_mass": 0.6962235247855888,
+          "embedding_bypass_mass": 0.2949001786619328,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.7024587570288525,
+          "walk_conservation": 0.9999999999999862
+        },
+        "signed": {
+          "direct_jacobian": -0.07208588957055215,
+          "indirect_signed_jacobian": 0.009741575484947501,
+          "total_signed_jacobian": -0.062344314085604646,
+          "total_absolute_path_strength": 0.11822063465118055,
+          "cancellation_ratio": 0.5273556031022548,
+          "conflict_fraction": 0.4726443968977452,
+          "path_sign_relation": "opposed_partial",
+          "receiver_active": true,
+          "intermediate_active_count": 36,
+          "class": "mixed",
+          "predicted_receiver_preactivation_delta": -0.062344314085604646,
+          "predicted_receiver_preactivation": -22.312344314085603,
+          "predicted_receiver_gate_crossing": false
+        },
+        "reference_graph_id": "LC-H03-D0",
+        "transported_context_warning": "topology is an H03-D0 design reference, not a current-context prediction"
+      },
+      "role": "graph_proposed",
+      "route_signature": "h09_f0_from_d0|mechanics:h09_f0_from_d0:a_to_c:L29:F18221|L31|module_output"
+    },
+    {
+      "cell_id": "mechanics:h09_f0_from_d0:b_to_c",
+      "panel": "mechanics_core",
+      "context_id": "h09_f0_from_d0",
+      "direction_id": "h09_f0_from_d0",
+      "pair_id": null,
+      "pair_type": "harmful_replication_denoising",
+      "target_prompt_key": "LC-H09-F0",
+      "source_prompt_key": "LC-H09-D0",
+      "source_feature": "L29:F152160",
+      "source_edit_id": "mechanics:h09_f0_from_d0:b_to_c:L29:F152160",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": 5.09375,
+      "source_edit_l2": 5.093473106622696,
+      "receiver_layer": 31,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L31:F49541",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.0017178712337856284,
+          "bypass_share": 0.9982821287662144,
+          "direct_coverage": 0.001644063888535303,
+          "indirect_coverage": 7.380734525032546e-05,
+          "route_effective_count": 1.0915961615140761,
+          "route_max_branch_share": 0.9570355776389141,
+          "error_bypass_mass": 0.7008896169542045,
+          "embedding_bypass_mass": 0.2973925118119954,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.7020957270069936,
+          "walk_conservation": 0.9999999999999856
+        },
+        "signed": {
+          "direct_jacobian": 0.03432765151515151,
+          "indirect_signed_jacobian": -0.01200205711586071,
+          "total_signed_jacobian": 0.022325594399290802,
+          "total_absolute_path_strength": 0.07557498846880809,
+          "cancellation_ratio": 0.2954098287227024,
+          "conflict_fraction": 0.7045901712772976,
+          "path_sign_relation": "opposed_partial",
+          "receiver_active": true,
+          "intermediate_active_count": 36,
+          "class": "conflicted",
+          "predicted_receiver_preactivation_delta": 0.022325594399290802,
+          "predicted_receiver_preactivation": -22.22767440560071,
+          "predicted_receiver_gate_crossing": false
+        },
+        "reference_graph_id": "LC-H03-D0",
+        "transported_context_warning": "topology is an H03-D0 design reference, not a current-context prediction"
+      },
+      "role": "graph_proposed",
+      "route_signature": "h09_f0_from_d0|mechanics:h09_f0_from_d0:b_to_c:L29:F152160|L31|module_output"
+    },
+    {
+      "cell_id": "mechanics:h09_f0_from_d0:c_to_d",
+      "panel": "mechanics_core",
+      "context_id": "h09_f0_from_d0",
+      "direction_id": "h09_f0_from_d0",
+      "pair_id": null,
+      "pair_type": "harmful_replication_denoising",
+      "target_prompt_key": "LC-H09-F0",
+      "source_prompt_key": "LC-H09-D0",
+      "source_feature": "L31:F49541",
+      "source_edit_id": "mechanics:h09_f0_from_d0:c_to_d:L31:F49541",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": 22.0,
+      "source_edit_l2": 21.998926043510437,
+      "receiver_layer": 32,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L32:F50401",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.06551779754663248,
+          "bypass_share": 0.9344822024533675,
+          "direct_coverage": 0.06551779754663248,
+          "indirect_coverage": 0.0,
+          "route_effective_count": 1.0,
+          "route_max_branch_share": 1.0,
+          "error_bypass_mass": 0.6472312845293726,
+          "embedding_bypass_mass": 0.28725091792394897,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.6926095358800273,
+          "walk_conservation": 0.999999999999954
+        },
+        "signed": {
+          "direct_jacobian": 0.59375,
+          "indirect_signed_jacobian": 0.0,
+          "total_signed_jacobian": 0.59375,
+          "total_absolute_path_strength": 0.59375,
+          "cancellation_ratio": 1.0,
+          "conflict_fraction": 0.0,
+          "path_sign_relation": "direct_only",
+          "receiver_active": true,
+          "intermediate_active_count": 0,
+          "class": "coherent",
+          "predicted_receiver_preactivation_delta": 0.59375,
+          "predicted_receiver_preactivation": -9.15625,
+          "predicted_receiver_gate_crossing": false
+        },
+        "reference_graph_id": "LC-H03-D0",
+        "transported_context_warning": "topology is an H03-D0 design reference, not a current-context prediction"
+      },
+      "role": "graph_proposed",
+      "route_signature": "h09_f0_from_d0|mechanics:h09_f0_from_d0:c_to_d:L31:F49541|L32|module_output"
+    },
+    {
+      "cell_id": "mechanics:h09_f0_from_d0:matched_a_to_c",
+      "panel": "mechanics_core",
+      "context_id": "h09_f0_from_d0",
+      "direction_id": "h09_f0_from_d0",
+      "pair_id": null,
+      "pair_type": "harmful_replication_denoising",
+      "target_prompt_key": "LC-H09-F0",
+      "source_prompt_key": "LC-H09-D0",
+      "source_feature": "L29:F40376",
+      "source_edit_id": "mechanics:h09_f0_from_d0:matched_a_to_c:L29:F40376",
+      "source_edit_policy": "exact_l2_matched_to_graph_relation",
+      "source_activation_delta": 18.748709215993664,
+      "source_edit_l2": 18.74913163483143,
+      "receiver_layer": 31,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L31:F49541",
+      "topology": {
+        "status": "not_available_in_reference_graph",
+        "missing_features": [
+          "L29:F40376"
+        ],
+        "claim_boundary": "matched controls absent from the selected graph remain valid causal controls but receive no invented topology features",
+        "reference_graph_id": "LC-H03-D0",
+        "transported_context_warning": "topology is an H03-D0 design reference, not a current-context prediction"
+      },
+      "role": "matched_source_control",
+      "route_signature": "h09_f0_from_d0|mechanics:h09_f0_from_d0:matched_a_to_c:L29:F40376|L31|module_output"
+    },
+    {
+      "cell_id": "mechanics:h09_f0_from_d0:matched_b_to_c",
+      "panel": "mechanics_core",
+      "context_id": "h09_f0_from_d0",
+      "direction_id": "h09_f0_from_d0",
+      "pair_id": null,
+      "pair_type": "harmful_replication_denoising",
+      "target_prompt_key": "LC-H09-F0",
+      "source_prompt_key": "LC-H09-D0",
+      "source_feature": "L29:F63008",
+      "source_edit_id": "mechanics:h09_f0_from_d0:matched_b_to_c:L29:F63008",
+      "source_edit_policy": "exact_l2_matched_to_graph_relation",
+      "source_activation_delta": 5.09409069302497,
+      "source_edit_l2": 5.093473106622696,
+      "receiver_layer": 31,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L31:F49541",
+      "topology": {
+        "status": "not_available_in_reference_graph",
+        "missing_features": [
+          "L29:F63008"
+        ],
+        "claim_boundary": "matched controls absent from the selected graph remain valid causal controls but receive no invented topology features",
+        "reference_graph_id": "LC-H03-D0",
+        "transported_context_warning": "topology is an H03-D0 design reference, not a current-context prediction"
+      },
+      "role": "matched_source_control",
+      "route_signature": "h09_f0_from_d0|mechanics:h09_f0_from_d0:matched_b_to_c:L29:F63008|L31|module_output"
+    },
+    {
+      "cell_id": "mechanics:h09_f0_from_d0:matched_c_to_d",
+      "panel": "mechanics_core",
+      "context_id": "h09_f0_from_d0",
+      "direction_id": "h09_f0_from_d0",
+      "pair_id": null,
+      "pair_type": "harmful_replication_denoising",
+      "target_prompt_key": "LC-H09-F0",
+      "source_prompt_key": "LC-H09-D0",
+      "source_feature": "L31:F139261",
+      "source_edit_id": "mechanics:h09_f0_from_d0:matched_c_to_d:L31:F139261",
+      "source_edit_policy": "exact_l2_matched_to_graph_relation",
+      "source_activation_delta": 21.998202263852974,
+      "source_edit_l2": 21.998926043510437,
+      "receiver_layer": 32,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L32:F50401",
+      "topology": {
+        "status": "not_available_in_reference_graph",
+        "missing_features": [
+          "L31:F139261"
+        ],
+        "claim_boundary": "matched controls absent from the selected graph remain valid causal controls but receive no invented topology features",
+        "reference_graph_id": "LC-H03-D0",
+        "transported_context_warning": "topology is an H03-D0 design reference, not a current-context prediction"
+      },
+      "role": "matched_source_control",
+      "route_signature": "h09_f0_from_d0|mechanics:h09_f0_from_d0:matched_c_to_d:L31:F139261|L32|module_output"
+    }
+  ],
+  "topology_cells": [
+    {
+      "cell_id": "topology:benign_b01_d0_f0:a_from_b:LC-B01-D0:late_long:anchor_high",
+      "panel": "topology_discrimination",
+      "context_id": "benign_b01_d0_f0:a_from_b",
+      "direction_id": "benign_b01_d0_f0:a_from_b",
+      "pair_id": "benign_b01_d0_f0",
+      "pair_type": "benign_same_behavior",
+      "target_prompt_key": "LC-B01-D0",
+      "source_prompt_key": "LC-B01-F0",
+      "source_feature": "L25:F51350",
+      "source_edit_id": "benign_b01_d0_f0:a_from_b:L25:F51350:natural",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": -6.21875,
+      "source_edit_l2": 6.218505730852485,
+      "receiver_layer": 32,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L32:F93101",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.009105167516910387,
+          "bypass_share": 0.9908948324830896,
+          "direct_coverage": 0.008559700238640123,
+          "indirect_coverage": 0.0005454672782702636,
+          "route_effective_count": 1.131338236855545,
+          "route_max_branch_share": 0.9400925598285583,
+          "error_bypass_mass": 0.6399373333052827,
+          "embedding_bypass_mass": 0.35095749917779595,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.6458176108373274,
+          "walk_conservation": 0.999999999999989
+        },
+        "signed": {
+          "direct_jacobian": 0.22487437185929648,
+          "indirect_signed_jacobian": -0.0021524202528818703,
+          "total_signed_jacobian": 0.22272195160641461,
+          "total_absolute_path_strength": 1.8904606150376366,
+          "cancellation_ratio": 0.1178135898916786,
+          "conflict_fraction": 0.8821864101083214,
+          "path_sign_relation": "opposed_partial",
+          "receiver_active": true,
+          "intermediate_active_count": 159,
+          "class": "conflicted",
+          "predicted_receiver_preactivation_delta": -1.385052136552391,
+          "predicted_receiver_preactivation": 25.864947863447608,
+          "predicted_receiver_gate_crossing": false
+        }
+      },
+      "role": "anchor_high",
+      "route_signature": "benign_b01_d0_f0:a_from_b|benign_b01_d0_f0:a_from_b:L25:F51350:natural|L32|module_output"
+    },
+    {
+      "cell_id": "topology:benign_b01_d0_f0:a_from_b:LC-B01-D0:late_long:edge_permuted_same_receiver",
+      "panel": "topology_discrimination",
+      "context_id": "benign_b01_d0_f0:a_from_b",
+      "direction_id": "benign_b01_d0_f0:a_from_b",
+      "pair_id": "benign_b01_d0_f0",
+      "pair_type": "benign_same_behavior",
+      "target_prompt_key": "LC-B01-D0",
+      "source_prompt_key": "LC-B01-F0",
+      "source_feature": "L25:F106080",
+      "source_edit_id": "benign_b01_d0_f0:a_from_b:L25:F106080:l2_matched_to:LC-B01-D0:late_long:anchor_high",
+      "source_edit_policy": "l2_matched_to_anchor_source_edit",
+      "source_activation_delta": -6.218320410462902,
+      "source_edit_l2": 6.218505730852485,
+      "receiver_layer": 32,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L32:F93101",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.0016761194646583628,
+          "bypass_share": 0.9983238805353416,
+          "direct_coverage": 0.0008189098691995091,
+          "indirect_coverage": 0.0008572095954588537,
+          "route_effective_count": 4.044743441834466,
+          "route_max_branch_share": 0.48857488172325736,
+          "error_bypass_mass": 0.6450896797978746,
+          "embedding_bypass_mass": 0.3532342007374562,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.6461727425091258,
+          "walk_conservation": 0.9999999999999891
+        },
+        "signed": {
+          "direct_jacobian": 0.020782766990291263,
+          "indirect_signed_jacobian": -0.07219090056664242,
+          "total_signed_jacobian": -0.051408133576351156,
+          "total_absolute_path_strength": 2.4976428603043463,
+          "cancellation_ratio": 0.020582659912429153,
+          "conflict_fraction": 0.9794173400875709,
+          "path_sign_relation": "opposed_partial",
+          "receiver_active": true,
+          "intermediate_active_count": 159,
+          "class": "conflicted",
+          "predicted_receiver_preactivation_delta": 0.3196722462816276,
+          "predicted_receiver_preactivation": 27.569672246281627,
+          "predicted_receiver_gate_crossing": false
+        }
+      },
+      "role": "edge_permuted_same_receiver",
+      "route_signature": "benign_b01_d0_f0:a_from_b|benign_b01_d0_f0:a_from_b:L25:F106080:l2_matched_to:LC-B01-D0:late_long:anchor_high|L32|module_output"
+    },
+    {
+      "cell_id": "topology:benign_b01_d0_f0:a_from_b:LC-B01-D0:late_long:weak_same_receiver",
+      "panel": "topology_discrimination",
+      "context_id": "benign_b01_d0_f0:a_from_b",
+      "direction_id": "benign_b01_d0_f0:a_from_b",
+      "pair_id": "benign_b01_d0_f0",
+      "pair_type": "benign_same_behavior",
+      "target_prompt_key": "LC-B01-D0",
+      "source_prompt_key": "LC-B01-F0",
+      "source_feature": "L25:F88401",
+      "source_edit_id": "benign_b01_d0_f0:a_from_b:L25:F88401:l2_matched_to:LC-B01-D0:late_long:anchor_high",
+      "source_edit_policy": "l2_matched_to_anchor_source_edit",
+      "source_activation_delta": -6.218459029073259,
+      "source_edit_l2": 6.218505730852485,
+      "receiver_layer": 32,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L32:F93101",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.0007317409177577023,
+          "bypass_share": 0.9992682590822423,
+          "direct_coverage": 0.00037508462987057803,
+          "indirect_coverage": 0.0003566562878871243,
+          "route_effective_count": 3.564909937302925,
+          "route_max_branch_share": 0.5125921221133324,
+          "error_bypass_mass": 0.6457690191433065,
+          "embedding_bypass_mass": 0.3534992399389248,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.6462419007848804,
+          "walk_conservation": 0.9999999999999891
+        },
+        "signed": {
+          "direct_jacobian": 0.027047413793103447,
+          "indirect_signed_jacobian": 0.11084196650047005,
+          "total_signed_jacobian": 0.1378893802935735,
+          "total_absolute_path_strength": 2.83872776333112,
+          "cancellation_ratio": 0.048574358582299026,
+          "conflict_fraction": 0.9514256414177009,
+          "path_sign_relation": "aligned",
+          "receiver_active": true,
+          "intermediate_active_count": 159,
+          "class": "conflicted",
+          "predicted_receiver_preactivation_delta": -0.8574594618998884,
+          "predicted_receiver_preactivation": 26.39254053810011,
+          "predicted_receiver_gate_crossing": false
+        }
+      },
+      "role": "weak_same_receiver",
+      "route_signature": "benign_b01_d0_f0:a_from_b|benign_b01_d0_f0:a_from_b:L25:F88401:l2_matched_to:LC-B01-D0:late_long:anchor_high|L32|module_output"
+    },
+    {
+      "cell_id": "topology:benign_b01_d0_f0:b_from_a:LC-B01-F0:early_local:anchor_high",
+      "panel": "topology_discrimination",
+      "context_id": "benign_b01_d0_f0:b_from_a",
+      "direction_id": "benign_b01_d0_f0:b_from_a",
+      "pair_id": "benign_b01_d0_f0",
+      "pair_type": "benign_same_behavior",
+      "target_prompt_key": "LC-B01-F0",
+      "source_prompt_key": "LC-B01-D0",
+      "source_feature": "L7:F96498",
+      "source_edit_id": "benign_b01_d0_f0:b_from_a:L7:F96498:natural",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": 0.3125,
+      "source_edit_l2": 0.3124910965561867,
+      "receiver_layer": 8,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L8:F160272",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.141211244444907,
+          "bypass_share": 0.858788755555093,
+          "direct_coverage": 0.141211244444907,
+          "indirect_coverage": 0.0,
+          "route_effective_count": 1.0,
+          "route_max_branch_share": 1.0,
+          "error_bypass_mass": 0.5564103921349879,
+          "embedding_bypass_mass": 0.30237836342010527,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.6479013477247293,
+          "walk_conservation": 1.0
+        },
+        "signed": {
+          "direct_jacobian": 0.10244845360824742,
+          "indirect_signed_jacobian": 0.0,
+          "total_signed_jacobian": 0.10244845360824742,
+          "total_absolute_path_strength": 0.10244845360824742,
+          "cancellation_ratio": 1.0,
+          "conflict_fraction": 0.0,
+          "path_sign_relation": "direct_only",
+          "receiver_active": true,
+          "intermediate_active_count": 0,
+          "class": "coherent",
+          "predicted_receiver_preactivation_delta": 0.03201514175257732,
+          "predicted_receiver_preactivation": 0.9226401417525774,
+          "predicted_receiver_gate_crossing": false
+        }
+      },
+      "role": "anchor_high",
+      "route_signature": "benign_b01_d0_f0:b_from_a|benign_b01_d0_f0:b_from_a:L7:F96498:natural|L8|module_output"
+    },
+    {
+      "cell_id": "topology:benign_b01_d0_f0:b_from_a:LC-B01-F0:early_local:edge_permuted_same_receiver",
+      "panel": "topology_discrimination",
+      "context_id": "benign_b01_d0_f0:b_from_a",
+      "direction_id": "benign_b01_d0_f0:b_from_a",
+      "pair_id": "benign_b01_d0_f0",
+      "pair_type": "benign_same_behavior",
+      "target_prompt_key": "LC-B01-F0",
+      "source_prompt_key": "LC-B01-D0",
+      "source_feature": "L7:F76557",
+      "source_edit_id": "benign_b01_d0_f0:b_from_a:L7:F76557:l2_matched_to:LC-B01-F0:early_local:anchor_high",
+      "source_edit_policy": "l2_matched_to_anchor_source_edit",
+      "source_activation_delta": 0.3124672571963542,
+      "source_edit_l2": 0.3124910965561867,
+      "receiver_layer": 8,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L8:F160272",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.0,
+          "bypass_share": 1.0,
+          "direct_coverage": 0.0,
+          "indirect_coverage": 0.0,
+          "route_effective_count": 0.0,
+          "route_max_branch_share": 0.0,
+          "error_bypass_mass": 0.6288309760201092,
+          "embedding_bypass_mass": 0.371169023979891,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.6288309760201092,
+          "walk_conservation": 1.0000000000000002
+        },
+        "signed": {
+          "direct_jacobian": 0.0015222886029411765,
+          "indirect_signed_jacobian": 0.0,
+          "total_signed_jacobian": 0.0015222886029411765,
+          "total_absolute_path_strength": 0.0015222886029411765,
+          "cancellation_ratio": 1.0,
+          "conflict_fraction": 0.0,
+          "path_sign_relation": "direct_only",
+          "receiver_active": true,
+          "intermediate_active_count": 0,
+          "class": "coherent",
+          "predicted_receiver_preactivation_delta": 0.00047566534442229934,
+          "predicted_receiver_preactivation": 0.8911006653444223,
+          "predicted_receiver_gate_crossing": false
+        }
+      },
+      "role": "edge_permuted_same_receiver",
+      "route_signature": "benign_b01_d0_f0:b_from_a|benign_b01_d0_f0:b_from_a:L7:F76557:l2_matched_to:LC-B01-F0:early_local:anchor_high|L8|module_output"
+    },
+    {
+      "cell_id": "topology:benign_b01_d0_f0:b_from_a:LC-B01-F0:early_local:weak_same_receiver",
+      "panel": "topology_discrimination",
+      "context_id": "benign_b01_d0_f0:b_from_a",
+      "direction_id": "benign_b01_d0_f0:b_from_a",
+      "pair_id": "benign_b01_d0_f0",
+      "pair_type": "benign_same_behavior",
+      "target_prompt_key": "LC-B01-F0",
+      "source_prompt_key": "LC-B01-D0",
+      "source_feature": "L7:F13452",
+      "source_edit_id": "benign_b01_d0_f0:b_from_a:L7:F13452:l2_matched_to:LC-B01-F0:early_local:anchor_high",
+      "source_edit_policy": "l2_matched_to_anchor_source_edit",
+      "source_activation_delta": 0.31248822819071165,
+      "source_edit_l2": 0.3124910965561867,
+      "receiver_layer": 8,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L8:F160272",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.004662635429784665,
+          "bypass_share": 0.9953373645702154,
+          "direct_coverage": 0.004662635429784665,
+          "indirect_coverage": 0.0,
+          "route_effective_count": 1.0,
+          "route_max_branch_share": 1.0,
+          "error_bypass_mass": 0.6262807157069503,
+          "embedding_bypass_mass": 0.369056648863265,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.6292145135909541,
+          "walk_conservation": 1.0
+        },
+        "signed": {
+          "direct_jacobian": 0.004346026490066225,
+          "indirect_signed_jacobian": 0.0,
+          "total_signed_jacobian": 0.004346026490066225,
+          "total_absolute_path_strength": 0.004346026490066225,
+          "cancellation_ratio": 1.0,
+          "conflict_fraction": 0.0,
+          "path_sign_relation": "direct_only",
+          "receiver_active": true,
+          "intermediate_active_count": 0,
+          "class": "coherent",
+          "predicted_receiver_preactivation_delta": 0.001358082117550692,
+          "predicted_receiver_preactivation": 0.8919830821175507,
+          "predicted_receiver_gate_crossing": false
+        }
+      },
+      "role": "weak_same_receiver",
+      "route_signature": "benign_b01_d0_f0:b_from_a|benign_b01_d0_f0:b_from_a:L7:F13452:l2_matched_to:LC-B01-F0:early_local:anchor_high|L8|module_output"
+    },
+    {
+      "cell_id": "topology:flip_h07_d0_f0:a_from_b:LC-H07-D0:middle_short:anchor_high",
+      "panel": "topology_discrimination",
+      "context_id": "flip_h07_d0_f0:a_from_b",
+      "direction_id": "flip_h07_d0_f0:a_from_b",
+      "pair_id": "flip_h07_d0_f0",
+      "pair_type": "harmful_behavior_flip",
+      "target_prompt_key": "LC-H07-D0",
+      "source_prompt_key": "LC-H07-F0",
+      "source_feature": "L19:F93429",
+      "source_edit_id": "flip_h07_d0_f0:a_from_b:L19:F93429:natural",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": -1.203125,
+      "source_edit_l2": 1.2031400594860315,
+      "receiver_layer": 22,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L22:F64818",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.02103627864316523,
+          "bypass_share": 0.9789637213568347,
+          "direct_coverage": 0.019352435616728312,
+          "indirect_coverage": 0.0016838430264369195,
+          "route_effective_count": 1.180205174687389,
+          "route_max_branch_share": 0.9199552803516412,
+          "error_bypass_mass": 0.6687002029793314,
+          "embedding_bypass_mass": 0.31026351837749966,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.683069442095892,
+          "walk_conservation": 0.9999999999999963
+        },
+        "signed": {
+          "direct_jacobian": 0.08702531645569621,
+          "indirect_signed_jacobian": 0.04964907307082543,
+          "total_signed_jacobian": 0.13667438952652164,
+          "total_absolute_path_strength": 0.257248439955916,
+          "cancellation_ratio": 0.5312933658604234,
+          "conflict_fraction": 0.4687066341395766,
+          "path_sign_relation": "aligned",
+          "receiver_active": true,
+          "intermediate_active_count": 103,
+          "class": "mixed",
+          "predicted_receiver_preactivation_delta": -0.16443637489909635,
+          "predicted_receiver_preactivation": 4.616813625100904,
+          "predicted_receiver_gate_crossing": false
+        }
+      },
+      "role": "anchor_high",
+      "route_signature": "flip_h07_d0_f0:a_from_b|flip_h07_d0_f0:a_from_b:L19:F93429:natural|L22|module_output"
+    },
+    {
+      "cell_id": "topology:flip_h07_d0_f0:a_from_b:LC-H07-D0:middle_short:edge_permuted_same_receiver",
+      "panel": "topology_discrimination",
+      "context_id": "flip_h07_d0_f0:a_from_b",
+      "direction_id": "flip_h07_d0_f0:a_from_b",
+      "pair_id": "flip_h07_d0_f0",
+      "pair_type": "harmful_behavior_flip",
+      "target_prompt_key": "LC-H07-D0",
+      "source_prompt_key": "LC-H07-F0",
+      "source_feature": "L19:F77881",
+      "source_edit_id": "flip_h07_d0_f0:a_from_b:L19:F77881:l2_matched_to:LC-H07-D0:middle_short:anchor_high",
+      "source_edit_policy": "l2_matched_to_anchor_source_edit",
+      "source_activation_delta": -1.2030365152074123,
+      "source_edit_l2": 1.2031400594860315,
+      "receiver_layer": 22,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L22:F64818",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.0008255808251984284,
+          "bypass_share": 0.9991744191748015,
+          "direct_coverage": 0.0003711049443548753,
+          "indirect_coverage": 0.0004544758808435531,
+          "route_effective_count": 4.6789907655991065,
+          "route_max_branch_share": 0.44950770781974037,
+          "error_bypass_mass": 0.6821575124778674,
+          "embedding_bypass_mass": 0.3170169066969301,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.6827211539715436,
+          "walk_conservation": 0.999999999999996
+        },
+        "signed": {
+          "direct_jacobian": 0.0022064592050209204,
+          "indirect_signed_jacobian": -0.010865317132343351,
+          "total_signed_jacobian": -0.008658857927322431,
+          "total_absolute_path_strength": 0.11097957578336665,
+          "cancellation_ratio": 0.07802208529094234,
+          "conflict_fraction": 0.9219779147090577,
+          "path_sign_relation": "opposed_partial",
+          "receiver_active": true,
+          "intermediate_active_count": 103,
+          "class": "conflicted",
+          "predicted_receiver_preactivation_delta": 0.010416922266562054,
+          "predicted_receiver_preactivation": 4.791666922266562,
+          "predicted_receiver_gate_crossing": false
+        }
+      },
+      "role": "edge_permuted_same_receiver",
+      "route_signature": "flip_h07_d0_f0:a_from_b|flip_h07_d0_f0:a_from_b:L19:F77881:l2_matched_to:LC-H07-D0:middle_short:anchor_high|L22|module_output"
+    },
+    {
+      "cell_id": "topology:flip_h07_d0_f0:a_from_b:LC-H07-D0:middle_short:weak_same_receiver",
+      "panel": "topology_discrimination",
+      "context_id": "flip_h07_d0_f0:a_from_b",
+      "direction_id": "flip_h07_d0_f0:a_from_b",
+      "pair_id": "flip_h07_d0_f0",
+      "pair_type": "harmful_behavior_flip",
+      "target_prompt_key": "LC-H07-D0",
+      "source_prompt_key": "LC-H07-F0",
+      "source_feature": "L19:F104910",
+      "source_edit_id": "flip_h07_d0_f0:a_from_b:L19:F104910:l2_matched_to:LC-H07-D0:middle_short:anchor_high",
+      "source_edit_policy": "l2_matched_to_anchor_source_edit",
+      "source_activation_delta": -1.203098037290582,
+      "source_edit_l2": 1.2031400594860315,
+      "receiver_layer": 22,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L22:F64818",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.0015830384086453994,
+          "bypass_share": 0.9984169615913546,
+          "direct_coverage": 0.001154548715770723,
+          "indirect_coverage": 0.00042848969287467625,
+          "route_effective_count": 1.8693196097565066,
+          "route_max_branch_share": 0.729324512573682,
+          "error_bypass_mass": 0.6816820572200757,
+          "embedding_bypass_mass": 0.31673490437127494,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.6827628971101991,
+          "walk_conservation": 0.999999999999996
+        },
+        "signed": {
+          "direct_jacobian": -0.007595486111111111,
+          "indirect_signed_jacobian": 0.00014670630438040448,
+          "total_signed_jacobian": -0.0074487798067307065,
+          "total_absolute_path_strength": 0.13190740906548445,
+          "cancellation_ratio": 0.05646976056540399,
+          "conflict_fraction": 0.943530239434596,
+          "path_sign_relation": "opposed_partial",
+          "receiver_active": true,
+          "intermediate_active_count": 103,
+          "class": "conflicted",
+          "predicted_receiver_preactivation_delta": 0.008961612365687434,
+          "predicted_receiver_preactivation": 4.790211612365687,
+          "predicted_receiver_gate_crossing": false
+        }
+      },
+      "role": "weak_same_receiver",
+      "route_signature": "flip_h07_d0_f0:a_from_b|flip_h07_d0_f0:a_from_b:L19:F104910:l2_matched_to:LC-H07-D0:middle_short:anchor_high|L22|module_output"
+    },
+    {
+      "cell_id": "topology:flip_h07_d0_f0:b_from_a:LC-H07-F0:early_long:anchor_high",
+      "panel": "topology_discrimination",
+      "context_id": "flip_h07_d0_f0:b_from_a",
+      "direction_id": "flip_h07_d0_f0:b_from_a",
+      "pair_id": "flip_h07_d0_f0",
+      "pair_type": "harmful_behavior_flip",
+      "target_prompt_key": "LC-H07-F0",
+      "source_prompt_key": "LC-H07-D0",
+      "source_feature": "L7:F96498",
+      "source_edit_id": "flip_h07_d0_f0:b_from_a:L7:F96498:natural",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": 0.90625,
+      "source_edit_l2": 0.9062241800129414,
+      "receiver_layer": 12,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L12:F75753",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.051688619175055135,
+          "bypass_share": 0.9483113808249448,
+          "direct_coverage": 0.047720149630977655,
+          "indirect_coverage": 0.00396846954407748,
+          "route_effective_count": 1.1723074312949249,
+          "route_max_branch_share": 0.9232235333925759,
+          "error_bypass_mass": 0.71606412870836,
+          "embedding_bypass_mass": 0.23224725211658495,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.7550938891880103,
+          "walk_conservation": 1.0000000000000002
+        },
+        "signed": {
+          "direct_jacobian": -0.05169392523364486,
+          "indirect_signed_jacobian": -0.004858441041381077,
+          "total_signed_jacobian": -0.05655236627502594,
+          "total_absolute_path_strength": 0.20834953286588406,
+          "cancellation_ratio": 0.27143025231272805,
+          "conflict_fraction": 0.7285697476872719,
+          "path_sign_relation": "aligned",
+          "receiver_active": true,
+          "intermediate_active_count": 54,
+          "class": "conflicted",
+          "predicted_receiver_preactivation_delta": -0.05125058193674226,
+          "predicted_receiver_preactivation": 0.45265566806325774,
+          "predicted_receiver_gate_crossing": false
+        }
+      },
+      "role": "anchor_high",
+      "route_signature": "flip_h07_d0_f0:b_from_a|flip_h07_d0_f0:b_from_a:L7:F96498:natural|L12|module_output"
+    },
+    {
+      "cell_id": "topology:flip_h07_d0_f0:b_from_a:LC-H07-F0:early_long:edge_permuted_same_receiver",
+      "panel": "topology_discrimination",
+      "context_id": "flip_h07_d0_f0:b_from_a",
+      "direction_id": "flip_h07_d0_f0:b_from_a",
+      "pair_id": "flip_h07_d0_f0",
+      "pair_type": "harmful_behavior_flip",
+      "target_prompt_key": "LC-H07-F0",
+      "source_prompt_key": "LC-H07-D0",
+      "source_feature": "L7:F76557",
+      "source_edit_id": "flip_h07_d0_f0:b_from_a:L7:F76557:l2_matched_to:LC-H07-F0:early_long:anchor_high",
+      "source_edit_policy": "l2_matched_to_anchor_source_edit",
+      "source_activation_delta": 0.9061550458694272,
+      "source_edit_l2": 0.9062241800129414,
+      "receiver_layer": 12,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L12:F75753",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.000681023541995804,
+          "bypass_share": 0.9993189764580042,
+          "direct_coverage": 0.0,
+          "indirect_coverage": 0.000681023541995804,
+          "route_effective_count": 9.277716836850134,
+          "route_max_branch_share": 0.24266111226114478,
+          "error_bypass_mass": 0.7419987294713011,
+          "embedding_bypass_mass": 0.2573202469867032,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.7425043924425898,
+          "walk_conservation": 1.0
+        },
+        "signed": {
+          "direct_jacobian": -0.011181640625,
+          "indirect_signed_jacobian": -0.013389621801059015,
+          "total_signed_jacobian": -0.024571262426059014,
+          "total_absolute_path_strength": 0.18217479062096498,
+          "cancellation_ratio": 0.13487740176511182,
+          "conflict_fraction": 0.8651225982348882,
+          "path_sign_relation": "aligned",
+          "receiver_active": true,
+          "intermediate_active_count": 54,
+          "class": "conflicted",
+          "predicted_receiver_preactivation_delta": -0.02226537343075524,
+          "predicted_receiver_preactivation": 0.48164087656924476,
+          "predicted_receiver_gate_crossing": false
+        }
+      },
+      "role": "edge_permuted_same_receiver",
+      "route_signature": "flip_h07_d0_f0:b_from_a|flip_h07_d0_f0:b_from_a:L7:F76557:l2_matched_to:LC-H07-F0:early_long:anchor_high|L12|module_output"
+    },
+    {
+      "cell_id": "topology:flip_h07_d0_f0:b_from_a:LC-H07-F0:early_long:weak_same_receiver",
+      "panel": "topology_discrimination",
+      "context_id": "flip_h07_d0_f0:b_from_a",
+      "direction_id": "flip_h07_d0_f0:b_from_a",
+      "pair_id": "flip_h07_d0_f0",
+      "pair_type": "harmful_behavior_flip",
+      "target_prompt_key": "LC-H07-F0",
+      "source_prompt_key": "LC-H07-D0",
+      "source_feature": "L7:F13452",
+      "source_edit_id": "flip_h07_d0_f0:b_from_a:L7:F13452:l2_matched_to:LC-H07-F0:early_long:anchor_high",
+      "source_edit_policy": "l2_matched_to_anchor_source_edit",
+      "source_activation_delta": 0.9062158617530638,
+      "source_edit_l2": 0.9062241800129414,
+      "receiver_layer": 12,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L12:F75753",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.002684258314995809,
+          "bypass_share": 0.9973157416850041,
+          "direct_coverage": 0.0,
+          "indirect_coverage": 0.002684258314995809,
+          "route_effective_count": 16.471420094354926,
+          "route_max_branch_share": 0.10378684330185221,
+          "error_bypass_mass": 0.7409515971396698,
+          "embedding_bypass_mass": 0.25636414454533435,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.7429458557305062,
+          "walk_conservation": 1.0
+        },
+        "signed": {
+          "direct_jacobian": 0.002042483660130719,
+          "indirect_signed_jacobian": -0.026190794015974336,
+          "total_signed_jacobian": -0.024148310355843618,
+          "total_absolute_path_strength": 0.17677123790852978,
+          "cancellation_ratio": 0.13660768935916573,
+          "conflict_fraction": 0.8633923106408343,
+          "path_sign_relation": "opposed_partial",
+          "receiver_active": true,
+          "intermediate_active_count": 54,
+          "class": "conflicted",
+          "predicted_receiver_preactivation_delta": -0.02188358187900126,
+          "predicted_receiver_preactivation": 0.48202266812099875,
+          "predicted_receiver_gate_crossing": false
+        }
+      },
+      "role": "weak_same_receiver",
+      "route_signature": "flip_h07_d0_f0:b_from_a|flip_h07_d0_f0:b_from_a:L7:F13452:l2_matched_to:LC-H07-F0:early_long:anchor_high|L12|module_output"
+    },
+    {
+      "cell_id": "topology:same_h01_d0_f1:a_from_b:LC-H01-D0:late_short:anchor_high",
+      "panel": "topology_discrimination",
+      "context_id": "same_h01_d0_f1:a_from_b",
+      "direction_id": "same_h01_d0_f1:a_from_b",
+      "pair_id": "same_h01_d0_f1",
+      "pair_type": "harmful_same_behavior",
+      "target_prompt_key": "LC-H01-D0",
+      "source_prompt_key": "LC-H01-F1",
+      "source_feature": "L33:F143078",
+      "source_edit_id": "same_h01_d0_f1:a_from_b:L33:F143078:natural",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": -8.25,
+      "source_edit_l2": 8.265227168798447,
+      "receiver_layer": 35,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L35:F10607",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.017605876406685643,
+          "bypass_share": 0.9823941235933144,
+          "direct_coverage": 0.016932077846010408,
+          "indirect_coverage": 0.0006737985606752352,
+          "route_effective_count": 1.0800664390834156,
+          "route_max_branch_share": 0.9617287691273712,
+          "error_bypass_mass": 0.6829941071799649,
+          "embedding_bypass_mass": 0.2994000164133354,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.6952343166322794,
+          "walk_conservation": 0.999999999999986
+        },
+        "signed": {
+          "direct_jacobian": 0.3169642857142857,
+          "indirect_signed_jacobian": 0.00044045945801141073,
+          "total_signed_jacobian": 0.3174047451722971,
+          "total_absolute_path_strength": 0.37605754735737407,
+          "cancellation_ratio": 0.844032375902994,
+          "conflict_fraction": 0.15596762409700604,
+          "path_sign_relation": "aligned",
+          "receiver_active": true,
+          "intermediate_active_count": 16,
+          "class": "mixed",
+          "predicted_receiver_preactivation_delta": -2.618589147671451,
+          "predicted_receiver_preactivation": 109.88141085232854,
+          "predicted_receiver_gate_crossing": false
+        }
+      },
+      "role": "anchor_high",
+      "route_signature": "same_h01_d0_f1:a_from_b|same_h01_d0_f1:a_from_b:L33:F143078:natural|L35|module_output"
+    },
+    {
+      "cell_id": "topology:same_h01_d0_f1:a_from_b:LC-H01-D0:late_short:edge_permuted_same_receiver",
+      "panel": "topology_discrimination",
+      "context_id": "same_h01_d0_f1:a_from_b",
+      "direction_id": "same_h01_d0_f1:a_from_b",
+      "pair_id": "same_h01_d0_f1",
+      "pair_type": "harmful_same_behavior",
+      "target_prompt_key": "LC-H01-D0",
+      "source_prompt_key": "LC-H01-F1",
+      "source_feature": "L33:F78685",
+      "source_edit_id": "same_h01_d0_f1:a_from_b:L33:F78685:l2_matched_to:LC-H01-D0:late_short:anchor_high",
+      "source_edit_policy": "l2_matched_to_anchor_source_edit",
+      "source_activation_delta": -8.264069613004294,
+      "source_edit_l2": 8.265227168798447,
+      "receiver_layer": 35,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L35:F10607",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.0006930756252718775,
+          "bypass_share": 0.9993069243747281,
+          "direct_coverage": 0.0004769599393242369,
+          "indirect_coverage": 0.0002161156859476406,
+          "route_effective_count": 1.9931632774523558,
+          "route_max_branch_share": 0.6881787815537973,
+          "error_bypass_mass": 0.6947778500334149,
+          "embedding_bypass_mass": 0.3045290743412981,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.6952597175969147,
+          "walk_conservation": 0.9999999999999849
+        },
+        "signed": {
+          "direct_jacobian": -0.020689655172413793,
+          "indirect_signed_jacobian": -0.0013662704324322733,
+          "total_signed_jacobian": -0.022055925604846066,
+          "total_absolute_path_strength": 0.0941612456445018,
+          "cancellation_ratio": 0.23423570338179717,
+          "conflict_fraction": 0.7657642966182028,
+          "path_sign_relation": "aligned",
+          "receiver_active": true,
+          "intermediate_active_count": 16,
+          "class": "conflicted",
+          "predicted_receiver_preactivation_delta": 0.18227170457769173,
+          "predicted_receiver_preactivation": 112.68227170457769,
+          "predicted_receiver_gate_crossing": false
+        }
+      },
+      "role": "edge_permuted_same_receiver",
+      "route_signature": "same_h01_d0_f1:a_from_b|same_h01_d0_f1:a_from_b:L33:F78685:l2_matched_to:LC-H01-D0:late_short:anchor_high|L35|module_output"
+    },
+    {
+      "cell_id": "topology:same_h01_d0_f1:a_from_b:LC-H01-D0:late_short:weak_same_receiver",
+      "panel": "topology_discrimination",
+      "context_id": "same_h01_d0_f1:a_from_b",
+      "direction_id": "same_h01_d0_f1:a_from_b",
+      "pair_id": "same_h01_d0_f1",
+      "pair_type": "harmful_same_behavior",
+      "target_prompt_key": "LC-H01-D0",
+      "source_prompt_key": "LC-H01-F1",
+      "source_feature": "L33:F5064",
+      "source_edit_id": "same_h01_d0_f1:a_from_b:L33:F5064:l2_matched_to:LC-H01-D0:late_short:anchor_high",
+      "source_edit_policy": "l2_matched_to_anchor_source_edit",
+      "source_activation_delta": -8.264681353155417,
+      "source_edit_l2": 8.265227168798447,
+      "receiver_layer": 35,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L35:F10607",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.000655494718444492,
+          "bypass_share": 0.9993445052815555,
+          "direct_coverage": 0.0004893807710774723,
+          "indirect_coverage": 0.00016611394736701975,
+          "route_effective_count": 1.7633619760266137,
+          "route_max_branch_share": 0.7465823252379318,
+          "error_bypass_mass": 0.6947967214174935,
+          "embedding_bypass_mass": 0.3045477838640468,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.6952524557302102,
+          "walk_conservation": 0.9999999999999848
+        },
+        "signed": {
+          "direct_jacobian": -0.026883187772925764,
+          "indirect_signed_jacobian": -0.014331670090363697,
+          "total_signed_jacobian": -0.04121485786328946,
+          "total_absolute_path_strength": 0.134528528581464,
+          "cancellation_ratio": 0.30636518735378665,
+          "conflict_fraction": 0.6936348126462133,
+          "path_sign_relation": "aligned",
+          "receiver_active": true,
+          "intermediate_active_count": 16,
+          "class": "conflicted",
+          "predicted_receiver_preactivation_delta": 0.34062766725567933,
+          "predicted_receiver_preactivation": 112.84062766725567,
+          "predicted_receiver_gate_crossing": false
+        }
+      },
+      "role": "weak_same_receiver",
+      "route_signature": "same_h01_d0_f1:a_from_b|same_h01_d0_f1:a_from_b:L33:F5064:l2_matched_to:LC-H01-D0:late_short:anchor_high|L35|module_output"
+    },
+    {
+      "cell_id": "topology:same_h01_d0_f1:b_from_a:LC-H01-F1:middle_short:anchor_high",
+      "panel": "topology_discrimination",
+      "context_id": "same_h01_d0_f1:b_from_a",
+      "direction_id": "same_h01_d0_f1:b_from_a",
+      "pair_id": "same_h01_d0_f1",
+      "pair_type": "harmful_same_behavior",
+      "target_prompt_key": "LC-H01-F1",
+      "source_prompt_key": "LC-H01-D0",
+      "source_feature": "L21:F143133",
+      "source_edit_id": "same_h01_d0_f1:b_from_a:L21:F143133:natural",
+      "source_edit_policy": "natural_counterfactual",
+      "source_activation_delta": -3.71875,
+      "source_edit_l2": 3.7191210500895977,
+      "receiver_layer": 23,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L23:F11852",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.006391786371655085,
+          "bypass_share": 0.993608213628345,
+          "direct_coverage": 0.006318113735919299,
+          "indirect_coverage": 7.367263573578638e-05,
+          "route_effective_count": 1.023440028711778,
+          "route_max_branch_share": 0.9884738582530709,
+          "error_bypass_mass": 0.6221540246731776,
+          "embedding_bypass_mass": 0.37145418895516635,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.62615628186211,
+          "walk_conservation": 0.999999999999999
+        },
+        "signed": {
+          "direct_jacobian": -0.28361344537815125,
+          "indirect_signed_jacobian": 0.000312186272168391,
+          "total_signed_jacobian": -0.28330125910598286,
+          "total_absolute_path_strength": 0.3542038544518032,
+          "cancellation_ratio": 0.7998254551589921,
+          "conflict_fraction": 0.20017454484100794,
+          "path_sign_relation": "opposed_partial",
+          "receiver_active": true,
+          "intermediate_active_count": 23,
+          "class": "mixed",
+          "predicted_receiver_preactivation_delta": 1.0535265573003738,
+          "predicted_receiver_preactivation": 10.553526557300374,
+          "predicted_receiver_gate_crossing": false
+        }
+      },
+      "role": "anchor_high",
+      "route_signature": "same_h01_d0_f1:b_from_a|same_h01_d0_f1:b_from_a:L21:F143133:natural|L23|module_output"
+    },
+    {
+      "cell_id": "topology:same_h01_d0_f1:b_from_a:LC-H01-F1:middle_short:edge_permuted_same_receiver",
+      "panel": "topology_discrimination",
+      "context_id": "same_h01_d0_f1:b_from_a",
+      "direction_id": "same_h01_d0_f1:b_from_a",
+      "pair_id": "same_h01_d0_f1",
+      "pair_type": "harmful_same_behavior",
+      "target_prompt_key": "LC-H01-F1",
+      "source_prompt_key": "LC-H01-D0",
+      "source_feature": "L21:F151318",
+      "source_edit_id": "same_h01_d0_f1:b_from_a:L21:F151318:l2_matched_to:LC-H01-F1:middle_short:anchor_high",
+      "source_edit_policy": "l2_matched_to_anchor_source_edit",
+      "source_activation_delta": -3.7190966657916764,
+      "source_edit_l2": 3.7191210500895977,
+      "receiver_layer": 23,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L23:F11852",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.0005325654024268564,
+          "bypass_share": 0.9994674345975731,
+          "direct_coverage": 0.0004533831616053201,
+          "indirect_coverage": 7.918224082153634e-05,
+          "route_effective_count": 1.3723098908551445,
+          "route_max_branch_share": 0.8513192173943155,
+          "error_bypass_mass": 0.6264682608272819,
+          "embedding_bypass_mass": 0.3729991737702902,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.6268020739260243,
+          "walk_conservation": 0.9999999999999989
+        },
+        "signed": {
+          "direct_jacobian": 0.020699786324786324,
+          "indirect_signed_jacobian": -0.03717265506970424,
+          "total_signed_jacobian": -0.01647286874491792,
+          "total_absolute_path_strength": 0.08833105202757703,
+          "cancellation_ratio": 0.1864901228593437,
+          "conflict_fraction": 0.8135098771406564,
+          "path_sign_relation": "opposed_partial",
+          "receiver_active": true,
+          "intermediate_active_count": 23,
+          "class": "conflicted",
+          "predicted_receiver_preactivation_delta": 0.061264191225248156,
+          "predicted_receiver_preactivation": 9.561264191225249,
+          "predicted_receiver_gate_crossing": false
+        }
+      },
+      "role": "edge_permuted_same_receiver",
+      "route_signature": "same_h01_d0_f1:b_from_a|same_h01_d0_f1:b_from_a:L21:F151318:l2_matched_to:LC-H01-F1:middle_short:anchor_high|L23|module_output"
+    },
+    {
+      "cell_id": "topology:same_h01_d0_f1:b_from_a:LC-H01-F1:middle_short:weak_same_receiver",
+      "panel": "topology_discrimination",
+      "context_id": "same_h01_d0_f1:b_from_a",
+      "direction_id": "same_h01_d0_f1:b_from_a",
+      "pair_id": "same_h01_d0_f1",
+      "pair_type": "harmful_same_behavior",
+      "target_prompt_key": "LC-H01-F1",
+      "source_prompt_key": "LC-H01-D0",
+      "source_feature": "L21:F108909",
+      "source_edit_id": "same_h01_d0_f1:b_from_a:L21:F108909:l2_matched_to:LC-H01-F1:middle_short:anchor_high",
+      "source_edit_policy": "l2_matched_to_anchor_source_edit",
+      "source_activation_delta": -3.7189525832853736,
+      "source_edit_l2": 3.7191210500895977,
+      "receiver_layer": 23,
+      "receiver_boundary": "module_output",
+      "nominated_receiver_feature": "L23:F11852",
+      "topology": {
+        "unsigned": {
+          "receiver_coverage": 0.0002657945417305535,
+          "bypass_share": 0.9997342054582694,
+          "direct_coverage": 0.00010895821141805272,
+          "indirect_coverage": 0.00015683633031250078,
+          "route_effective_count": 3.186042932735064,
+          "route_max_branch_share": 0.4099339689545167,
+          "error_bypass_mass": 0.6266692287332941,
+          "embedding_bypass_mass": 0.37306497672497424,
+          "dangling_bypass_mass": 0.0,
+          "error_fraction_of_bypass": 0.6268358382776694,
+          "walk_conservation": 0.9999999999999989
+        },
+        "signed": {
+          "direct_jacobian": -0.006191821808510638,
+          "indirect_signed_jacobian": 0.0677259850016648,
+          "total_signed_jacobian": 0.06153416319315416,
+          "total_absolute_path_strength": 0.12458273164635716,
+          "cancellation_ratio": 0.4939220900038231,
+          "conflict_fraction": 0.506077909996177,
+          "path_sign_relation": "opposed_partial",
+          "receiver_active": true,
+          "intermediate_active_count": 23,
+          "class": "conflicted",
+          "predicted_receiver_preactivation_delta": -0.22884263516748443,
+          "predicted_receiver_preactivation": 9.271157364832515,
+          "predicted_receiver_gate_crossing": false
+        }
+      },
+      "role": "weak_same_receiver",
+      "route_signature": "same_h01_d0_f1:b_from_a|same_h01_d0_f1:b_from_a:L21:F108909:l2_matched_to:LC-H01-F1:middle_short:anchor_high|L23|module_output"
+    }
+  ],
+  "topology_contrasts": [
+    {
+      "contrast_id": "e7b:benign_b01_d0_f0:a_from_b:late_long:agreement",
+      "direction_id": "benign_b01_d0_f0:a_from_b",
+      "quartet_id": "late_long",
+      "receiver_band": "late",
+      "predictor_relation": "agreement",
+      "control_family": "same_receiver_l2_matched_trio_pair",
+      "graph_absolute_margin_first_minus_second": 1.2302442654851953,
+      "atp_absolute_margin_first_minus_second": 0.526177179689969,
+      "robust_margin": 0.526177179689969,
+      "first_candidate_id": "LC-B01-D0:late_long:anchor_high",
+      "second_candidate_id": "LC-B01-D0:late_long:weak_same_receiver"
+    },
+    {
+      "contrast_id": "e7b:benign_b01_d0_f0:a_from_b:late_long:disagreement",
+      "direction_id": "benign_b01_d0_f0:a_from_b",
+      "quartet_id": "late_long",
+      "receiver_band": "late",
+      "predictor_relation": "disagreement",
+      "control_family": "same_receiver_l2_matched_trio_pair",
+      "graph_absolute_margin_first_minus_second": 0.038959330353181915,
+      "atp_absolute_margin_first_minus_second": -0.2767450210045276,
+      "robust_margin": 0.038959330353181915,
+      "first_candidate_id": "LC-B01-D0:late_long:weak_same_receiver",
+      "second_candidate_id": "LC-B01-D0:late_long:edge_permuted_same_receiver"
+    },
+    {
+      "contrast_id": "e7b:benign_b01_d0_f0:b_from_a:early_local:agreement",
+      "direction_id": "benign_b01_d0_f0:b_from_a",
+      "quartet_id": "early_local",
+      "receiver_band": "early",
+      "predictor_relation": "agreement",
+      "control_family": "same_receiver_l2_matched_trio_pair",
+      "graph_absolute_margin_first_minus_second": 0.030657059635026625,
+      "atp_absolute_margin_first_minus_second": 0.028416697887583355,
+      "robust_margin": 0.028416697887583355,
+      "first_candidate_id": "LC-B01-F0:early_local:anchor_high",
+      "second_candidate_id": "LC-B01-F0:early_local:weak_same_receiver"
+    },
+    {
+      "contrast_id": "e7b:benign_b01_d0_f0:b_from_a:early_local:disagreement",
+      "direction_id": "benign_b01_d0_f0:b_from_a",
+      "quartet_id": "early_local",
+      "receiver_band": "early",
+      "predictor_relation": "disagreement",
+      "control_family": "same_receiver_l2_matched_trio_pair",
+      "graph_absolute_margin_first_minus_second": 0.0008824167731283927,
+      "atp_absolute_margin_first_minus_second": -0.0010417808193314666,
+      "robust_margin": 0.0008824167731283927,
+      "first_candidate_id": "LC-B01-F0:early_local:weak_same_receiver",
+      "second_candidate_id": "LC-B01-F0:early_local:edge_permuted_same_receiver"
+    },
+    {
+      "contrast_id": "e7b:flip_h07_d0_f0:a_from_b:middle_short:agreement",
+      "direction_id": "flip_h07_d0_f0:a_from_b",
+      "quartet_id": "middle_short",
+      "receiver_band": "middle",
+      "predictor_relation": "agreement",
+      "control_family": "same_receiver_l2_matched_trio_pair",
+      "graph_absolute_margin_first_minus_second": 0.09556421942821385,
+      "atp_absolute_margin_first_minus_second": 0.07163050254657036,
+      "robust_margin": 0.07163050254657036,
+      "first_candidate_id": "LC-H07-D0:middle_short:anchor_high",
+      "second_candidate_id": "LC-H07-D0:middle_short:weak_same_receiver"
+    },
+    {
+      "contrast_id": "e7b:flip_h07_d0_f0:a_from_b:middle_short:disagreement",
+      "direction_id": "flip_h07_d0_f0:a_from_b",
+      "quartet_id": "middle_short",
+      "receiver_band": "middle",
+      "predictor_relation": "disagreement",
+      "control_family": "same_receiver_l2_matched_trio_pair",
+      "graph_absolute_margin_first_minus_second": 0.0064836634395899675,
+      "atp_absolute_margin_first_minus_second": -0.0010068431886186488,
+      "robust_margin": 0.0010068431886186488,
+      "first_candidate_id": "LC-H07-D0:middle_short:weak_same_receiver",
+      "second_candidate_id": "LC-H07-D0:middle_short:edge_permuted_same_receiver"
+    },
+    {
+      "contrast_id": "e7b:flip_h07_d0_f0:b_from_a:early_long:agreement",
+      "direction_id": "flip_h07_d0_f0:b_from_a",
+      "quartet_id": "early_long",
+      "receiver_band": "early",
+      "predictor_relation": "agreement",
+      "control_family": "same_receiver_l2_matched_trio_pair",
+      "graph_absolute_margin_first_minus_second": 0.03671531966954833,
+      "atp_absolute_margin_first_minus_second": 0.009406578865887673,
+      "robust_margin": 0.009406578865887673,
+      "first_candidate_id": "LC-H07-F0:early_long:anchor_high",
+      "second_candidate_id": "LC-H07-F0:early_long:edge_permuted_same_receiver"
+    },
+    {
+      "contrast_id": "e7b:flip_h07_d0_f0:b_from_a:early_long:disagreement",
+      "direction_id": "flip_h07_d0_f0:b_from_a",
+      "quartet_id": "early_long",
+      "receiver_band": "early",
+      "predictor_relation": "disagreement",
+      "control_family": "same_receiver_l2_matched_trio_pair",
+      "graph_absolute_margin_first_minus_second": -0.008281368983260415,
+      "atp_absolute_margin_first_minus_second": 0.006012449460529614,
+      "robust_margin": 0.006012449460529614,
+      "first_candidate_id": "LC-H07-F0:early_long:weak_same_receiver",
+      "second_candidate_id": "LC-H07-F0:early_long:edge_permuted_same_receiver"
+    },
+    {
+      "contrast_id": "e7b:same_h01_d0_f1:a_from_b:late_short:agreement",
+      "direction_id": "same_h01_d0_f1:a_from_b",
+      "quartet_id": "late_short",
+      "receiver_band": "late",
+      "predictor_relation": "agreement",
+      "control_family": "same_receiver_l2_matched_trio_pair",
+      "graph_absolute_margin_first_minus_second": 2.4439746065289754,
+      "atp_absolute_margin_first_minus_second": 0.4538437648120201,
+      "robust_margin": 0.4538437648120201,
+      "first_candidate_id": "LC-H01-D0:late_short:anchor_high",
+      "second_candidate_id": "LC-H01-D0:late_short:edge_permuted_same_receiver"
+    },
+    {
+      "contrast_id": "e7b:same_h01_d0_f1:a_from_b:late_short:disagreement",
+      "direction_id": "same_h01_d0_f1:a_from_b",
+      "quartet_id": "late_short",
+      "receiver_band": "late",
+      "predictor_relation": "disagreement",
+      "control_family": "same_receiver_l2_matched_trio_pair",
+      "graph_absolute_margin_first_minus_second": 2.392774376442582,
+      "atp_absolute_margin_first_minus_second": -0.4310758213431567,
+      "robust_margin": 0.4310758213431567,
+      "first_candidate_id": "LC-H01-D0:late_short:anchor_high",
+      "second_candidate_id": "LC-H01-D0:late_short:weak_same_receiver"
+    },
+    {
+      "contrast_id": "e7b:same_h01_d0_f1:b_from_a:middle_short:agreement",
+      "direction_id": "same_h01_d0_f1:b_from_a",
+      "quartet_id": "middle_short",
+      "receiver_band": "middle",
+      "predictor_relation": "agreement",
+      "control_family": "same_receiver_l2_matched_trio_pair",
+      "graph_absolute_margin_first_minus_second": 0.9777029936968871,
+      "atp_absolute_margin_first_minus_second": 0.29656676531628623,
+      "robust_margin": 0.29656676531628623,
+      "first_candidate_id": "LC-H01-F1:middle_short:anchor_high",
+      "second_candidate_id": "LC-H01-F1:middle_short:edge_permuted_same_receiver"
+    },
+    {
+      "contrast_id": "e7b:same_h01_d0_f1:b_from_a:middle_short:disagreement",
+      "direction_id": "same_h01_d0_f1:b_from_a",
+      "quartet_id": "middle_short",
+      "receiver_band": "middle",
+      "predictor_relation": "disagreement",
+      "control_family": "same_receiver_l2_matched_trio_pair",
+      "graph_absolute_margin_first_minus_second": 1.0316604082899967,
+      "atp_absolute_margin_first_minus_second": -0.06906311144193189,
+      "robust_margin": 0.06906311144193189,
+      "first_candidate_id": "LC-H01-F1:middle_short:anchor_high",
+      "second_candidate_id": "LC-H01-F1:middle_short:weak_same_receiver"
+    }
+  ],
+  "input_calibration_cell_ids": [
+    "mechanics:b04_f0_h03_denoising_transport:a_to_c",
+    "mechanics:b04_f0_h03_denoising_transport:b_to_c",
+    "mechanics:b04_f0_h03_denoising_transport:c_to_d",
+    "mechanics:h03_d0_from_f0:a_to_c",
+    "mechanics:h03_d0_from_f0:b_to_c",
+    "mechanics:h03_d0_from_f0:c_to_d",
+    "mechanics:h03_f0_from_d0:a_to_c",
+    "mechanics:h03_f0_from_d0:b_to_c",
+    "mechanics:h03_f0_from_d0:c_to_d",
+    "mechanics:h09_d0_from_f0:a_to_c",
+    "mechanics:h09_d0_from_f0:b_to_c",
+    "mechanics:h09_d0_from_f0:c_to_d",
+    "mechanics:h09_f0_from_d0:a_to_c",
+    "mechanics:h09_f0_from_d0:b_to_c",
+    "mechanics:h09_f0_from_d0:c_to_d",
+    "topology:benign_b01_d0_f0:a_from_b:LC-B01-D0:late_long:anchor_high",
+    "topology:benign_b01_d0_f0:b_from_a:LC-B01-F0:early_local:anchor_high",
+    "topology:flip_h07_d0_f0:a_from_b:LC-H07-D0:middle_short:anchor_high",
+    "topology:flip_h07_d0_f0:b_from_a:LC-H07-F0:early_long:anchor_high",
+    "topology:same_h01_d0_f1:a_from_b:LC-H01-D0:late_short:anchor_high",
+    "topology:same_h01_d0_f1:b_from_a:LC-H01-F1:middle_short:anchor_high"
+  ],
+  "low_coverage_controls": [
+    {
+      "control_id": "low_coverage:mechanics:b04_f0_h03_denoising_transport",
+      "panel": "mechanics_core",
+      "source_cell_id": "mechanics:b04_f0_h03_denoising_transport:a_to_c",
+      "direction_id": "b04_f0_h03_denoising_transport",
+      "source_edit_id": "mechanics:b04_f0_h03_denoising_transport:a_to_c:L29:F18221",
+      "source_feature": "L29:F18221",
+      "receiver_layer": 35,
+      "receiver_boundary": "module_output",
+      "selection": {
+        "layer": 35,
+        "active_feature_count": 14,
+        "maximum_sender_coverage": 0.005620668473758908,
+        "mean_sender_coverage": 0.0026662155824883588,
+        "p90_sender_coverage": 0.005094275101501562,
+        "selection_band": "late",
+        "primary_receiver_layer": 31,
+        "excluded_layers": [
+          31,
+          32
+        ],
+        "selection_semantics": "minimum maximum sender coverage across active final-position feature markers in a band-matched alternate receiver MLP",
+        "claim_boundary": "operational low-coverage module control; not proof that the complete module is physically off-path"
+      }
+    },
+    {
+      "control_id": "low_coverage:mechanics:h03_d0_from_f0",
+      "panel": "mechanics_core",
+      "source_cell_id": "mechanics:h03_d0_from_f0:a_to_c",
+      "direction_id": "h03_d0_from_f0",
+      "source_edit_id": "mechanics:h03_d0_from_f0:a_to_c:L29:F18221",
+      "source_feature": "L29:F18221",
+      "receiver_layer": 35,
+      "receiver_boundary": "module_output",
+      "selection": {
+        "layer": 35,
+        "active_feature_count": 14,
+        "maximum_sender_coverage": 0.005620668473758908,
+        "mean_sender_coverage": 0.0026662155824883588,
+        "p90_sender_coverage": 0.005094275101501562,
+        "selection_band": "late",
+        "primary_receiver_layer": 31,
+        "excluded_layers": [
+          31,
+          32
+        ],
+        "selection_semantics": "minimum maximum sender coverage across active final-position feature markers in a band-matched alternate receiver MLP",
+        "claim_boundary": "operational low-coverage module control; not proof that the complete module is physically off-path"
+      }
+    },
+    {
+      "control_id": "low_coverage:mechanics:h03_f0_from_d0",
+      "panel": "mechanics_core",
+      "source_cell_id": "mechanics:h03_f0_from_d0:a_to_c",
+      "direction_id": "h03_f0_from_d0",
+      "source_edit_id": "mechanics:h03_f0_from_d0:a_to_c:L29:F18221",
+      "source_feature": "L29:F18221",
+      "receiver_layer": 35,
+      "receiver_boundary": "module_output",
+      "selection": {
+        "layer": 35,
+        "active_feature_count": 14,
+        "maximum_sender_coverage": 0.005620668473758908,
+        "mean_sender_coverage": 0.0026662155824883588,
+        "p90_sender_coverage": 0.005094275101501562,
+        "selection_band": "late",
+        "primary_receiver_layer": 31,
+        "excluded_layers": [
+          31,
+          32
+        ],
+        "selection_semantics": "minimum maximum sender coverage across active final-position feature markers in a band-matched alternate receiver MLP",
+        "claim_boundary": "operational low-coverage module control; not proof that the complete module is physically off-path"
+      }
+    },
+    {
+      "control_id": "low_coverage:mechanics:h09_d0_from_f0",
+      "panel": "mechanics_core",
+      "source_cell_id": "mechanics:h09_d0_from_f0:a_to_c",
+      "direction_id": "h09_d0_from_f0",
+      "source_edit_id": "mechanics:h09_d0_from_f0:a_to_c:L29:F18221",
+      "source_feature": "L29:F18221",
+      "receiver_layer": 35,
+      "receiver_boundary": "module_output",
+      "selection": {
+        "layer": 35,
+        "active_feature_count": 14,
+        "maximum_sender_coverage": 0.005620668473758908,
+        "mean_sender_coverage": 0.0026662155824883588,
+        "p90_sender_coverage": 0.005094275101501562,
+        "selection_band": "late",
+        "primary_receiver_layer": 31,
+        "excluded_layers": [
+          31,
+          32
+        ],
+        "selection_semantics": "minimum maximum sender coverage across active final-position feature markers in a band-matched alternate receiver MLP",
+        "claim_boundary": "operational low-coverage module control; not proof that the complete module is physically off-path"
+      }
+    },
+    {
+      "control_id": "low_coverage:mechanics:h09_f0_from_d0",
+      "panel": "mechanics_core",
+      "source_cell_id": "mechanics:h09_f0_from_d0:a_to_c",
+      "direction_id": "h09_f0_from_d0",
+      "source_edit_id": "mechanics:h09_f0_from_d0:a_to_c:L29:F18221",
+      "source_feature": "L29:F18221",
+      "receiver_layer": 35,
+      "receiver_boundary": "module_output",
+      "selection": {
+        "layer": 35,
+        "active_feature_count": 14,
+        "maximum_sender_coverage": 0.005620668473758908,
+        "mean_sender_coverage": 0.0026662155824883588,
+        "p90_sender_coverage": 0.005094275101501562,
+        "selection_band": "late",
+        "primary_receiver_layer": 31,
+        "excluded_layers": [
+          31,
+          32
+        ],
+        "selection_semantics": "minimum maximum sender coverage across active final-position feature markers in a band-matched alternate receiver MLP",
+        "claim_boundary": "operational low-coverage module control; not proof that the complete module is physically off-path"
+      }
+    },
+    {
+      "control_id": "low_coverage:topology:benign_b01_d0_f0:a_from_b",
+      "panel": "topology_discrimination",
+      "source_cell_id": "topology:benign_b01_d0_f0:a_from_b:LC-B01-D0:late_long:anchor_high",
+      "direction_id": "benign_b01_d0_f0:a_from_b",
+      "source_edit_id": "benign_b01_d0_f0:a_from_b:L25:F51350:natural",
+      "source_feature": "L25:F51350",
+      "receiver_layer": 35,
+      "receiver_boundary": "module_output",
+      "selection": {
+        "layer": 35,
+        "active_feature_count": 10,
+        "maximum_sender_coverage": 0.0018723605747072002,
+        "mean_sender_coverage": 0.0013218080911359495,
+        "p90_sender_coverage": 0.0017055793934542566,
+        "selection_band": "late",
+        "primary_receiver_layer": 32,
+        "excluded_layers": [
+          32
+        ],
+        "selection_semantics": "minimum maximum sender coverage across active final-position feature markers in a band-matched alternate receiver MLP",
+        "claim_boundary": "operational low-coverage module control; not proof that the complete module is physically off-path"
+      }
+    },
+    {
+      "control_id": "low_coverage:topology:benign_b01_d0_f0:b_from_a",
+      "panel": "topology_discrimination",
+      "source_cell_id": "topology:benign_b01_d0_f0:b_from_a:LC-B01-F0:early_local:anchor_high",
+      "direction_id": "benign_b01_d0_f0:b_from_a",
+      "source_edit_id": "benign_b01_d0_f0:b_from_a:L7:F96498:natural",
+      "source_feature": "L7:F96498",
+      "receiver_layer": 11,
+      "receiver_boundary": "module_output",
+      "selection": {
+        "layer": 11,
+        "active_feature_count": 13,
+        "maximum_sender_coverage": 0.03577782193574607,
+        "mean_sender_coverage": 0.017462083159912992,
+        "p90_sender_coverage": 0.034290937639552314,
+        "selection_band": "early",
+        "primary_receiver_layer": 8,
+        "excluded_layers": [
+          8
+        ],
+        "selection_semantics": "minimum maximum sender coverage across active final-position feature markers in a band-matched alternate receiver MLP",
+        "claim_boundary": "operational low-coverage module control; not proof that the complete module is physically off-path"
+      }
+    },
+    {
+      "control_id": "low_coverage:topology:flip_h07_d0_f0:a_from_b",
+      "panel": "topology_discrimination",
+      "source_cell_id": "topology:flip_h07_d0_f0:a_from_b:LC-H07-D0:middle_short:anchor_high",
+      "direction_id": "flip_h07_d0_f0:a_from_b",
+      "source_edit_id": "flip_h07_d0_f0:a_from_b:L19:F93429:natural",
+      "source_feature": "L19:F93429",
+      "receiver_layer": 23,
+      "receiver_boundary": "module_output",
+      "selection": {
+        "layer": 23,
+        "active_feature_count": 49,
+        "maximum_sender_coverage": 0.01995341596171373,
+        "mean_sender_coverage": 0.005841338680920227,
+        "p90_sender_coverage": 0.013138165599136047,
+        "selection_band": "middle",
+        "primary_receiver_layer": 22,
+        "excluded_layers": [
+          22
+        ],
+        "selection_semantics": "minimum maximum sender coverage across active final-position feature markers in a band-matched alternate receiver MLP",
+        "claim_boundary": "operational low-coverage module control; not proof that the complete module is physically off-path"
+      }
+    },
+    {
+      "control_id": "low_coverage:topology:flip_h07_d0_f0:b_from_a",
+      "panel": "topology_discrimination",
+      "source_cell_id": "topology:flip_h07_d0_f0:b_from_a:LC-H07-F0:early_long:anchor_high",
+      "direction_id": "flip_h07_d0_f0:b_from_a",
+      "source_edit_id": "flip_h07_d0_f0:b_from_a:L7:F96498:natural",
+      "source_feature": "L7:F96498",
+      "receiver_layer": 11,
+      "receiver_boundary": "module_output",
+      "selection": {
+        "layer": 11,
+        "active_feature_count": 12,
+        "maximum_sender_coverage": 0.03234523136970791,
+        "mean_sender_coverage": 0.01619357748562774,
+        "p90_sender_coverage": 0.02708561108865259,
+        "selection_band": "early",
+        "primary_receiver_layer": 12,
+        "excluded_layers": [
+          12
+        ],
+        "selection_semantics": "minimum maximum sender coverage across active final-position feature markers in a band-matched alternate receiver MLP",
+        "claim_boundary": "operational low-coverage module control; not proof that the complete module is physically off-path"
+      }
+    },
+    {
+      "control_id": "low_coverage:topology:same_h01_d0_f1:a_from_b",
+      "panel": "topology_discrimination",
+      "source_cell_id": "topology:same_h01_d0_f1:a_from_b:LC-H01-D0:late_short:anchor_high",
+      "direction_id": "same_h01_d0_f1:a_from_b",
+      "source_edit_id": "same_h01_d0_f1:a_from_b:L33:F143078:natural",
+      "source_feature": "L33:F143078",
+      "receiver_layer": 34,
+      "receiver_boundary": "module_output",
+      "selection": {
+        "layer": 34,
+        "active_feature_count": 16,
+        "maximum_sender_coverage": 0.024118242488245425,
+        "mean_sender_coverage": 0.007671171955056804,
+        "p90_sender_coverage": 0.012350414796289674,
+        "selection_band": "late",
+        "primary_receiver_layer": 35,
+        "excluded_layers": [
+          35
+        ],
+        "selection_semantics": "minimum maximum sender coverage across active final-position feature markers in a band-matched alternate receiver MLP",
+        "claim_boundary": "operational low-coverage module control; not proof that the complete module is physically off-path"
+      }
+    },
+    {
+      "control_id": "low_coverage:topology:same_h01_d0_f1:b_from_a",
+      "panel": "topology_discrimination",
+      "source_cell_id": "topology:same_h01_d0_f1:b_from_a:LC-H01-F1:middle_short:anchor_high",
+      "direction_id": "same_h01_d0_f1:b_from_a",
+      "source_edit_id": "same_h01_d0_f1:b_from_a:L21:F143133:natural",
+      "source_feature": "L21:F143133",
+      "receiver_layer": 24,
+      "receiver_boundary": "module_output",
+      "selection": {
+        "layer": 24,
+        "active_feature_count": 32,
+        "maximum_sender_coverage": 0.016146716125057015,
+        "mean_sender_coverage": 0.0031220086965448217,
+        "p90_sender_coverage": 0.007882133562019545,
+        "selection_band": "middle",
+        "primary_receiver_layer": 23,
+        "excluded_layers": [
+          23
+        ],
+        "selection_semantics": "minimum maximum sender coverage across active final-position feature markers in a band-matched alternate receiver MLP",
+        "claim_boundary": "operational low-coverage module control; not proof that the complete module is physically off-path"
+      }
+    }
+  ],
+  "joint_receiver_sets": [
+    {
+      "cell_id": "joint_receiver_set:h03_d0_from_f0:L31+L32",
+      "context_id": "h03_d0_from_f0",
+      "source_cell_id": "mechanics:h03_d0_from_f0:a_to_c",
+      "direction_id": "h03_d0_from_f0",
+      "source_edit_id": "mechanics:h03_d0_from_f0:a_to_c:L29:F18221",
+      "source_feature": "L29:F18221",
+      "receiver_layers": [
+        31,
+        32
+      ],
+      "receiver_boundary": "module_output",
+      "interpretation": "causally ordered receiver-set dependence, not redundancy"
+    },
+    {
+      "cell_id": "joint_receiver_set:h09_d0_from_f0:L31+L32",
+      "context_id": "h09_d0_from_f0",
+      "source_cell_id": "mechanics:h09_d0_from_f0:a_to_c",
+      "direction_id": "h09_d0_from_f0",
+      "source_edit_id": "mechanics:h09_d0_from_f0:a_to_c:L29:F18221",
+      "source_feature": "L29:F18221",
+      "receiver_layers": [
+        31,
+        32
+      ],
+      "receiver_boundary": "module_output",
+      "interpretation": "causally ordered receiver-set dependence, not redundancy"
+    }
+  ],
+  "expected_counts": {
+    "mechanics_primary_cells": 30,
+    "topology_primary_cells": 18,
+    "primary_cells": 48,
+    "input_calibration_cells": 21,
+    "low_coverage_controls": 11,
+    "joint_receiver_sets": 2,
+    "unique_source_edits": 48,
+    "unique_prompts": 11
+  },
+  "expected_forwards": {
+    "unique_prompt_baseline_or_counterfactual_caches": 11,
+    "unique_sender_patched_worlds": 48,
+    "primary_output_restoration_and_rescue": 96,
+    "input_calibration_restoration_and_rescue": 42,
+    "low_coverage_control_restoration_and_rescue": 22,
+    "joint_receiver_set_restoration_and_rescue": 4,
+    "total": 223,
+    "audit_ceiling": 246
+  },
+  "endpoints": {
+    "primary": [
+      "probe_score",
+      "next_token_refusal_log_odds"
+    ],
+    "same_forward_diagnostics": [
+      "top_token_id",
+      "final_logit_l2",
+      "top1_minus_top2_logit_margin",
+      "refusal_top_minus_nonrefusal_top_logit_margin"
+    ],
+    "s10_four_view_score": {
+      "included": false,
+      "reason": "the S10 target is not a same-forward endpoint and failed two portability clauses; adding it would change timing and compute"
+    },
+    "generation_executed": false
+  },
+  "exact_method": {
+    "sender_edit": "add source_activation_delta times the pinned transcoder decoder to the final-position source MLP output",
+    "primary_receiver_boundary": "blocks.L.mlp.hook_out",
+    "calibration_receiver_boundary": "blocks.L.mlp.hook_in",
+    "receiver_state_contract": "complete final-position d_model vector",
+    "receiver_feature_intervened": false,
+    "receiver_feature_role": "topology marker and gate diagnostic only",
+    "restoration": "sender edit plus replacement by target-baseline receiver state",
+    "rescue": "target baseline plus replacement by sender-world receiver state",
+    "joint_receiver_order": "ascending causal layer order",
+    "position": "final prompt token",
+    "dose": 1.0,
+    "generation": false
+  },
+  "estimands": {
+    "T_S": "YS - Y0",
+    "D_R": "YS - YS_R0",
+    "B_R": "YS_R0 - Y0",
+    "Q_R": "YR_S - Y0",
+    "invariant": "T_S = D_R + B_R",
+    "ratios_primary": false
+  },
+  "execution_contract": {
+    "resume_after_each_route_row": true,
+    "cache_prompt_baselines": true,
+    "cache_unique_sender_worlds": true,
+    "exact_planned_forwards": 223,
+    "audit_ceiling": 246,
+    "no_backward_pass": true,
+    "no_generation": true,
+    "public_result_excludes_raw_tensors": true,
+    "private_safetensors_bundle_required": true
+  },
+  "analysis_contract": {
+    "development_only": true,
+    "generalization_unit": "independent intent, not route cell",
+    "primary_outputs": [
+      "T_S",
+      "D_R",
+      "B_R",
+      "Q_R"
+    ],
+    "single_receiver_does_not_establish_redundancy": true,
+    "joint_ordered_receivers_are_receiver_set_dependence": true,
+    "weak_dependence_is_not_automatically_bypass": true,
+    "e7d_incremental_topology_claim_allowed": false
+  },
+  "inputs": {
+    "analyzer": {
+      "path": "analyze_s9_e7c.py",
+      "sha256": "ca0356d98bb7be322cf8cc22dd0fbe8a03ef10410b02caad9d44b92a0fdecf30"
+    },
+    "annotations": {
+      "path": "qwen3_4b_lexical_control_manual_annotations.csv",
+      "sha256": "20c50ff0bef0a427357d3642d2784f1dc6ab4ef5f8454e7bcb0f5f43138c8f8e"
+    },
+    "base_contract": {
+      "path": "s9_contract.py",
+      "sha256": "35717f36e91ec3bcdda1c6adcd220477dc899f7ac4b1d17de8aaee9a0e07753b"
+    },
+    "base_runner": {
+      "path": "run_s9_calibration.py",
+      "sha256": "77632041676083f4d5ae485ccd7b80e9cb5d44c926d18d15ff95710e075af05b"
+    },
+    "candidate_manifest": {
+      "path": "s9_e7b_candidate_manifest.json",
+      "sha256": "0f1b6864706aa7a7d70ffffd6dcc6e219d03b0e096dc8f7688fa4e1a08bfde55"
+    },
+    "colab_runner": {
+      "path": "run_s9_e7c_colab.py",
+      "sha256": "24f57c625d63dcd555dd70babbadfe21b9848653e086f6d92ae28ad02f18493d"
+    },
+    "e7_contract": {
+      "path": "s9_e7_contract.py",
+      "sha256": "de8ea7ab6ddd06f974e69280d5780ce7a51b8669c7449bf7f52e759671e6fd57"
+    },
+    "e7a_semantics": {
+      "path": "receiver_route_semantics.py",
+      "sha256": "d0e72ff43dac353890d7b26936dddbf4ee537c27d40ab7136db62fd7018c6c8f"
+    },
+    "manifest_builder": {
+      "path": "build_s9_e7b_candidate_manifest.py",
+      "sha256": "6b349fb74b6d66a1ff5ab7076c288c52fecc6281b31c7ba42ce719cf6a4b294e"
+    },
+    "plan_builder": {
+      "path": "build_s9_e7b_plan.py",
+      "sha256": "0a2a8f82028fd6bc5f930ce3198fb192fc3156cab74240ebb8566f646f470efa"
+    },
+    "probe_direction": {
+      "path": "qwen3_4b_refusal_probe_direction.npz",
+      "sha256": "3d2048a873ed05b334545e703e0253707aad9b3de76176eb1fc9d8a71b30d72e"
+    },
+    "prompts": {
+      "path": "qwen3_4b_lexical_control_prompts.csv",
+      "sha256": "567a69fc30f218c32566f1d15f62c01be3dc6fe0fe63e3c721366418539c901b"
+    },
+    "runner": {
+      "path": "run_s9_e7c.py",
+      "sha256": "8fa06ede8bbbb76bc307f144ffbc2259055322216da6c66c1fb34ca453385a3c"
+    },
+    "runtime_installer": {
+      "path": "install_s9_colab_runtime.py",
+      "sha256": "2a58d24c5387f299cc60872703490533482720a22ef4b404745e5cb959488bf7"
+    },
+    "runtime_probe": {
+      "path": "probe_s9_e7c_runtime_colab.py",
+      "sha256": "3e0c212958888e7ab8d2418b57baf6e15f3a6ef9561a4e7186d5e481f2ea9d8a"
+    },
+    "topology_source": {
+      "path": "e7_topology.py",
+      "sha256": "6d58e1f8202ae1b9157363e030c0ab6667169c2d1336ae7bc6d97bf0d24d2a05"
+    }
+  },
+  "privacy": {
+    "prompt_text_in_public_artifacts": false,
+    "completion_text_in_public_artifacts": false,
+    "token_text_in_public_artifacts": false,
+    "raw_receiver_tensors_in_public_artifacts": false
+  },
+  "payload_sha256": "730479e91c89a4d0d7fe26ac4f29594dc7cd2006e3ff59d4397da9f6670b799f"
+}
